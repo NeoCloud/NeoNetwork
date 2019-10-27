@@ -1,0 +1,35 @@
+digraph ""
+{
+	labelloc="t";
+	label="NeoNetwork OSPF Transit";
+	rankdir=TD
+	node [shape=box]
+	c [label="caasih.nerdpol.ovh"]
+	ucbvax [label="ucbvax (sl-sgp.asn.yt)"]
+	np11 [label="NeoPDP-11"]
+	cklvax [label="cklvax"]
+	neobox [label="NeoBOX"]
+	local [label="192.168.9.0/24 (CRoom)"]
+	np [label="NeoPortable"]
+	nv [label="NeoVAX"]
+	home [label="192.168.0.0/24 (Home)"]
+	openwrt [label="Wi-Fi AP"]
+
+
+	NeoPMC1 -> local [dir=both]
+	NeoPMC2 -> local [dir=both]
+	NeoPMC3 -> local [dir=both]
+	NeoSYS -> local [dir=both]
+	NeoBOX -> local [dir=both]
+	NNPCC -> local [dir=both]
+	np11 -> c
+	np11 -> ucbvax
+	ucbvax -> c [dir=both]
+	cklvax -> local [dir=both]
+	neobox -> local [dir=both]
+	local -> np11 [dir=both]
+	np -> ucbvax
+	home -> np [dir=both]
+	openwrt -> home [dir=both]
+	nv -> home [dir=both]
+}
