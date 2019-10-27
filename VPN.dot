@@ -29,6 +29,7 @@ digraph ""
 	neobox -> local [dir=both]
 	local -> np11 [dir=both]
 	np -> ucbvax
+	np -> c
 	home -> np [dir=both]
 	openwrt -> home [dir=both]
 	nv -> home [dir=both]
