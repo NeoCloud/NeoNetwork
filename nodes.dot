@@ -1,7 +1,7 @@
 digraph ""
 {
 	labelloc="t";
-	label="NeoNetwork OSPF Transit";
+	label="NeoNetwork Nodes";
 	rankdir=TD
 	node [shape=box]
 	c [label="caasih.nerdpol.ovh"]
@@ -9,7 +9,7 @@ digraph ""
 	np11 [label="NeoPDP-11"]
 	cklvax [label="cklvax"]
 	neobox [label="NeoBOX"]
-	local [label="10.127.1.0/24 (CRoom)"]
+	local [label="CROOM (10.127.1.0/24)"]
 	np [label="NeoPortable"]
 	nv [label="NeoVAX"]
 

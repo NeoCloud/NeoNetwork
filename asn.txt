@@ -1,0 +1,5 @@
+# NeoNetwork uses the 32 bit private AS number range
+# 4201048576 ~ 4202097152
+
+# ASN		Name
+4201048576	Neo_Chen
