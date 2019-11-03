@@ -1,0 +1,10 @@
+#!/bin/sh
+
+case `uname` in
+	Linux)
+		ip link set $INTERFACE down
+		;;
+	*BSD)
+		ifconfig $INTERFACE down
+		;;
+esac

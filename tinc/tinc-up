@@ -1,0 +1,11 @@
+#!/bin/sh
+
+case `uname` in
+	Linux)
+		ip link set $INTERFACE up
+		ip addr add 10.127.x.x/x dev $INTERFACE
+		;;
+	*BSD)
+		ifconfig $INTERFACE 10.127.x.x/x
+		;;
+esac
