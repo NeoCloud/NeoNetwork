@@ -8,6 +8,10 @@ Pull requests are welcomed!
 * caasih.nerdpol.ovh (10.127.0.1, AS: 4201048576)
 * ucbvax.nerdpol.ovh (10.127.0.2, AS: 4201048576)
 
+# Routing Protocols
+Any protocol supported by Quagga or FRRouting.
+
+
 # IP Addresses
 All IPv4 addresses are under the range 10.127.0.0/16,
 see routes.txt for allocated domain.
