@@ -2,7 +2,7 @@
 A useless VPN network ready for peering!
 
 Pull requests are welcome!
-Telegram Group: https://t.me/NeoNetworkVPN
+- Telegram Group: https://t.me/NeoNetworkVPN
 
 == Peers:
 1. caasih.nerdpol.ovh (10.127.0.1, AS: 4201048576)
