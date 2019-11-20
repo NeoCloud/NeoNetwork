@@ -1,8 +1,8 @@
 = NeoNetwork
 A useless VPN network ready for peering!
 
-Pull requests are welcomed!
-https://t.me/NeoNetworkVPN[Telegram Group]
+Pull requests are welcome!
+Telegram Group: https://t.me/NeoNetworkVPN
 
 == Peers:
 1. caasih.nerdpol.ovh (10.127.0.1, AS: 4201048576)
@@ -22,8 +22,8 @@ There's a bind9 server on NeoPDP-11 (10.127.1.1), all domain names are under "ne
 image:https://gitlab.com/Neo_Chen/NeoNetwork/raw/master/nodes.png[NeoNetwork Nodes]
 
 == Files:
-	asn.txt:	BGP AS number allocation
-	named.conf:	Bind9 DNS configuration example
-	nodes.dot:	connection graph
-	tinc.conf:	Tinc configuration example
-	routes.txt:	network address allocation
+        asn.txt:	BGP AS number allocation
+        named.conf:	Bind9 DNS configuration example
+        nodes.dot:	connection graph
+        tinc.conf:	Tinc configuration example
+        routes.txt:	network address allocation
