@@ -22,8 +22,8 @@ There's a bind9 server on NeoPDP-11 (10.127.1.1), all domain names are under "ne
 image:https://gitlab.com/Neo_Chen/NeoNetwork/raw/master/nodes.png[NeoNetwork Nodes]
 
 == Files:
-        asn.txt:	BGP AS number allocation
-        named.conf:	Bind9 DNS configuration example
-        nodes.dot:	connection graph
-        tinc.conf:	Tinc configuration example
-        routes.txt:	network address allocation
+	asn.txt:	BGP AS number allocation
+	named.conf:	Bind9 DNS configuration example
+	nodes.dot:	connection graph
+	tinc.conf:	Tinc configuration example
+	routes.txt:	network address allocation
