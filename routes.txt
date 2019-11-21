@@ -7,6 +7,7 @@
 10.127.0.20/30		NeoPortable	<--> NeoVAX
 10.127.0.24/30		NeoPDP-11	 --> NeoPortable
 10.127.0.28/30		fionaLHS 	<--  ucbvax
+10.127.0.32/30		ncuiqh		<--> caasih
 
 # Continuous Subnet
 10.127.1.0/24		CROOM
