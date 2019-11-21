@@ -12,6 +12,7 @@ digraph ""
 	local [label="CROOM (10.127.1.0/24)"]
 	np [label="NeoPortable"]
 	nv [label="NeoVAX"]
+	ncuiqh [label="ncuiqh.nerdpol.ovh"]
 
 	NeoPMC1 -> local [dir=both]
 	NeoPMC2 -> local [dir=both]
@@ -27,4 +28,5 @@ digraph ""
 	np -> ucbvax
 	np -> c
 	nv -> np [dir=both]
+	ncuiqh -> c [dir=both]
 }

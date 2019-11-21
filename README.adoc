@@ -7,6 +7,7 @@ Telegram Group: https://t.me/NeoNetworkVPN
 == Peers:
 1. caasih.nerdpol.ovh (10.127.0.1, AS: 4201048576)
 2. ucbvax.nerdpol.ovh (10.127.0.2, AS: 4201048576)
+3. ncuiqh.nerdpool.ovh (10.127.0.32, AS: 4201059074)
 
 == Routing Protocols
 Any protocol supported by Quagga or FRRouting.
