@@ -1,6 +1,6 @@
 # Point to Point Tunnels
 # Upstream's IP is Network ID + 1, Downstream's is Network ID + 2
-# Bidirection arrow means they both isn't behind NAT
+# Bidirection arrow means they both aren't behind NAT
 
 # Network ID		Upstream	     Downstream
 10.127.0.0/30		caasih		<--> ucbvax
