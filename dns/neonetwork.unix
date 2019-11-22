@@ -1,0 +1,26 @@
+; NeoNetwork DNS Record
+
+$TTL	604800
+@	IN	SOA	NeoPDP-11.NeoNetwork.unix. root.NeoNetwork.unix. (
+			4096	; Serial
+			604800	; Refresh
+			86400	; Retry
+			2419200	; Expire
+			604800 )	; Negative Cache TTL
+;
+@	IN	NS	NeoPDP-11.NeoNetwork.unix.
+@	IN	A	10.127.1.1
+
+NeoPDP-11	IN	A	10.127.1.1
+ucbvax		IN	A	10.127.0.2
+caasih		IN	A	10.127.0.1
+NeoPortable	IN	A	10.127.0.10
+NeoBOX		IN	A	10.127.1.20
+NeoSYS		IN	A	10.127.1.10
+NeoPMC1		IN	A	10.127.1.11
+NeoPMC2		IN	A	10.127.1.12
+NeoPMC3		IN	A	10.127.1.13
+cklvax		IN	A	10.127.1.40
+NNPCC		IN	A	10.127.1.63
+join-telegram	IN	TXT	"https://t.me/NeoNetworkVPN"
+info		IN	TXT	"NeoNetwork, operated by Neo_Chen"
