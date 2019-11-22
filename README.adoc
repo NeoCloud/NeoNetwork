@@ -5,12 +5,13 @@ Pull requests are welcome! +
 Telegram Group: https://t.me/NeoNetworkVPN
 
 == Peers:
-1. caasih.nerdpol.ovh (10.127.0.1, AS: 4201048576)
-2. ucbvax.nerdpol.ovh (10.127.0.2, AS: 4201048576)
-3. ncuiqh.nerdpool.ovh (10.127.0.32, AS: 4201059074)
+1. caasih.nerdpol.ovh (10.127.0.1, Area 0)
+2. ucbvax.nerdpol.ovh (10.127.0.2, Area 0)
+3. ncuiqh.nerdpool.ovh (10.127.0.34, Area 1)
+4. fiona.yukipedia.cf (10.127.0.30, Area 2)
 
 == Routing Protocols
-Any protocol supported by Quagga or FRRouting.
+Any protocol supported by Quagga or FRRouting, recommended to use OSPF.
 
 == IP Addresses
 All IPv4 addresses are under the range 10.127.0.0/16,
@@ -22,9 +23,10 @@ There's a bind9 server on NeoPDP-11 (10.127.1.1), all domain names are under "ne
 == Connection Graph
 image:https://gitlab.com/Neo_Chen/NeoNetwork/raw/master/nodes.png[NeoNetwork Nodes]
 
-== Files:
-	asn.txt:	BGP AS number allocation
+== Files and Directories:
+	ospf-area.txt:	OSPF Area Number
+	routes.txt:	network address allocation
 	named.conf:	Bind9 DNS configuration example
 	nodes.dot:	connection graph
-	tinc.conf:	Tinc configuration example
-	routes.txt:	network address allocation
+	tinc:		Tinc configuration example
+	dns:		Bind9 DNS zone files
