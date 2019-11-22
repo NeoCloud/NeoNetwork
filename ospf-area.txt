@@ -1,7 +1,6 @@
-# NeoNetwork uses the 32 bit private AS number range
-# 4201048576 ~ 4202097152
+# OSPF Area Number:
 
-# ASN		OSPF Area	Name
-4201048576	0		Neo_Chen
-4201059074	1		Edward_P
-4201111037	2		LibreHouse
+OSPF Area	Name
+0		Neo_Chen
+1		Edward_P
+2		LibreHouse
