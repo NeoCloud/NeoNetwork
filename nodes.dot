@@ -13,6 +13,7 @@ digraph ""
 	np [label="NeoPortable"]
 	nv [label="NeoVAX"]
 	ncuiqh [label="ncuiqh.nerdpol.ovh"]
+	fionaLHS [label="fiona.yukipedia.cf"]
 
 	NeoPMC1 -> local [dir=both]
 	NeoPMC2 -> local [dir=both]
@@ -29,4 +30,5 @@ digraph ""
 	np -> c
 	nv -> np [dir=both]
 	ncuiqh -> c [dir=both]
+	fionaLHS -> ucbvax [dir=both]
 }
