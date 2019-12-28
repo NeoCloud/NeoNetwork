@@ -22,5 +22,6 @@ NeoPMC2		IN	A	10.127.1.12
 NeoPMC3		IN	A	10.127.1.13
 cklvax		IN	A	10.127.1.40
 NNPCC		IN	A	10.127.1.63
+NeoVAX		IN	A	10.127.0.21
 join-telegram	IN	TXT	"https://t.me/NeoNetworkVPN"
 info		IN	TXT	"NeoNetwork, operated by Neo_Chen"

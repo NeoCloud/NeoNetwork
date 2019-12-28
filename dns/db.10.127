@@ -24,3 +24,5 @@ $TTL	604800
 1.0	IN	PTR	caasih.NeoNetwork.unix.
 5.0	IN	PTR	caasih.NeoNetwork.unix.
 17.0	IN	PTR	caasih.NeoNetwork.unix.
+21.0	IN	PTR	NeoVAX.NeoNetwork.unix.
+38.0	IN	PTR	NeoVAX.NeoNetwork.unix.
