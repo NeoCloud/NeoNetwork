@@ -1,4 +1,4 @@
-digraph ""
+digraph "NeoNetwork Nodes"
 {
 	labelloc="t";
 	label="NeoNetwork Nodes";
@@ -7,31 +7,33 @@ digraph ""
 	c [label="caasih.nerdpol.ovh"]
 	ucbvax [label="ucbvax.nerdpol.ovh"]
 	np11 [label="NeoPDP-11"]
-	cklvax [label="cklvax"]
-	neobox [label="NeoBOX"]
-	local [label="CROOM (10.127.1.0/24)"]
+	croom [label="CROOM (10.127.1.0/24)"]
 	np [label="NeoPortable"]
 	nv [label="NeoVAX"]
 	ncuiqh [label="ncuiqh.nerdpol.ovh"]
 	fionaLHS [label="fiona.yukipedia.cf"]
 	pan [label="r2.tw.pan93412.dedyn.io"]
 
-	NeoPMC1 -> local [dir=both]
-	NeoPMC2 -> local [dir=both]
-	NeoPMC3 -> local [dir=both]
-	NeoSYS -> local [dir=both]
-	NNPCC -> local [dir=both]
+	subgraph cluster_croom {
+	    label = "CROOM";
+
+		NeoPMC1 -> croom [dir=both]
+		NeoPMC2 -> croom [dir=both]
+		NeoPMC3 -> croom [dir=both]
+		NeoSYS -> croom [dir=both]
+		NNPCC -> croom [dir=both]
+		NeoBOX -> croom [dir=both]
+		cklvax -> croom [dir=both]
+	}
+
 	np11 -> c
 	np11 -> ucbvax
+	np11 -> pan
 	ucbvax -> c [dir=both]
-	cklvax -> local [dir=both]
-	neobox -> local [dir=both]
-	local -> np11 [dir=both]
+	croom -> np11 [dir=both]
 	np -> ucbvax
-	np -> c
 	nv -> np [dir=both]
 	ncuiqh -> c [dir=both]
 	fionaLHS -> ucbvax [dir=both]
-	np11 -> pan
 	np -> pan
 }
