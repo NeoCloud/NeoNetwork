@@ -15,12 +15,8 @@ digraph "NeoNetwork Nodes"
 	pan [label="r2.tw.pan93412.dedyn.io"]
 
 	subgraph cluster_croom {
-	    label = "CROOM";
+		label = "CROOM";
 
-		NeoPMC1 -> croom [dir=both]
-		NeoPMC2 -> croom [dir=both]
-		NeoPMC3 -> croom [dir=both]
-		NeoSYS -> croom [dir=both]
 		NNPCC -> croom [dir=both]
 		NeoBOX -> croom [dir=both]
 		cklvax -> croom [dir=both]
