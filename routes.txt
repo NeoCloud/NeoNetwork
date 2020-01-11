@@ -1,22 +1,22 @@
 # Point to Point Tunnels
 # Upstream's IP is Network ID + 1, Downstream's is Network ID + 2
-# Bidirection arrow means they both aren't behind NAT
+# Bidirection arrow means they could establish bidirectional connection
 
-# Network ID		Upstream	     Downstream
+# Network ID		Upstream	     Downstream		Comment
 10.127.0.0/30		caasih		<--> ucbvax
-10.127.0.4/30		caasih		 --> NeoPortable
-10.127.0.8/30		ucbvax		 --> NeoPortable
+10.127.0.4/30		caasih		 --> NeoPortable	Normally not being used
+10.127.0.8/30		ucbvax		 --> NeoPortable	Non-24H
 10.127.0.12/30		ucbvax		 --> NeoPDP-11
 10.127.0.16/30		caasih		 --> NeoPDP-11
-10.127.0.20/30		NeoPortable	<--> NeoVAX
-10.127.0.24/30		NeoPDP-11	 --> NeoPortable
+10.127.0.20/30		NeoPortable	<--> NeoVAX		Non-24H
+10.127.0.24/30		NeoPDP-11	 --> NeoPortable	Normally not being used
 10.127.0.28/30		ucbvax		<--> fionaLHS
 10.127.0.32/30		caasih		<--> ncuiqh
-10.127.0.36/30		ucbvax		 --> NeoVAX
+10.127.0.36/30		ucbvax		 --> NeoVAX		Non-24H
 10.127.0.40/30		pan		 --> NeoPDP11
-10.127.0.44/30		pan		 --> NeoPortable
+10.127.0.44/30		pan		 --> NeoPortable	Non-24H
 
 # Continuous Subnet
 10.127.1.0/24		CROOM
-10.127.2.0/24		NeoPortable-VM
-10.127.3.0/24		pan hub (for non-multihome connection)
+10.127.2.0/24		(Non-used)
+10.127.3.0/24		pan hub (for non-multihome connection in Taiwan)
