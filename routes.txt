@@ -18,5 +18,5 @@
 
 # Continuous Subnet
 10.127.1.0/24		CROOM
-10.127.2.0/24		(Non-used)
+10.127.2.0/24		NeoSystems VMs
 10.127.3.0/24		pan hub (for non-multihome connection in Taiwan)
