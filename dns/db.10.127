@@ -17,12 +17,12 @@ $TTL	604800
 11.1	IN	PTR	NeoPMC1.NeoNetwork.unix.
 12.1	IN	PTR	NeoPMC2.NeoNetwork.unix.
 13.1	IN	PTR	NeoPMC3.NeoNetwork.unix.
-10.0	IN	PTR	NeoPortable.NeoNetwork.unix.
+10.0	IN	PTR	NeoSystem.NeoNetwork.unix.
+46.0	IN	PTR	NeoSystem.NeoNetwork.unix.
 2.0	IN	PTR	ucbvax.NeoNetwork.unix.
 9.0	IN	PTR	ucbvax.NeoNetwork.unix.
 13.0	IN	PTR	ucbvax.NeoNetwork.unix.
 1.0	IN	PTR	caasih.NeoNetwork.unix.
 5.0	IN	PTR	caasih.NeoNetwork.unix.
 17.0	IN	PTR	caasih.NeoNetwork.unix.
-21.0	IN	PTR	NeoVAX.NeoNetwork.unix.
-38.0	IN	PTR	NeoVAX.NeoNetwork.unix.
+1.3	IN	PTR	pan.NeoNetwork.unix
