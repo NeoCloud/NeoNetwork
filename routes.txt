@@ -2,19 +2,23 @@
 # Upstream's IP is Network ID + 1, Downstream's is Network ID + 2
 # Bidirection arrow means they could establish bidirectional connection
 
-# Network ID		Upstream	     Downstream		Comment
-10.127.0.0/30		caasih		<--> ucbvax
-10.127.0.4/30		caasih		 --> NeoPortable	Normally not being used
-10.127.0.8/30		ucbvax		 --> NeoPortable	Non-24H
-10.127.0.12/30		ucbvax		 --> NeoPDP-11
-10.127.0.16/30		caasih		 --> NeoPDP-11
-10.127.0.20/30		NeoPortable	<--> NeoVAX		Non-24H
-10.127.0.24/30		NeoPDP-11	 --> NeoPortable	Normally not being used
-10.127.0.28/30		ucbvax		<--> fionaLHS
-10.127.0.32/30		caasih		<--> ncuiqh
-10.127.0.36/30		ucbvax		 --> NeoVAX		Non-24H
-10.127.0.40/30		pan		 --> NeoPDP11
-10.127.0.44/30		pan		 --> NeoPortable	Non-24H
+# Network ID		Protocol	Upstream	     Downstream		Comment
+10.127.0.0/30		Tinc		caasih		<--> ucbvax
+10.127.0.4/30		Tinc		caasih		 --> NeoPortable	Normally not being used
+10.127.0.8/30		Tinc		ucbvax		 --> NeoPortable	@
+10.127.0.12/30		Tinc		ucbvax		 --> NeoPDP-11
+10.127.0.16/30		Tinc		caasih		 --> NeoPDP-11
+10.127.0.20/30		Tinc		NeoPortable	<--> NeoVAX		@
+10.127.0.24/30		Tinc		NeoPDP-11	 --> NeoPortable	Normally not being used
+10.127.0.28/30		Tinc		ucbvax		<--> fionaLHS
+10.127.0.32/30		Tinc		caasih		<--> ncuiqh
+10.127.0.36/30		Tinc		ucbvax		 --> NeoVAX		@
+10.127.0.40/30		Tinc		pan		 --> NeoPDP11
+10.127.0.44/30		Tinc		pan		 --> NeoPortable	@
+10.127.0.48/30		WireGuard	cklvax		<--> NeoSystem
+10.127.0.52/30		WireGuard	pan		 --> NeoSystem		
+
+@ --> Non-24H
 
 # Continuous Subnet
 10.127.1.0/24		CROOM
