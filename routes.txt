@@ -17,6 +17,7 @@
 10.127.0.44/30		Tinc		pan		 --> NeoPortable	@
 10.127.0.48/30		WireGuard	cklvax		<--> NeoSystem
 10.127.0.52/30		WireGuard	pan		 --> NeoSystem		
+10.127.0.56/30		Tinc		ucbvax		 --> Icecat-Explosion	No online time guarantee
 
 @ --> Non-24H
 
@@ -24,3 +25,4 @@
 10.127.1.0/24		CROOM
 10.127.2.0/24		NeoSystems VMs
 10.127.3.0/24		pan hub (for non-multihome connection in Taiwan)
+10.127.4.0/24		Icecat-Explosion (For Magicneko Explosion Network Interworking address)
