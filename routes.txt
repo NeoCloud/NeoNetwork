@@ -5,7 +5,7 @@
 # Network ID		Protocol	Upstream	     Downstream		Comment
 10.127.0.0/30		Tinc		caasih		<--> ucbvax
 10.127.0.4/30		Tinc		caasih		 --> NeoPortable	Normally not being used
-10.127.0.8/30		Tinc		ucbvax		 --> NeoPortable	@
+10.127.0.8/30		WireGuard	ucbvax		 --> NeoPortable	@
 10.127.0.12/30		Tinc		ucbvax		 --> NeoPDP-11
 10.127.0.16/30		Tinc		caasih		 --> NeoPDP-11
 10.127.0.20/30		Tinc		NeoPortable	<--> NeoVAX		@
