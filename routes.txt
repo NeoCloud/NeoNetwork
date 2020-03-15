@@ -1,28 +1,50 @@
-# Point to Point Tunnels
+##########################
+# Point to Point Tunnels #
+##########################
 # Upstream's IP is Network ID + 1, Downstream's is Network ID + 2
 # Bidirection arrow means they could establish bidirectional connection
 
-# Network ID		Protocol	Upstream	     Downstream		Comment
+Network ID		Protocol	Upstream	     Downstream		Comment
+=======================|===============|====================|==================|===========================
 10.127.0.0/30		Tinc		caasih		<--> ucbvax
 10.127.0.4/30		Tinc		caasih		 --> NeoPortable	Normally not being used
-10.127.0.8/30		WireGuard	ucbvax		 --> NeoPortable	@
+10.127.0.8/30		WireGuard	ucbvax		 --> NeoPortable	@1
 10.127.0.12/30		Tinc		ucbvax		 --> NeoPDP-11
 10.127.0.16/30		Tinc		caasih		 --> NeoPDP-11
-10.127.0.20/30		Tinc		NeoPortable	<--> NeoVAX		@
+10.127.0.20/30		Tinc		NeoPortable	<--> NeoVAX		@1
 10.127.0.24/30		Tinc		NeoPDP-11	 --> NeoPortable	Normally not being used
 10.127.0.28/30		Tinc		ucbvax		<--> fionaLHS
 10.127.0.32/30		Tinc		caasih		<--> ncuiqh
-10.127.0.36/30		Tinc		ucbvax		 --> NeoVAX		@
+10.127.0.36/30		Tinc		ucbvax		 --> NeoVAX		@1
 10.127.0.40/30		Tinc		pan		 --> NeoPDP11
-10.127.0.44/30		Tinc		pan		 --> NeoPortable	@
+10.127.0.44/30		Tinc		pan		 --> NeoPortable	@1
 10.127.0.48/30		WireGuard	cklvax		<--> NeoSystem
 10.127.0.52/30		WireGuard	pan		 --> NeoSystem		
 10.127.0.56/30		Tinc		ucbvax		 --> Icecat-Explosion	No online time guarantee
+10.127.0.60/30		WireGuard	ucbvax		<--> pan
 
-@ --> Non-24H
+@1 --> Non-24H
 
-# Continuous Subnet
+
+/* ================= *\
+|| Continuous Subnet ||
+\* ================= */
+
+Subnet			Name			Comment
 10.127.1.0/24		CROOM
 10.127.2.0/24		NeoSystems VMs
-10.127.3.0/24		pan hub (for non-multihome connection in Taiwan)
-10.127.4.0/24		Icecat-Explosion (For Magicneko Explosion Network Interworking address)
+10.127.3.0/24		pan hub			for non-multihome connection in Taiwan
+10.127.4.0/24		Icecat-Explosion	For Magicneko Explosion Network Interworking address
+
+
++======================+
+|| Loopback Addresses ||
++======================+
+
+Loopback Address	Name		System		Comment
+=======================|===============|===============|===================================================
+10.127.255.1		NeoPDP-11	FreeBSD/frr
+10.127.255.2		ucbvax		Arch Linux/frr
+10.127.255.3		caasih		Debian/frr
+10.127.255.4		pan		Arch Linux/frr
+10.127.255.80		NeoSystem	Arch Linux/frr

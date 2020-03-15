@@ -8,8 +8,7 @@ digraph "NeoNetwork Nodes"
 	ucbvax [label="ucbvax.nerdpol.ovh"]
 	np11 [label="NeoPDP-11"]
 	croom [label="CROOM (10.127.1.0/24)"]
-	np [label="NeoPortable"]
-	nv [label="NeoVAX"]
+	ns [label="NeoSystem"]
 	ncuiqh [label="ncuiqh.nerdpol.ovh"]
 	fionaLHS [label="fiona.yukipedia.cf"]
 	pan [label="r2.tw.pan93412.dedyn.io"]
@@ -22,15 +21,16 @@ digraph "NeoNetwork Nodes"
 		cklvax -> croom [dir=both]
 	}
 
-	np11 -> c
+	croom -> np11 [dir=both]
 	np11 -> ucbvax
 	np11 -> pan
+	np11 -> c
 	ucbvax -> c [dir=both]
-	croom -> np11 [dir=both]
-	np -> ucbvax
-	nv -> np [dir=both]
+	ns -> ucbvax
 	ncuiqh -> c [dir=both]
 	fionaLHS -> ucbvax [dir=both]
-	np -> pan
+	ns -> pan
 	icecat_Explosion -> ucbvax [dir=both]
+	pan -> ucbvax [dir=both]
+	pan -> c [dir=both]
 }
