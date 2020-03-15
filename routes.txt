@@ -45,6 +45,5 @@ Loopback Address	Name		System		Comment
 =======================|===============|===============|===================================================
 10.127.255.1		NeoPDP-11	FreeBSD/frr
 10.127.255.2		ucbvax		Arch Linux/frr
-10.127.255.3		caasih		Debian/frr
 10.127.255.4		pan		Arch Linux/frr
 10.127.255.80		NeoSystem	Arch Linux/frr
