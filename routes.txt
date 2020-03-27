@@ -26,3 +26,4 @@
 10.127.2.0/24		NeoSystems VMs
 10.127.3.0/24		pan hub (for non-multihome connection in Taiwan)
 10.127.4.0/24		Icecat-Explosion (For Magicneko Explosion Network Interworking address)
+172.24.5.0/24		Icecat-Mobile-devices (For Mobile device internal network segment for testing connectivity quality, No SLA)
