@@ -26,6 +26,7 @@ image:https://raw.githubusercontent.com/NeoChen1024/NeoNetwork/master/nodes.png[
 
 == Files and Directories:
 	ospf-area.txt:	OSPF Area Number
+	bgp-asn.txt:	BGP AS Number
 	routes.txt:	network address allocation
 	named.conf:	Bind9 DNS configuration example
 	nodes.dot:	connection graph
