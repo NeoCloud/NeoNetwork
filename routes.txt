@@ -7,17 +7,17 @@
 Network ID		Protocol	Upstream	     Downstream		Comment
 =======================|===============|====================|==================|===========================
 10.127.0.0/30		Tinc		caasih		<--> ucbvax
-10.127.0.4/30		Tinc		caasih		 --> NeoSystem		Normally not being used
+10.127.0.4/30
 10.127.0.8/30		WireGuard	ucbvax		 --> NeoSystem		@1
 10.127.0.12/30		Tinc		ucbvax		 --> NeoPDP-11
 10.127.0.16/30		Tinc		caasih		 --> NeoPDP-11
 10.127.0.20/30		Tinc		NeoSystem	<--> NeoVAX		@1
-10.127.0.24/30		Tinc		NeoPDP-11	 --> NeoSystem		Normally not being used
+10.127.0.24/30
 10.127.0.28/30		Tinc		ucbvax		<--> fionaLHS
 10.127.0.32/30		Tinc		caasih		<--> ncuiqh
 10.127.0.36/30		Tinc		ucbvax		 --> NeoVAX		@1
 10.127.0.40/30		Tinc		pan		 --> NeoPDP11
-10.127.0.44/30		Tinc		pan		 --> NeoSystem		@1
+10.127.0.44/30
 10.127.0.48/30		WireGuard	cklvax		<--> NeoSystem
 10.127.0.52/30		WireGuard	pan		 --> NeoSystem		
 10.127.0.56/30		Tinc		ucbvax		 --> Icecat-Explosion	No online time guarantee
