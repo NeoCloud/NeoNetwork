@@ -32,5 +32,4 @@ digraph "NeoNetwork Nodes"
 	ns -> pan
 	icecat_Explosion -> ucbvax [dir=both]
 	pan -> ucbvax [dir=both]
-	pan -> c [dir=both]
 }
