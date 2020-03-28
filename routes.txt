@@ -17,7 +17,7 @@ Network ID		Protocol	Upstream	     Downstream		Comment
 10.127.0.32/30		Tinc		caasih		<--> ncuiqh
 10.127.0.36/30		Tinc		ucbvax		 --> NeoVAX		@1
 10.127.0.40/30		Tinc		pan		 --> NeoPDP11
-10.127.0.44/30
+10.127.0.44/30		Tinc		pan		 --> NeoSystem
 10.127.0.48/30		WireGuard	cklvax		<--> NeoSystem
 10.127.0.52/30		WireGuard	pan		 --> NeoSystem		
 10.127.0.56/30		Tinc		ucbvax		 --> Icecat-Explosion	No online time guarantee
