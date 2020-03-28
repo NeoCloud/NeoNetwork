@@ -8,21 +8,33 @@ $TTL	604800
 			604800 )	; Negative Cache TTL
 ;
 @	IN	NS	NeoPDP-11.NeoNetwork.unix.
-1.1	IN	PTR	NeoPDP-11.NeoNetwork.unix.
 
+1.1	IN	PTR	NeoPDP-11.NeoNetwork.unix.
+14.0	IN	PTR	NeoPDP-11.NeoNetwork.unix.
+18.0	IN	PTR	NeoPDP-11.NeoNetwork.unix.
+42.0	IN	PTR	NeoPDP-11.NeoNetwork.unix.
+
+; CROOM
 40.1	IN	PTR	cklvax.NeoNetwork.unix.
 63.1	IN	PTR	NNPCC.NeoNetwork.unix.
 20.1	IN	PTR	NeoBOX.NeoNetwork.unix.
-10.1	IN	PTR	NeoSYS.NeoNetwork.unix.
-11.1	IN	PTR	NeoPMC1.NeoNetwork.unix.
-12.1	IN	PTR	NeoPMC2.NeoNetwork.unix.
-13.1	IN	PTR	NeoPMC3.NeoNetwork.unix.
+
 10.0	IN	PTR	NeoSystem.NeoNetwork.unix.
 46.0	IN	PTR	NeoSystem.NeoNetwork.unix.
+
 2.0	IN	PTR	ucbvax.NeoNetwork.unix.
 9.0	IN	PTR	ucbvax.NeoNetwork.unix.
 13.0	IN	PTR	ucbvax.NeoNetwork.unix.
+29.0	IN	PTR	ucbvax.NeoNetwork.unix.
+37.0	IN	PTR	ucbvax.NeoNetwork.unix.
+57.0	IN	PTR	ucbvax.NeoNetwork.unix.
+61.0	IN	PTR	ucbvax.NeoNetwork.unix.
+
 1.0	IN	PTR	caasih.NeoNetwork.unix.
-5.0	IN	PTR	caasih.NeoNetwork.unix.
 17.0	IN	PTR	caasih.NeoNetwork.unix.
-1.3	IN	PTR	pan.NeoNetwork.unix
+33.0	IN	PTR	caasih.NeoNetwork.unix.
+
+1.3	IN	PTR	pan.NeoNetwork.unix.
+41.0	IN	PTR	pan.NeoNetwork.unix.
+45.0	IN	PTR	pan.NeoNetwork.unix.
+62.0	IN	PTR	pan.NeoNetwork.unix.
