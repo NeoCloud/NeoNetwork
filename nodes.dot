@@ -19,6 +19,7 @@ digraph "NeoNetwork Nodes"
 		NNPCC -> croom [dir=both]
 		NeoBOX -> croom [dir=both]
 		cklvax -> croom [dir=both]
+		NeoStorage -> croom [dir=both]
 	}
 
 	croom -> np11 [dir=both]

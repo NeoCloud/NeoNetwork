@@ -18,6 +18,7 @@ $TTL	604800
 40.1	IN	PTR	cklvax.NeoNetwork.unix.
 63.1	IN	PTR	NNPCC.NeoNetwork.unix.
 20.1	IN	PTR	NeoBOX.NeoNetwork.unix.
+10.1	IN	PTR	neostorage.neonetwork.unix.
 
 10.0	IN	PTR	NeoSystem.NeoNetwork.unix.
 46.0	IN	PTR	NeoSystem.NeoNetwork.unix.
