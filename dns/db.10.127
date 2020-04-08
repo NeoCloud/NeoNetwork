@@ -22,6 +22,7 @@ $TTL	604800
 
 10.0	IN	PTR	NeoSystem.NeoNetwork.unix.
 46.0	IN	PTR	NeoSystem.NeoNetwork.unix.
+80.1	IN	PTR	NeoSystem.NeoNetwork.unix.
 
 2.0	IN	PTR	ucbvax.NeoNetwork.unix.
 9.0	IN	PTR	ucbvax.NeoNetwork.unix.
