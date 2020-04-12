@@ -22,6 +22,7 @@ Network ID		Protocol	Upstream	     Downstream		Comment
 10.127.0.52/30		WireGuard	pan		 --> NeoSystem		
 10.127.0.56/30		Tinc		ucbvax		 --> Icecat-Explosion	No online time guarantee
 10.127.0.60/30		WireGuard	ucbvax		<--> pan
+10.127.0.64/30          Gre             Icecat-Explosion<--> Icecat-Notebook    No online time guarantee
 
 @1 --> Non-24H
 
@@ -34,8 +35,8 @@ Subnet			Name			Comment
 10.127.1.0/24		CROOM			For LAN in school
 10.127.2.0/24		NeoSystem VMs		Virtual Machine on NeoSystem
 10.127.3.0/24		pan hub			For non-multihome connection in Taiwan
-10.127.4.0/24		Icecat-Explosion	For Magicneko Explosion Network Interworking address
-172.24.5.0/24		Icecat-Mobile-devices 	for Mobile device internal network segment for testing connectivity quality, No SLA
+10.127.4.0/24		Icecat-Explosion	For Magicneko Explosion Network Interworking address (in Global)
+172.24.5.0/24		Icecat-Mobile-devices 	for Mobile device internal network segment for testing connectivity quality, No SLA (in China Mainland)
 
 
 +======================+
