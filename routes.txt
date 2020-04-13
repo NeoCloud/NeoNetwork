@@ -22,6 +22,7 @@ Network ID		Protocol	Upstream	     Downstream		Comment
 10.127.0.52/30		WireGuard	pan		 --> NeoSystem		
 10.127.0.56/30		Tinc		ucbvax		 --> Icecat-Explosion	No online time guarantee
 10.127.0.60/30		WireGuard	ucbvax		<--> pan
+10.127.0.64/30          Gre             Icecat-Explosion<--> Icecat-Notebook    No online time guarantee
 
 @1 --> Non-24H
 
