@@ -13,6 +13,7 @@ $TTL	604800
 14.0	IN	PTR	NeoPDP-11.NeoNetwork.unix.
 18.0	IN	PTR	NeoPDP-11.NeoNetwork.unix.
 42.0	IN	PTR	NeoPDP-11.NeoNetwork.unix.
+1.255	IN	PTR	NeoPDP-11.NeoNetwork.unix.
 
 ; CROOM
 40.1	IN	PTR	cklvax.NeoNetwork.unix.
@@ -23,6 +24,7 @@ $TTL	604800
 10.0	IN	PTR	NeoSystem.NeoNetwork.unix.
 46.0	IN	PTR	NeoSystem.NeoNetwork.unix.
 80.1	IN	PTR	NeoSystem.NeoNetwork.unix.
+80.255	IN	PTR	NeoSystem.NeoNetwork.unix.
 
 2.0	IN	PTR	ucbvax.NeoNetwork.unix.
 9.0	IN	PTR	ucbvax.NeoNetwork.unix.
@@ -31,6 +33,7 @@ $TTL	604800
 37.0	IN	PTR	ucbvax.NeoNetwork.unix.
 57.0	IN	PTR	ucbvax.NeoNetwork.unix.
 61.0	IN	PTR	ucbvax.NeoNetwork.unix.
+2.255	IN	PTR	ucbvax.NeoNetwork.unix.
 
 1.0	IN	PTR	caasih.NeoNetwork.unix.
 17.0	IN	PTR	caasih.NeoNetwork.unix.
