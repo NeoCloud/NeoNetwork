@@ -35,6 +35,7 @@ Subnet			Name			Comment
 10.127.2.0/24		NeoSystem VMs		Virtual Machine on NeoSystem
 10.127.3.0/24		pan hub			For non-multihome connection in Taiwan
 10.127.4.0/24		Icecat-Explosion	For Magicneko Explosion Network Interworking address
+10.127.5.0/24		CROOM-Netboot		Netboot in CROOM
 172.24.5.0/24		Icecat-Mobile-devices 	for Mobile device internal network segment for testing connectivity quality, No SLA
 
 
