@@ -12,7 +12,7 @@ Telegram Group: https://t.me/NeoNetworkVPN
 5. hk-01.nextmoe.cloud.imiku.cn (10.127.0.58, Area 3)  
 
 == Routing Protocols
-Any protocol supported by Quagga or FRRouting, recommended to use OSPF.
+Any protocol supported by Quagga or FRRouting, recommended to use BGP.
 
 == IP Addresses
 All IPv4 addresses are under the range 10.127.0.0/16,
