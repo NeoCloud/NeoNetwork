@@ -25,6 +25,8 @@ Network ID		Protocol	Upstream	     Downstream		Comment
 10.127.0.64/30          Gre             Icecat-Explosion<--> Icecat-Notebook    No online time guarantee
 10.127.0.68/30		Tinc		caaish		 --> staph
 10.127.0.72/30		WireGuard	ucbvax		<--> chenx97
+10.127.0.76/30		WireGuard	JerryXiao		<--> pan
+10.127.0.80/30		WireGuard	JerryXiao		<--> ucbvax
 
 @1 --> Non-24H
 
@@ -40,6 +42,8 @@ Subnet			Name			Comment
 10.127.4.0/24		Icecat-Explosion	For Magicneko Explosion Network Interworking address
 10.127.5.0/24		CROOM-Netboot		Netboot in CROOM
 172.24.5.0/24		Icecat-Mobile-devices 	for Mobile device internal network segment for testing connectivity quality, No SLA
+10.127.8.192/26		JerryXiao-Infrastructure		For cloud instances
+10.127.9.0/24		JerryXiao-Home		For home
 
 
 +======================+

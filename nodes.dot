@@ -24,6 +24,7 @@ digraph "NeoNetwork Nodes"
 	magicneko_CN01 [label="M-CN1(10.127.4.100)"]
 	staph [label="s.aureus.ga"]
 	chenx97 [label="chenx97.neocloud.tw"]
+	JerryXiao [label="jpn.neo.jerryxiao.cc"]
 
 	subgraph cluster_croom {
 		label = "CROOM";
@@ -57,4 +58,6 @@ digraph "NeoNetwork Nodes"
 	magicneko_JP03 -> icecat_Explosion
 	magicneko_CN01 -> icecat_Explosion
 	magicneko_CN01 -> icecat_Notebook
+	JerryXiao -> pan [dir=both]
+	JerryXiao -> ucbvax [dir=both]
 }
