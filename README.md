@@ -23,7 +23,7 @@ see routes.txt for allocated domain.
 There's a bind9 server on NeoPDP-11 (10.127.1.1), all domain names are under "neonetwork.unix".
 
 # Connection Graph
-[NeoNetwork Nodes](https://raw.githubusercontent.com/NeoChen1024/NeoNetwork/master/nodes.png)
+![NeoNetwork Nodes](https://raw.githubusercontent.com/NeoChen1024/NeoNetwork/master/nodes.png)
 
 # Files and Directories:
 	ospf-area.txt:	OSPF Area Number
