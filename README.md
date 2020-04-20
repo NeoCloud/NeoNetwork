@@ -26,10 +26,10 @@ There's a bind9 server on NeoPDP-11 (10.127.1.1), all domain names are under "ne
 ![NeoNetwork Nodes](https://raw.githubusercontent.com/NeoChen1024/NeoNetwork/master/nodes.png)
 
 # Files and Directories:
-	ospf-area.txt:	OSPF Area Number
-	bgp-asn.txt:	BGP AS Number
-	routes.txt:	network subnet allocation
-	named.conf:	Bind9 DNS configuration example
-	nodes.dot:	connection graph
-	tinc:		Tinc configuration example
-	dns:		Bind9 DNS zone files
+	ospf-area.txt	OSPF Area Number
+	bgp-asn.txt	BGP AS Number
+	routes.txt	network subnet allocation
+	named.conf	Bind9 DNS configuration example
+	nodes.dot	connection graph
+	vpn/		VPN configuration examples (Tinc & WireGuard)
+	dns/		Bind9 DNS zone files
