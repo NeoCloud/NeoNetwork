@@ -4,17 +4,17 @@ digraph "NeoNetwork Nodes"
 	label="NeoNetwork Nodes";
 	rankdir=TD
 	node [shape=box]
-	c [label="caasih.nerdpol.ovh"]
-	ucbvax [label="ucbvax.nerdpol.ovh"]
+	c [label="caasih.neocloud.tw"]
+	ucbvax [label="router.neocloud.tw"]
 	np11 [label="NeoPDP-11"]
 	croom [label="CROOM (10.127.1.0/24)"]
 	ns [label="NeoSystem"]
 	ncuiqh [label="ncuiqh.nerdpol.ovh"]
 	fionaLHS [label="fiona.yukipedia.cf"]
-	pan [label="r2.tw.pan93412.dedyn.io"]
+	pan [label="r2.neocloud.tw"]
         icecat_Explosion [label="hk-01.nextmoe.cloud.imiku.cn"]
 	staph [label="s.aureus.ga"]
-    chenx97 [label="chenx97.neocloud.tw"]
+	chenx97 [label="chenx97.neocloud.tw"]
 
 	subgraph cluster_croom {
 		label = "CROOM";
