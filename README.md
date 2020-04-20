@@ -1,13 +1,13 @@
 # NeoNetwork
 A useless VPN network ready for peering!
 
-Pull requests are welcome!  
-Telegram Group: https://t.me/NeoNetworkVPN
+Pull requests are welcomed!  
+Telegram Group invitation link available at TXT record of `join-telegram.neocloud.tw`
 
 ## Peers:
-	caasih.nerdpol.ovh		(10.127.0.1, Area 0, ASN 4201048576)
-	ucbvax.nerdpol.ovh		(10.127.255.2, Area 0, ASN 4201048576)
-	r2.tw.pan93412.dedyn.ioi	(10.127.3.1, Area 0)
+	caasih.neocloud.tw		(10.127.0.1, Area 0, ASN 4201048576)
+	router.neocloud.tw		(10.127.255.2, Area 0, ASN 4201048576)
+	r2.neocloud.tw			(10.127.3.1, Area 0)
 	cuiqh.nerdpool.ovh		(10.127.0.34, Area 1)
 	fiona.yukipedia.cf		(10.127.0.30, Area 2)
 	hk-01.nextmoe.cloud.imiku.cn	(10.127.0.58, Area 3)  
