@@ -26,7 +26,8 @@ digraph "NeoNetwork Nodes"
 	chenx97 [label="chenx97.neocloud.tw"]
 	JerryXiao [label="jpn.neo.jerryxiao.cc"]
 
-	subgraph cluster_croom {
+	subgraph cluster_croom
+	{
 		label = "CROOM";
 
 		NNPCC -> croom [dir=both]
@@ -48,16 +49,21 @@ digraph "NeoNetwork Nodes"
 	pan -> ucbvax [dir=both]
 	c -> staph
 	ucbvax -> chenx97 [dir=both]
-	icecat_Notebook -> icecat_Explosion
-	magicneko_HK01-> icecat_Explosion
-	magicneko_HK02-> icecat_Explosion
-	magicneko_JP01 -> icecat_Explosion
-	magicneko_HK03 -> icecat_Explosion
-	magicneko_JP02 -> icecat_Explosion
-	magicneko_RU01 -> icecat_Explosion
-	magicneko_JP03 -> icecat_Explosion
-	magicneko_CN01 -> icecat_Explosion
-	magicneko_CN01 -> icecat_Notebook
+
+	subgraph cluster_magicneko
+	{
+		label="MagicNeko Network";
+
+		magicneko_HK01-> icecat_Explosion
+		magicneko_HK02-> icecat_Explosion
+		magicneko_JP01 -> icecat_Explosion
+		magicneko_HK03 -> icecat_Explosion
+		magicneko_JP02 -> icecat_Explosion
+		magicneko_RU01 -> icecat_Explosion
+		magicneko_JP03 -> icecat_Explosion
+		icecat_Notebook -> icecat_Explosion
+	}
+
 	JerryXiao -> pan [dir=both]
 	JerryXiao -> ucbvax [dir=both]
 }
