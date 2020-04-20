@@ -14,6 +14,7 @@ digraph "NeoNetwork Nodes"
 	pan [label="r2.tw.pan93412.dedyn.io"]
         icecat_Explosion [label="hk-01.nextmoe.cloud.imiku.cn"]
 	staph [label="s.aureus.ga"]
+    chenx97 [label="chenx97.neocloud.tw"]
 
 	subgraph cluster_croom {
 		label = "CROOM";
@@ -36,4 +37,5 @@ digraph "NeoNetwork Nodes"
 	icecat_Explosion -> ucbvax [dir=both]
 	pan -> ucbvax [dir=both]
 	c -> staph
+	ucbvax -> chenx97 [dir=both]
 }
