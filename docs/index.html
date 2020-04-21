@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-Hant" lang="zh-Hant">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>NeoNetwork</title>
+		<link rel="stylesheet" type="text/css" href="/neostyle.css" />
+		<link rel="icon" href="/icon.png" />
+	</head>
+	<body>
+<h1>NeoNetwork</h1>
+
+<p>A useless VPN network ready for peering!</p>
+
+<p>Pull requests are welcomed!<br/>
+Telegram Group invitation link available at TXT record of <code>join-telegram.neocloud.tw</code></p>
+
+<h2>Peers:</h2>
+
+<pre><code>caasih.neocloud.tw      (10.127.0.1,    Area 0, ASN 4201048576)
+router.neocloud.tw      (10.127.255.2,  Area 0, ASN 4201048576)
+r2.neocloud.tw          (10.127.3.1,    Area 0, ASN 4201048576)
+cuiqh.nerdpool.ovh      (10.127.0.34,   Area 1)
+fiona.yukipedia.cf      (10.127.0.30,   Area 2)
+hk-01.nextmoe.cloud.imiku.cn    (10.127.0.58,   Area 3)
+</code></pre>
+
+<h2>Routing Protocols</h2>
+
+<p>Any protocol supported by Quagga or FRRouting, recommended to use BGP.</p>
+
+<h2>IP Addresses</h2>
+
+<p>All IPv4 addresses are under the range 10.127.0.0/16,
+see routes.txt for allocated domain.</p>
+
+<h2>DNS</h2>
+
+<p>There&rsquo;s a bind9 server on NeoPDP-11 (10.127.1.1), all domain names are under &ldquo;neonetwork.unix&rdquo;.</p>
+
+<h1>Connection Graph</h1>
+
+<p><img src="https://raw.githubusercontent.com/NeoChen1024/NeoNetwork/master/nodes.png" alt="NeoNetwork Nodes" /></p>
+
+<h1>Files and Directories:</h1>
+
+<pre><code>ospf-area.txt   OSPF Area Number
+bgp-asn.txt BGP AS Number
+routes.txt  network subnet allocation
+named.conf  Bind9 DNS configuration example
+nodes.dot   connection graph
+vpn/        VPN configuration examples (Tinc &amp; WireGuard)
+dns/        Bind9 DNS zone files
+</code></pre>
+	</body>
+</html>
