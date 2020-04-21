@@ -10,7 +10,7 @@ Telegram Group invitation link available at TXT record of `join-telegram.neoclou
 	r2.neocloud.tw			(10.127.3.1,	Area 0, ASN 4201048576)
 	cuiqh.nerdpool.ovh		(10.127.0.34,	Area 1)
 	fiona.yukipedia.cf		(10.127.0.30,	Area 2)
-	hk-01.nextmoe.cloud.imiku.cn	(10.127.0.58,	Area 3)
+	hk-01.nextmoe.cloud.imiku.cn	(10.127.0.58,	Area 3, ASN 4200012450)
 
 ## Routing Protocols
 Any protocol supported by Quagga or FRRouting, recommended to use BGP.
