@@ -41,6 +41,7 @@ h2 {
 .mono, code {
 	font-family: monospace;
 	font-size:12pt;
+	background-color: #fff;
 }
 
 .msrf {
@@ -51,7 +52,7 @@ h2 {
 
 .srf, p {
 	font-family: serif;
-	font-size:9pt;
+	font-size:12pt;
 }
 
 .srfb {
@@ -92,8 +93,4 @@ table, th, td {
 	white-space: pre;
 	border-style: solid;
 	border-width: 2px;
-}
-
-.whitebg {
-	background-color: #fff;
 }
