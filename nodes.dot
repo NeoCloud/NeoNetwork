@@ -1,19 +1,19 @@
 digraph "NeoNetwork Nodes"
 {
-	labelloc="t";
 	label="NeoNetwork Nodes";
-	rankdir=TD
+	labelloc="t";
+	rankdir=LR;
 	node [shape=box]
-	c [label="caasih.neocloud.tw"]
-	ucbvax [label="router.neocloud.tw"]
-	np11 [label="NeoPDP-11"]
+	c [label="caasih.neocloud.tw\n(10.127.0.1)"]
+	ucbvax [label="router.neocloud.tw\n(10.127.255.2)"]
+	np11 [label="NeoPDP-11\n(10.127.255.1,\n10.127.1.1)"]
 	croom [label="CROOM\n(10.127.1.0/24)"]
-	ns [label="NeoSystem"]
+	ns [label="NeoSystem\n(10.127.255.80)"]
 	ncuiqh [label="ncuiqh.nerdpol.ovh"]
 	fionaLHS [label="fiona.yukipedia.cf"]
-	pan [label="r2.neocloud.tw"]
+	pan [label="r2.neocloud.tw\n(10.127.3.1)"]
 	icecat_Explosion [label="hk-01.nextmoe.cloud.imiku.cn"]
-	icecat_Notebook [label="Notebook\n(10.127.0.64/30/10.127.4.100)"]
+	icecat_Notebook [label="Notebook\n(10.127.0.64/30,\n10.127.4.100)"]
 	magicneko_HK01 [label="M-HK1\n(10.127.4.1)"]
 	magicneko_HK02 [label="M-HK2\n(10.127.4.10)"]
 	magicneko_JP01 [label="M-JP1\n(10.127.4.11)"]
