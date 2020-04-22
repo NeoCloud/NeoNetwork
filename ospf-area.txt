@@ -5,4 +5,3 @@ OSPF Area	Name
 1		Edward_P
 2		LibreHouse
 3		Icecat
-
