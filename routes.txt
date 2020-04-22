@@ -28,7 +28,9 @@ Network ID		Protocol	Upstream		     Downstream			Comment
 10.127.0.76/30		WireGuard	JerryXiao		<--> pan
 10.127.0.80/30		WireGuard	JerryXiao		<--> ucbvax
 10.127.0.84/30		WireGuard	MagicNeko-JP03		<--> JerryXiao
-10.127.0.88~104/30	<Available>
+10.127.0.88/30	<Available>
+10.127.0.92/30	<Available>
+10.127.0.96/30		Gre		staph			<--> septs
 10.127.0.108/30     Gre         septs           <--> Lan Tian
 10.127.0.112~252/30	<Available>
 

@@ -46,6 +46,7 @@ $TTL	604800
 62.0	IN	PTR	pan.NeoNetwork.unix.
 
 70.0	IN	PTR	staph.NeoNetwork.unix.
+97.0	IN	PTR	staph.NeoNetwork.unix.
 185.8	IN	PTR	staph.NeoNetwork.unix.
 
 187.8	IN	PTR	staph-cn.NeoNetwork.unix.
