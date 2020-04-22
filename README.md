@@ -8,7 +8,6 @@ Telegram Group invitation link available at TXT record of `join-telegram.neoclou
 	caasih.neocloud.tw		(10.127.0.1,	ASN 4201048576)
 	router.neocloud.tw		(10.127.255.2,	ASN 4201048576)
 	r2.neocloud.tw			(10.127.3.1,	ASN 4201048576)
-	ncuiqh.nerdpool.ovh		(10.127.0.34)
 	megumi.yukipedia.cf		(10.127.0.30)
 	hk-01.nextmoe.cloud.imiku.cn	(10.127.0.58,	ASN 4200012450)
 	bgp.septs.me                    (		ASN 4200055555)
