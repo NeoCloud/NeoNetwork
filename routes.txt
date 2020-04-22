@@ -12,7 +12,7 @@ Network ID		Protocol	Upstream		     Downstream			Comment
 10.127.0.12/30		Tinc		ucbvax			 --> NeoPDP-11
 10.127.0.16/30		Tinc		caasih			 --> NeoPDP-11
 10.127.0.20/30		Tinc		NeoSystem		<--> NeoVAX			@1
-10.127.0.24/30		Gre		staph			<--> ???			Pending
+10.127.0.24/30		Gre		staph			<--> MagicNeko-RU1
 10.127.0.28/30		Tinc		ucbvax			<--> fionaLHS
 10.127.0.32/30		Tinc		caasih			<--> ncuiqh
 10.127.0.36/30		Tinc		ucbvax			 --> NeoVAX			@1
