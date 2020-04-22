@@ -48,7 +48,7 @@ Subnet			Name				Comment
 10.127.8.184/29		StaphNet			For Staph equipments around the world
 10.127.8.192/26		JerryXiao-Infrastructure	For cloud instances
 10.127.9.0/24		JerryXiao-Home			For home
-
+10.127.10.0/24		Lan Tian LAN			For LAN
 
 +======================+
 || Loopback Addresses ||
