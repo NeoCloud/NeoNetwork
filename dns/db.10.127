@@ -1,52 +1,51 @@
 ; NeoNetwork DNS Record
 $TTL	604800
-@	IN	SOA	NeoPDP-11.NeoNetwork.unix. root.NeoNetwork.unix. (
+@	IN	SOA	NeoPDP-11.neo. root.neo. (
 			4096	; Serial
 			604800	; Refresh
 			86400	; Retry
 			2419200	; Expire
 			604800 )	; Negative Cache TTL
 ;
-@	IN	NS	NeoPDP-11.NeoNetwork.unix.
+@	IN	NS	NeoPDP-11.neo.
 
-1.1	IN	PTR	NeoPDP-11.NeoNetwork.unix.
-14.0	IN	PTR	NeoPDP-11.NeoNetwork.unix.
-18.0	IN	PTR	NeoPDP-11.NeoNetwork.unix.
-42.0	IN	PTR	NeoPDP-11.NeoNetwork.unix.
-1.255	IN	PTR	NeoPDP-11.NeoNetwork.unix.
+1.1	IN	PTR	NeoPDP-11.neo.
+14.0	IN	PTR	NeoPDP-11.neo.
+18.0	IN	PTR	NeoPDP-11.neo.
+42.0	IN	PTR	NeoPDP-11.neo.
+1.255	IN	PTR	NeoPDP-11.neo.
 
-; CROOM
-40.1	IN	PTR	cklvax.NeoNetwork.unix.
-63.1	IN	PTR	NNPCC.NeoNetwork.unix.
-20.1	IN	PTR	NeoBOX.NeoNetwork.unix.
-10.1	IN	PTR	neostorage.neonetwork.unix.
+40.1	IN	PTR	cklvax.neo.
+63.1	IN	PTR	NNPCC.neo.
+20.1	IN	PTR	NeoBOX.neo.
+10.1	IN	PTR	neostorage.neonetwork.
 
-10.0	IN	PTR	NeoSystem.NeoNetwork.unix.
-46.0	IN	PTR	NeoSystem.NeoNetwork.unix.
-80.1	IN	PTR	NeoSystem.NeoNetwork.unix.
-80.255	IN	PTR	NeoSystem.NeoNetwork.unix.
+10.0	IN	PTR	NeoSystem.neo.
+46.0	IN	PTR	NeoSystem.neo.
+80.1	IN	PTR	NeoSystem.neo.
+80.255	IN	PTR	NeoSystem.neo.
 
-2.0	IN	PTR	ucbvax.NeoNetwork.unix.
-9.0	IN	PTR	ucbvax.NeoNetwork.unix.
-13.0	IN	PTR	ucbvax.NeoNetwork.unix.
-29.0	IN	PTR	ucbvax.NeoNetwork.unix.
-37.0	IN	PTR	ucbvax.NeoNetwork.unix.
-57.0	IN	PTR	ucbvax.NeoNetwork.unix.
-61.0	IN	PTR	ucbvax.NeoNetwork.unix.
-2.255	IN	PTR	ucbvax.NeoNetwork.unix.
+2.0	IN	PTR	ucbvax.neo.
+9.0	IN	PTR	ucbvax.neo.
+13.0	IN	PTR	ucbvax.neo.
+29.0	IN	PTR	ucbvax.neo.
+37.0	IN	PTR	ucbvax.neo.
+57.0	IN	PTR	ucbvax.neo.
+61.0	IN	PTR	ucbvax.neo.
+2.255	IN	PTR	ucbvax.neo.
 
-1.0	IN	PTR	caasih.NeoNetwork.unix.
-17.0	IN	PTR	caasih.NeoNetwork.unix.
-33.0	IN	PTR	caasih.NeoNetwork.unix.
-69.0	IN	PTR	caasih.NeoNetwork.unix.
+1.0	IN	PTR	caasih.neo.
+17.0	IN	PTR	caasih.neo.
+33.0	IN	PTR	caasih.neo.
+69.0	IN	PTR	caasih.neo.
 
-1.3	IN	PTR	pan.NeoNetwork.unix.
-41.0	IN	PTR	pan.NeoNetwork.unix.
-45.0	IN	PTR	pan.NeoNetwork.unix.
-62.0	IN	PTR	pan.NeoNetwork.unix.
+1.3	IN	PTR	pan.neo.
+41.0	IN	PTR	pan.neo.
+45.0	IN	PTR	pan.neo.
+62.0	IN	PTR	pan.neo.
 
-70.0	IN	PTR	staph.NeoNetwork.unix.
-97.0	IN	PTR	staph.NeoNetwork.unix.
-185.8	IN	PTR	staph.NeoNetwork.unix.
+70.0	IN	PTR	staph.neo.
+97.0	IN	PTR	staph.neo.
+185.8	IN	PTR	staph.neo.
 
-187.8	IN	PTR	staph-cn.NeoNetwork.unix.
+187.8	IN	PTR	staph-cn.neo.
