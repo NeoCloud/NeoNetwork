@@ -11,7 +11,7 @@ digraph "NeoNetwork Nodes"
 	ncuiqh [label="ncuiqh.nerdpol.ovh\n(LEGACY)"]
 	fionaLHS [label="fiona.yukipedia.cf\n(LEGACY)"]
 	pan [label="r2.neocloud.tw\n(10.127.3.1)"]
-	icecat_Explosion [label="hk-01.nextmoe.cloud.imiku.cn"]
+	icecat_Explosion [label="hk-01.nextmoe.cloud.imiku.cn\n(10.127.0.58,\n10.127.4.10)"]
 	icecat_Notebook [label="Notebook\n(10.127.0.64/30,\n10.127.4.100)"]
 	magicneko_HK01 [label="M-HK1\n(10.127.4.1)"]
 	magicneko_HK02 [label="M-HK2\n(10.127.4.10)"]
@@ -30,7 +30,7 @@ digraph "NeoNetwork Nodes"
 	septs [label="bgp.septs.me\n(AS4200055555)"]
 	lantian [label="lantian\n(AS4200002547)"]
 	dfceaef [label="dfceaef\n(AS4242420140)"]
-
+	SUNNET [label="SUNNET\n(10.127.11.0/24)\n(AS4242423088)"]
 	subgraph cluster_AS4201048576
 	{
 		label = "NeoNetwork (AS4201048576)";
@@ -91,4 +91,6 @@ digraph "NeoNetwork Nodes"
 	ucbvax -> septs [dir=both]
 	magicneko_JP03 -> chenx97 [dir=both]
 	magicneko_RU01 -> staph [dir=both]
+	icecat_Explosion -> SUNNET [dir=both]
+
 }
