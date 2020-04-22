@@ -1,0 +1,41 @@
+路由目錄格式定義文檔
+====================
+
+按照本 VPN 網路之常見使用方式，可將 IP 分配歸類為下列
+幾種規則，並將其格式規範化，做為路由分配定義檔之檔案名稱：
+
+1. 點對點 /30 隧道： `10.127.0.x/30` （其中 x 可被 4 整除）
+2. 連續子網路： `10.127.x.y/z` （其中， z 必定大於 16）
+3. 點對點 Peer： `PP,10.127.x.x~10.127.x.x` （兩邊 IP 各為 /32）
+4. Loopback 位址： `10.127.255.x/32`
+
+定義格式
+========
+
+檔案內容可分為以下幾個欄位，由於要方便處裡，將會以類似
+Shell Script 定義變數的方式作為定義檔語法，此外，定義變數之
+順序必須與此處相同：
+
+	TYPE=
+	PROTO=	（僅限於點對點 /30 隧道，以及點對點 Peer）
+	SUBNET= 或是 PEER=<上游 IP>~<下游 IP>
+	UPSTREAM=
+	DOWNSTREAM=
+
+各變數詳細資訊
+==============
+
+1. TYPE:	IP 使用類型
+	可用選項有： TUN30, SUBNET, PP, LO （分別對應第一節之 IP 位址分配類型）
+
+2. PROTO:	使用的 VPN 協定
+	可用選項有： Tinc, WireGuard, GRE, IPsec/L2TP, IPsec/GRE, OpenVPN
+
+3. SUBNET:	使用的網域範圍
+	格式： 依照 CIDR
+
+4. PEER:	點對點 Peer 位址
+	格式： <UPSTREAM IP>~<DOWNSTREAM IP>
+
+5. UPSTREAM:	上游主機名稱
+6. DOWNSTREAM:	下游主機名稱
