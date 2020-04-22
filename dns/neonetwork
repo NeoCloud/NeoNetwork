@@ -8,6 +8,8 @@ $TTL	604800
 			2419200	; Expire
 			604800 )	; Negative Cache TTL
 ;
+
+; NeoNetwork Original
 @		IN	NS	NeoPDP-11.neo.
 @		IN	A	10.127.1.1
 root		IN	CNAME	neo.
@@ -21,4 +23,5 @@ cklvax		IN	A	10.127.1.40
 NNPCC		IN	A	10.127.1.63
 NeoVAX		IN	A	10.127.0.38
 pan		IN	A	10.127.3.1
+
 telegram	IN	TXT	"https://t.me/NeoNetworkVPN"
