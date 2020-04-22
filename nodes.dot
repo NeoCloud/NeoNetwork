@@ -89,4 +89,5 @@ digraph "NeoNetwork Nodes"
 	magicneko_JP03 -> septs [dir=both]
 	staph -> septs [dir=both]
 	ucbvax -> septs [dir=both]
+	magicneko_JP03 -> chenx97 [dir=both]
 }
