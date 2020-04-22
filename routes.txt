@@ -54,7 +54,7 @@ Subnet			Name				Comment
 10.127.8.192/26		JerryXiao-Infrastructure	For cloud instances
 10.127.9.0/24		JerryXiao-Home			For home
 10.127.10.0/24		Lan Tian LAN			For LAN
-10.127.11.0/24		SUNNET			For SUN
+10.127.11.0/24		SUNNET            For SUN
 
 
 +======================+
