@@ -67,4 +67,5 @@ digraph "NeoNetwork Nodes"
 
 	JerryXiao -> pan [dir=both]
 	JerryXiao -> ucbvax [dir=both]
+	magicneko_JP03 -> JerryXiao [dir=both]
 }

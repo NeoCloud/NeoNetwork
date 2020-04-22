@@ -27,7 +27,8 @@ Network ID		Protocol	Upstream		     Downstream			Comment
 10.127.0.72/30		WireGuard	ucbvax			<--> chenx97
 10.127.0.76/30		WireGuard	JerryXiao		<--> pan
 10.127.0.80/30		WireGuard	JerryXiao		<--> ucbvax
-10.127.0.84~252/30	<Available>
+10.127.0.84/30		WireGuard	MagicNeko-JP03		<--> JerryXiao
+10.127.0.88~252/30	<Available>
 
 @1 --> Non-24H
 
