@@ -36,14 +36,14 @@ Network ID		Protocol	Upstream		     Downstream			Comment
 10.127.0.108/30		Gre		septs			<--> Lan Tian
 10.127.0.112/30		Gre		septs			<--> ucbvax
 10.127.0.116/30		WireGuard	ucbvax			<--> santost12
-=======
-N/A			WireGuard	JerryXiao		<--> JerryXiao-SH1
-N/A			WireGuard	JerryXiao		<--> JerryXiao-HK1
-N/A			WireGuard	JerryXiao-SH1		<--> JerryXiao-HK1
-N/A			WireGuard	JerryXiao-HK1		<--> JerryXiao-HK2
-N/A			WireGuard	JerryXiao		<--> Lan Tian
-N/A			WireGuard	JerryXiao		<--> dfceaef
 10.127.0.116~252/30	<Available>
+=======
+PP:10.127.8.193/32	: 10.127.8.195/32			WireGuard	JerryXiao		<--> JerryXiao-SH1
+PP:10.127.8.193/32	: 10.127.8.194/32			WireGuard	JerryXiao		<--> JerryXiao-HK1
+PP:10.127.8.195/32	: 10.127.8.194/32			WireGuard	JerryXiao-SH1		<--> JerryXiao-HK1
+PP:10.127.8.194/32	: 10.127.8.196/32			WireGuard	JerryXiao-HK1		<--> JerryXiao-HK2
+PP:10.127.8.193/32	: 10.127.10.1/32			WireGuard	JerryXiao		<--> Lan Tian
+PP:172.20.51.99/32	: 172.22.127.2/32			WireGuard	JerryXiao		<--> dfceaef
 
 
 @1 --> Non-24H
