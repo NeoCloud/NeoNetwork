@@ -1,5 +1,5 @@
-路由目錄格式定義文檔
-====================
+IP 註冊目錄格式定義文檔
+=======================
 
 按照本 VPN 網路之常見使用方式，可將 IP 分配歸類為下列
 幾種規則，並將其格式規範化，做為路由分配定義檔之檔案名稱：
@@ -17,10 +17,10 @@ Shell Script 定義變數的方式作為定義檔語法，此外，定義變數�
 順序必須與此處相同：
 
 	TYPE=
-	PROTO=	（僅限於點對點 /30 隧道，以及點對點 Peer）
+	PROTO=		（僅限於點對點 /30 隧道，以及點對點 Peer）
 	SUBNET= 或是 PEER=<上游 IP>~<下游 IP>
-	UPSTREAM=
-	DOWNSTREAM=
+	UPSTREAM=	（僅限於點對點 /30 隧道，以及點對點 Peer）
+	DOWNSTREAM=	（僅限於點對點 /30 隧道，以及點對點 Peer）
 
 各變數詳細資訊
 ==============
@@ -37,5 +37,5 @@ Shell Script 定義變數的方式作為定義檔語法，此外，定義變數�
 4. PEER:	點對點 Peer 位址
 	格式： <UPSTREAM IP>~<DOWNSTREAM IP>
 
-5. UPSTREAM:	上游主機名稱
-6. DOWNSTREAM:	下游主機名稱
+5. UPSTREAM:	上游節點名稱
+6. DOWNSTREAM:	下游節點名稱
