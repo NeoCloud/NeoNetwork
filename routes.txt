@@ -35,7 +35,14 @@ Network ID		Protocol	Upstream		     Downstream			Comment
 10.127.0.104/30		Gre		septs			<--> fionaLHS
 10.127.0.108/30		Gre		septs			<--> Lan Tian
 10.127.0.112/30		Gre		septs			<--> ucbvax
+N/A			WireGuard	JerryXiao		<--> JerryXiao-SH1
+N/A			WireGuard	JerryXiao		<--> JerryXiao-HK1
+N/A			WireGuard	JerryXiao-SH1		<--> JerryXiao-HK1
+N/A			WireGuard	JerryXiao-HK1		<--> JerryXiao-HK2
+N/A			WireGuard	JerryXiao		<--> Lan Tian
+N/A			WireGuard	JerryXiao		<--> dfceaef
 10.127.0.116~252/30	<Available>
+
 
 @1 --> Non-24H
 
