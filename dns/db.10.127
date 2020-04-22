@@ -1,6 +1,6 @@
 ; NeoNetwork DNS Record
 $TTL	604800
-@	IN	SOA	NeoPDP-11.neo. (
+@	IN	SOA	NeoPDP-11.neo. root.neo. (
 			4096	; Serial
 			604800	; Refresh
 			86400	; Retry

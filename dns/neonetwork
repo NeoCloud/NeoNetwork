@@ -1,16 +1,16 @@
 ; NeoNetwork DNS Record
 
 $TTL	604800
-@	IN	SOA	NeoPDP-11.neo. (
+@	IN	SOA	NeoPDP-11.neo. root.neo. (
 			4096	; Serial
 			604800	; Refresh
 			86400	; Retry
 			2419200	; Expire
 			604800 )	; Negative Cache TTL
 ;
-@	IN	NS	NeoPDP-11.neo.
-@	IN	A	10.127.1.1
-
+@		IN	NS	NeoPDP-11.neo.
+@		IN	A	10.127.1.1
+root		IN	CNAME	neo.
 NeoPDP-11	IN	A	10.127.255.1
 ucbvax		IN	A	10.127.255.2
 caasih		IN	A	10.127.0.1
