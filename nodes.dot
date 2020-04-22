@@ -7,10 +7,9 @@ digraph "NeoNetwork Nodes"
 	c [label="caasih.neocloud.tw\n(10.127.0.1)"]
 	ucbvax [label="router.neocloud.tw\n(10.127.255.2)"]
 	np11 [label="NeoPDP-11\n(10.127.255.1,\n10.127.1.1)"]
-	croom [label="CROOM\n(10.127.1.0/24)"]
 	ns [label="NeoSystem\n(10.127.255.80)"]
-	ncuiqh [label="ncuiqh.nerdpol.ovh"]
-	fionaLHS [label="fiona.yukipedia.cf"]
+	ncuiqh [label="ncuiqh.nerdpol.ovh\n(LEGACY)"]
+	fionaLHS [label="fiona.yukipedia.cf\n(LEGACY)"]
 	pan [label="r2.neocloud.tw\n(10.127.3.1)"]
 	icecat_Explosion [label="hk-01.nextmoe.cloud.imiku.cn"]
 	icecat_Notebook [label="Notebook\n(10.127.0.64/30,\n10.127.4.100)"]
@@ -21,39 +20,40 @@ digraph "NeoNetwork Nodes"
 	magicneko_JP02 [label="M-JP2\n(10.127.4.13)"]
 	magicneko_RU01 [label="M-RU1\n(10.127.4.14)"]
 	magicneko_JP03 [label="M-JP3\n(10.127.4.15)"]
-	staph [label="s.aureus.ga"]
-	staph_CN [label="cnhome.aureus.ga\n(10.127.8.187)"]
-	chenx97 [label="chenx97.neocloud.tw"]
-	JerryXiao [label="jpn.neo.jerryxiao.cc"]
+	staph [label="s.aureus.ga\n(AS4200078274)"]
+	staph_CN [label="cnhome.aureus.ga\n(10.127.8.187)\n(AS4200078274)"]
+	chenx97 [label="chenx97.neocloud.tw\n(AS4200114514)"]
+	JerryXiao [label="jpn.neo.jerryxiao.cc\n(AS4200066666)"]
+	septs [label="bgp.septs.me\n(AS4200055555)"]
+	lantian [label="lantian\n(AS4200002547)"]
 
-	subgraph cluster_croom
+	subgraph cluster_AS4201048576
 	{
-		label = "CROOM";
+		label = "NeoNetwork (AS4201048576)";
 
-		NNPCC -> croom [dir=both]
-		NeoBOX -> croom [dir=both]
-		cklvax -> croom [dir=both]
-		NeoStorage -> croom [dir=both]
+		NNPCC -> np11 [dir=both]
+		NeoBOX -> np11 [dir=both]
+		cklvax -> np11 [dir=both]
+		NeoStorage -> np11 [dir=both]
+		np11 -> ucbvax
+		np11 -> pan
+		np11 -> c
+		ucbvax -> c [dir=both]
+		ns -> ucbvax
+		ns -> pan
+		pan -> ucbvax [dir=both]
 	}
 
-	croom -> np11 [dir=both]
-	np11 -> ucbvax
-	np11 -> pan
-	np11 -> c
-	ucbvax -> c [dir=both]
-	ns -> ucbvax
 	ncuiqh -> c [dir=both]
 	fionaLHS -> ucbvax [dir=both]
-	ns -> pan
 	icecat_Explosion -> ucbvax [dir=both]
-	pan -> ucbvax [dir=both]
 	c -> staph
 	staph -> staph_CN
 	ucbvax -> chenx97 [dir=both]
 
-	subgraph cluster_magicneko
+	subgraph cluster_AS4200012450
 	{
-		label="MagicNeko Network";
+		label="MagicNeko Network (4200012450)";
 
 		magicneko_HK01-> icecat_Explosion
 		magicneko_HK02-> icecat_Explosion
@@ -68,4 +68,10 @@ digraph "NeoNetwork Nodes"
 	JerryXiao -> pan [dir=both]
 	JerryXiao -> ucbvax [dir=both]
 	magicneko_JP03 -> JerryXiao [dir=both]
+	lantian -> septs [dir=both]
+	lantian -> JerryXiao [dir=both]
+	JerryXiao -> septs [dir=both]
+	magicneko_JP03 -> septs [dir=both]
+	staph -> septs [dir=both]
+	ucbvax -> septs [dir=both]
 }
