@@ -4,27 +4,27 @@
 # Upstream's IP is Network ID + 1, Downstream's is Network ID + 2
 # Bidirection arrow means they could establish bidirectional connection
 
-Network ID		Protocol	Upstream	     Downstream		Comment
-=======================|===============|====================|==================|===========================
-10.127.0.0/30		Tinc		caasih		<--> ucbvax
+Network ID		Protocol	Upstream		     Downstream			Comment
+=======================|===============|============================|==========================|===================================
+10.127.0.0/30		Tinc		caasih			<--> ucbvax
 10.127.0.4/30		<Available>
-10.127.0.8/30		WireGuard	ucbvax		 --> NeoSystem		@1
-10.127.0.12/30		Tinc		ucbvax		 --> NeoPDP-11
-10.127.0.16/30		Tinc		caasih		 --> NeoPDP-11
-10.127.0.20/30		Tinc		NeoSystem	<--> NeoVAX		@1
+10.127.0.8/30		WireGuard	ucbvax			 --> NeoSystem			@1
+10.127.0.12/30		Tinc		ucbvax			 --> NeoPDP-11
+10.127.0.16/30		Tinc		caasih			 --> NeoPDP-11
+10.127.0.20/30		Tinc		NeoSystem		<--> NeoVAX			@1
 10.127.0.24/30		<Available>
-10.127.0.28/30		Tinc		ucbvax		<--> fionaLHS
-10.127.0.32/30		Tinc		caasih		<--> ncuiqh
-10.127.0.36/30		Tinc		ucbvax		 --> NeoVAX		@1
-10.127.0.40/30		Tinc		pan		 --> NeoPDP11
-10.127.0.44/30		Tinc		pan		 --> NeoSystem
-10.127.0.48/30		WireGuard	cklvax		<--> NeoSystem
-10.127.0.52/30		WireGuard	pan		 --> NeoSystem		
-10.127.0.56/30		Tinc		ucbvax		 --> Icecat-Explosion	No online time guarantee
-10.127.0.60/30		WireGuard	ucbvax		<--> pan
-10.127.0.64/30		Gre             Icecat-Explosion<--> Icecat-Notebook    No online time guarantee
-10.127.0.68/30		Tinc		caaish		 --> staph
-10.127.0.72/30		WireGuard	ucbvax		<--> chenx97
+10.127.0.28/30		Tinc		ucbvax			<--> fionaLHS
+10.127.0.32/30		Tinc		caasih			<--> ncuiqh
+10.127.0.36/30		Tinc		ucbvax			 --> NeoVAX			@1
+10.127.0.40/30		Tinc		pan			 --> NeoPDP11
+10.127.0.44/30		Tinc		pan			 --> NeoSystem
+10.127.0.48/30		WireGuard	cklvax			<--> NeoSystem
+10.127.0.52/30		WireGuard	pan			 --> NeoSystem		
+10.127.0.56/30		Tinc		ucbvax			 --> Icecat-Explosion		No online time guarantee
+10.127.0.60/30		WireGuard	ucbvax			<--> pan
+10.127.0.64/30		Gre             Icecat-Explosion	<--> Icecat-Notebook		No online time guarantee
+10.127.0.68/30		Tinc		caaish			 --> staph
+10.127.0.72/30		WireGuard	ucbvax			<--> chenx97
 10.127.0.76/30		WireGuard	JerryXiao		<--> pan
 10.127.0.80/30		WireGuard	JerryXiao		<--> ucbvax
 10.127.0.84~252/30	<Available>
@@ -37,11 +37,12 @@ Network ID		Protocol	Upstream	     Downstream		Comment
 \* ================= */
 
 Subnet			Name				Comment
+=======================|===============================|===========================================================================
 10.127.1.0/24		CROOM				For LAN in school
 10.127.2.0/24		NeoSystem VMs			For LANVirtual Machine on NeoSystem
 10.127.3.0/24		pan hub				For LANFor non-multihome connection in Taiwan
 10.127.4.0/24		Icecat-Explosion		For LANFor Magicneko Explosion Network Interworking address
-10.127.5.0/24		CROOM-Netboot			For LANNetboot in CROOM
+10.127.5.0/24		<Available>
 172.24.5.0/24		Icecat-Mobile-devices 		For LANfor Mobile device internal network segment for testing connectivity quality, No SLA
 10.127.8.184/29		StaphNet			For Staph equipments around the world
 10.127.8.192/26		JerryXiao-Infrastructure	For cloud instances
