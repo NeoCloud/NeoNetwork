@@ -13,7 +13,7 @@ Network ID		Protocol	Upstream		     Downstream			Comment
 10.127.0.16/30		Tinc		caasih			 --> NeoPDP-11
 10.127.0.20/30		Tinc		NeoSystem		<--> NeoVAX			@1
 10.127.0.24/30		Gre		staph			<--> MagicNeko-RU1
-10.127.0.28/30		Tinc		ucbvax			<--> fionaLHS
+10.127.0.28/30		Tinc		ucbvax			<--> megumiLHS
 10.127.0.32/30		Tinc		caasih			<--> ncuiqh
 10.127.0.36/30		Tinc		ucbvax			 --> NeoVAX			@1
 10.127.0.40/30		Tinc		pan			 --> NeoPDP11
@@ -32,7 +32,7 @@ Network ID		Protocol	Upstream		     Downstream			Comment
 10.127.0.92/30		<Available>
 10.127.0.96/30		Gre		staph			<--> septs
 10.127.0.100/30		Gre		septs			<--> JerryXiao
-10.127.0.104/30		Gre		septs			<--> fionaLHS
+10.127.0.104/30		Gre		septs			<--> megumiLHS
 10.127.0.108/30		Gre		septs			<--> Lan Tian
 10.127.0.112/30		Gre		septs			<--> ucbvax
 10.127.0.116/30		WireGuard	ucbvax			<--> santost12

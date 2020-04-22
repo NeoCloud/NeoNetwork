@@ -9,7 +9,7 @@ digraph "NeoNetwork Nodes"
 	np11 [label="NeoPDP-11\n(10.127.255.1,\n10.127.1.1)"]
 	ns [label="NeoSystem\n(10.127.255.80)"]
 	ncuiqh [label="ncuiqh.nerdpol.ovh\n(LEGACY)"]
-	fionaLHS [label="fiona.yukipedia.cf\n(LEGACY)"]
+	megumiLHS [label="megumi.yukipedia.cf"]
 	pan [label="r2.neocloud.tw\n(10.127.3.1)"]
 	icecat_Explosion [label="hk-01.nextmoe.cloud.imiku.cn\n(10.127.0.58,\n10.127.4.10)"]
 	icecat_Notebook [label="Notebook\n(10.127.0.64/30,\n10.127.4.100)"]
@@ -49,7 +49,7 @@ digraph "NeoNetwork Nodes"
 	}
 
 	ncuiqh -> c [dir=both]
-	fionaLHS -> ucbvax [dir=both]
+	megumiLHS -> ucbvax [dir=both]
 	icecat_Explosion -> ucbvax [dir=both]
 	c -> staph
 	staph -> staph_CN
@@ -91,6 +91,6 @@ digraph "NeoNetwork Nodes"
 	ucbvax -> septs [dir=both]
 	magicneko_JP03 -> chenx97 [dir=both]
 	magicneko_RU01 -> staph [dir=both]
+	megumiLHS -> septs [dir=both]
 	icecat_Explosion -> SUNNET [dir=both]
-
 }
