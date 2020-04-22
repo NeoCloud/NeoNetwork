@@ -5,11 +5,11 @@
  -->
 <!-- Title: NeoNetwork Nodes Pages: 1 -->
 <svg width="1310pt" height="992pt"
- viewBox="0.00 0.00 1310.00 992.01" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 988.01)">
+ viewBox="0.00 0.00 1310.00 992.37" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 988.37)">
 <title>NeoNetwork Nodes</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-988.01 1306,-988.01 1306,4 -4,4"/>
-<text text-anchor="middle" x="651" y="-968.81" font-family="Times,serif" font-size="14.00">NeoNetwork Nodes</text>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-988.37 1306,-988.37 1306,4 -4,4"/>
+<text text-anchor="middle" x="651" y="-969.17" font-family="Times,serif" font-size="14.00">NeoNetwork Nodes</text>
 <g id="clust1" class="cluster">
 <title>cluster_AS4201048576</title>
 <polygon fill="none" stroke="black" points="8,-657.29 8,-894.29 946.5,-894.29 946.5,-657.29 8,-657.29"/>
@@ -142,21 +142,22 @@
 <!-- megumiLHS -->
 <g id="node5" class="node">
 <title>megumiLHS</title>
-<polygon fill="none" stroke="black" points="523.5,-938.29 358.5,-938.29 358.5,-902.29 523.5,-902.29 523.5,-938.29"/>
-<text text-anchor="middle" x="441" y="-916.59" font-family="Times,serif" font-size="14.00">megumi.yukipedia.cf</text>
+<polygon fill="none" stroke="black" points="523.5,-940.29 358.5,-940.29 358.5,-902.29 523.5,-902.29 523.5,-940.29"/>
+<text text-anchor="middle" x="441" y="-925.09" font-family="Times,serif" font-size="14.00">megumi.yukipedia.cf</text>
+<text text-anchor="middle" x="441" y="-910.09" font-family="Times,serif" font-size="14.00">(AS4203223939)</text>
 </g>
 <!-- megumiLHS&#45;&gt;ucbvax -->
 <g id="edge12" class="edge">
 <title>megumiLHS&#45;&gt;ucbvax</title>
-<path fill="none" stroke="black" d="M533.35,-912.91C544.27,-909.46 554.8,-904.73 564,-898.29 615.69,-862.09 645.12,-790.83 658.21,-750.98"/>
-<polygon fill="black" stroke="black" points="532.36,-909.56 523.67,-915.62 534.25,-916.3 532.36,-909.56"/>
-<polygon fill="black" stroke="black" points="661.59,-751.92 661.26,-741.33 654.91,-749.81 661.59,-751.92"/>
+<path fill="none" stroke="black" d="M533.37,-913.11C544.29,-909.58 554.81,-904.78 564,-898.29 615.55,-861.88 645.04,-790.7 658.17,-750.92"/>
+<polygon fill="black" stroke="black" points="532.34,-909.76 523.7,-915.89 534.28,-916.49 532.34,-909.76"/>
+<polygon fill="black" stroke="black" points="661.54,-751.88 661.24,-741.29 654.87,-749.76 661.54,-751.88"/>
 </g>
 <!-- megumiLHS&#45;&gt;septs -->
 <g id="edge40" class="edge">
 <title>megumiLHS&#45;&gt;septs</title>
-<path fill="none" stroke="black" d="M521.07,-940.5C627.64,-962.86 818.71,-985.24 946.5,-898.29 1102.6,-792.07 1066.7,-691.56 1119.5,-510.29 1149.53,-407.18 1091.37,-357.79 1155,-271.29 1157.68,-267.64 1160.84,-264.36 1164.32,-261.41"/>
-<polygon fill="black" stroke="black" points="521.54,-937.02 511.03,-938.34 520.07,-943.86 521.54,-937.02"/>
+<path fill="none" stroke="black" d="M526.11,-942.33C633.59,-964.07 820.76,-984.03 946.5,-898.29 1102.49,-791.92 1066.7,-691.56 1119.5,-510.29 1149.53,-407.18 1091.37,-357.79 1155,-271.29 1157.68,-267.64 1160.84,-264.36 1164.32,-261.41"/>
+<polygon fill="black" stroke="black" points="526.78,-938.9 516.28,-940.29 525.36,-945.75 526.78,-938.9"/>
 <polygon fill="black" stroke="black" points="1166.42,-264.21 1172.38,-255.45 1162.26,-258.58 1166.42,-264.21"/>
 </g>
 <!-- pan&#45;&gt;ucbvax -->
