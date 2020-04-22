@@ -43,6 +43,7 @@ Subnet			Name				Comment
 10.127.4.0/24		Icecat-Explosion		For LANFor Magicneko Explosion Network Interworking address
 10.127.5.0/24		CROOM-Netboot			For LANNetboot in CROOM
 172.24.5.0/24		Icecat-Mobile-devices 		For LANfor Mobile device internal network segment for testing connectivity quality, No SLA
+10.127.8.184/29		StaphNet			For Staph equipments around the world
 10.127.8.192/26		JerryXiao-Infrastructure	For cloud instances
 10.127.9.0/24		JerryXiao-Home			For home
 

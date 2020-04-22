@@ -22,6 +22,7 @@ digraph "NeoNetwork Nodes"
 	magicneko_RU01 [label="M-RU1\n(10.127.4.14)"]
 	magicneko_JP03 [label="M-JP3\n(10.127.4.15)"]
 	staph [label="s.aureus.ga"]
+	staph_CN [label="cnhome.aureus.ga\n(10.127.8.187)"]
 	chenx97 [label="chenx97.neocloud.tw"]
 	JerryXiao [label="jpn.neo.jerryxiao.cc"]
 
@@ -47,6 +48,7 @@ digraph "NeoNetwork Nodes"
 	icecat_Explosion -> ucbvax [dir=both]
 	pan -> ucbvax [dir=both]
 	c -> staph
+	staph -> staph_CN
 	ucbvax -> chenx97 [dir=both]
 
 	subgraph cluster_magicneko

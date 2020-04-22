@@ -38,8 +38,14 @@ $TTL	604800
 1.0	IN	PTR	caasih.NeoNetwork.unix.
 17.0	IN	PTR	caasih.NeoNetwork.unix.
 33.0	IN	PTR	caasih.NeoNetwork.unix.
+69.0	IN	PTR	caasih.NeoNetwork.unix.
 
 1.3	IN	PTR	pan.NeoNetwork.unix.
 41.0	IN	PTR	pan.NeoNetwork.unix.
 45.0	IN	PTR	pan.NeoNetwork.unix.
 62.0	IN	PTR	pan.NeoNetwork.unix.
+
+70.0	IN	PTR	staph.NeoNetwork.unix.
+185.8	IN	PTR	staph.NeoNetwork.unix.
+
+187.8	IN	PTR	staph-cn.NeoNetwork.unix.
