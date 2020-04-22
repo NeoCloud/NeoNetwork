@@ -35,6 +35,7 @@ Network ID		Protocol	Upstream		     Downstream			Comment
 10.127.0.104/30		Gre		septs			<--> fionaLHS
 10.127.0.108/30		Gre		septs			<--> Lan Tian
 10.127.0.112/30		Gre		septs			<--> ucbvax
+10.127.0.116/30		WireGuard	ucbvax			<--> santost12
 10.127.0.116~252/30	<Available>
 
 @1 --> Non-24H
