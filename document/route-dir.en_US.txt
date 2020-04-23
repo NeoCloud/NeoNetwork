@@ -1,0 +1,44 @@
+IP Registration Directory Format Specification
+=======================
+
+According to the common usage of this VPN network, the IP allocation can be
+classified into the following rules, with its format normalized, as the
+file name of the routing distribution definition file:
+
+1. Point-to-Point /30 Tunnel： `10.127.0.x/30` （where x is divisible by 4）
+2. Contiguous Subnet： `10.127.x.y/z` (where z must be greater than 16）
+3. Peer-to-Peer： `PP,10.127.x.x~10.127.x.x` （IP on both sides is /32）
+4. Loopback Address： `10.127.255.x/32`
+
+Definition Format
+========
+
+The content of the file can be divided into the following fields.
+To simplify processing, Shell Script variable definition syntax
+will be used as the syntax of the definition file. In addition, variables must
+be defined in the same order as the following:
+
+	TYPE=
+	PROTO=		（only for peer-to-peer /30 tunnels and peer-to-peer /32 peers）
+	SUBNET= or PEER=<UPSTREAM IP>~<DOWNSTREAM IP>
+	UPSTREAM=	（only for peer-to-peer /30 tunnels and peer-to-peer /32 peers）
+	DOWNSTREAM=	（only for peer-to-peer /30 tunnels and peer-to-peer /32 peers）
+
+Detailed Information of Each Variable
+==============
+
+1. TYPE:	IP Usage Type
+	Available options are: TUN30, SUBNET, PP, LO （corresponding to the IP address
+	allocation type in the first section respectively）
+
+2. PROTO:	VPN Protocol Used
+	Available options are: Tinc, WireGuard, GRE, IPsec/L2TP, IPsec/GRE, OpenVPN
+
+3. SUBNET:	Subnet Used
+	Format： Use CIDR Notation
+
+4. PEER:	Peer-to-Peer Address
+	Format： <UPSTREAM IP>~<DOWNSTREAM IP>
+
+5. UPSTREAM:	Upstream Node Name
+6. DOWNSTREAM:	Downstream Node Name
