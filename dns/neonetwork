@@ -25,5 +25,13 @@ NeoVAX		IN	A	10.127.0.38
 pan		IN	A	10.127.3.1
 staph		IN	A	10.127.8.185
 staph-cn	IN	A	10.127.8.187
+hk-b.nextmoe	IN	A	10.127.4.10
+jp3.nextmoe	IN	A	10.127.4.15
+ru1.nextmoe	IN	A	10.127.4.14
+jp-vip.nextmoe	IN	A	10.127.4.13
+cn-a.nextmoe	IN	A	10.127.4.100
+cn-b.nextmoe	IN	A	10.127.4.101
+icecat-gw6.nextmoe IN	A	10.127.233.1
+icecat-gw6.nextmoe IN	A	172.24.5.1
 
 telegram	IN	TXT	"https://t.me/NeoNetworkVPN"
