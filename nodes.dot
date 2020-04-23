@@ -91,4 +91,5 @@ digraph "NeoNetwork Nodes"
 	megumiLHS -> septs [dir=both]
 	icecat_Explosion -> SUNNET [dir=both]
 	staph -> santost12 [dir=both]
+	magicneko_RU01 -> septs [dir=both]
 }

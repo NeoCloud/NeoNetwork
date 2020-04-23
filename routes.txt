@@ -37,7 +37,8 @@ Network ID		Protocol	Upstream		     Downstream			Comment
 10.127.0.112/30		Gre		septs			<--> ucbvax
 10.127.0.116/30		WireGuard	ucbvax			<--> santost12
 10.127.0.120/30		WireGuard	MagicNeko-JP03		<--> chenx97
-10.127.0.124~252/30	<Available>
+10.127.0.124/30		Gre		septs			<--> MagicNeko-RU01
+10.127.0.128~252/30	<Available>
 =======
 PP:10.127.8.193/32	: 10.127.8.195/32			WireGuard	JerryXiao		<--> JerryXiao-SH1
 PP:10.127.8.193/32	: 10.127.8.194/32			WireGuard	JerryXiao		<--> JerryXiao-HK1
