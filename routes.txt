@@ -72,7 +72,7 @@ Subnet			Name				Comment
 10.127.11.0/24		SUNNET				For SUN
 10.127.69.0/24		santost12			For home
 10.127.56.0/24		frank-hsinchu			For home
-10.127.254.0/24		Icecat-Mobile-devices		For Mobile device internal network segment for testing connectivity quality, No SLA(=172.24.5.0/24)
+10.127.233.0/24		Icecat-Mobile-devices		For Mobile device internal network segment for testing connectivity quality, No SLA(=172.24.5.0/24)
 +======================+
 || Loopback Addresses ||
 +======================+
