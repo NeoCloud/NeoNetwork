@@ -49,3 +49,5 @@ $TTL	604800
 185.8	IN	PTR	staph.neo.
 
 187.8	IN	PTR	staph-cn.neo.
+
+1.69	IN	PTR	santosh12.neo.

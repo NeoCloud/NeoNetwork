@@ -30,6 +30,7 @@ digraph "NeoNetwork Nodes"
 	lantian [label="lantian\n(AS4200002547)"]
 	dfceaef [label="dfceaef\n(AS4242420140)"]
 	SUNNET [label="SUNNET\n(10.127.11.0/24)\n(AS4242423088)"]
+	santost12 [label="Santost12\n(10.127.69.1)\n(AS4200006969)"]
 	subgraph cluster_AS4201048576
 	{
 		label = "NeoNetwork (AS4201048576)";
@@ -49,7 +50,6 @@ digraph "NeoNetwork Nodes"
 
 	megumiLHS -> ucbvax [dir=both]
 	icecat_Explosion -> ucbvax [dir=both]
-	c -> staph
 	staph -> staph_CN
 	ucbvax -> chenx97 [dir=both]
 
@@ -90,4 +90,5 @@ digraph "NeoNetwork Nodes"
 	magicneko_RU01 -> staph [dir=both]
 	megumiLHS -> septs [dir=both]
 	icecat_Explosion -> SUNNET [dir=both]
+	staph -> santost12 [dir=both]
 }
