@@ -13,6 +13,7 @@ Telegram Group invitation link available at TXT record of `join-telegram.neoclou
 	bgp.septs.me                    (		ASN 4200055555)
 	jp-03.nextmoe.cloud.imiku.cn	(10.127.4.15,	ASN 4200012450)
 	ru-01.nextmoe.cloud.imiku.cn	(10.127.4.14,	ASN 4200012450)
+	jpn.neo.jerryxiao.cc		(10.127.8.193,	ASN 4200066666)
 
 ## Routing Protocols
 Any protocol supported by Quagga or FRRouting, recommended to use BGP.
