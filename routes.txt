@@ -59,11 +59,11 @@ PP:10.127.8.185/32	: 10.127.69.1/32			WireGuard	staph			<--> santost12
 Subnet			Name				Comment
 =======================|===============================|===========================================================================
 10.127.1.0/24		CROOM				For LAN in school
-10.127.2.0/24		NeoSystem VMs			For LANVirtual Machine on NeoSystem
-10.127.3.0/24		pan hub				For LANFor non-multihome connection in Taiwan
-10.127.4.0/24		Icecat-Explosion		For LANFor Magicneko Explosion Network Interworking address
+10.127.2.0/24		NeoSystem VMs			For Virtual Machine on NeoSystem
+10.127.3.0/24		pan hub				For non-multihome connection in Taiwan
+10.127.4.0/24		Icecat-Explosion		For Magicneko Explosion Network Interworking address, No SLA
 10.127.5.0/24		<Available>
-172.24.5.0/24		Icecat-Mobile-devices 		For LANfor Mobile device internal network segment for testing connectivity quality, No SLA
+172.24.5.0/24		Icecat-Mobile-devices 		For Mobile device internal network segment for testing connectivity quality, No SLA
 10.127.8.0/26		LibreHouse			For infrastratures in our network
 10.127.8.184/29		StaphNet			For Staph equipments around the world
 10.127.8.192/26		JerryXiao-Infrastructure	For cloud instances
@@ -72,7 +72,7 @@ Subnet			Name				Comment
 10.127.11.0/24		SUNNET				For SUN
 10.127.69.0/24		santost12			For home
 10.127.56.0/24		frank-hsinchu			For home
-
+10.127.254.0/24		Icecat-Mobile-devices		For Mobile device internal network segment for testing connectivity quality, No SLA(=172.24.5.0/24)
 +======================+
 || Loopback Addresses ||
 +======================+
