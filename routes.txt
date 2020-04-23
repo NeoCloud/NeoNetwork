@@ -39,7 +39,8 @@ Network ID		Protocol	Upstream		     Downstream			Comment
 10.127.0.120/30		WireGuard	MagicNeko-JP03		<--> chenx97
 10.127.0.124/30		Gre		septs			<--> MagicNeko-RU01
 10.127.0.128/30		Gre		MagicNeko-JP03			<--> megumiLHS
-10.127.0.132~252/30	<Available>
+10.127.0.132/30		WireGuard	icecat-jp3		<-->	frank-hsinchu
+10.127.0.136~252/30	<Available>
 =======
 PP:10.127.8.193/32	: 10.127.8.195/32			WireGuard	JerryXiao		<--> JerryXiao-SH1
 PP:10.127.8.193/32	: 10.127.8.194/32			WireGuard	JerryXiao		<--> JerryXiao-HK1
