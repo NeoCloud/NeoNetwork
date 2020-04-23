@@ -70,6 +70,7 @@ Subnet			Name				Comment
 10.127.10.0/24		Lan Tian LAN			For LAN
 10.127.11.0/24		SUNNET				For SUN
 10.127.69.0/24		santost12			For home
+10.127.56.0/24		frank-hsinchu			For home
 
 +======================+
 || Loopback Addresses ||
@@ -82,3 +83,4 @@ Loopback Address	Name		System		Comment
 10.127.255.2		ucbvax		Arch Linux/frr
 10.127.255.4		pan		Arch Linux/frr
 10.127.255.80		NeoSystem	Arch Linux/frr
+10.127.255.56		frank-hsinchu	Ubuntu/bird
