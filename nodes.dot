@@ -11,7 +11,7 @@ digraph "NeoNetwork Nodes"
 	megumiLHS [label="megumi.yukipedia.cf\n(AS4203223939)"]
 	pan [label="r2.neocloud.tw\n(10.127.3.1)"]
 	icecat_Explosion [label="hk-01.nextmoe.cloud.imiku.cn\n(10.127.0.58,\n10.127.4.10)"]
-	icecat_Notebook [label="Notebook\n(10.127.0.64/30,\n10.127.4.100)"]
+	icecat_Notebook [label="Notebook\n(AS4200012451)\n(10.127.233.1)"]
 	magicneko_HK01 [label="M-HK1\n(10.127.4.1)"]
 	magicneko_HK02 [label="M-HK2\n(10.127.4.10)"]
 	magicneko_JP01 [label="M-JP1\n(10.127.4.11)"]
@@ -56,7 +56,7 @@ digraph "NeoNetwork Nodes"
 
 	subgraph cluster_AS4200012450
 	{
-		label="MagicNeko Network (AS4200012450)";
+		label="MagicNeko Network Internet exchange (AS4200012450)";
 
 		magicneko_HK01-> icecat_Explosion
 		magicneko_HK02-> icecat_Explosion
@@ -65,7 +65,6 @@ digraph "NeoNetwork Nodes"
 		magicneko_JP02 -> icecat_Explosion
 		magicneko_RU01 -> icecat_Explosion
 		magicneko_JP03 -> icecat_Explosion
-		icecat_Notebook -> icecat_Explosion
 	}
 
 	subgraph cluster_AS4200066666
@@ -94,6 +93,11 @@ digraph "NeoNetwork Nodes"
 	staph -> santost12 [dir=both]
 	magicneko_RU01 -> septs [dir=both]
 	magicneko_JP03 -> megumiLHS [dir=both]
-    magicneko_JP03 -> frank_hsinchu [dir=both]
+	magicneko_JP03 -> frank_hsinchu [dir=both]
 	septs	->	frank_hsinchu	[dir=both]
+	icecat_Notebook -> magicneko_HK01
+	icecat_Notebook -> magicneko_JP03
+	icecat_Notebook -> magicneko_RU01
+	icecat_Noteboot -> magicneko_CN01
+	icecat_Noteboot -> magicneko_JP02
 }
