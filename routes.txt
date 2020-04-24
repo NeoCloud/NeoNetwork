@@ -77,7 +77,7 @@ Subnet			Name				Comment
 10.127.10.0/24		Lan Tian LAN			For LAN
 10.127.11.0/24		SUNNET				For SUN
 10.127.56.0/24		frank-hsinchu			For home
-10.127.69.0/24		santost12			For home
+10.127.69.0/29		santost12			For home
 10.127.233.0/24		Icecat-Mobile-devices		For Mobile device internal network segment for testing connectivity quality, No SLA(=172.24.5.0/24)
 172.24.5.0/24		Icecat-Mobile-devices 		For Mobile device internal network segment for testing connectivity quality, No SLA
 +======================+
