@@ -10,8 +10,8 @@ digraph "NeoNetwork Nodes"
 	ns [label="NeoSystem\n(10.127.255.80)"]
 	megumiLHS [label="megumi.yukipedia.cf\n(AS4203223939)"]
 	pan [label="r2.neocloud.tw\n(10.127.3.1)"]
-	icecat_Explosion [label="hk-01.nextmoe.cloud.imiku.cn\n(10.127.0.58,\n10.127.4.10)"]
-	icecat_Notebook [label="Notebook\n(AS4200012451)\n(10.127.233.1)"]
+	icecat_Explosion [label="MagicNeko P2P network interconnection"]
+	icecat_Notebook [label="NextMoe Group Access Network\n(AS4200012451)\n(10.127.233.1)"]
 	magicneko_HK01 [label="M-HK1\n(10.127.4.1)"]
 	magicneko_HK02 [label="M-HK2\n(10.127.4.10)"]
 	magicneko_JP01 [label="M-JP1\n(10.127.4.11)"]
@@ -19,6 +19,7 @@ digraph "NeoNetwork Nodes"
 	magicneko_JP02 [label="M-JP2\n(10.127.4.13)"]
 	magicneko_RU01 [label="M-RU1\n(10.127.4.14)"]
 	magicneko_JP03 [label="M-JP3\n(10.127.4.15)"]
+	magicneko_CN01 [label="M-JP3\n(10.127.4.15)"]
 	staph [label="s.aureus.ga\n(10.127.8.185)\n(AS4200078274)"]
 	staph_CN [label="cnhome.aureus.ga\n(10.127.8.187)\n(AS4200078274)"]
 	chenx97 [label="chenx97.neocloud.tw\n(AS4200114514)"]
@@ -50,7 +51,7 @@ digraph "NeoNetwork Nodes"
 	}
 
 	megumiLHS -> ucbvax [dir=both]
-	icecat_Explosion -> ucbvax [dir=both]
+	magicneko_HK02 -> ucbvax [dir=both]
 	staph -> staph_CN
 	ucbvax -> chenx97 [dir=both]
 
@@ -58,13 +59,14 @@ digraph "NeoNetwork Nodes"
 	{
 		label="MagicNeko Network Internet exchange (AS4200012450)";
 
-		magicneko_HK01-> icecat_Explosion
-		magicneko_HK02-> icecat_Explosion
+		magicneko_HK01 -> icecat_Explosion
+		magicneko_HK02 -> icecat_Explosion
 		magicneko_JP01 -> icecat_Explosion
 		magicneko_HK03 -> icecat_Explosion
 		magicneko_JP02 -> icecat_Explosion
 		magicneko_RU01 -> icecat_Explosion
 		magicneko_JP03 -> icecat_Explosion
+		magicneko_CN01 -> icecat_Explosion
 	}
 
 	subgraph cluster_AS4200066666
@@ -89,7 +91,7 @@ digraph "NeoNetwork Nodes"
 	magicneko_JP03 -> chenx97 [dir=both]
 	magicneko_RU01 -> staph [dir=both]
 	megumiLHS -> septs [dir=both]
-	icecat_Explosion -> SUNNET [dir=both]
+	magicneko_HK02 -> SUNNET [dir=both]
 	staph -> santost12 [dir=both]
 	magicneko_RU01 -> septs [dir=both]
 	magicneko_JP03 -> megumiLHS [dir=both]
@@ -98,6 +100,6 @@ digraph "NeoNetwork Nodes"
 	icecat_Notebook -> magicneko_HK01
 	icecat_Notebook -> magicneko_JP03
 	icecat_Notebook -> magicneko_RU01
-	icecat_Noteboot -> magicneko_CN01
-	icecat_Noteboot -> magicneko_JP02
+	icecat_Notebook -> magicneko_CN01
+	icecat_Notebook -> magicneko_JP02
 }
