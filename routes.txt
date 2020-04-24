@@ -29,7 +29,7 @@ Network ID		Protocol	Upstream		     Downstream			Comment
 10.127.0.80/30		WireGuard	JerryXiao		<--> ucbvax
 10.127.0.84/30		WireGuard	MagicNeko-JP03		<--> JerryXiao
 10.127.0.88/30		Gre		septs			<--> icecat-jp3
-10.127.0.92/30		<Available>
+10.127.0.92/30		Gre		septs			<--> frank-hsinchu
 10.127.0.96/30		Gre		staph			<--> septs
 10.127.0.100/30		Gre		septs			<--> JerryXiao
 10.127.0.104/30		Gre		septs			<--> megumiLHS
