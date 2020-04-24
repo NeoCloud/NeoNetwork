@@ -95,4 +95,5 @@ digraph "NeoNetwork Nodes"
 	magicneko_RU01 -> septs [dir=both]
 	magicneko_JP03 -> megumiLHS [dir=both]
     magicneko_JP03 -> frank_hsinchu [dir=both]
+	septs	->	frank_hsinchu	[dir=both]
 }
