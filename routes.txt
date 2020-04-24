@@ -64,16 +64,22 @@ Subnet			Name				Comment
 10.127.3.0/24		pan hub				For non-multihome connection in Taiwan
 10.127.4.0/24		Icecat-Explosion		For Magicneko Explosion Network Interworking address, No SLA
 10.127.5.0/24		<Available>
-172.24.5.0/24		Icecat-Mobile-devices 		For Mobile device internal network segment for testing connectivity quality, No SLA
+10.127.6.0/24		<Available>
+10.127.7.0/24		<Available>
 10.127.8.0/26		LibreHouse			For infrastratures in our network
+10.127.8.64/26		dfceaef NET			For Yangfl Network
+10.127.8.128/27		<Available>
+10.127.8.160/28		<Available>
+10.127.8.176/29		<Available>
 10.127.8.184/29		StaphNet			For Staph equipments around the world
 10.127.8.192/26		JerryXiao-Infrastructure	For cloud instances
 10.127.9.0/24		JerryXiao-Home			For home
 10.127.10.0/24		Lan Tian LAN			For LAN
 10.127.11.0/24		SUNNET				For SUN
-10.127.69.0/24		santost12			For home
 10.127.56.0/24		frank-hsinchu			For home
+10.127.69.0/24		santost12			For home
 10.127.233.0/24		Icecat-Mobile-devices		For Mobile device internal network segment for testing connectivity quality, No SLA(=172.24.5.0/24)
+172.24.5.0/24		Icecat-Mobile-devices 		For Mobile device internal network segment for testing connectivity quality, No SLA
 +======================+
 || Loopback Addresses ||
 +======================+
