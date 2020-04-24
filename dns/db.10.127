@@ -51,3 +51,10 @@ $TTL	604800
 187.8	IN	PTR	staph-cn.neo.
 
 1.69	IN	PTR	santosh12.neo.
+1.233	IN	PTR	gwv4.nextmoe.imiku.cn.neo.
+10.4	IN	PTR	hk-aa.100m-500G.ix.magicneko.imiku.cn.neo.
+12.4	IN	PTR	jp-vip.100m-200G.ix.magicneko.imiku.cn.neo.
+14.4	IN	PTR	ru-cc.100m-400G.ix.magicneko.imiku.cn.neo.
+15.4	IN	PTR	jp-bb.100m-400G.ix.magicneko.imiku.cn.neo.
+101.4	IN	PTR	cn-adsl.15m-none.ix.magicneko.imiku.cn.neo.
+

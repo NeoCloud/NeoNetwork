@@ -19,7 +19,7 @@ digraph "NeoNetwork Nodes"
 	magicneko_JP02 [label="M-JP2\n(10.127.4.13)"]
 	magicneko_RU01 [label="M-RU1\n(10.127.4.14)"]
 	magicneko_JP03 [label="M-JP3\n(10.127.4.15)"]
-	magicneko_CN01 [label="M-JP3\n(10.127.4.15)"]
+	magicneko_CN01 [label="M-CN1\n(10.127.4.101)"]
 	staph [label="s.aureus.ga\n(10.127.8.185)\n(AS4200078274)"]
 	staph_CN [label="cnhome.aureus.ga\n(10.127.8.187)\n(AS4200078274)"]
 	chenx97 [label="chenx97.neocloud.tw\n(AS4200114514)"]
