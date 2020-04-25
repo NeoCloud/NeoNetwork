@@ -15,7 +15,7 @@ Network ID		Protocol	Upstream		     Downstream			Comment
 10.127.0.24/30		Gre		staph			<--> MagicNeko-RU1
 10.127.0.28/30		Tinc		ucbvax			<--> megumiLHS
 10.127.0.32/30		<Available>
-10.127.0.36/30		Tinc		ucbvax			 --> NeoVAX			@1
+10.127.0.36/30		<Available>
 10.127.0.40/30		Tinc		pan			 --> NeoPDP11
 10.127.0.44/30		Tinc		pan			 --> NeoSystem
 10.127.0.48/30		WireGuard	cklvax			<--> NeoSystem
