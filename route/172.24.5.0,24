@@ -1,3 +1,0 @@
-TYPE=SUBNET
-NAME=Icecat-Mobile-devices
-DESC="For Mobile device internal network segment for testing connectivity quality, No SLA"
