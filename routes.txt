@@ -85,8 +85,8 @@ Subnet			Name				Comment
 +======================+
 (Loopback address => /32)
 
-Loopback Address	Name		System		Comment
-=======================|===============|===============|===================================================
+Loopback Address	Name		Comment
+=======================|===============|===================================================================
 10.127.255.1		NeoPDP-11	FreeBSD/frr
 10.127.255.2		ucbvax		Arch Linux/frr
 10.127.255.4		pan		Arch Linux/frr
