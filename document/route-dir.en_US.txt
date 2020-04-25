@@ -20,7 +20,6 @@ be defined in the same order as the following:
 
 	TYPE=
 	PROTO=		(only for peer-to-peer /30 tunnels and peer-to-peer /32 peers)
-	SUBNET= or PEER=<UPSTREAM IP>~<DOWNSTREAM IP>
 	UPSTREAM=	(only for peer-to-peer /30 tunnels and peer-to-peer /32 peers)
 	DOWNSTREAM=	(only for peer-to-peer /30 tunnels and peer-to-peer /32 peers)
 
@@ -34,11 +33,5 @@ Detailed Information of Each Variable
 2. PROTO:	VPN Protocol Used
 	Available options are: Tinc, WireGuard, GRE, IPsec/L2TP, IPsec/GRE, OpenVPN
 
-3. SUBNET:	Subnet Used
-	Format: Use CIDR Notation
-
-4. PEER:	Peer-to-Peer Address
-	Format: <UPSTREAM IP>~<DOWNSTREAM IP>
-
-5. UPSTREAM:	Upstream Node Name
-6. DOWNSTREAM:	Downstream Node Name
+3. UPSTREAM:	Upstream Node Name
+4. DOWNSTREAM:	Downstream Node Name

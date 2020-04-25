@@ -18,7 +18,6 @@ Shell Script 定義變數的方式作為定義檔語法，此外，定義變數�
 
 	TYPE=
 	PROTO=		（僅限於點對點 /30 隧道，以及點對點 Peer）
-	SUBNET= 或是 PEER=<上游 IP>~<下游 IP>
 	UPSTREAM=	（僅限於點對點 /30 隧道，以及點對點 Peer）
 	DOWNSTREAM=	（僅限於點對點 /30 隧道，以及點對點 Peer）
 
@@ -30,9 +29,6 @@ Shell Script 定義變數的方式作為定義檔語法，此外，定義變數�
 
 2. PROTO:	使用的 VPN 協定
 	可用選項有： Tinc, WireGuard, GRE, IPsec/L2TP, IPsec/GRE, OpenVPN
-
-3. SUBNET:	使用的網域範圍
-	格式： 依照 CIDR
 
 4. PEER:	點對點 Peer 位址
 	格式： <UPSTREAM IP>~<DOWNSTREAM IP>
