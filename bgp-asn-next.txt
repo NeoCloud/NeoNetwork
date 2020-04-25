@@ -12,11 +12,11 @@ AS Number       Name
 4201270006      JerryXiao
 4201270007      Staph
 4201270008      MagicNeko (Inter-NeoNetwork Exchange)
+4201270010      Lan Tian
+4201270015      James58899
 420127----      santost12
 420127----      SUNNET
 420127----      Yangfl Network
-420127----      Lan Tian
-4201270015      James58899
 
 # External: dn42
 4242421037      LibreHouse
