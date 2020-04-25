@@ -4,7 +4,7 @@ A useless VPN network ready for peering!
 Pull requests are welcomed!  
 Telegram Group invitation link available at TXT record of `join-telegram.neocloud.tw`
 
-## Peers:
+## IXs:
 	caasih.neocloud.tw		(10.127.0.1,	ASN 4201048576)
 	router.neocloud.tw		(10.127.255.2,	ASN 4201048576)
 	r2.neocloud.tw			(10.127.3.1,	ASN 4201048576)
@@ -23,7 +23,7 @@ All IPv4 addresses are under the range 10.127.0.0/16,
 see routes.txt for allocated domain.
 
 ## DNS
-There's a bind9 server on NeoPDP-11 (10.127.1.1), all domain names are under "neonetwork.unix".
+There's a bind9 server on dns.neocloud.tw (10.127.225.2), all domain names are under ".neo".
 
 ## Connection Graph
 ![NeoNetwork Nodes](https://raw.githubusercontent.com/NeoChen1024/NeoNetwork/master/nodes.svg)
@@ -31,7 +31,7 @@ There's a bind9 server on NeoPDP-11 (10.127.1.1), all domain names are under "ne
 ## Files and Directories:
 	ospf-area.txt	OSPF Area Number
 	bgp-asn.txt	BGP AS Number
-	routes.txt	network subnet allocation
+	route/		network subnet allocation
 	named.conf	Bind9 DNS configuration example
 	nodes.dot	connection graph
 	vpn/		VPN configuration examples (Tinc & WireGuard)
