@@ -3,10 +3,9 @@
 
 AS Number	Name
 ===============|================================================================
-4201270000	[reserved]
-4201270001	Neo_Chen
-4201270002	Septs (Inter-NeoNetwork Exchange)
-4201270003	Septs (Home)
+4201270000	Neo_Chen
+4201270001	Septs (Inter-NeoNetwork Exchange)
+4201270002	Septs (Home)
 420127----	chenx97
 420127----	frank
 420127----	Icecat
