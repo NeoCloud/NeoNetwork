@@ -8,10 +8,10 @@ AS Number       Name
 4201270002      Septs (Home)
 4201270003      chenx97
 4201270004      frank
-420127----      Icecat
+4201270005      Icecat (NextMoe Access Network)
 4201270006      JerryXiao
 4201270007      Staph
-420127----      MagicNeko-IX
+4201270008      MagicNeko (Inter-NeoNetwork Exchange)
 420127----      santost12
 420127----      SUNNET
 420127----      Yangfl Network
