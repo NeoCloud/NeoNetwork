@@ -18,8 +18,10 @@ Shell Script 定義變數的方式作為定義檔語法，此外，定義變數�
 
 	TYPE=
 	PROTO=		（僅限於點對點 /30 隧道，以及點對點 Peer）
+	NAME=		（除了連續子網路或 Loopback 位址以外，可選）
 	UPSTREAM=	（僅限於點對點 /30 隧道，以及點對點 Peer）
 	DOWNSTREAM=	（僅限於點對點 /30 隧道，以及點對點 Peer）
+	DESC=		（可選）
 
 各變數詳細資訊
 ==============
@@ -30,8 +32,7 @@ Shell Script 定義變數的方式作為定義檔語法，此外，定義變數�
 2. PROTO:	使用的 VPN 協定
 	可用選項有： Tinc, WireGuard, GRE, IPsec/L2TP, IPsec/GRE, OpenVPN
 
-4. PEER:	點對點 Peer 位址
-	格式： <UPSTREAM IP>~<DOWNSTREAM IP>
-
+3. NAME:	這個連線的名稱
 5. UPSTREAM:	上游節點名稱
 6. DOWNSTREAM:	下游節點名稱
+7. DESC:	描述
