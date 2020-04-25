@@ -3,7 +3,7 @@
 
 AS Number	Name
 ===============|================================================================
-4201270000  [reserved]
+4201270000	[reserved]
 4201270001	Septs (Inter-NeoNetwork Exchange)
 4201270002	Septs (Home)
 420127----	chenx97
@@ -17,4 +17,4 @@ AS Number	Name
 420127----	Staph
 420127----	SUNNET
 420127----	Yangfl Network
-420127----  Lan Tian
+420127----	Lan Tian
