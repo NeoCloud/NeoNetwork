@@ -8,7 +8,7 @@ digraph "NeoNetwork Nodes"
 	ucbvax [label="router.neocloud.tw\n(10.127.255.2)"]
 	np11 [label="NeoPDP-11\n(10.127.255.1,\n10.127.1.1)"]
 	ns [label="NeoSystem\n(10.127.255.80)"]
-	megumiLHS [label="megumi.yukipedia.cf\n(AS4203223939)"]
+	megumiLHS [label="megumi.yukipedia.cf\n(AS4242421037)"]
 	pan [label="r2.neocloud.tw\n(10.127.3.1)"]
 	icecat_Explosion [label="MagicNeko P2P network interconnection"]
 	icecat_Notebook [label="NextMoe Group Access Network\n(AS4200012451)\n(10.127.233.1)"]
