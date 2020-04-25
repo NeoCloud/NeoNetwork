@@ -58,3 +58,5 @@ $TTL	604800
 15.4	IN	PTR	jp-bb.100m-400G.ix.magicneko.imiku.cn.neo.
 101.4	IN	PTR	cn-adsl.15m-none.ix.magicneko.imiku.cn.neo.
 
+1.8     IN      PTR     librehs.neo.
+2.8     IN      PTR     blog.librehs.neo.
