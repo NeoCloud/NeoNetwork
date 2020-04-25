@@ -1,0 +1,4 @@
+TYPE=TUN30
+PROTO=WireGuard
+UPSTREAM=JerryXiao
+DOWNSTREAM=JerryXiao-SH1

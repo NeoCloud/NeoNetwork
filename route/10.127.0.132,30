@@ -1,0 +1,4 @@
+TYPE=TUN30
+PROTO=WireGuard
+UPSTREAM=icecat-jp3
+DOWNSTREAM=frank-hsinchu

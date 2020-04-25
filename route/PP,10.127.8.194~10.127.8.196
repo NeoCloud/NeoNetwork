@@ -1,0 +1,4 @@
+TYPE=PP
+PROTO=WireGuard
+UPSTREAM=JerryXiao-HK1
+DOWNSTREAM=JerryXiao-HK2

@@ -1,0 +1,4 @@
+TYPE=TUN30
+PROTO=Tinc
+UPSTREAM=ucbvax
+DOWNSTREAM=Icecat-Explosion
