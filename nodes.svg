@@ -11,9 +11,9 @@
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-1287 1342.5,-1287 1342.5,4 -4,4"/>
 <text text-anchor="middle" x="669.25" y="-1267.8" font-family="Times,serif" font-size="14.00">NeoNetwork Nodes</text>
 <g id="clust1" class="cluster">
-<title>cluster_AS4201048576</title>
+<title>cluster_AS4201270000</title>
 <polygon fill="none" stroke="black" points="66,-1015 66,-1252 1157.5,-1252 1157.5,-1015 66,-1015"/>
-<text text-anchor="middle" x="611.75" y="-1236.8" font-family="Times,serif" font-size="14.00">NeoNetwork (AS4201048576)</text>
+<text text-anchor="middle" x="611.75" y="-1236.8" font-family="Times,serif" font-size="14.00">NeoNetwork (AS4201270000)</text>
 </g>
 <g id="clust2" class="cluster">
 <title>cluster_4201270008</title>
@@ -21,9 +21,9 @@
 <text text-anchor="middle" x="529.75" y="-797.8" font-family="Times,serif" font-size="14.00">MagicNeko Network Internet exchange (AS4201270008)</text>
 </g>
 <g id="clust3" class="cluster">
-<title>cluster_AS4200066666</title>
+<title>cluster_4201270006</title>
 <polygon fill="none" stroke="black" points="526,-8 526,-105 1330.5,-105 1330.5,-8 526,-8"/>
-<text text-anchor="middle" x="928.25" y="-89.8" font-family="Times,serif" font-size="14.00">Jerry Network (AS4200066666)</text>
+<text text-anchor="middle" x="928.25" y="-89.8" font-family="Times,serif" font-size="14.00">Jerry Network (4201270006)</text>
 </g>
 <!-- c -->
 <g id="node1" class="node">
@@ -65,7 +65,7 @@
 <title>septs</title>
 <polygon fill="none" stroke="black" points="1142,-282 1005,-282 1005,-244 1142,-244 1142,-282"/>
 <text text-anchor="middle" x="1073.5" y="-266.8" font-family="Times,serif" font-size="14.00">bgp.septs.me</text>
-<text text-anchor="middle" x="1073.5" y="-251.8" font-family="Times,serif" font-size="14.00">(AS4200055555)</text>
+<text text-anchor="middle" x="1073.5" y="-251.8" font-family="Times,serif" font-size="14.00">(AS4201270001)</text>
 </g>
 <!-- ucbvax&#45;&gt;septs -->
 <g id="edge36" class="edge">
@@ -381,7 +381,7 @@
 <polygon fill="none" stroke="black" points="1330,-265.5 1193,-265.5 1193,-212.5 1330,-212.5 1330,-265.5"/>
 <text text-anchor="middle" x="1261.5" y="-250.3" font-family="Times,serif" font-size="14.00">Frank_Hsinchu</text>
 <text text-anchor="middle" x="1261.5" y="-235.3" font-family="Times,serif" font-size="14.00">(10.127.255.56)</text>
-<text text-anchor="middle" x="1261.5" y="-220.3" font-family="Times,serif" font-size="14.00">(AS4200005566)</text>
+<text text-anchor="middle" x="1261.5" y="-220.3" font-family="Times,serif" font-size="14.00">(AS4201270004)</text>
 </g>
 <!-- magicneko_JP03&#45;&gt;frank_hsinchu -->
 <g id="edge44" class="edge">
@@ -423,7 +423,7 @@
 <polygon fill="none" stroke="black" points="947,-874.5 810,-874.5 810,-821.5 947,-821.5 947,-874.5"/>
 <text text-anchor="middle" x="878.5" y="-859.3" font-family="Times,serif" font-size="14.00">Santost12</text>
 <text text-anchor="middle" x="878.5" y="-844.3" font-family="Times,serif" font-size="14.00">(10.127.69.1)</text>
-<text text-anchor="middle" x="878.5" y="-829.3" font-family="Times,serif" font-size="14.00">(AS4200006969)</text>
+<text text-anchor="middle" x="878.5" y="-829.3" font-family="Times,serif" font-size="14.00">(AS4201270009)</text>
 </g>
 <!-- staph&#45;&gt;santost12 -->
 <g id="edge41" class="edge">
@@ -522,7 +522,7 @@
 <title>lantian</title>
 <polygon fill="none" stroke="black" points="422,-116 285,-116 285,-78 422,-78 422,-116"/>
 <text text-anchor="middle" x="353.5" y="-100.8" font-family="Times,serif" font-size="14.00">lantian</text>
-<text text-anchor="middle" x="353.5" y="-85.8" font-family="Times,serif" font-size="14.00">(AS4200002547)</text>
+<text text-anchor="middle" x="353.5" y="-85.8" font-family="Times,serif" font-size="14.00">(AS4201270010)</text>
 </g>
 <!-- lantian&#45;&gt;JerryXiao -->
 <g id="edge33" class="edge">
