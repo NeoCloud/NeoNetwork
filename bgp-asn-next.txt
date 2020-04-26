@@ -1,11 +1,11 @@
 # BGP AS Number: (Private AS)
 # Please follow numeric order
 
-AS Number       Name
-===============|================================================================
+AS Number       Name                                             Contact
+===============|================================================|===============
 4201270000      Neo_Chen
-4201270001      Septs (Inter-NeoNetwork Exchange)
-4201270002      Septs (Home)
+4201270001      Septs (Inter-NeoNetwork Exchange)                bgp@septs.email
+4201270002      Septs (Home)                                     bgp@septs.email
 4201270003      chenx97
 4201270004      frank
 4201270005      Icecat (NextMoe Access Network)
