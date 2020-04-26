@@ -21,7 +21,7 @@ $TTL	604800
 185.8	IN	PTR	staph.neo.
 187.8	IN	PTR	staph-cn.neo.
 
-1.69	IN	PTR	santosh12.neo.
+1.69	IN	PTR	santost12.neo.
 
 1.233	IN	PTR	nextmoe.15M.gw4.eth0-vl1000.imiku.cn.neo.
 1.4	IN	PTR	hk-ac.2M-none.static.ix.magicneko.imiku.cn.neo.

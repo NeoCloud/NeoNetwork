@@ -25,6 +25,7 @@ NeoVAX		IN	A	10.127.0.38
 pan		IN	A	10.127.3.1
 staph		IN	A	10.127.8.185
 staph-cn	IN	A	10.127.8.187
+santost12	IN	A	10.128.69.1
 
 neko		IN	TXT	"helloworld"
 telegram	IN	TXT	"https://t.me/NeoNetworkVPN"
