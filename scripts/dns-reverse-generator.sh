@@ -26,6 +26,13 @@ for i in *; do
 
 		print_record "$upstream_ip" "$DOWNSTREAM.$UPSTREAM.tun30.neo."
 		print_record "$downstream_ip" "$UPSTREAM.$DOWNSTREAM.tun30.neo."
+	elif [ "$TYPE" = "PP" ]; then
+		i="${i/PP,/}"
+		upstream_ip="${i%~*}"
+		downstream_ip="${i#*~}"
+
+		print_record "$upstream_ip" "$UPSTREAM.pp.neo."
+		print_record "$downstream_ip" "$DOWNSTREAM.pp.neo."
 	fi
 done
 ) | sort -n >> dns/db.10.127

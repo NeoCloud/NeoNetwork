@@ -44,6 +44,20 @@ $TTL	604800
 2.0	IN	PTR	caasih.ucbvax.tun30.neo.
 9.0	IN	PTR	NeoSystem.ucbvax.tun30.neo.
 10.0	IN	PTR	ucbvax.NeoSystem.tun30.neo.
+10.127.10.1	IN	PTR	Lan Tian.pp.neo.
+10.127.11.199	IN	PTR	SUNNET.pp.neo.
+10.127.4.254	IN	PTR	Icecat-Explosion.pp.neo.
+10.127.69.1	IN	PTR	santost12.pp.neo.
+10.127.8.185	IN	PTR	staph.pp.neo.
+10.127.8.193	IN	PTR	JerryXiao.pp.neo.
+10.127.8.193	IN	PTR	JerryXiao.pp.neo.
+10.127.8.193	IN	PTR	JerryXiao.pp.neo.
+10.127.8.194	IN	PTR	JerryXiao-HK1.pp.neo.
+10.127.8.194	IN	PTR	JerryXiao-HK1.pp.neo.
+10.127.8.194	IN	PTR	JerryXiao-HK1.pp.neo.
+10.127.8.195	IN	PTR	JerryXiao-SH1.pp.neo.
+10.127.8.195	IN	PTR	JerryXiao-SH1.pp.neo.
+10.127.8.196	IN	PTR	JerryXiao-HK2.pp.neo.
 13.0	IN	PTR	NeoPDP-11.ucbvax.tun30.neo.
 14.0	IN	PTR	ucbvax.NeoPDP-11.tun30.neo.
 17.0	IN	PTR	NeoPDP-11.caasih.tun30.neo.
@@ -102,5 +116,7 @@ $TTL	604800
 134.0	IN	PTR	icecat-jp3.frank-hsinchu.tun30.neo.
 137.0	IN	PTR	James58899.septs.tun30.neo.
 138.0	IN	PTR	septs.James58899.tun30.neo.
-141.0	IN	PTR	NeoSystem.ucbvax.tun30.neo.
-142.0	IN	PTR	ucbvax.NeoSystem.tun30.neo.
+141.0	IN	PTR	icecat-jp3.pan.tun30.neo.
+142.0	IN	PTR	pan.icecat-jp3.tun30.neo.
+172.20.51.99	IN	PTR	JerryXiao.pp.neo.
+172.22.127.2	IN	PTR	dfceaef.pp.neo.
