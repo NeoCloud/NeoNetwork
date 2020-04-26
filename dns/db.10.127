@@ -44,7 +44,7 @@ $TTL	604800
 2.0	IN	PTR	caasih.ucbvax.tun30.neo.
 9.0	IN	PTR	NeoSystem.ucbvax.tun30.neo.
 10.0	IN	PTR	ucbvax.NeoSystem.tun30.neo.
-10.127.10.1	IN	PTR	Lan Tian.pp.neo.
+10.127.10.1	IN	PTR	LanTian.pp.neo.
 10.127.11.199	IN	PTR	SUNNET.pp.neo.
 10.127.4.254	IN	PTR	Icecat-Explosion.pp.neo.
 10.127.69.1	IN	PTR	santost12.pp.neo.
