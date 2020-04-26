@@ -83,7 +83,7 @@ $TTL	604800
 105.0	IN	PTR	septs
 106.0	IN	PTR	megumiLHS
 109.0	IN	PTR	septs
-110.0	IN	PTR	Lan Tian
+110.0	IN	PTR	LanTian
 113.0	IN	PTR	septs
 114.0	IN	PTR	ucbvax
 117.0	IN	PTR	ucbvax
