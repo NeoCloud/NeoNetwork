@@ -24,8 +24,8 @@ for i in *; do
 		upstream_ip=$("$IPTOOL" "$i" 1)
 		downstream_ip=$("$IPTOOL" "$i" 2)
 
-		print_record "$upstream_ip" "$UPSTREAM.$DOWNSTREAM.tun30.neo."
-		print_record "$downstream_ip" "$DOWNSTREAM.$UPSTREAM.tun30.neo."
+		print_record "$upstream_ip" "$DOWNSTREAM.$UPSTREAM.tun30.neo."
+		print_record "$downstream_ip" "$UPSTREAM.$DOWNSTREAM.tun30.neo."
 	fi
 done
 ) | sort -n >> dns/db.10.127
