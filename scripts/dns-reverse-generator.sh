@@ -3,6 +3,10 @@ set -e
 
 IPTOOL="$PWD/Misc/C/ip"
 
+TUN30_TEMP="$(mktemp)"
+PP_TEMP="$(mktemp)"
+LO_TEMP="$(mktemp)"
+
 if [ ! -x "$IPTOOL" ]; then
 	echo "You need to build Misc/C/ip first"
 	exit 1
@@ -24,15 +28,34 @@ for i in *; do
 		upstream_ip=$("$IPTOOL" "$i" 1)
 		downstream_ip=$("$IPTOOL" "$i" 2)
 
+		(
 		print_record "$upstream_ip" "$DOWNSTREAM.$UPSTREAM.tun30.neo."
 		print_record "$downstream_ip" "$UPSTREAM.$DOWNSTREAM.tun30.neo."
+		) >> "$TUN30_TEMP"
 	elif [ "$TYPE" = "PP" ]; then
 		i="${i/PP,/}"
 		upstream_ip="${i%~*}"
 		downstream_ip="${i#*~}"
 
-		print_record "$upstream_ip" "$UPSTREAM.pp.neo."
-		print_record "$downstream_ip" "$DOWNSTREAM.pp.neo."
+		(
+		print_record "$("$IPTOOL" "$upstream_ip" 0)" "$UPSTREAM.pp.neo."
+		print_record "$("$IPTOOL" "$downstream_ip" 0)" "$DOWNSTREAM.pp.neo."
+		) >> "$PP_TEMP"
+	elif [ "$TYPE" = "LO" ]; then
+		ip="${i/,32/}"
+
+		print_record "$("$IPTOOL" "$ip" 0)" "$NAME.neo" >> "$LO_TEMP"
 	fi
 done
-) | sort -n >> dns/db.10.127
+)
+
+{
+	echo -e "\n; Tunnel /30 Addresses"
+	sort -n < "$TUN30_TEMP"
+	echo -e "\n; Point to Point Addresses"
+	sort -n < "$PP_TEMP"
+	echo -e "\n; Loopback Addresses"
+	sort -n < "$LO_TEMP"
+} >> dns/db.10.127
+
+rm -f "$TUN30_TEMP" "$PP_TEMP" "$LO_TEMP"
