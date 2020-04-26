@@ -52,6 +52,7 @@ digraph "NeoNetwork Nodes"
 
 	megumiLHS -> ucbvax [dir=both]
 	magicneko_HK02 -> ucbvax [dir=both]
+	c -> staph [dir=both]
 	staph -> staph_CN
 	ucbvax -> chenx97 [dir=both]
 
