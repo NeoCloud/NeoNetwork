@@ -12,14 +12,13 @@ AS Number       Name                                             Contact
 4201270006      JerryXiao
 4201270007      Staph
 4201270008      MagicNeko (Inter-NeoNetwork Exchange)
-420127----      [Unused]
+4201270009      santost12
 4201270010      Lan Tian
 420127----      [Unused]
 420127----      [Unused]
 420127----      [Unused]
 420127----      [Unused]
 4201270015      James58899
-420127----      santost12
 420127----      SUNNET
 420127----      Yangfl Network
 
