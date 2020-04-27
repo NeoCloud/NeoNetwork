@@ -33,6 +33,7 @@ digraph "NeoNetwork Nodes"
 	SUNNET [label="SUNNET\n(10.127.11.0/24)\n(AS4242423088)"]
 	santost12 [label="Santost12\n(10.127.69.1)\n(AS4201270009)"]
 	frank_hsinchu [label="Frank_Hsinchu\n(10.127.255.56)\n(AS4201270004)"]
+
 	subgraph cluster_AS4201270000
 	{
 		label = "NeoNetwork (AS4201270000)";
@@ -104,4 +105,5 @@ digraph "NeoNetwork Nodes"
 	icecat_Notebook -> magicneko_CN01
 	icecat_Notebook -> magicneko_JP02
 	santost12	-> magicneko_JP03
+	pan -> magicneko_JP03 [dir=both]
 }
