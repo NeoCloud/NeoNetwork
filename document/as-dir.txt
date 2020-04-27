@@ -1,0 +1,15 @@
+# as-dir Template
+# ===============
+# Filename format: AS<Number>
+# Owner Name
+NAME=""
+# Description
+DESC=""
+# Contact
+CONTACT=(
+	"EMAIL:"
+	"TELEGRAM:"
+	"IRC:"
+	"MASTODON:"
+	"GITHUB:"
+)
