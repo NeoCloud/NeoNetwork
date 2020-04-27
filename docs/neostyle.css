@@ -3,17 +3,9 @@
  * Released to public domain
  */
 html {
-	font-family: monospace;
-	font-size:12pt;
 	border-width: 4pt;
 	border-style: solid;
 	background-color:#c0c0c0;
-	color:black;
-}
-
-body {
-	background-color:#c0c0c0;
-	color:black;
 }
 
 h1 {
@@ -91,4 +83,8 @@ table, th, td {
 img {
 	max-width: 100vw;
 	width: 100%;
+}
+
+.whitebg, pre{
+	background-color: #fff;
 }
