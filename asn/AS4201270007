@@ -1,0 +1,9 @@
+NAME="Staph"
+DESC=""
+CONTACT=(
+	"EMAIL:"
+	"TELEGRAM:"
+	"IRC:"
+	"MASTODON:"
+	"GITHUB:"
+)
