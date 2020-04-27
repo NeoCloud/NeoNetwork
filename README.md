@@ -7,7 +7,6 @@ Telegram Group invitation link available at TXT record of `join-telegram.neoclou
 
 ## IXs
 
-
 	caasih.neocloud.tw              (10.127.0.1,    ASN 4201270000)
 	router.neocloud.tw              (10.127.255.2,  ASN 4201270000)
 	r2.neocloud.tw                  (10.127.3.1,    ASN 4201270000)
@@ -18,7 +17,6 @@ Telegram Group invitation link available at TXT record of `join-telegram.neoclou
 	jpn.neo.jerryxiao.cc            (10.127.8.193,  ASN 4201270008)
 	s.aureus.ga                     (10.127.8.185,  ASN 4201270007)
 	megumi.yukipedia.cf             (10.127.30.1,   ASN 4242421037)
-
 
 ## Routing Protocols
 
