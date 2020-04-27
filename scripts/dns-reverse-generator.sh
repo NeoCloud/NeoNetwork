@@ -38,8 +38,8 @@ for i in *; do
 		downstream_ip="${i#*~}"
 
 		(
-		print_record "$("$IPTOOL" "$upstream_ip" 0)" "$UPSTREAM.pp.neo."
-		print_record "$("$IPTOOL" "$downstream_ip" 0)" "$DOWNSTREAM.pp.neo."
+		print_record "$("$IPTOOL" "$upstream_ip" 0)" "$UPSTREAM.ptp.neo."
+		print_record "$("$IPTOOL" "$downstream_ip" 0)" "$DOWNSTREAM.ptp.neo."
 		) >> "$PP_TEMP"
 	elif [ "$TYPE" = "LO" ]; then
 		ip="${i/,32/}"
