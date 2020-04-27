@@ -41,7 +41,6 @@ h2 {
 .mono, code {
 	font-family: monospace;
 	font-size:12pt;
-	background-color: #fff;
 }
 
 .msrf {
@@ -87,12 +86,6 @@ table, th, td {
 	border-collapse: collapse;
 	font-family: monospace;
 	font-size:12pt;
-}
-
-.pre {
-	white-space: pre;
-	border-style: solid;
-	border-width: 2px;
 }
 
 img {
