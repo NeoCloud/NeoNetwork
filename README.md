@@ -3,7 +3,7 @@ A useless VPN network ready for peering!
 **WARNING:** This network is not interconnected to DN42 yet  
 Git Repo. [here](https://git.neocloud.tw)  
 Pull requests are welcomed!  
-Working language: `zh_* / en_*`
+Working language: `zh_* / en_*`  
 Telegram Group invitation link available at TXT record of `join-telegram.neocloud.tw`
 
 ## IXs
