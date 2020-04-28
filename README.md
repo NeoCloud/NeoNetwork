@@ -38,7 +38,7 @@ There's a bind9 server on dns.neocloud.tw (10.127.225.2), all domain names are u
 ## Files and Directories
 
 	ospf-area.txt	OSPF Area Number
-	bgp-asn.txt	BGP AS Number
+	asn/		BGP AS Number allocation
 	named.conf	Bind9 DNS configuration example
 	nodes.dot	Connection graph
 	route/		Network subnet allocation

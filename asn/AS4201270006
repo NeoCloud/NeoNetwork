@@ -1,9 +1,9 @@
 NAME="JerryXiao"
-DESC=""
+DESC="Jerry Network"
 CONTACT=(
-	"EMAIL:"
-	"TELEGRAM:"
-	"IRC:"
+	"EMAIL:neonet@mail.jerryxiao.cc"
+	"TELEGRAM:@JerryXiao"
+	"IRC:JerryXiao@hackint"
 	"MASTODON:"
-	"GITHUB:"
+	"GITHUB:isjerryxiao"
 )
