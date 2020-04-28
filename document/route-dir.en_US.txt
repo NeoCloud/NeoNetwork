@@ -29,11 +29,11 @@ Detailed Information of Each Variable
 =====================================
 
 1. TYPE:	IP Usage Type
-	Available options are: TUN30, SUBNET, PP, LO (corresponding to the IP address
+	Available options are: TUN30, SUBNET, PTP, LO (corresponding to the IP address
 	allocation type in the first section respectively)
 
 2. PROTO:	VPN Protocol Used
-	Available options are: Tinc, WireGuard, GRE, IPsec/L2TP, IPsec/GRE, OpenVPN
+	Available options are: Tinc, WireGuard, L2TP, GRE, IPsec/L2TP, IPsec/GRE, OpenVPN, SLIRP, PPP
 
 3. NAME:	Name
 3. UPSTREAM:	Upstream Node Name

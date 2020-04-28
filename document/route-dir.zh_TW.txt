@@ -27,10 +27,10 @@ Shell Script 定義變數的方式作為定義檔語法，此外，定義變數�
 ==============
 
 1. TYPE:	IP 使用類型
-	可用選項有： TUN30, SUBNET, PP, LO （分別對應第一節之 IP 位址分配類型）
+	可用選項有： TUN30, SUBNET, PIP, LO （分別對應第一節之 IP 位址分配類型）
 
 2. PROTO:	使用的 VPN 協定
-	可用選項有： Tinc, WireGuard, GRE, IPsec/L2TP, IPsec/GRE, OpenVPN
+	可用選項有： Tinc, WireGuard, L2TP, GRE, IPsec/L2TP, IPsec/GRE, OpenVPN, SLIRP, PPP
 
 3. NAME:	這個連線的名稱
 5. UPSTREAM:	上游節點名稱
