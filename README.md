@@ -1,5 +1,5 @@
 # NeoNetwork
-
+**WARNING:** This network is not interconnect to DN42 yet  
 A useless VPN network ready for peering!  
 Git Repo. [here](https://git.neocloud.tw)  
 Pull requests are welcomed!  
