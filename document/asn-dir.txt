@@ -5,11 +5,3 @@
 NAME=""
 # Description
 DESC=""
-# Contact
-CONTACT=(
-	"EMAIL:"
-	"TELEGRAM:"
-	"IRC:"
-	"MASTODON:"
-	"GITHUB:"
-)

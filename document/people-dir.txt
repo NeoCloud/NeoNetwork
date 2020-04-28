@@ -1,0 +1,17 @@
+# people-dir Template
+# ===================
+# Filename format: <Name>
+# Description (maybe short self introduction)
+DESC=""
+# Contact
+CONTACT=(
+	"EMAIL:"
+	"TELEGRAM:"
+	"IRC:"
+	"MASTODON:"
+	"GITHUB:"
+)
+# Babel (https://en.wikipedia.org/wiki/Wikipedia:Babel)
+BABEL=(
+	""
+)
