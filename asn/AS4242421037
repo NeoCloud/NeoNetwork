@@ -1,9 +1,9 @@
 NAME="LibreHouse"
-DESC=""
+DESC="For LibreHouse network project"
 CONTACT=(
-	"EMAIL:"
-	"TELEGRAM:"
+	"EMAIL:i+noc@outv.im"
+	"TELEGRAM:@outvi"
 	"IRC:"
-	"MASTODON:"
-	"GITHUB:"
+	"MASTODON:@outvi@moe.cat"
+	"GITHUB:@outloudvi"
 )
