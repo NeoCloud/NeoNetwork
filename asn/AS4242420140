@@ -1,9 +1,3 @@
 NAME="Yangfl Network"
+OWNER="Yangfl"
 DESC=""
-CONTACT=(
-	"EMAIL:"
-	"TELEGRAM:"
-	"IRC:"
-	"MASTODON:"
-	"GITHUB:"
-)

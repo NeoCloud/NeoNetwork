@@ -1,9 +1,3 @@
 NAME="MagicNeko"
-DESC="Inter-NeoNetwork Exchange"
-CONTACT=(
-	"EMAIL:"
-	"TELEGRAM:@fakeicecat"
-	"IRC:"
-	"MASTODON:"
-	"GITHUB:Myer921"
-)
+OWNER="Icecat"
+DESC=""

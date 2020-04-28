@@ -1,0 +1,12 @@
+NAME="LibreHouse"
+DESC=""
+CONTACT=(
+	"EMAIL:i+noc@outv.im"
+	"TELEGRAM:@outvi"
+	"IRC:"
+	"MASTODON:@outvi@moe.cat"
+	"GITHUB:@outloudvi"
+)
+BABEL=(
+	""
+)

@@ -1,0 +1,12 @@
+NAME="Staph"
+DESC="A programming prokaryotic organism"
+CONTACT=(
+	"EMAIL: staph@aosc.io"
+	"TELEGRAM: @Staph"
+	"IRC: Staph_aureus"
+	"MASTODON:"
+	"GITHUB: StephDC"
+)
+BABEL=(
+	""
+)

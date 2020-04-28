@@ -1,9 +1,3 @@
 NAME="frank"
+OWNER="frank"
 DESC=""
-CONTACT=(
-	"EMAIL:"
-	"TELEGRAM:"
-	"IRC:"
-	"MASTODON:"
-	"GITHUB:"
-)

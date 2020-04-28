@@ -1,9 +1,3 @@
-NAME="Septs"
-DESC="Inter-NeoNetwork Exchange"
-CONTACT=(
-	"EMAIL:bgp@septs.email"
-	"TELEGRAM:"
-	"IRC:"
-	"MASTODON:"
-	"GITHUB:"
-)
+NAME="Septs Inter-NeoNetwork Exchange"
+OWNER="Septs"
+DESC=""

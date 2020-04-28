@@ -1,0 +1,12 @@
+NAME="Icecat"
+DESC=""
+CONTACT=(
+	"EMAIL:"
+	"TELEGRAM:@fakeicecat"
+	"IRC:"
+	"MASTODON:"
+	"GITHUB:Myer921"
+)
+BABEL=(
+	""
+)

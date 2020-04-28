@@ -1,9 +1,3 @@
-NAME="JerryXiao"
-DESC="Jerry Network"
-CONTACT=(
-	"EMAIL:neonet@mail.jerryxiao.cc"
-	"TELEGRAM:@JerryXiao"
-	"IRC:JerryXiao@hackint"
-	"MASTODON:"
-	"GITHUB:isjerryxiao"
-)
+NAME="Jerry Network"
+OWNER="JerryXiao"
+DESC=""

@@ -1,0 +1,12 @@
+NAME="SUNNET"
+DESC=""
+CONTACT=(
+	"EMAIL:"
+	"TELEGRAM:"
+	"IRC:"
+	"MASTODON:"
+	"GITHUB:"
+)
+BABEL=(
+	""
+)

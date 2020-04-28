@@ -1,0 +1,12 @@
+NAME="Yangfl Network"
+DESC=""
+CONTACT=(
+	"EMAIL:"
+	"TELEGRAM:"
+	"IRC:"
+	"MASTODON:"
+	"GITHUB:"
+)
+BABEL=(
+	""
+)
