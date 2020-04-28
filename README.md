@@ -14,7 +14,7 @@ Telegram Group invitation link available at TXT record of `join-telegram.neoclou
 	hk-01.nextmoe.cloud.imiku.cn	(10.127.4.10,	ASN 4201270008)
 	jp-03.nextmoe.cloud.imiku.cn	(10.127.4.15,	ASN 4201270008)
 	ru-01.nextmoe.cloud.imiku.cn	(10.127.4.14,	ASN 4201270008)
-	jpn.neo.jerryxiao.cc		(10.127.8.193,	ASN 4201270008)
+	jpn.neo.jerryxiao.cc		(10.127.8.193,	ASN 4201270006)
 	s.aureus.ga			(10.127.8.185,	ASN 4201270007)
 	megumi.yukipedia.cf		(10.127.30.1,	ASN 4242421037)
 
