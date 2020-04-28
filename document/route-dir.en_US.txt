@@ -7,7 +7,7 @@ file name of the routing distribution definition file:
 
 1. Point-to-Point /30 Tunnel: `10.127.0.x/30` （where x is divisible by 4）
 2. Contiguous Subnet: `10.127.x.y/z` (where z must be greater than 16）
-3. Peer-to-Peer: `PP,10.127.x.x~10.127.x.x` （IP on both sides is /32）
+3. Peer-to-Peer: `PTP,10.127.x.x~10.127.x.x` （IP on both sides is /32）
 4. Loopback Address: `10.127.255.x/32`
 
 Definition Format
