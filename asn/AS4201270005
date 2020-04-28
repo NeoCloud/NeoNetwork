@@ -2,8 +2,8 @@ NAME="Icecat"
 DESC="NextMoe Access Network"
 CONTACT=(
 	"EMAIL:"
-	"TELEGRAM:"
+	"TELEGRAM:@fakeicecat"
 	"IRC:"
 	"MASTODON:"
-	"GITHUB:"
+	"GITHUB:Myer921"
 )
