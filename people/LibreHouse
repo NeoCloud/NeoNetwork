@@ -8,7 +8,7 @@ CONTACT=(
 	"GITHUB:@outloudvi"
 )
 BABEL=(
-	"zh-n"
+	"zh-N"
 	"zh-hans-N"
 	"zh-hant-3"
 	"en-2"
