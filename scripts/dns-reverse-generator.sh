@@ -46,7 +46,7 @@ for i in *; do
 		print_record "$downstream_ip" "$UPSTREAM.$DOWNSTREAM.tun30.neo."
 		) >> "$TUN30_TEMP"
 	elif [ "$TYPE" = "PTP" ]; then
-		i="${i/PP,/}"
+		i="${i/PTP,/}"
 		upstream_ip="${i%~*}"
 		downstream_ip="${i#*~}"
 
