@@ -1,8 +1,0 @@
-# OSPF Area Number:
-
-OSPF Area	Name
-===============|================================================================
-0		Neo_Chen
-1		Edward_P
-2		LibreHouse
-3		Icecat
