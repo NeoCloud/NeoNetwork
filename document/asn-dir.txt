@@ -1,7 +1,9 @@
 # as-dir Template
 # ===============
 # Filename format: AS<Number>
-# Owner Name
+# AS Name
 NAME=""
+# Owner
+OWNER=""
 # Description
 DESC=""

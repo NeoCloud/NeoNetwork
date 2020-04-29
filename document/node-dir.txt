@@ -4,10 +4,10 @@
 # Tunnel /30 or Point to Point Address
 # Filename format: <Node Name>
 # ASN
-AS=""
+ASN=""
 # Description
 DESC=""
-# IP addresses
+# IP addresses excluding TUN30 and PTP
 IP=(
 	"10.127.x.x/x"
 )
