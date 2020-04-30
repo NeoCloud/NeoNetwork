@@ -1,3 +1,4 @@
 TYPE=SUBNET
 NAME=JerryXiao-Infrastructure
-DESC="For cloud instances"
+DESC=For cloud instances
+AS=4201270006

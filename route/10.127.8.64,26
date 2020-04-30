@@ -1,3 +1,4 @@
 TYPE=SUBNET
-NAME="dfceaef NET"
-DESC="For Yangfl Network"
+NAME=dfceaef NET
+DESC=For Yangfl Network
+AS=4242420140

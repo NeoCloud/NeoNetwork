@@ -1,3 +1,4 @@
 TYPE=SUBNET
 NAME=frank-hsinchu
-DESC="For home"
+DESC=For home
+AS=4201270004

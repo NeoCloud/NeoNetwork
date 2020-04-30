@@ -1,3 +1,4 @@
 TYPE=SUBNET
 NAME=CROOM
-DESC="For LAN in school"
+DESC=For LAN in school
+AS=4201270000

@@ -1,3 +1,4 @@
 TYPE=SUBNET
-NAME="NeoSystem VMs"
-DESC="For Virtual Machine on NeoSystem"
+NAME=NeoSystem VMs
+DESC=For Virtual Machine on NeoSystem
+AS=4201270000
