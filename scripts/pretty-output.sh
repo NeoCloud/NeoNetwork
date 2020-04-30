@@ -99,7 +99,7 @@ if [ $# -lt 1 ]; then
 		"Usage: table-output.sh <table type>\n" \
 		"\n" \
 		"	table types:\n" \
-		"		asn, route, route6, people, node\n"
+		"		asn, route, people, node\n"
 fi
 
 arg="$2"	# Optional argument
@@ -114,17 +114,17 @@ asn)
 			"$OWNER" "$NAME" "$DESC"
 	done
 	;;
-route|route6)
-	cd route
-	for i in *; do
-		subnet="${i/,/\/}"
+route)
+	for i in route*/*; do
+		subnet="${i#route*/}"
+		subnet="${subnet/,/\/}"
 		source "$i"
 		case "$TYPE" in
 			TUN30)	print_tun30	"$subnet" "$PROTO" "$UPSTREAM" "$DOWNSTREAM";;
 			SUBNET)	print_subnet	"$subnet" "$NAME" "$DESC";;
 			PTP)	print_ptp	"$subnet" "$PROTO" "$UPSTREAM" "$DOWNSTREAM";;
 			LO)	print_lo	"$subnet" "$NAME" "$DESC";;
-			*)	errmsg "Invalid \$TYPE in this file\n";;
+			*)	errmsg "Invalid \$TYPE in $i\n";;
 		esac
 	done
 	;;
