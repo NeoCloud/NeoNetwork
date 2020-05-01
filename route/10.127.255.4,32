@@ -1,3 +1,4 @@
 TYPE=LO
-NAME=pan:4201270000
+NAME=pan
 DESC="Arch Linux/frr"
+AS=4201270000

@@ -1,3 +1,4 @@
 TYPE=LO
-NAME=NeoSystem:4201270000
+NAME=NeoSystem
 DESC="Arch Linux/frr"
+AS=4201270000

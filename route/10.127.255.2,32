@@ -1,3 +1,4 @@
 TYPE=LO
-NAME=ucbvax:4201270000
+NAME=ucbvax
 DESC="Arch Linux/frr"
+AS=4201270000
