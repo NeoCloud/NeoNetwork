@@ -7,12 +7,20 @@ from itertools import combinations
 
 def keyVal(line):
     l = line.split('=')
-    assert len(l) > 1
+    assert l[0].strip()
+    if len(l) == 1:
+        l.append('')
     repl_quotes = lambda t: t.replace('"', '').replace('\'', '')
     return [l[0].strip(), '='.join([repl_quotes(i).strip() for i in l[1:]])]
 
 cwd = Path()
-assert not [d for d in ("asn", "route", "route6") if not (cwd / d).is_dir()]
+assert not [d for d in ("asn", "route", "route6", "node") if not (cwd / d).is_dir()]
+
+def str2asn(s_asn):
+    s_asn = s_asn.lower()
+    if s_asn.startswith('as'):
+        s_asn = s_asn[2:]
+    return int(s_asn)
 
 def get_asns():
     asns = list()
@@ -26,8 +34,32 @@ def get_asns():
             print("[!] Error while processing file", f)
             raise
     return asns
-
 ASNS = get_asns()
+
+def shell2dict(shellscript):
+    fc = dict()
+    for line in shellscript.split('\n'):
+        l = line.strip()
+        if not l or l.startswith('#'):
+            continue
+        key, val = keyVal(l)
+        fc[key.lower()] = val.lower()
+    return fc
+
+def node2asn():
+    node_table = dict()
+    for f in (cwd / "node").iterdir():
+        try:
+            if not f.is_file():
+                continue
+            fc = shell2dict(f.read_text())
+            asn = str2asn(fc.get('asn'))
+            node_table[f.name.lower()] = asn
+        except Exception:
+            print("[!] Error while processing file", f)
+            raise
+    return node_table
+NODE_TABLE = node2asn()
 
 def route2roa(dirname, is_ipv6=False):
     roa_entries = list()
@@ -35,23 +67,16 @@ def route2roa(dirname, is_ipv6=False):
         try:
             if not f.is_file():
                 continue
-            t = f.read_text()
-            lines = t.split('\n')
-            fc = dict()
-            for line in lines:
-                l = line.strip()
-                if not l or l.startswith('#'):
-                    continue
-                key, val = keyVal(l)
-                fc[key.lower()] = val.lower()
+            fc = shell2dict(f.read_text())
             nettype = IPv6Network if is_ipv6 else IPv4Network
             if fc.get('type') in ('lo', 'subnet'):
-                asn = int(fc.get('as'))
+                asn = str2asn(fc.get('as'))
                 assert asn in ASNS
                 route = f.name.replace(',', '/')
                 roa_entries.append([asn, nettype(route, strict=True)])
             elif fc.get('type').startswith('tun'):
-                asn = int(fc.get('upstream').split(':')[1])
+                upstream = fc.get('upstream')
+                asn = NODE_TABLE[upstream]
                 assert asn in ASNS
                 route = f.name.replace(',', '/')
                 roa_entries.append([asn, nettype(route, strict=True)])
