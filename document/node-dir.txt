@@ -1,7 +1,7 @@
 # node-dir Template
 # =================
-# It's used to generate DNS records that were neither
-# Tunnel /30 or Point to Point Address
+# It's used to store ASN information and generate DNS records 
+# that were neither Tunnel /30 or Point to Point Address
 # Filename format: <Node Name>
 # ASN
 ASN=""
