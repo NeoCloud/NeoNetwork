@@ -1,0 +1,6 @@
+ASN="4201270008"
+DESC="Magicneko IX LAN interconnection"
+IP=(
+	"10.127.4.10/24"
+	"fd10:127:0233:7170:2021::10.127.4.10/80"
+)
