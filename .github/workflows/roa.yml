@@ -39,12 +39,13 @@ jobs:
         cd roa_dir
         [ -n "$SSHPRIVKEY" ] || (echo SSHPRIVKEY is not set; exit 1)
         ( set -e;
+          mkdir -p ~/.ssh
           echo "$SSHPRIVKEY" |base64 -d > ~/.ssh/id_ed25519
           chmod 0600 ~/.ssh/id_ed25519
           ssh -o StrictHostKeyChecking=no git@github.com || true
+          git init && git add .
           git config user.name "neonet roa bot"
           git config user.email "bot@github.com"
-          git init && git add .
           git commit -m "Generated at $(TZ='UTC' date +%Y%m%d-%H%M%S.%N)"
           git push --force --quiet "git@github.com:NeoCloud/NeoNetwork-ROA.git" HEAD:master
         ) || (shred ~/.ssh/id_ed25519; exit 1)
