@@ -1,0 +1,51 @@
+# This is a basic workflow to help you get started with Actions
+
+name: roa_generator
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Generate ROA
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Install dependencies
+      shell: bash
+      run: |
+        sudo apt update -qq
+        sudo apt install -y python3 git openssh-client
+
+    - name: Run roa script
+      shell: bash
+      run: |
+        maxlen4=30
+        maxlen6=64
+        mkdir -p roa_dir
+        python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6}    -o roa_dir/roa46_bird2.conf
+        python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -4 -o roa_dir/roa4_bird2.conf
+        python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -6 -o roa_dir/roa6_bird2.conf
+        python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -j -o roa_dir/roa46.json
+
+    - name: Upload files
+      env:
+        SSHPRIVKEY: ${{ secrets.KEY }}
+      shell: bash
+      run: |
+        cd roa_dir
+        [ -n "$SSHPRIVKEY" ] || (echo SSHPRIVKEY is not set; exit 1)
+        ( set -e;
+          echo "$SSHPRIVKEY" |base64 -d > ~/.ssh/id_ed25519
+          chmod 0600 ~/.ssh/id_ed25519
+          ssh -o StrictHostKeyChecking=no git@github.com || true
+          git config user.name "neonet roa bot"
+          git config user.email "bot@github.com"
+          git init && git add .
+          git commit -m "Generated at $(TZ='UTC' date +%Y%m%d-%H%M%S.%N)"
+          git push --force --quiet "git@github.com:NeoCloud/NeoNetwork-ROA.git" HEAD:master
+        ) || (shred ~/.ssh/id_ed25519; exit 1)
+        shred ~/.ssh/id_ed25519
