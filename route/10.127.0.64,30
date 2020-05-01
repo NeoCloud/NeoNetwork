@@ -1,4 +1,4 @@
 TYPE=TUN30
 PROTO=Gre
-UPSTREAM=Icecat-Explosion:4201270005
-DOWNSTREAM=Icecat-Notebook:4201270005
+UPSTREAM=Icecat-Explosion
+DOWNSTREAM=Icecat-Notebook
