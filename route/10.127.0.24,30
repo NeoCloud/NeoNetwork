@@ -1,4 +1,4 @@
 TYPE="TUN30"
 PROTO="Gre"
 UPSTREAM="staph"
-DOWNSTREAM="MagicNeko-RU1"
+DOWNSTREAM="MagicNeko-RU01"
