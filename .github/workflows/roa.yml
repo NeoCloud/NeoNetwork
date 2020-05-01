@@ -23,7 +23,7 @@ jobs:
     - name: Run roa script
       shell: bash
       run: |
-        maxlen4=30
+        maxlen4=29
         maxlen6=64
         mkdir -p roa_dir
         python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6}    -o roa_dir/roa46_bird2.conf
