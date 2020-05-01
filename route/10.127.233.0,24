@@ -1,4 +1,4 @@
 TYPE="SUBNET"
 NAME="Icecat-Mobile-devices"
-DESC=For Mobile device internal network segment for testing connectivity quality, No SLA(="172.24.5.0/24)"
+DESC="For Mobile device internal network segment for testing connectivity quality, No SLA(=172.24.5.0/24)"
 AS="4201270008"
