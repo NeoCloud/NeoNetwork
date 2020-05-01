@@ -25,7 +25,8 @@ Any protocol supported by Quagga or FRRouting, recommended to use BGP.
 
 ## IP Addresses
 
-All IPv4 addresses are under the range 10.127.0.0/16,
+All IPv4 addresses are under the range 10.127.0.0/16  
+All IPv6 addresses are under the range fd10:127::/32  
 see routes.txt for allocated domain.
 
 ## DNS
