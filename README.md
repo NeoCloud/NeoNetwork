@@ -40,9 +40,11 @@ There's a bind9 server on dns.neocloud.tw (10.127.225.2), all domain names are u
 ## Files and Directories
 
 	ospf-area.txt	OSPF Area Number
-	asn/		BGP AS Number allocation
 	named.conf	Bind9 DNS configuration example
 	nodes.dot	Connection graph
+	asn/		BGP AS Number allocation
+	people/		Peoples
 	route/		Network subnet allocation
+	node/		Nodes
 	vpn/		VPN configuration examples (Tinc & WireGuard)
 	dns/		Bind9 DNS zone files
