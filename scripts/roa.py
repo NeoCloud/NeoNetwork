@@ -75,8 +75,8 @@ def route2roa(dirname, is_ipv6=False):
                 route = f.name.replace(',', '/')
                 roa_entries.append([asn, nettype(route, strict=True)])
             elif fc.get('type').startswith('tun'):
-                upstream = fc.get('upstream')
-                asn = NODE_TABLE[upstream]
+                assert NODE_TABLE[fc.get('downstream')] # extra check for downstream
+                asn = NODE_TABLE[fc.get('upstream')]
                 assert asn in ASNS
                 route = f.name.replace(',', '/')
                 roa_entries.append([asn, nettype(route, strict=True)])
