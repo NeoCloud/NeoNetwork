@@ -1,4 +1,4 @@
-TYPE=TUN30
-PROTO=WireGuard
-UPSTREAM=ucbvax
-DOWNSTREAM=chenx97
+TYPE="TUN30"
+PROTO="WireGuard"
+UPSTREAM="ucbvax"
+DOWNSTREAM="chenx97"

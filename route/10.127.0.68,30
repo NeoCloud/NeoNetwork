@@ -1,4 +1,4 @@
-TYPE=TUN30
-PROTO=Tinc
-UPSTREAM=caasih
-DOWNSTREAM=staph
+TYPE="TUN30"
+PROTO="Tinc"
+UPSTREAM="caasih"
+DOWNSTREAM="staph"

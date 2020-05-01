@@ -1,4 +1,4 @@
-TYPE=LO
-NAME=frank-hsinchu
-DESC=Ubuntu/bird
-AS=4201270004
+TYPE="LO"
+NAME="frank-hsinchu"
+DESC="Ubuntu/bird"
+AS="4201270004"

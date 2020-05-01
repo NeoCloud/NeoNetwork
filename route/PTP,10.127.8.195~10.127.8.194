@@ -1,4 +1,4 @@
-TYPE=PTP
-PROTO=WireGuard
-UPSTREAM=JerryXiao-SH1
-DOWNSTREAM=JerryXiao-HK1
+TYPE="PTP"
+PROTO="WireGuard"
+UPSTREAM="JerryXiao-SH1"
+DOWNSTREAM="JerryXiao-HK1"

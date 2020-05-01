@@ -1,4 +1,4 @@
-TYPE=SUBNET
-NAME=santost12
-DESC=For home
-AS=4201270009
+TYPE="SUBNET"
+NAME="santost12"
+DESC="For home"
+AS="4201270009"

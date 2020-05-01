@@ -1,4 +1,4 @@
-TYPE=PTP
-PROTO=WireGuard
-UPSTREAM=Icecat-Explosion
-DOWNSTREAM=SUNNET
+TYPE="PTP"
+PROTO="WireGuard"
+UPSTREAM="Icecat-Explosion"
+DOWNSTREAM="SUNNET"

@@ -1,4 +1,4 @@
-TYPE=TUN30
-PROTO=WireGuard
-UPSTREAM=pan
-DOWNSTREAM=icecat-jp3
+TYPE="TUN30"
+PROTO="WireGuard"
+UPSTREAM="pan"
+DOWNSTREAM="icecat-jp3"

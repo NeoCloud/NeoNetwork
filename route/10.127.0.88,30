@@ -1,4 +1,4 @@
-TYPE=TUN30
-PROTO=Gre
-UPSTREAM=septs
-DOWNSTREAM=icecat-jp3
+TYPE="TUN30"
+PROTO="Gre"
+UPSTREAM="septs"
+DOWNSTREAM="icecat-jp3"

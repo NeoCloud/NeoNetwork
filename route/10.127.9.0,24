@@ -1,4 +1,4 @@
-TYPE=SUBNET
-NAME=JerryXiao-Home
-DESC=For home
-AS=4201270006
+TYPE="SUBNET"
+NAME="JerryXiao-Home"
+DESC="For home"
+AS="4201270006"

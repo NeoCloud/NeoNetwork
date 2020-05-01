@@ -1,4 +1,4 @@
-TYPE=TUN30
-PROTO=WireGuard
-UPSTREAM=cklvax
-DOWNSTREAM=NeoSystem
+TYPE="TUN30"
+PROTO="WireGuard"
+UPSTREAM="cklvax"
+DOWNSTREAM="NeoSystem"
