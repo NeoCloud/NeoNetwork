@@ -70,7 +70,7 @@ def route2roa(dirname, is_ipv6=False):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description='NeoNetwork ROA tool')
-    parser.add_argument('-m', '--max', type=int, default=30, help='set ipv4 max prefix length')
+    parser.add_argument('-m', '--max', type=int, default=29, help='set ipv4 max prefix length')
     parser.add_argument('-M', '--max6', type=int, default=64, help='set ipv6 max prefix length')
     parser.add_argument('-j', '--json', action='store_true', help='output json')
     parser.add_argument('-o', '--output', default='', help='write output to file')
@@ -104,12 +104,15 @@ if __name__ == "__main__":
 
     output = ""
     if args.json:
-        import json
-        d_output = dict()
+        import json, time
+        for r in (*roa4, *roa6):
+            r[0] = "AS%d" % r[0]
+        current = int(time.time())
+        d_output = {"metadata": {"counts": len(roa4)+len(roa6), "generated": current, "valid": current+14*86400}, "roas": list()}
         for r in roa4:
-            d_output.setdefault('ipv4', list()).append(dict(zip(['asn', 'prefix', 'max'], r)))
+            d_output['roas'].append(dict(zip(['asn', 'prefix', 'maxLength'], r)))
         for r in roa6:
-            d_output.setdefault('ipv6', list()).append(dict(zip(['asn', 'prefix', 'max'], r)))
+            d_output['roas'].append(dict(zip(['asn', 'prefix', 'maxLength'], r)))
         output = json.dumps(d_output, indent=2)
     else:
         output += "# NeoNetwork ROA tool\n"
