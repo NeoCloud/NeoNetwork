@@ -1,0 +1,33 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Test Your PR
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Generate ROA
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Install dependencies
+      shell: bash
+      run: |
+        sudo apt update -qq
+        sudo apt install -y python3 git openssh-client
+
+    - name: Run roa script
+      shell: bash
+      run: |
+        maxlen4=30
+        maxlen6=64
+        mkdir -p roa_dir
+        python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6}    -o roa_dir/roa46_bird2.conf
+        python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -4 -o roa_dir/roa4_bird2.conf
+        python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -6 -o roa_dir/roa6_bird2.conf
+        python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -j -o roa_dir/roa46.json
