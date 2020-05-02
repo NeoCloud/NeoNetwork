@@ -1,4 +1,4 @@
-# people-dir Template
+# entity-dir Template
 # ===================
 # Filename format: <Name>
 # Description (maybe short self introduction)

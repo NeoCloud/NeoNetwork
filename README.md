@@ -41,7 +41,7 @@ There's a bind9 server on dns.neocloud.tw (10.127.225.2), all domain names are u
 
 	nodes.dot	Connection graph
 	asn/		BGP AS Number allocation
-	people/		Peoples
+	entity/		Entitys
 	route/		Network subnet allocation
 	node/		Nodes
 	vpn/		VPN configuration examples (Tinc & WireGuard)
