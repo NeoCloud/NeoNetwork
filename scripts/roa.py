@@ -69,27 +69,37 @@ def route2roa(dirname, is_ipv6=False):
                 continue
             fc = shell2dict(f.read_text())
             nettype = IPv6Network if is_ipv6 else IPv4Network
+            get_supernet = lambda s_net: None if not s_net else nettype(s_net, strict=True)
+            roa_entries_key = ("asn", "prefix", "supernet")
             if fc.get('type') in ('lo', 'subnet'):
                 asn = str2asn(fc.get('as'))
                 assert asn in ASNS
                 route = f.name.replace(',', '/')
-                roa_entries.append([asn, nettype(route, strict=True)])
+                supernet = get_supernet(fc.get('supernet'))
+                roa_entries.append(dict(zip(roa_entries_key, [asn, nettype(route, strict=True), supernet])))
             elif fc.get('type').startswith('tun'):
                 assert NODE_TABLE[fc.get('downstream')] # extra check for downstream
                 asn = NODE_TABLE[fc.get('upstream')]
                 assert asn in ASNS
                 route = f.name.replace(',', '/')
-                roa_entries.append([asn, nettype(route, strict=True)])
+                supernet = get_supernet(fc.get('supernet'))
+                roa_entries.append(dict(zip(roa_entries_key, [asn, nettype(route, strict=True), supernet])))
             else:
                 assert fc.get('type') in ('ptp',)
         except Exception:
             print("[!] Error while processing file", f)
             raise
-    roa_entries.sort(key=lambda l: l[0])
-    for en1, en2 in combinations(roa_entries, 2):
-        if en1[1].overlaps(en2[1]):
-            print("[!] Error: found", en1[1], "overlaps", en2[1])
-            raise AssertionError
+    roa_entries.sort(key=lambda l: l['asn'])
+    for _net1, _net2 in combinations(roa_entries, 2):
+        net1, net2 = sorted([_net1, _net2], key=lambda net: net['prefix'].prefixlen)
+        if net1['prefix'].overlaps(net2['prefix']):
+            if net1['prefix'] != net2['prefix'] and net1['prefix'].supernet_of(net2['prefix']) \
+                and net2['supernet'] == net1['prefix']:
+                # This is allowed
+                pass
+            else:
+                print("[!] Error: found", net2, "overlaps", net1)
+                raise AssertionError
     return roa_entries
 
 if __name__ == "__main__":
@@ -114,38 +124,38 @@ if __name__ == "__main__":
         roa4 = route2roa('route')
         roa6 = route2roa('route6', True)
 
-    roa4 = [r for r in roa4 if r[1].prefixlen <= args.max or r[1].prefixlen == IPv4Network(0).max_prefixlen]
-    roa6 = [r for r in roa6 if r[1].prefixlen <= args.max6]
+    roa4 = [r for r in roa4 if r['prefix'].prefixlen <= args.max or r['prefix'].prefixlen == IPv4Network(0).max_prefixlen]
+    roa6 = [r for r in roa6 if r['prefix'].prefixlen <= args.max6]
 
     for r in roa4:
-        if r[1].prefixlen == IPv4Network(0).max_prefixlen:
-            r.append(IPv4Network(0).max_prefixlen)
+        if r['prefix'].prefixlen == IPv4Network(0).max_prefixlen:
+            r['maxLength'] = IPv4Network(0).max_prefixlen
         else:
-            r.append(args.max)
-        r[1] = r[1].with_prefixlen
+            r['maxLength'] = args.max
     for r in roa6:
-        r.append(args.max6)
-        r[1] = r[1].with_prefixlen
+        r['maxLength'] = args.max6
+    for r in (*roa4, *roa6):
+        r['prefix'] = r['prefix'].with_prefixlen
+
 
     output = ""
+    VALID_KEYS = ('asn', 'prefix', 'maxLength')
     if args.json:
         import json, time
-        for r in (*roa4, *roa6):
-            r[0] = "AS%d" % r[0]
         current = int(time.time())
         d_output = {"metadata": {"counts": len(roa4)+len(roa6), "generated": current, "valid": current+14*86400}, "roas": list()}
-        for r in roa4:
-            d_output['roas'].append(dict(zip(['asn', 'prefix', 'maxLength'], r)))
-        for r in roa6:
-            d_output['roas'].append(dict(zip(['asn', 'prefix', 'maxLength'], r)))
+        for r in (*roa4, *roa6):
+            # some preprocessing
+            r['asn'] = "AS%d" % r['asn']
+        for r in (*roa4, *roa6):
+            d_output['roas'].append({k:v for k, v in r.items() if k in VALID_KEYS})
         output = json.dumps(d_output, indent=2)
     else:
         output += "# NeoNetwork ROA tool\n"
         pattern = 'route %s max %d as %d;'
         l_output = list()
-        for (asn, prefix, maxlen) in roa4:
-            l_output.append(pattern % (prefix, maxlen, asn))
-        for (asn, prefix, maxlen) in roa6:
+        rdict2list = lambda d: [d[k] for k in VALID_KEYS]
+        for (asn, prefix, maxlen) in [rdict2list(r) for r in (*roa4, *roa6)]:
             l_output.append(pattern % (prefix, maxlen, asn))
         output += '\n'.join(l_output)
     if not args.output or args.output == '-':
