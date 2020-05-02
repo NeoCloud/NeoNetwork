@@ -44,7 +44,7 @@ def shell2dict(shellscript):
     return fc
 
 cwd = Path()
-assert not [d for d in ("asn", "route", "route6", "node", "people") if not (cwd / d).is_dir()]
+assert not [d for d in ("asn", "route", "route6", "node", "entity") if not (cwd / d).is_dir()]
 
 def str2asn(s_asn):
     s_asn = s_asn.strip().lower()
@@ -55,7 +55,7 @@ def str2asn(s_asn):
 
 def neoneo_get_people():
     people = dict()
-    for f in (cwd / "people").iterdir():
+    for f in (cwd / "entity").iterdir():
         try:
             if not f.is_file():
                 continue
