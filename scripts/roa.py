@@ -133,6 +133,7 @@ def neonet_route2roa(dirname, is_ipv6=False):
                 route = f.name.replace(',', '/')
                 supernet = get_supernet(fc.get('supernet'))
                 netname = fc.get('name')
+                assert netname
                 roa_entries.append(dict(zip(roa_entries_key, [asn, nettype(route, strict=True), supernet, netname])))
             elif fc.get('type').lower().startswith('tun'):
                 assert NODE_TABLE[fc.get('downstream')] # extra check for downstream
