@@ -118,7 +118,6 @@ def node2asn():
 NODE_TABLE = node2asn()
 
 def neonet_route2roa(dirname, is_ipv6=False):
-    net_names = set()
     roa_entries = list()
     for f in (cwd / dirname).iterdir():
         try:
@@ -133,9 +132,7 @@ def neonet_route2roa(dirname, is_ipv6=False):
                 assert asn in ASNS
                 route = f.name.replace(',', '/')
                 supernet = get_supernet(fc.get('supernet'))
-                netname = name2nichdl(fc.get('name'))
-                assert netname not in net_names
-                net_names.add(netname)
+                netname = fc.get('name')
                 roa_entries.append(dict(zip(roa_entries_key, [asn, nettype(route, strict=True), supernet, netname])))
             elif fc.get('type').lower().startswith('tun'):
                 assert NODE_TABLE[fc.get('downstream')] # extra check for downstream
@@ -143,9 +140,7 @@ def neonet_route2roa(dirname, is_ipv6=False):
                 assert asn in ASNS
                 route = f.name.replace(',', '/')
                 supernet = get_supernet(fc.get('supernet'))
-                netname = name2nichdl("%s-%s" % (fc.get('type'), route))
-                assert netname not in net_names
-                net_names.add(netname)
+                netname = "%s-%s" % (fc.get('type'), route)
                 roa_entries.append(dict(zip(roa_entries_key, [asn, nettype(route, strict=True), supernet, netname])))
             else:
                 assert fc.get('type').lower() in ('ptp',)
