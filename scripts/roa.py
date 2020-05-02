@@ -192,12 +192,13 @@ if __name__ == "__main__":
         for asn, asi in ASNS.items():
             as_route4 = list()
             as_route6 = list()
+            vkeys = [k for k in VALID_KEYS if k != 'asn']
             for r in roa4:
                 if r['asn'] == asn:
-                    as_route4.append({k:v for k, v in r.items() if k in VALID_KEYS})
+                    as_route4.append({k:v for k, v in r.items() if k in vkeys})
             for r in roa6:
                 if r['asn'] == asn:
-                    as_route6.append({k:v for k, v in r.items() if k in VALID_KEYS})
+                    as_route6.append({k:v for k, v in r.items() if k in vkeys})
             owner = asi['owner']
             peopledict = d_output['people'].setdefault(owner, {"info": PEOPLE[owner], "asns": list()})
             peopledict['asns'].append({"asn": asn, "routes": {'ipv4': as_route4, 'ipv6': as_route6}})
