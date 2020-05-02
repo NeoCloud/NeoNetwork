@@ -1,4 +1,4 @@
 TYPE="SUBNET"
 NAME="icecat"
 DESC="Magicneko ipv6 reserved segment"
-AS="4201270008"
+ASN="4201270008"

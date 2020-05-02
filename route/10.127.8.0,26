@@ -1,4 +1,4 @@
 TYPE="SUBNET"
 NAME="LibreHouse"
 DESC="For infrastratures in our network"
-AS="4242421037"
+ASN="4242421037"
