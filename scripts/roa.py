@@ -74,7 +74,7 @@ def neoneo_get_people():
             people[f.name] = {k: fc.get(k) for k in present_keys}
             nic_hdl = name2nichdl(f.name)
             assert nic_hdl not in nic_hdl_names
-            nic_hdl_names.add('nic_hdl')
+            nic_hdl_names.add(nic_hdl)
             people[f.name]['nic_hdl'] = nic_hdl
             for v in people[f.name].values():
                 assert v is not None
