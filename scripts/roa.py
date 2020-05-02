@@ -115,7 +115,7 @@ def neonet_route2roa(dirname, is_ipv6=False):
             get_supernet = lambda s_net: None if not s_net else nettype(s_net, strict=True)
             roa_entries_key = ("asn", "prefix", "supernet")
             if fc.get('type').lower() in ('lo', 'subnet'):
-                asn = str2asn(fc.get('as'))
+                asn = str2asn(fc.get('asn'))
                 assert asn in ASNS
                 route = f.name.replace(',', '/')
                 supernet = get_supernet(fc.get('supernet'))
