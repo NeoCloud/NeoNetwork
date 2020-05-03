@@ -1,4 +1,4 @@
 TYPE="PTP"
 PROTO="WireGuard"
-UPSTREAM="Icecat-Explosion"
+UPSTREAM="MagicNeko-HK01"
 DOWNSTREAM="SUNNET"

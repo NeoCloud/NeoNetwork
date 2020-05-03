@@ -143,8 +143,11 @@ def neonet_route2roa(dirname, is_ipv6=False):
                 supernet = get_supernet(fc.get('supernet'))
                 netname = "%s-%s" % (fc.get('type'), route)
                 roa_entries.append(dict(zip(roa_entries_key, [asn, nettype(route, strict=True), supernet, netname])))
+            elif fc.get('type').lower() == 'ptp':
+                assert NODE_TABLE[fc.get('upstream')] # extra check for upstream
+                assert NODE_TABLE[fc.get('downstream')] # extra check for downstream
             else:
-                assert fc.get('type').lower() in ('ptp',)
+                raise AssertionError
         except Exception:
             print("[!] Error while processing file", f)
             raise
