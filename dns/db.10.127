@@ -51,8 +51,8 @@ $TTL	604800
 18.0	IN	PTR	caasih.NeoPDP-11.tun30.neo.
 21.0	IN	PTR	NeoVAX.NeoSystem.tun30.neo.
 22.0	IN	PTR	NeoSystem.NeoVAX.tun30.neo.
-25.0	IN	PTR	MagicNeko-RU1.staph.tun30.neo.
-26.0	IN	PTR	staph.MagicNeko-RU1.tun30.neo.
+25.0	IN	PTR	MagicNeko-RU01.staph.tun30.neo.
+26.0	IN	PTR	staph.MagicNeko-RU01.tun30.neo.
 29.0	IN	PTR	megumiLHS.ucbvax.tun30.neo.
 30.0	IN	PTR	ucbvax.megumiLHS.tun30.neo.
 41.0	IN	PTR	NeoPDP-11.pan.tun30.neo.
@@ -63,12 +63,12 @@ $TTL	604800
 50.0	IN	PTR	cklvax.NeoSystem.tun30.neo.
 53.0	IN	PTR	NeoSystem.pan.tun30.neo.
 54.0	IN	PTR	pan.NeoSystem.tun30.neo.
-57.0	IN	PTR	Icecat-Explosion.ucbvax.tun30.neo.
-58.0	IN	PTR	ucbvax.Icecat-Explosion.tun30.neo.
+57.0	IN	PTR	MagicNeko-HK01.ucbvax.tun30.neo.
+58.0	IN	PTR	ucbvax.MagicNeko-HK01.tun30.neo.
 61.0	IN	PTR	pan.ucbvax.tun30.neo.
 62.0	IN	PTR	ucbvax.pan.tun30.neo.
-65.0	IN	PTR	Icecat-Notebook.Icecat-Explosion.tun30.neo.
-66.0	IN	PTR	Icecat-Explosion.Icecat-Notebook.tun30.neo.
+65.0	IN	PTR	Icecat-GroupAccessNetwork.MagicNeko-HK01.tun30.neo.
+66.0	IN	PTR	MagicNeko-HK01.Icecat-GroupAccessNetwork.tun30.neo.
 69.0	IN	PTR	staph.caasih.tun30.neo.
 70.0	IN	PTR	caasih.staph.tun30.neo.
 73.0	IN	PTR	chenx97.ucbvax.tun30.neo.
@@ -77,8 +77,8 @@ $TTL	604800
 82.0	IN	PTR	JerryXiao.ucbvax.tun30.neo.
 85.0	IN	PTR	JerryXiao.MagicNeko-JP03.tun30.neo.
 86.0	IN	PTR	MagicNeko-JP03.JerryXiao.tun30.neo.
-89.0	IN	PTR	icecat-jp3.septs.tun30.neo.
-90.0	IN	PTR	septs.icecat-jp3.tun30.neo.
+89.0	IN	PTR	MagicNeko-JP03.septs.tun30.neo.
+90.0	IN	PTR	septs.MagicNeko-JP03.tun30.neo.
 93.0	IN	PTR	frank-hsinchu.septs.tun30.neo.
 94.0	IN	PTR	septs.frank-hsinchu.tun30.neo.
 97.0	IN	PTR	septs.staph.tun30.neo.
@@ -99,12 +99,12 @@ $TTL	604800
 126.0	IN	PTR	septs.MagicNeko-RU01.tun30.neo.
 129.0	IN	PTR	megumiLHS.MagicNeko-JP03.tun30.neo.
 130.0	IN	PTR	MagicNeko-JP03.megumiLHS.tun30.neo.
-133.0	IN	PTR	frank-hsinchu.icecat-jp3.tun30.neo.
-134.0	IN	PTR	icecat-jp3.frank-hsinchu.tun30.neo.
+133.0	IN	PTR	frank-hsinchu.MagicNeko-JP03.tun30.neo.
+134.0	IN	PTR	MagicNeko-JP03.frank-hsinchu.tun30.neo.
 137.0	IN	PTR	James58899.septs.tun30.neo.
 138.0	IN	PTR	septs.James58899.tun30.neo.
-141.0	IN	PTR	icecat-jp3.pan.tun30.neo.
-142.0	IN	PTR	pan.icecat-jp3.tun30.neo.
+141.0	IN	PTR	MagicNeko-JP03.pan.tun30.neo.
+142.0	IN	PTR	pan.MagicNeko-JP03.tun30.neo.
 
 ; Point to Point Addresses
 1.10	IN	PTR	LanTian.ptp.neo.
@@ -123,12 +123,12 @@ $TTL	604800
 195.8	IN	PTR	JerryXiao-SH1.ptp.neo.
 196.8	IN	PTR	JerryXiao-HK2.ptp.neo.
 199.11	IN	PTR	SUNNET.ptp.neo.
-253.4	IN	PTR	MagicNeko-JP3.ptp.neo.
-254.4	IN	PTR	Icecat-Explosion.ptp.neo.
+253.4	IN	PTR	MagicNeko-JP03.ptp.neo.
+254.4	IN	PTR	MagicNeko-HK01.ptp.neo.
 
 ; Loopback Addresses
 1.255	IN	PTR	NeoPDP-11.neo
 2.255	IN	PTR	ucbvax.neo
 4.255	IN	PTR	pan.neo
-56.255	IN	PTR	frank-hsinchu.neo
+56.255	IN	PTR	frank-hsinchu-1.neo
 80.255	IN	PTR	NeoSystem.neo
