@@ -1,0 +1,4 @@
+TYPE=SUBNET
+NAME="CROOM"
+DESC="For CROOM connectivity"
+AS="4201270000"
