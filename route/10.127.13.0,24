@@ -1,0 +1,4 @@
+TYPE="SUBNET"
+NAME="Ndoskrnl's LAN"
+DESC="For devices which being connected locally to Ndoskrnl's Master Router"
+ASN="4201270013"
