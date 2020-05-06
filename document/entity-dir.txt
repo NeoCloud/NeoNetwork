@@ -1,6 +1,7 @@
 # entity-dir Template
 # ===================
 # Filename format: <Name>
+# Remove any line which starts with '#' when applying
 # Description (maybe short self introduction)
 DESC=""
 # Contact

@@ -1,6 +1,7 @@
 # as-dir Template
 # ===============
 # Filename format: AS<Number>
+# Remove any line which starts with '#' when applying
 # AS Name
 NAME=""
 # Owner
