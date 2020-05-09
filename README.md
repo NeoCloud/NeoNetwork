@@ -21,7 +21,7 @@ Telegram Group invitation link available at TXT record of `join-telegram.neoclou
 
 ## Routing Protocols
 
-Any protocol supported by Quagga or FRRouting, recommended to use BGP.
+Any protocol supported by Bird, Quagga or FRRouting, BGP recommended.
 
 ## IP Addresses
 
