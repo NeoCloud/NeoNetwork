@@ -1,4 +1,4 @@
 TYPE="SUBNET"
-NAME="NeoSystem VMs"
-DESC="For Virtual Machine on NeoSystem"
+NAME="NeoSystem"
+DESC=""
 ASN="4201270000"
