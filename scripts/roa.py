@@ -173,6 +173,7 @@ if __name__ == "__main__":
     parser.add_argument('-m', '--max', type=int, default=29, help='set ipv4 max prefix length')
     parser.add_argument('-M', '--max6', type=int, default=64, help='set ipv6 max prefix length')
     parser.add_argument('-j', '--json', action='store_true', help='output json')
+    parser.add_argument('-r', '--rfc8416', action='store_true', help='output rfc8416')
     parser.add_argument('-o', '--output', default='', help='write output to file')
     parser.add_argument('-4', '--ipv4', action='store_true', help='print ipv4 only')
     parser.add_argument('-6', '--ipv6', action='store_true', help='print ipv6 only')
@@ -234,6 +235,17 @@ if __name__ == "__main__":
             r['asn'] = "AS%d" % r['asn']
         for r in (*roa4, *roa6):
             d_output['roas'].append({k:v for k, v in r.items() if k in VALID_KEYS})
+        output = json.dumps(d_output, indent=2)
+    elif args.rfc8416:
+        import json
+        l_prefix = list()
+        d_output = {'slurmVersion': 1, 'validationOutputFilters': {'prefixFilters': list(),
+                    'bgpsecFilters': list()}, 'locallyAddedAssertions': {'bgpsecAssertions': list(),
+                    'prefixAssertions': l_prefix}}
+        for r in (*roa4, *roa6):
+            vkeys = ["netname", "maxLength", *VALID_KEYS]
+            substk = lambda k: "maxPrefixLength" if k == 'maxLength' else ("comment" if k == "netname" else k)
+            l_prefix.append({substk(k):v for k, v in r.items() if k in vkeys})
         output = json.dumps(d_output, indent=2)
     else:
         output += "# NeoNetwork ROA tool\n"
