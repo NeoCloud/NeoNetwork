@@ -1,4 +1,0 @@
-TYPE="TUN30"
-PROTO="WireGuard"
-UPSTREAM="MagicNeko-JP03"
-DOWNSTREAM="frank-hsinchu"

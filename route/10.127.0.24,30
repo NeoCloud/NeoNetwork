@@ -1,4 +1,0 @@
-TYPE="TUN30"
-PROTO="Gre"
-UPSTREAM="staph"
-DOWNSTREAM="MagicNeko-RU01"

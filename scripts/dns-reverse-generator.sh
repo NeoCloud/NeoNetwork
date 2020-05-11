@@ -3,7 +3,6 @@ set -e
 
 FILE="dns/db.10.127"
 TUN30_TEMP="$(mktemp)"
-PP_TEMP="$(mktemp)"
 LO_TEMP="$(mktemp)"
 
 if [[ "$(uname)" = *BSD ]]; then
@@ -45,15 +44,6 @@ for i in *; do
 		print_record "$upstream_ip" "$DOWNSTREAM.$UPSTREAM.tun30.neo."
 		print_record "$downstream_ip" "$UPSTREAM.$DOWNSTREAM.tun30.neo."
 		) >> "$TUN30_TEMP"
-	elif [ "$TYPE" = "PTP" ]; then
-		i="${i/PTP,/}"
-		upstream_ip="${i%~*}"
-		downstream_ip="${i#*~}"
-
-		(
-		print_record "$(ipcalc "$upstream_ip" 0)" "$UPSTREAM.ptp.neo."
-		print_record "$(ipcalc "$downstream_ip" 0)" "$DOWNSTREAM.ptp.neo."
-		) >> "$PP_TEMP"
 	elif [ "$TYPE" = "LO" ]; then
 		ip="${i/,32/}"
 
@@ -65,10 +55,8 @@ done
 {
 	echo -e "\n; Tunnel /30 Addresses"
 	sort -n < "$TUN30_TEMP"
-	echo -e "\n; Point to Point Addresses"
-	sort -n < "$PP_TEMP"
 	echo -e "\n; Loopback Addresses"
 	sort -n < "$LO_TEMP"
 } >> "$FILE"
 
-rm -f "$TUN30_TEMP" "$PP_TEMP" "$LO_TEMP"
+rm -f "$TUN30_TEMP" "$LO_TEMP"

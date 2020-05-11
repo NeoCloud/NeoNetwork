@@ -1,4 +1,0 @@
-TYPE="TUN30"
-PROTO="Gre"
-UPSTREAM="MagicNeko-JP03"
-DOWNSTREAM="megumiLHS"

@@ -1,4 +1,0 @@
-TYPE="TUN30"
-PROTO="WireGuard"
-UPSTREAM="pan"
-DOWNSTREAM="MagicNeko-JP03"

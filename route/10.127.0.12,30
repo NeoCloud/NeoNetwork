@@ -1,4 +1,0 @@
-TYPE="TUN30"
-PROTO="Tinc"
-UPSTREAM="ucbvax"
-DOWNSTREAM="NeoPDP-11"

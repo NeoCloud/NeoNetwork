@@ -106,13 +106,16 @@ arg="$2"	# Optional argument
 
 case "$1" in
 asn)
-	for i in asn/*; do
+	(
+	cd asn
+	for i in *; do
 		msg "${i#asn/}\n"
 		source "$i"
 
 		printf "${BRIGHT}${FMAGENTA}%-16s${RESET}| ${BRIGHT}${FYELLOW}%s\n\t>> %s\n" \
 			"$OWNER" "$NAME" "$DESC"
 	done
+	)
 	;;
 route)
 	for i in route*/*; do
@@ -122,7 +125,6 @@ route)
 		case "$TYPE" in
 			TUN30)	print_tun30	"$subnet" "$PROTO" "$UPSTREAM" "$DOWNSTREAM";;
 			SUBNET)	print_subnet	"$subnet" "$NAME" "$DESC";;
-			PTP)	print_ptp	"$subnet" "$PROTO" "$UPSTREAM" "$DOWNSTREAM";;
 			LO)	print_lo	"$subnet" "$NAME" "$DESC";;
 			*)	errmsg "Invalid \$TYPE in $i\n";;
 		esac

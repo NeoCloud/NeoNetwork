@@ -1,4 +1,0 @@
-TYPE="TUN30"
-PROTO="L2TP"
-UPSTREAM="septs"
-DOWNSTREAM="ucbvax"

@@ -1,4 +1,0 @@
-TYPE="TUN30"
-PROTO="Gre"
-UPSTREAM="MagicNeko-HK01"
-DOWNSTREAM="Icecat-GroupAccessNetwork"
