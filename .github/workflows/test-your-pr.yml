@@ -34,3 +34,4 @@ jobs:
         python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -6 -o roa_dir/roa6_bird2.conf
         python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -j -o roa_dir/roa46.json
         python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -e -o roa_dir/neonetwork.json
+        python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -r -o roa_dir/rfc8416.json
