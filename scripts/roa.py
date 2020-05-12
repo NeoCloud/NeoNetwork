@@ -9,6 +9,9 @@ import re
 NEONET_ADDR_POOL = ('10.127.0.0/16', 'fd10:127::/32')
 NEONET_ADDR_POOL = [ip_network(neo) for neo in NEONET_ADDR_POOL]
 IS_NEONET = lambda net: bool([True for neo in NEONET_ADDR_POOL if net.version == neo.version and net.subnet_of(neo)])
+if not hasattr(IPv4Network, 'subnet_of'):
+    IS_NEONET = lambda x: True
+    print('# [!] IPv4Network has no attr subnet_of, please consider upgrading your python installation')
 
 class BashParser:
     def __init__(self):
