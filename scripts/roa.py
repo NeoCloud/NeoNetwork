@@ -113,12 +113,29 @@ def node2asn():
                 continue
             fc = shell2dict(f.read_text())
             asn = str2asn(fc.get('asn'))
+            assert asn in ASNS
             node_table[f.name] = asn
         except Exception:
             print("[!] Error while processing file", f)
             raise
     return node_table
 NODE_TABLE = node2asn()
+
+def neonet_peercheck():
+    for f in (cwd / "peer").iterdir():
+        try:
+            if not f.is_file():
+                continue
+            fc = shell2dict(f.read_text())
+            desc = fc.get('desc')
+            assert desc is not None
+            upstream, downstream = f.name.split('~')
+            assert upstream in NODE_TABLE
+            assert downstream in NODE_TABLE
+        except Exception:
+            print("[!] Error while processing file", f)
+            raise
+neonet_peercheck()
 
 def neonet_route2roa(dirname, is_ipv6=False):
     roa_entries = list()
@@ -138,17 +155,6 @@ def neonet_route2roa(dirname, is_ipv6=False):
                 netname = fc.get('name')
                 assert netname
                 roa_entries.append(dict(zip(roa_entries_key, [asn, nettype(route, strict=True), supernet, netname])))
-            elif fc.get('type').lower().startswith('tun'):
-                assert NODE_TABLE[fc.get('downstream')] # not in node-dir
-                asn = NODE_TABLE[fc.get('upstream')]
-                assert asn in ASNS
-                route = f.name.replace(',', '/')
-                supernet = get_supernet(fc.get('supernet'))
-                netname = "%s-%s" % (fc.get('type'), route)
-                roa_entries.append(dict(zip(roa_entries_key, [asn, nettype(route, strict=True), supernet, netname])))
-            elif fc.get('type').lower() == 'ptp':
-                assert NODE_TABLE[fc.get('upstream')] # not in node-dir
-                assert NODE_TABLE[fc.get('downstream')] # not in node-dir
             else:
                 raise AssertionError # unknown type
         except Exception:
