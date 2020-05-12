@@ -2,9 +2,13 @@
 # -*- coding: utf-8 -*-
 
 from pathlib import Path
-from ipaddress import IPv4Network, IPv6Network
+from ipaddress import IPv4Network, IPv6Network, ip_network
 from itertools import combinations
 import re
+
+NEONET_ADDR_POOL = ('10.127.0.0/16', 'fd10:127::/32')
+NEONET_ADDR_POOL = [ip_network(neo) for neo in NEONET_ADDR_POOL]
+IS_NEONET = lambda net: bool([True for neo in NEONET_ADDR_POOL if net.version == neo.version and net.subnet_of(neo)])
 
 class BashParser:
     def __init__(self):
@@ -151,10 +155,13 @@ def neonet_route2roa(dirname, is_ipv6=False):
                 asn = str2asn(fc.get('asn'))
                 assert asn in ASNS # asn not in as-dir
                 route = f.name.replace(',', '/')
+                net = nettype(route, strict=True)
+                assert IS_NEONET(net)
                 supernet = get_supernet(fc.get('supernet'))
+                assert not supernet or IS_NEONET(supernet)
                 netname = fc.get('name')
                 assert netname
-                roa_entries.append(dict(zip(roa_entries_key, [asn, nettype(route, strict=True), supernet, netname])))
+                roa_entries.append(dict(zip(roa_entries_key, [asn, net, supernet, netname])))
             else:
                 raise AssertionError # unknown type
         except Exception:
