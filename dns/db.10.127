@@ -23,16 +23,18 @@ $TTL	604800
 
 1.69	IN	PTR	santost12.neo.
 
-1.233	IN	PTR	nextmoe.15M.gw4.eth0-vl1000.imiku.cn.neo.
-1.4	IN	PTR	hk-ac.2M-none.static.ix.magicneko.imiku.cn.neo.
-10.4	IN	PTR	hk-aa.100M-500G.static.ix.magicneko.imiku.cn.neo.
-12.4	IN	PTR	hk-ab.100M-10G.dynamic.ix.magicneko.imiku.cn.neo.
-13.4	IN	PTR	jp-vip.100M-200G.static.ix.magicneko.imiku.cn.neo.
-14.4	IN	PTR	ru-cc.100M-400G.static.ix.magicneko.imiku.cn.neo.
-15.4	IN	PTR	jp-bb.100M-400G.static.ix.magicneko.imiku.cn.neo.
-16.4	IN	PTR	us-dd.100M-400G.static.ix.magicneko.imiku.cn.neo.
-100.4	IN	PTR	cn-adsl.15M-none.dynamic.ix.magicneko.imiku.cn.neo.
-101.4	IN	PTR	cn-adsl.15M-none.dynamic.ix.magicneko.imiku.cn.neo.
+1.233	IN	PTR	1.233.gw4.imiku.cn.neo.
+1.4	IN	PTR	Abolition-hk.bb.ix-magicneko.neo.
+10.4	IN	PTR	01-100M-200G.hk.bb.ix-magicneko.neo.
+12.4	IN	PTR	02-100M-5G.hk.bb.ix-magicneko.neo.
+13.4	IN	PTR	02-100M-200G.jp.bb.ix-magicneko.neo.
+14.4	IN	PTR	01-100M-200G.ru.bb.ix-magicneko.neo.
+15.4	IN	PTR	03-100M-200G.jp.bb.ix-magicneko.neo.
+16.4	IN	PTR	01-100M-200G-Abolition.us.bb.ix-magicneko.neo.
+17.4	IN	PTR	01-100M-200G.tw.bb.ix-magicneko.neo.
+18.4	IN	PTR	01-100M-200G.uk.bb.ix-magicneko.neo.
+100.4	IN	PTR	cn-adsl-15M.cn.bb.ix-magicneko.neo.
+101.4	IN	PTR	cn-adsl.15M.cn.bb.ix-magicneko.neo.
 
 1.8     IN      PTR     librehs.neo.
 2.8     IN      PTR     blog.librehs.neo.
