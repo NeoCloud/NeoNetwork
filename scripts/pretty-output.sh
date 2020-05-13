@@ -99,7 +99,7 @@ if [ $# -lt 1 ]; then
 		"Usage: table-output.sh <table type>\n" \
 		"\n" \
 		"	table types:\n" \
-		"		asn, route, people, node\n"
+		"		asn, route, entity, node\n"
 fi
 
 arg="$2"	# Optional argument
@@ -129,7 +129,7 @@ route)
 		esac
 	done
 	;;
-people);;
+entity);;
 node)
 	for i in node/*; do
 		node="${i#node/}"
