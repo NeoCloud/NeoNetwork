@@ -36,6 +36,7 @@ jobs:
         export PATH="$HOME/.pyenv/bin:$PATH"
         eval "$(pyenv init -)"
         eval "$(pyenv virtualenv-init -)"
+        pyenv shell 3.8.2
         maxlen4=29
         maxlen6=64
         mkdir -p roa_dir
