@@ -123,7 +123,6 @@ route)
 		subnet="${subnet/,/\/}"
 		source "$i"
 		case "$TYPE" in
-			TUN30)	print_tun30	"$subnet" "$PROTO" "$UPSTREAM" "$DOWNSTREAM";;
 			SUBNET)	print_subnet	"$subnet" "$NAME" "$DESC";;
 			LO)	print_lo	"$subnet" "$NAME" "$DESC";;
 			*)	errmsg "Invalid \$TYPE in $i\n";;
@@ -131,7 +130,21 @@ route)
 	done
 	;;
 people);;
-node);;
+node)
+	for i in node/*; do
+		node="${i#node/}"
+		source "$i"
+
+		echo -e \
+			"${BRIGHT}${BBLUE}${FYELLOW}========================================${RESET}"
+
+		printf "${BRIGHT}${FYELLOW}%12s${RESET} | ${BRIGHT}${FGREEN}%20s${RESET} | ${FCYAN}%s${RESET}\n" "AS${ASN}" "$node" "$DESC"
+
+		for ip in "${IP[@]}"; do
+			printf "\t%s\n" "$ip"
+		done
+	done
+	;;
 *) errmsg "Invalid type\n";;
 esac
 
