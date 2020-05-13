@@ -9,9 +9,7 @@ import re
 NEONET_ADDR_POOL = ('10.127.0.0/16', 'fd10:127::/32')
 NEONET_ADDR_POOL = [ip_network(neo) for neo in NEONET_ADDR_POOL]
 IS_NEONET = lambda net: bool([True for neo in NEONET_ADDR_POOL if net.version == neo.version and net.subnet_of(neo)])
-if not hasattr(IPv4Network, 'subnet_of'):
-    IS_NEONET = lambda x: True
-    print('# [!] IPv4Network has no attr subnet_of, please consider upgrading your python installation')
+assert hasattr(IPv4Network, 'subnet_of') # needs at least python 3.7
 
 class BashParser:
     def __init__(self):
@@ -171,16 +169,22 @@ def neonet_route2roa(dirname, is_ipv6=False):
             print("[!] Error while processing file", f)
             raise
     roa_entries.sort(key=lambda l: l['asn'])
+    l_prefix = [_roa['prefix'] for _roa in roa_entries]
     for _net1, _net2 in combinations(roa_entries, 2):
         net1, net2 = sorted([_net1, _net2], key=lambda net: net['prefix'].prefixlen)
         if net1['prefix'].overlaps(net2['prefix']):
-            if net1['prefix'] != net2['prefix'] and net1['prefix'].supernet_of(net2['prefix']) \
-                and net2['supernet'] == net1['prefix']:
-                # This is allowed
-                pass
-            else:
-                print("[!] Error: found", net2, "overlaps", net1)
-                raise AssertionError # if this is intended, please include SUPERNET=<cidr> in your route
+            try:
+                assert net1['prefix'] != net2['prefix']
+                assert net1['prefix'].supernet_of(net2['prefix'])
+                s1net, s2net= (net1['supernet'], net2['supernet'])
+                assert s2net # please include SUPERNET=<cidr> in your route
+                # if net1(the bigger net) has a supernet s1net, then s1net and net1
+                # will be checked or must have been checked, same for net2
+                assert not s1net               or s1net in l_prefix # net1.supernet is garbage
+                assert s2net == net1['prefix'] or s2net in l_prefix # net2.supernet is garbage
+            except AssertionError:
+                print("[!] Error: found", net1, "overlaps", net2)
+                raise
     return roa_entries
 
 if __name__ == "__main__":
