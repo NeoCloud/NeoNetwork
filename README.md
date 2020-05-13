@@ -1,10 +1,8 @@
 # NeoNetwork
 A useless VPN network ready for peering!  
-**WARNING:** This network is not interconnected to DN42 yet  
 Git Repo. [here](https://git.neocloud.tw)  
 Pull requests are welcomed!  
 Working language: `zh_* / en_*`  
-Telegram Group invitation link available at TXT record of `join-telegram.neocloud.tw`
 
 ## IXs
 
@@ -27,11 +25,12 @@ Any protocol supported by Bird, Quagga or FRRouting, BGP recommended.
 
 All IPv4 addresses are under the range 10.127.0.0/16  
 All IPv6 addresses are under the range fd10:127::/32  
-see routes.txt for allocated domain.
+see [route](https://github.com/NeoCloud/NeoNetwork/tree/master/route)
+and [route6](https://github.com/NeoCloud/NeoNetwork/tree/master/route6) for allocated subnet.
 
 ## DNS
 
-There's a bind9 server on dns.neocloud.tw (10.127.225.2), all domain names are under ".neo".
+There's a bind9 server on dns.neocloud.tw (`10.127.225.2` and `fd10:127:5f37:59df::255:2`), all domain names are under ".neo".
 
 ## Connection Graph
 
@@ -44,5 +43,6 @@ There's a bind9 server on dns.neocloud.tw (10.127.225.2), all domain names are u
 	entity/		Entitys
 	route/		Network subnet allocation
 	node/		Nodes
+	peer/		Peering status
 	vpn/		VPN configuration examples (Tinc & WireGuard)
 	dns/		Bind9 DNS zone files and example configuration
