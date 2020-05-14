@@ -8,5 +8,9 @@ CONTACT=(
 	"GITHUB: StephDC"
 )
 BABEL=(
-	""
+	"zh-N"
+	"en-4"
+	"ja-2"
+	"es-1"
+	"fr-1"
 )
