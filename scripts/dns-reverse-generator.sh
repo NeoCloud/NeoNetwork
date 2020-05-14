@@ -38,7 +38,7 @@ for i in *; do
 	if [ "$TYPE" = "LO" ]; then
 		ip="${i/,32/}"
 
-		print_record "$(ipcalc "$ip" 0)" "$NAME.neo" >> "$LO_TEMP"
+		print_record "$(ipcalc "$ip" 0)" "$NAME.neo." >> "$LO_TEMP"
 	fi
 done
 )

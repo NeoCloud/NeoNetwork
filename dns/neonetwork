@@ -15,13 +15,12 @@ $TTL	604800
 root		IN	CNAME	neo.
 NeoPDP-11	IN	A	10.127.255.1
 ucbvax		IN	A	10.127.255.2
-caasih		IN	A	10.127.0.1
+caasih		IN	A	10.127.2.16
 NeoSystem	IN	A	10.127.255.80
 neostorage	IN	A	10.127.1.10
 NeoBOX		IN	A	10.127.1.20
 cklvax		IN	A	10.127.1.40
 NNPCC		IN	A	10.127.1.63
-NeoVAX		IN	A	10.127.0.38
 pan		IN	A	10.127.3.1
 staph		IN	A	10.127.8.185
 staph-cn	IN	A	10.127.8.187
