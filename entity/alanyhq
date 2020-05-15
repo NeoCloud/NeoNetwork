@@ -1,0 +1,13 @@
+NAME="alanyhq"
+DESC=""
+CONTACT=(
+	"EMAIL:"
+	"TELEGRAM:@alanyhq"
+	"IRC:alanyhq"
+	"MASTODON:"
+	"GITHUB:"
+)
+BABEL=(
+	"zh-N"
+	"en-2"
+)
