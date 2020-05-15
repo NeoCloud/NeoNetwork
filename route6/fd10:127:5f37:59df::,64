@@ -1,4 +1,4 @@
 TYPE=SUBNET
-NAME="CROOM"
-DESC="For CROOM connectivity"
+NAME="NeoNetwork Origin"
+DESC="Neo_Chen's Network"
 ASN="4201270000"
