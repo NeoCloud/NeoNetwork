@@ -1,4 +1,4 @@
 TYPE=SUBNET
-NAME="alanyhq main"
+NAME="alanyhq backbone"
 DESC=""
-ASN="4242420916"
+ASN="4201270020"
