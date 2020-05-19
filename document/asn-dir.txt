@@ -8,3 +8,7 @@ NAME=""
 OWNER=""
 # Description
 DESC=""
+# if it's a ASN registered from *NIC, this variable records
+# whether members of NeoNetwork have validated its ownership yet
+# possible value: "YES" "NO"
+VALID=""
