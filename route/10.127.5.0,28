@@ -1,0 +1,4 @@
+TYPE=SUBNET
+NAME="yhi-h"
+DESC="Yhi Interconnect H"
+ASN="AS4201270012"
