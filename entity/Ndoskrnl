@@ -10,3 +10,4 @@ CONTACT=(
 BABEL=(
 	"zh|en-1"
 )
+AUTH="PGP:"

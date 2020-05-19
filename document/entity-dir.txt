@@ -16,3 +16,5 @@ CONTACT=(
 BABEL=(
 	""
 )
+# OpenPGP key fingerprint
+AUTH="PGP:"

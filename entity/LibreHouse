@@ -14,3 +14,4 @@ BABEL=(
 	"en-2"
 	"ja-0"
 )
+AUTH="PGP:"
