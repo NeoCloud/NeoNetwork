@@ -77,7 +77,7 @@ def neoneo_get_people():
             if not f.is_file():
                 continue
             fc = shell2dict(f.read_text())
-            present_keys = ('name', 'desc', 'contact', 'babel')
+            present_keys = ('name', 'desc', 'contact', 'babel', 'auth')
             assert f.name
             people[f.name] = {k: fc.get(k) for k in present_keys}
             nic_hdl = name2nichdl(f.name)
@@ -86,6 +86,15 @@ def neoneo_get_people():
             people[f.name]['nic_hdl'] = nic_hdl
             for v in people[f.name].values():
                 assert v is not None
+            auth = people[f.name]['auth']
+            if auth:
+                method, data = auth.split(':')
+                assert method in ('PGP', 'SSH')
+                if method == 'PGP':
+                    assert len(data) == 40 # invaild pgp fingerprint
+                elif method == 'SSH':
+                    assert data.startswith('ssh-') # invalid ssh pubkey
+                people[f.name]['auth'] = f"{'pgp-fingerprint ' if method == 'PGP' else ''}{data.strip()}"
         except Exception:
             print("[!] Error while processing file", f)
             raise

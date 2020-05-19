@@ -10,4 +10,4 @@ CONTACT=(
 BABEL=(
 	"en"
 )
-AUTH="PGP:"
+AUTH=""

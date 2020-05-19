@@ -11,4 +11,4 @@ BABEL=(
 	"zh-N"
 	"en-2"
 )
-AUTH="PGP:"
+AUTH=""
