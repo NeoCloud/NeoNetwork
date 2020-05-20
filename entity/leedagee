@@ -1,0 +1,13 @@
+NAME="leedagee"
+DESC=""
+CONTACT=(
+	"EMAIL:leedageea@gmail.com"
+	"TELEGRAM:@leedagee"
+	"IRC:lizr"
+	"GITHUB:leedagee"
+)
+BABEL=(
+	"zh-N"
+	"en-2"
+)
+AUTH="PGP:47627D2288B20CC033C7B7D72D83E4E89C15DA36"
