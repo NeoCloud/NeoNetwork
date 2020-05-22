@@ -1,7 +1,0 @@
-[
-  {
-    "asn": 4201270005,
-    "name": "Icecat-GroupAccessNetwork",
-    "cidr": ["10.127.233.1/24", "fd10:127:233:1c3c::1/64"]
-  }
-]

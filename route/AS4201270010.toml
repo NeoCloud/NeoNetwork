@@ -1,0 +1,9 @@
+["10.127.10.0/24"]
+type = "subnet"
+name = "Lan Tian LAN"
+description = "For LAN"
+
+["fd10:127:10::/48"]
+type = "subnet"
+name = "Lan Tian LAN6"
+description = "For LAN IPv6"

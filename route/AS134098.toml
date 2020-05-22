@@ -1,0 +1,3 @@
+["10.127.14.0/23"]
+type = "subnet"
+name = "LICSON-NET-SUBALLOC-1"

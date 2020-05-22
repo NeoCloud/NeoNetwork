@@ -1,8 +1,0 @@
-[
-  {
-    "type": "subnet",
-    "name": "SUNNET",
-    "description": "For SUN",
-    "cidr": ["10.127.11.0,24"]
-  }
-]
