@@ -54,12 +54,16 @@ def shell2dict(shellscript):
 cwd = Path()
 assert not [d for d in ("asn", "route", "route6", "node", "entity") if not (cwd / d).is_dir()]
 
-def str2asn(s_asn):
+def str2asn(s_asn, strict=None):
+    """ strict: 1 with prefix AS, other bool(x)==True without prefix AS """
     s_asn = s_asn.strip().lower()
+    if strict == 1:
+        assert s_asn.startswith('as')
+    elif strict:
+        assert int(s_asn)
     if s_asn.startswith('as'):
         s_asn = s_asn[2:]
     return int(s_asn)
-
 
 def name2nichdl(name):
     r, num = re.subn(r'[^0-9A-Z]', '-', name.upper())
@@ -109,9 +113,9 @@ def neonet_get_asns():
                 continue
             fc = shell2dict(f.read_text())
             present_keys = ('name', 'owner', 'desc')
-            asns[str2asn(f.name)] = {k: fc.get(k) for k in present_keys}
+            asns[str2asn(f.name, 1)] = {k: fc.get(k) for k in present_keys}
             assert fc.get('owner') in PEOPLE
-            for v in asns[str2asn(f.name)].values():
+            for v in asns[str2asn(f.name, 1)].values():
                 assert v is not None
         except Exception:
             print("[!] Error while processing file", f)
@@ -126,7 +130,7 @@ def node2asn():
             if not f.is_file():
                 continue
             fc = shell2dict(f.read_text())
-            asn = str2asn(fc.get('asn'))
+            asn = str2asn(fc.get('asn'), 2)
             assert asn in ASNS
             node_table[f.name] = asn
         except Exception:
@@ -162,7 +166,7 @@ def neonet_route2roa(dirname, is_ipv6=False):
             get_supernet = lambda s_net: None if not s_net else nettype(s_net, strict=True)
             roa_entries_key = ("asn", "prefix", "supernet", "netname")
             if fc.get('type').lower() in ('lo', 'subnet'):
-                asn = str2asn(fc.get('asn'))
+                asn = str2asn(fc.get('asn'), 2)
                 assert asn in ASNS # asn not in as-dir
                 route = f.name.replace(',', '/')
                 net = nettype(route, strict=True)
