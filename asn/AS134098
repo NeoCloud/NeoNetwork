@@ -1,4 +1,5 @@
 NAME="Licson Internal Network"
 OWNER="licson"
 DESC=""
+EXTERNAL="INET"
 VALID="YES"

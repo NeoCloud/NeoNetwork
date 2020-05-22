@@ -1,3 +1,4 @@
 NAME="Icecat"
 OWNER="Icecat"
 DESC="NextMoe Group Access Network"
+EXTERNAL="FALSE"
