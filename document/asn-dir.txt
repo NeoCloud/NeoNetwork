@@ -10,7 +10,7 @@ OWNER=""
 # Description
 DESC=""
 # Source of this ASN
-# Possible values: "NeoNetwork", "DN42" or name of other VPN Networks
+# Possible values: "NeoNetwork", "DN42" or "INET"
 SOURCE=""
 # if it's a ASN registered from *NIC, this variable records
 # whether members of NeoNetwork have validated its ownership yet
