@@ -1,0 +1,13 @@
+NAME="licson"
+DESC=""
+CONTACT=(
+	"EMAIL:admin@licson.net"
+	"TELEGRAM:licson"
+	"IRC:licson"
+	"MASTODON:"
+	"GITHUB:licson0729"
+)
+BABEL=(
+	""
+)
+AUTH=""

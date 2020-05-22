@@ -22,19 +22,30 @@ jobs:
       run: |
         sudo apt update -qq
         sudo apt install -y python3 git openssh-client
+        sudo apt install -y curl
+        curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+        export PATH="$HOME/.pyenv/bin:$PATH"
+        eval "$(pyenv init -)"
+        eval "$(pyenv virtualenv-init -)"
+        pyenv install 3.8.2
+        pyenv shell 3.8.2
 
     - name: Run roa script
       shell: bash
       run: |
+        export PATH="$HOME/.pyenv/bin:$PATH"
+        eval "$(pyenv init -)"
+        eval "$(pyenv virtualenv-init -)"
+        pyenv shell 3.8.2
         maxlen4=29
         maxlen6=64
         mkdir -p roa_dir
-        python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6}    -o roa_dir/roa46_bird2.conf
-        python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -4 -o roa_dir/roa4_bird2.conf
-        python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -6 -o roa_dir/roa6_bird2.conf
-        python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -j -o roa_dir/roa46.json
-        python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -e -o roa_dir/neonetwork.json
-        python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -r -o roa_dir/rfc8416.json
+        pyenv exec python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6}    -o roa_dir/roa46_bird2.conf
+        pyenv exec python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -4 -o roa_dir/roa4_bird2.conf
+        pyenv exec python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -6 -o roa_dir/roa6_bird2.conf
+        pyenv exec python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -j -o roa_dir/roa46.json
+        pyenv exec python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -e -o roa_dir/neonetwork.json
+        pyenv exec python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -r -o roa_dir/rfc8416.json
 
     - name: Upload files
       env:

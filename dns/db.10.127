@@ -17,6 +17,7 @@ $TTL	604800
 10.1	IN	PTR	neostorage.neonetwork.
 80.1	IN	PTR	NeoSystem.neo.
 1.3	IN	PTR	pan.neo.
+16.2	IN	PTR	caasih.neo.
 
 185.8	IN	PTR	staph.neo.
 187.8	IN	PTR	staph-cn.neo.

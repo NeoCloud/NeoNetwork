@@ -1,13 +1,14 @@
-NAME="frank"
+NAME="alanyhq"
 DESC=""
 CONTACT=(
 	"EMAIL:"
-	"TELEGRAM:"
-	"IRC:"
+	"TELEGRAM:@alanyhq"
+	"IRC:alanyhq"
 	"MASTODON:"
 	"GITHUB:"
 )
 BABEL=(
-	""
+	"zh-N"
+	"en-2"
 )
 AUTH=""
