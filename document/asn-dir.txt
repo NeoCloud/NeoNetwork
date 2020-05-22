@@ -1,6 +1,7 @@
 # as-dir Template
 # ===============
 # Filename format: AS<Number>
+# ASN range: 4201270000 ~ 4201279999
 # Remove any line which starts with '#' when applying
 # AS Name
 NAME=""
