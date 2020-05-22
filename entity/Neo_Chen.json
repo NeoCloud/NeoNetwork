@@ -1,0 +1,14 @@
+{
+  "name": "Neo_Chen",
+  "contact": {
+    "email": "chenkolei@gmail.com",
+    "telegram": "Neo_Chen",
+    "irc": "Neo_Chen",
+    "mastodon": "@Neo_Chen@mastodon.xyz",
+    "github": "Neo_Chen"
+  },
+  "babel": ["zh-N", "en-2"],
+  "persona": {
+    "pgp": "D306BB628837043150CD1E42CA0957540FD996CD"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "LINE-NZ",
+  "contact": {
+    "email": "dn42@line.co.nz",
+    "github": "line-nz"
+  },
+  "babel": ["en"]
+}

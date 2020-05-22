@@ -1,0 +1,9 @@
+{
+  "name": "Ndoskrnl",
+  "description": "We can start chat happily with Google Translate :)",
+  "contact": {
+    "email": "lollipop.studio.cn@gmail.com",
+    "github": "magic0whi"
+  },
+  "babel": ["en-1", "zh-1"]
+}
