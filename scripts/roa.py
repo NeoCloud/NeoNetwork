@@ -9,6 +9,7 @@ import re
 NEONET_ADDR_POOL = ('10.127.0.0/16', 'fd10:127::/32')
 NEONET_ADDR_POOL = [ip_network(neo) for neo in NEONET_ADDR_POOL]
 IS_NEONET = lambda net: bool([True for neo in NEONET_ADDR_POOL if net.version == neo.version and net.subnet_of(neo)])
+AS_IS_NEONET = lambda asn: 4201270000 <= asn <= 4201279999
 assert hasattr(IPv4Network, 'subnet_of') # needs at least python 3.7
 
 class BashParser:
@@ -113,10 +114,12 @@ def neonet_get_asns():
                 continue
             fc = shell2dict(f.read_text())
             present_keys = ('name', 'owner', 'desc')
-            asns[str2asn(f.name, 1)] = {k: fc.get(k) for k in present_keys}
+            asn = str2asn(f.name, 1)
+            asns[asn] = {k: fc.get(k) for k in present_keys}
             assert fc.get('owner') in PEOPLE
-            for v in asns[str2asn(f.name, 1)].values():
+            for v in asns[asn].values():
                 assert v is not None
+            assert AS_IS_NEONET(asn) or asns[asn].get('external')
         except Exception:
             print("[!] Error while processing file", f)
             raise
