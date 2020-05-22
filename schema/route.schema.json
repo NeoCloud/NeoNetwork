@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["subnet", "loopback"]
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "asn": {
+      "type": "number"
+    },
+    "range": {
+      "type": "array",
+      "items": {
+        "$ref": "./cidr.schema.json"
+      },
+      "minItems": 1
+    }
+  },
+  "required": ["type", "name", "asn"]
+}

@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "pgp": {
+      "type": "string",
+      "pattern": "^[A-F0-9]{40}$"
+    }
+  },
+  "required": ["pgp"]
+}

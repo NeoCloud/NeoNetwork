@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["NeoNetwork", "Internet", "DN42"]
+    },
+    "vaild": {
+      "type": "boolean"
+    }
+  },
+  "required": ["name", "owner", "source"]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "asn": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    },
+    "range": {
+      "type": "array",
+      "items": {
+        "$ref": "./cidr.schema.json"
+      }
+    }
+  },
+  "required": ["asn"]
+}

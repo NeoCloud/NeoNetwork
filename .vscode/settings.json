@@ -1,0 +1,25 @@
+{
+  "editor.formatOnSave": true,
+  "json.schemas": [
+    {
+      "url": "./schema/asn.schema.json",
+      "fileMatch": ["asn/*.json"]
+    },
+    {
+      "url": "./schema/entity.schema.json",
+      "fileMatch": ["entity/*.json"]
+    },
+    {
+      "url": "./schema/node.schema.json",
+      "fileMatch": ["node/*.json"]
+    },
+    {
+      "url": "./schema/peer.schema.json",
+      "fileMatch": ["peer/*.json"]
+    },
+    {
+      "url": "./schema/route.schema.json",
+      "fileMatch": ["route/*.json"]
+    }
+  ]
+}
