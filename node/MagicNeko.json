@@ -1,0 +1,20 @@
+[
+  {
+    "asn": 4201270008,
+    "name": "MagicNeko-HK01",
+    "description": "Magicneko IX LAN interconnection",
+    "cidr": ["10.127.4.10/24", "fd10:127:0233:7170:2021::10.127.4.10/80"]
+  },
+  {
+    "asn": 4201270008,
+    "name": "MagicNeko-RU01",
+    "description": "Magicneko IX LAN interconnection",
+    "cidr": ["10.127.4.14/24", "fd10:127:0233:7170:2021::10.127.4.14/80"]
+  },
+  {
+    "asn": 4201270008,
+    "name": "MagicNeko-JP03",
+    "description": "MagicNeko IX LAN interconnection",
+    "cidr": ["10.127.4.15/24", "fd10:127:0233:7170:2021::10.127.4.15/80"]
+  }
+]

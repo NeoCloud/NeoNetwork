@@ -1,18 +1,25 @@
 {
-  "type": "object",
-  "properties": {
-    "asn": {
-      "type": "number"
-    },
-    "description": {
-      "type": "string"
-    },
-    "range": {
-      "type": "array",
-      "items": {
-        "$ref": "./cidr.schema.json"
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "asn": {
+        "type": "number"
+      },
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "cidr": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
       }
-    }
+    },
+    "required": ["asn"]
   },
-  "required": ["asn"]
+  "minItems": 1
 }

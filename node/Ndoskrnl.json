@@ -1,0 +1,14 @@
+[
+  {
+    "asn": 4201270013,
+    "name": "Ndoskrnl-US01",
+    "description": "Ndoskrnls first node",
+    "cidr": ["10.127.13.1/24"]
+  },
+  {
+    "asn": 4201270013,
+    "name": "Ndoskrnl-US02",
+    "description": "Ndoskrnls first node",
+    "cidr": ["10.127.13.2/24"]
+  }
+]

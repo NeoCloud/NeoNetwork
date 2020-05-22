@@ -1,0 +1,14 @@
+[
+  {
+    "asn": 4201270011,
+    "name": "LINE-NZ-NZ01",
+    "description": "LINE-NZ Home",
+    "cidr": ["10.127.22.1/29"]
+  },
+  {
+    "asn": 4201270011,
+    "name": "LINE-NZ-AU01",
+    "description": "LINE-NZ Cloud",
+    "cidr": ["10.127.22.9/29"]
+  }
+]

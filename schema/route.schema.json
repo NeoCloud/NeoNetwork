@@ -14,10 +14,10 @@
     "asn": {
       "type": "number"
     },
-    "range": {
+    "cidr": {
       "type": "array",
       "items": {
-        "$ref": "./cidr.schema.json"
+        "type": "string"
       },
       "minItems": 1
     }
