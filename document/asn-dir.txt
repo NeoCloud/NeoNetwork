@@ -9,6 +9,9 @@ NAME=""
 OWNER=""
 # Description
 DESC=""
+# Whether or not it's a ASN from external source, e.g. DN42 or other VPNs.
+# Any value other than "" or "FALSE" will be seen as "TRUE"
+EXTERNAL=""
 # if it's a ASN registered from *NIC, this variable records
 # whether members of NeoNetwork have validated its ownership yet
 # possible value: "YES" "NO"
