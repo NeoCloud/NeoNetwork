@@ -113,14 +113,16 @@ def neonet_get_asns():
             if not f.is_file():
                 continue
             fc = shell2dict(f.read_text())
-            present_keys = ('name', 'owner', 'desc', 'external')
-            required_keys = ('name', 'owner')
+            present_keys = ('name', 'owner', 'desc', 'source')
+            required_keys = ('name', 'owner', 'source')
             asn = str2asn(f.name, 1)
             asns[asn] = {k: fc.get(k) for k in present_keys}
             assert fc.get('owner') in PEOPLE
             for k in required_keys:
                 assert asns[asn].get(k) # required fields missing
-            assert AS_IS_NEONET(asn) or asns[asn].get('external')
+            as_src = asns[asn].get('source')
+            assert as_src in ('NeoNetwork', 'DN42', 'INET')
+            assert AS_IS_NEONET(asn) or as_src != 'NeoNetwork'
         except Exception:
             print("[!] Error while processing file", f)
             raise
