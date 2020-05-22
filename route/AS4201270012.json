@@ -1,0 +1,8 @@
+[
+  {
+    "type": "subnet",
+    "name": "yhi-h",
+    "description": "Yhi Interconnect H",
+    "cidr": ["10.127.5.0,28"]
+  }
+]

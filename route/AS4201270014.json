@@ -1,0 +1,14 @@
+[
+  {
+    "type": "subnet",
+    "name": "leedagee",
+    "description": "leedagee",
+    "cidr": ["10.127.23.0,29"]
+  },
+  {
+    "type": "subnet",
+    "name": "leedagee",
+    "description": "leedagee",
+    "cidr": ["fd10:127:0023::,48"]
+  }
+]

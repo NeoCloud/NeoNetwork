@@ -1,26 +1,27 @@
 {
-  "type": "object",
-  "properties": {
-    "type": {
-      "type": "string",
-      "enum": ["subnet", "loopback"]
-    },
-    "name": {
-      "type": "string"
-    },
-    "description": {
-      "type": "string"
-    },
-    "asn": {
-      "type": "number"
-    },
-    "cidr": {
-      "type": "array",
-      "items": {
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "string",
+        "enum": ["subnet", "loopback"]
+      },
+      "name": {
         "type": "string"
       },
-      "minItems": 1
-    }
+      "description": {
+        "type": "string"
+      },
+      "cidr": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1
+      }
+    },
+    "required": ["type", "name", "cidr"]
   },
-  "required": ["type", "name", "asn"]
+  "minItems": 1
 }

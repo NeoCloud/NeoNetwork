@@ -1,0 +1,7 @@
+[
+  {
+    "type": "subnet",
+    "name": "LICSON-NET-SUBALLOC-1",
+    "cidr": ["10.127.14.0,23"]
+  }
+]

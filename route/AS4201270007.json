@@ -1,0 +1,14 @@
+[
+  {
+    "type": "subnet",
+    "name": "StaphNet",
+    "description": "For Staph-infected equipments around the world",
+    "cidr": ["10.127.8.184,29"]
+  },
+  {
+    "type": "subnet",
+    "name": "Staph_v6",
+    "description": "Staph-infected IPv6 subnet - please do not disinfect",
+    "cidr": ["fd10:127:7::,48"]
+  }
+]

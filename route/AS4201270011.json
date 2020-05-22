@@ -1,0 +1,14 @@
+[
+  {
+    "type": "subnet",
+    "name": "LINE-NZ",
+    "description": "For cloud",
+    "cidr": ["10.127.22.8,29"]
+  },
+  {
+    "type": "subnet",
+    "name": "LINE-NZ",
+    "description": "For home",
+    "cidr": ["10.127.22.0,29"]
+  }
+]

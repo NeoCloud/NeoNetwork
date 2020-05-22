@@ -1,0 +1,8 @@
+[
+  {
+    "type": "subnet",
+    "name": "santost12",
+    "description": "For home",
+    "cidr": ["10.127.69.0,29", "fd10:127:6969::,48"]
+  }
+]

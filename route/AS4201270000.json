@@ -1,0 +1,55 @@
+[
+  {
+    "type": "subnet",
+    "name": "RESERVED",
+    "description": "Reserved",
+    "cidr": ["10.127.0.0,24"]
+  },
+  {
+    "type": "loopback",
+    "name": "ucbvax",
+    "description": "Arch Linux/frr",
+    "cidr": ["10.127.255.2,32"]
+  },
+  {
+    "type": "subnet",
+    "name": "CROOM",
+    "description": "LAN at school",
+    "cidr": ["10.127.1.0,24"]
+  },
+  {
+    "type": "subnet",
+    "name": "NeoSystem",
+    "cidr": ["10.127.2.0,24"]
+  },
+  {
+    "type": "loopback",
+    "name": "NeoSystem",
+    "description": "Arch Linux/frr",
+    "cidr": ["10.127.255.80,32"]
+  },
+  {
+    "type": "subnet",
+    "name": "pan hub",
+    "description": "For non-multihome connection in Taiwan",
+    "cidr": ["10.127.3.0,24"]
+  },
+  {
+    "type": "loopback",
+    "name": "NeoPDP-11",
+    "description": "FreeBSD/frr",
+    "cidr": ["10.127.255.1,32"]
+  },
+  {
+    "type": "loopback",
+    "name": "pan",
+    "description": "Arch Linux/frr",
+    "cidr": ["10.127.255.4,32"]
+  },
+  {
+    "type": "subnet",
+    "name": "NeoNetwork Origin",
+    "description": "Neo_Chens Network",
+    "cidr": ["fd10:127:5f37:59df::,64"]
+  }
+]

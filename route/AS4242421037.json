@@ -1,0 +1,8 @@
+[
+  {
+    "type": "subnet",
+    "name": "LibreHouse",
+    "description": "For infrastratures in our network",
+    "cidr": ["10.127.8.0,26"]
+  }
+]
