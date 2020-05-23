@@ -255,13 +255,17 @@ def make_summary():
             print("AS{:<15}{}".format(asn, name))
         print()
         print("Peer table:")
-        peers = list(iter_toml_file("peer"))
-        maxUpstreamLength = max(map(lambda item: len(item[0].stem), peers))
-        print("{:>{}} ~ {}".format("Upstream", maxUpstreamLength, "Downstream"))
-        for item, entities in peers:
-            upstream = item.stem
-            for downstream in sorted(entities["to-peer"], key=str.lower):
-                print("{:>{}} ~ {}".format(upstream, maxUpstreamLength, downstream))
+        peers = {
+            item.stem: entity["to-peer"] for item, entity in iter_toml_file("peer")
+        }
+        peers = [
+            (upstream, downstream)
+            for upstream, downstream_list in peers.items()
+            for downstream in downstream_list
+        ]
+        print("{:>20} ~ {}".format("Upstream", "Downstream"))
+        for upstream, downstream in peers:
+            print("{:>20} ~ {}".format(upstream, downstream))
         print()
         print("Route table:")
         print("{:17}{:30}{:30}{}".format("ASN", "Name", "Prefix", "Supernet"))
