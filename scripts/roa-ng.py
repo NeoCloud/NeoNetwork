@@ -101,13 +101,7 @@ def route_to_roa(asn_table: dict):
                 yield fields
 
     entities = (
-        {
-            "asn": route["asn"],
-            "name": route["name"],
-            "prefix": route["prefix"],
-            "supernet": route["supernet"],
-        }
-        for route in make_route()
+        pick(route, ["asn", "name", "prefix", "supernet"]) for route in make_route()
     )
     entities = sorted(entities, key=lambda item: item["asn"])
     prefixes = [item["prefix"] for item in entities]
