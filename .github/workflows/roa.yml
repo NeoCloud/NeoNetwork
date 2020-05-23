@@ -41,13 +41,13 @@ jobs:
           maxlen4=29
           maxlen6=64
           mkdir -p roa_dir
-          pyenv exec python3 scripts/roa-ng.py -m ${maxlen4} -M ${maxlen6}    -o roa_dir/roa46_bird2.conf
-          pyenv exec python3 scripts/roa-ng.py -m ${maxlen4} -M ${maxlen6} -4 -o roa_dir/roa4_bird2.conf
-          pyenv exec python3 scripts/roa-ng.py -m ${maxlen4} -M ${maxlen6} -6 -o roa_dir/roa6_bird2.conf
-          pyenv exec python3 scripts/roa-ng.py -m ${maxlen4} -M ${maxlen6} -j -o roa_dir/roa46.json
-          pyenv exec python3 scripts/roa-ng.py -m ${maxlen4} -M ${maxlen6} -e -o roa_dir/neonetwork.json
-          pyenv exec python3 scripts/roa-ng.py -m ${maxlen4} -M ${maxlen6} -r -o roa_dir/rfc8416.json
-          pyenv exec python3 scripts/roa-ng.py --summary --output roa_dir/README.txt
+          pyenv exec python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6}    -o roa_dir/roa46_bird2.conf
+          pyenv exec python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -4 -o roa_dir/roa4_bird2.conf
+          pyenv exec python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -6 -o roa_dir/roa6_bird2.conf
+          pyenv exec python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -j -o roa_dir/roa46.json
+          pyenv exec python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -e -o roa_dir/neonetwork.json
+          pyenv exec python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -r -o roa_dir/rfc8416.json
+          pyenv exec python3 scripts/roa.py --summary --output roa_dir/README.txt
 
       - name: Upload files
         env:
