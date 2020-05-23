@@ -230,7 +230,7 @@ def make_summary():
     node_table = node_to_asn(set(asn_table.keys()))
     stream = StringIO()
     with redirect_stdout(stream):
-        print("Entities:")
+        print("Entity table:")
         print("{:20}{:20}{}".format("Name", "Telegram", "Email"))
         for entity in sorted(
             entities.values(), key=lambda entity: entity["name"].lower(),
@@ -240,7 +240,7 @@ def make_summary():
             telegram = contact.get("telegram", "")
             print("{:20}{:20}{}".format(entity["name"], telegram, email))
         print()
-        print("AS List:")
+        print("AS table:")
         print("{:15}{:<17}{:20}{}".format("Source", "ASN", "Owner", "Name"))
         for asn, entity in sorted(asn_table.items(), key=lambda item: item[0]):
             print(
@@ -249,12 +249,12 @@ def make_summary():
                 )
             )
         print()
-        print("Node List:")
+        print("Node table:")
         print("{:<17}{}".format("ASN", "Name"))
         for name, asn in sorted(node_table.items(), key=lambda item: item[1]):
             print("AS{:<15}{}".format(asn, name))
         print()
-        print("Peer List:")
+        print("Peer table:")
         peers = list(iter_toml_file("peer"))
         maxUpstreamLength = max(map(lambda item: len(item[0].stem), peers))
         print("{:>{}} ~ {}".format("Upstream", maxUpstreamLength, "Downstream"))
@@ -262,6 +262,13 @@ def make_summary():
             upstream = item.stem
             for downstream in sorted(entities["to-peer"], key=str.lower):
                 print("{:>{}} ~ {}".format(upstream, maxUpstreamLength, downstream))
+        print()
+        print("Route table:")
+        print("{:17}{:30}{:30}{}".format("ASN", "Name", "Prefix", "Supernet"))
+        for entity in route_to_roa(asn_table):
+            entity["prefix"] = str(entity["prefix"])
+            entity["supernet"] = str(entity["supernet"]) if entity["supernet"] else ""
+            print("AS{asn:<15}{name:30}{prefix:30}{supernet}".format_map(entity))
     return stream.getvalue()
 
 
