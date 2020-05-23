@@ -1,5 +1,0 @@
-TYPE="SUBNET"
-NAME="icecat"
-DESC="NextMoe Radvd IPv6 Address"
-ASN="4201270005"
-SUPERNET="fd10:127:0233::/48"

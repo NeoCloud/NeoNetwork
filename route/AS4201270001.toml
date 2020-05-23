@@ -1,0 +1,7 @@
+["10.127.41.0/24"]
+type = "subnet"
+name = "Septs IX IPv4 Pool"
+
+["fd10:127:41::/48"]
+type = "subnet"
+name = "Septs IX IPv6 Pool"

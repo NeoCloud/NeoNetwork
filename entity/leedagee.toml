@@ -1,0 +1,8 @@
+name = "leedagee"
+babel = ["zh-N", "zh-hans-N", "zh-hant-3", "en-2", "ja-0"]
+
+[contact]
+email = "leedageea@gmail.com"
+telegram = "leedagee"
+irc = "lizr"
+github = "leedagee"

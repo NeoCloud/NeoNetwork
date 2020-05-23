@@ -1,0 +1,9 @@
+["10.127.56.0/24"]
+type = "subnet"
+name = "frank-hsinchu"
+description = "For home"
+
+["10.127.255.56/32"]
+type = "loopback"
+name = "frank-hsinchu-1"
+description = "Ubuntu/bird"

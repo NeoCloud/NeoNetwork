@@ -1,0 +1,6 @@
+name = "LINE-NZ"
+babel = ["en"]
+
+[contact]
+email = "dn42@line.co.nz"
+github = "line-nz"

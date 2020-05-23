@@ -1,0 +1,9 @@
+name = "Staph"
+description = "A programming prokaryotic organism"
+babel = ["zh-N", "en-4", "ja-2", "es-1", "fr-1"]
+
+[contact]
+email = "staph@aosc.io"
+telegram = "Staph"
+irc = "Staph_aureus"
+github = "StephDC"

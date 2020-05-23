@@ -1,4 +1,0 @@
-TYPE="SUBNET"
-NAME="pan hub"
-DESC="For non-multihome connection in Taiwan"
-ASN="4201270000"

@@ -1,0 +1,5 @@
+name = "alanyhq"
+babel = ["zh-N", "en-2"]
+
+[contact]
+telegram = "alanyhq"
