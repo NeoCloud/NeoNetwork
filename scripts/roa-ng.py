@@ -2,6 +2,9 @@
 import argparse
 import json
 import time
+from collections import defaultdict
+from contextlib import redirect_stdout
+from io import StringIO
 from ipaddress import IPv4Network, IPv6Network, ip_network
 from itertools import combinations
 from pathlib import Path
@@ -147,6 +150,121 @@ def prehandle_roa(asn_table: dict, args):
     return roa4, roa6
 
 
+def make_export(roa4, roa6):
+    entities = load_entities()
+    asn_table = load_asn(entities)
+    current = int(time.time())
+    output = {
+        "metadata": {"generated": current, "valid": current + 14 * 86400},
+        "people": {
+            owner: {"info": entity, "asns": []} for owner, entity in entities.items()
+        },
+    }
+    for asn, asn_info in asn_table.items():
+        owner = asn_info["owner"]
+        asn_item = {
+            "asn": asn,
+            "name": asn_info["name"],
+            "source": asn_info["source"],
+            "routes": {
+                "ipv4": [
+                    pick(roa, ["prefix", "maxLength"])
+                    for roa in roa4
+                    if roa["asn"] == asn
+                ],
+                "ipv6": [
+                    pick(roa, ["prefix", "maxLength"])
+                    for roa in roa6
+                    if roa["asn"] == asn
+                ],
+            },
+        }
+        output["people"][owner]["asns"].append(asn_item)
+    return json.dumps(output, indent=2)
+
+
+def make_json(roa4, roa6):
+    current = int(time.time())
+    output = {
+        "metadata": {
+            "counts": len(roa4) + len(roa6),
+            "generated": current,
+            "valid": current + 14 * 86400,
+        },
+        "roas": [
+            {"asn": "AS%d" % roa["asn"], **pick(roa, ["prefix", "maxLength"])}
+            for roa in (*roa4, *roa6)
+        ],
+    }
+    return json.dumps(output, indent=2)
+
+
+def make_rfc8416(roa4, roa6):
+    output = {
+        "slurmVersion": 1,
+        "validationOutputFilters": {"prefixFilters": [], "bgpsecFilters": []},
+        "locallyAddedAssertions": {
+            "bgpsecAssertions": [],
+            "prefixAssertions": [
+                pick(
+                    roa, ["asn", "prefix"], maxLength="maxPrefixLength", name="comment",
+                )
+                for roa in (*roa4, *roa6)
+            ],
+        },
+    }
+    return json.dumps(output, indent=2)
+
+
+def make_roa_records(roa4, roa6):
+    records = [
+        "route {asn} max {prefix} as {maxLength};".format_map(roa)
+        for roa in (*roa4, *roa6)
+    ]
+    return "\n".join(["# NeoNetwork ROA tool", "", *records])
+
+
+def make_summary():
+    entities = load_entities()
+    asn_table = load_asn(entities)
+    node_table = node_to_asn(set(asn_table.keys()))
+    stream = StringIO()
+    with redirect_stdout(stream):
+        print("Entities:")
+        print("{:20}{:20}{}".format("Name", "Telegram", "Email"))
+        for entity in sorted(
+            entities.values(), key=lambda entity: entity["name"].lower(),
+        ):
+            contact = entity.get("contact", {})
+            email = contact.get("email", "")
+            telegram = contact.get("telegram", "")
+            print("{:20}{:20}{}".format(entity["name"], telegram, email))
+        print()
+        print("AS List:")
+        print("{:15}{:<17}{:20}{}".format("Source", "ASN", "Owner", "Name"))
+        for asn, entity in sorted(asn_table.items(), key=lambda item: item[0]):
+            print(
+                "{:15}AS{:<15}{:20}{}".format(
+                    entity["source"], asn, entity["owner"], entity["name"]
+                )
+            )
+        print()
+        print("Node List:")
+        print("{:<17}{}".format("ASN", "Name"))
+        for name, asn in sorted(node_table.items(), key=lambda item: item[1]):
+            print("AS{:<15}{}".format(asn, name))
+        print()
+        print("Peer List:")
+        peers = list(iter_toml_file("peer"))
+        maxUpstreamLength = max(map(lambda item: len(item[0].stem), peers))
+        print("{:>{}} ~ {}".format("Upstream", maxUpstreamLength, "Downstream"))
+        for item, entities in peers:
+            upstream = item.stem
+            for downstream in sorted(entities["to-peer"], key=str.lower):
+                print("{:>{}} ~ {}".format(upstream, maxUpstreamLength, downstream))
+    return stream.getvalue()
+
+
 def main(args):
     entities = load_entities()
     asn_table = load_asn(entities)
@@ -154,74 +272,15 @@ def main(args):
     assert_peer(set(node_table.keys()))
     roa4, roa6 = prehandle_roa(asn_table, args)
     if args.export:
-        current = int(time.time())
-        # people has [asns], asn has [route]
-        output = {
-            "metadata": {"generated": current, "valid": current + 14 * 86400},
-            "people": {
-                owner: {"info": entity, "asns": []}
-                for owner, entity in entities.items()
-            },
-        }
-        for asn, asn_info in asn_table.items():
-            owner = asn_info["owner"]
-            asn_item = {
-                "asn": asn,
-                "name": asn_info["name"],
-                "source": asn_info["source"],
-                "routes": {
-                    "ipv4": [
-                        pick(roa, ["prefix", "maxLength"])
-                        for roa in roa4
-                        if roa["asn"] == asn
-                    ],
-                    "ipv6": [
-                        pick(roa, ["prefix", "maxLength"])
-                        for roa in roa6
-                        if roa["asn"] == asn
-                    ],
-                },
-            }
-            output["people"][owner]["asns"].append(asn_item)
-        return json.dumps(output, indent=2)
+        return make_export(roa4, roa6)
     elif args.json:
-        current = int(time.time())
-        output = {
-            "metadata": {
-                "counts": len(roa4) + len(roa6),
-                "generated": current,
-                "valid": current + 14 * 86400,
-            },
-            "roas": [
-                {"asn": "AS%d" % roa["asn"], **pick(roa, ["prefix", "maxLength"])}
-                for roa in (*roa4, *roa6)
-            ],
-        }
-        return json.dumps(output, indent=2)
+        return make_json(roa4, roa6)
     elif args.rfc8416:
-        output = {
-            "slurmVersion": 1,
-            "validationOutputFilters": {"prefixFilters": [], "bgpsecFilters": []},
-            "locallyAddedAssertions": {
-                "bgpsecAssertions": [],
-                "prefixAssertions": [
-                    pick(
-                        roa,
-                        ["asn", "prefix"],
-                        maxLength="maxPrefixLength",
-                        name="comment",
-                    )
-                    for roa in (*roa4, *roa6)
-                ],
-            },
-        }
-        return json.dumps(output, indent=2)
+        return make_rfc8416(roa4, roa6)
+    elif args.summary:
+        return make_summary()
     else:
-        records = [
-            "route {asn} max {prefix} as {maxLength};".format_map(roa)
-            for roa in (*roa4, *roa6)
-        ]
-        return "\n".join(["# NeoNetwork ROA tool", "", *records])
+        return make_roa_records(roa4, roa6)
 
 
 if __name__ == "__main__":
@@ -234,6 +293,7 @@ if __name__ == "__main__":
     )
     parser.add_argument("-j", "--json", action="store_true", help="output json")
     parser.add_argument("-r", "--rfc8416", action="store_true", help="output rfc8416")
+    parser.add_argument("-s", "--summary", action="store_true", help="output summary")
     parser.add_argument("-o", "--output", default="", help="write output to file")
     parser.add_argument("-4", "--ipv4", action="store_true", help="print ipv4 only")
     parser.add_argument("-6", "--ipv6", action="store_true", help="print ipv6 only")
