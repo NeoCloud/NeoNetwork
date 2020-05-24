@@ -101,12 +101,9 @@ def route_to_roa(asn_table: dict):
                 assert fields["name"]
                 assert is_neo_network(fields["prefix"])
                 assert not fields["supernet"] or is_neo_network(fields["supernet"])
-                yield fields
+                yield pick(fields, ["asn", "name", "type", "prefix", "supernet"])
 
-    entities = (
-        pick(route, ["asn", "name", "prefix", "supernet"]) for route in make_route()
-    )
-    entities = sorted(entities, key=lambda item: item["asn"])
+    entities = sorted(make_route(), key=lambda item: item["asn"])
     prefixes = [item["prefix"] for item in entities]
     for net1, net2 in combinations(
         sorted(entities, key=lambda net: net["prefix"].prefixlen), 2
@@ -288,12 +285,13 @@ def make_summary():
                 (
                     "AS{asn}".format_map(entity),
                     entity["name"],
+                    entity["type"],
                     entity["prefix"] or "",
                     entity["supernet"] or "",
                 )
                 for entity in route_to_roa(asn_table)
             ),
-            headers=["ASN", "Name", "Prefix", "Supernet"],
+            headers=["ASN", "Name", "Type", "Prefix", "Supernet"],
             tablefmt="presto",
         )
         print(route_table)
