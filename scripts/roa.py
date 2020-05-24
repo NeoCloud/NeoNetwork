@@ -225,54 +225,78 @@ def make_roa_records(roa4, roa6):
 
 
 def make_summary():
+    from tabulate import tabulate
+
     entities = load_entities()
     asn_table = load_asn(entities)
     node_table = node_to_asn(set(asn_table.keys()))
     stream = StringIO()
     with redirect_stdout(stream):
         print("Entity table:")
-        print("{:20}{:20}{}".format("Name", "Telegram", "Email"))
-        for entity in sorted(
-            entities.values(), key=lambda entity: entity["name"].lower(),
-        ):
-            contact = entity.get("contact", {})
-            email = contact.get("email", "")
-            telegram = contact.get("telegram", "")
-            print("{:20}{:20}{}".format(entity["name"], telegram, email))
+        entity_table = tabulate(
+            (
+                (
+                    entity["name"],
+                    entity.get("contact", {}).get("email"),
+                    entity.get("contact", {}).get("telegram"),
+                )
+                for entity in entities.values()
+            ),
+            headers=["Name", "Email", "Telegram"],
+            tablefmt="presto",
+        )
+        print(entity_table)
         print()
         print("AS table:")
-        print("{:15}{:<17}{:20}{}".format("Source", "ASN", "Owner", "Name"))
-        for asn, entity in sorted(asn_table.items(), key=lambda item: item[0]):
-            print(
-                "{:15}AS{:<15}{:20}{}".format(
-                    entity["source"], asn, entity["owner"], entity["name"]
-                )
-            )
+        as_table = tabulate(
+            (
+                (entity["source"], "AS{}".format(asn), entity["owner"], entity["name"])
+                for asn, entity in sorted(asn_table.items(), key=lambda item: item[0])
+            ),
+            headers=["Source", "ASN", "Owner", "Name"],
+            tablefmt="presto",
+        )
+        print(as_table)
         print()
         print("Node table:")
-        print("{:<17}{}".format("ASN", "Name"))
-        for name, asn in sorted(node_table.items(), key=lambda item: item[1]):
-            print("AS{:<15}{}".format(asn, name))
+        node_table = tabulate(
+            (
+                ("AS{}".format(asn), name)
+                for name, asn in sorted(node_table.items(), key=lambda item: item[1])
+            ),
+            headers=["ASN", "Name"],
+            tablefmt="presto",
+        )
+        print(node_table)
         print()
         print("Peer table:")
-        peers = {
-            item.stem: entity["to-peer"] for item, entity in iter_toml_file("peer")
-        }
-        peers = [
-            (upstream, downstream)
-            for upstream, downstream_list in peers.items()
-            for downstream in downstream_list
-        ]
-        print("{:>20} ~ {}".format("Upstream", "Downstream"))
-        for upstream, downstream in peers:
-            print("{:>20} ~ {}".format(upstream, downstream))
+        peer_table = tabulate(
+            (
+                (item.stem, downstream)
+                for item, entity in iter_toml_file("peer")
+                for downstream in entity["to-peer"]
+            ),
+            headers=["Upstream", "Downstream"],
+            tablefmt="presto",
+            colalign=("right",),
+        )
+        print(peer_table)
         print()
         print("Route table:")
-        print("{:17}{:30}{:30}{}".format("ASN", "Name", "Prefix", "Supernet"))
-        for entity in route_to_roa(asn_table):
-            entity["prefix"] = str(entity["prefix"])
-            entity["supernet"] = str(entity["supernet"]) if entity["supernet"] else ""
-            print("AS{asn:<15}{name:30}{prefix:30}{supernet}".format_map(entity))
+        route_table = tabulate(
+            (
+                (
+                    "AS{asn}".format_map(entity),
+                    entity["name"],
+                    entity["prefix"] or "",
+                    entity["supernet"] or "",
+                )
+                for entity in route_to_roa(asn_table)
+            ),
+            headers=["ASN", "Name", "Prefix", "Supernet"],
+            tablefmt="presto",
+        )
+        print(route_table)
     return stream.getvalue()
 
 
