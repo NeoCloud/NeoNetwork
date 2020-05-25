@@ -36,7 +36,7 @@ Detailed Information of Each Variable
 	Available options are: Tinc, WireGuard, L2TP, GRE, IPsec/L2TP, IPsec/GRE, OpenVPN, SLIRP, PPP
 
 3. NAME:	Name
-4. ASN:		ASN
+4. ASN:		ASN (without prefix "AS")
 5. UPSTREAM:	Upstream Node Name
 6. DOWNSTREAM:	Downstream Node Name
 7. DESC:	Description

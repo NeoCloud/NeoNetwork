@@ -22,7 +22,7 @@ digraph "NeoNetwork Nodes"
 	magicneko_CN01 [label="M-CN1\n(10.127.4.101,\nfd10:127:0233:7170:2021::10.127.4.101)"]
 	staph [label="s.aureus.ga\n(10.127.8.185\nfd10:127:7::1)\n(AS4201270007)"]
 	staph_CN [label="cnhome.aureus.ga\n(10.127.8.187\nfd10:127:7::3)\n(AS4201270007)"]
-	chenx97 [label="chenx97.neocloud.tw\n(AS4201270003)"]
+	chenx97 [label="chenx97.neocloud.tw\n(10.127.89.3)\n(fd10:127:1919:810::893)\n(AS4201270003)"]
 	JerryXiao [label="jpn.neo.jerryxiao.cc\n(10.127.8.193)"]
 	JerryXiao_SH01 [label="jerryxiao-sh01\n(10.127.8.195)"]
 	JerryXiao_HK01 [label="jerryxiao-hk01\n(10.127.8.194)"]

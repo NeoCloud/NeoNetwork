@@ -1,0 +1,9 @@
+[LINE-NZ-NZ01]
+asn = 4201270011
+description = "LINE-NZ Home"
+cidr = ["10.127.22.1/29"]
+
+[LINE-NZ-AU01]
+asn = 4201270011
+description = "LINE-NZ Cloud"
+cidr = ["10.127.22.9/29"]

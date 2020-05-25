@@ -1,0 +1,9 @@
+["10.127.8.184/29"]
+type = "subnet"
+name = "StaphNet"
+description = "For Staph-infected equipments around the world"
+
+["fd10:127:7::/48"]
+type = "subnet"
+name = "Staph_v6"
+description = "Staph-infected IPv6 subnet - please do not disinfect"

@@ -1,0 +1,20 @@
+name = "Junde Yhi"
+babel = [
+    "zh-N",
+    "zh-hans-N",
+    "zh-hant-2",
+    "en-3",
+    "de-0",
+    "ru-0",
+    "jp-0",
+    "fi-0",
+]
+
+[contact]
+email = "lmy441900@live.com"
+telegram = "lmy441900"
+mastodon = "@lmy441900@sn.angry.im"
+github = "lmy441900"
+
+[persona]
+pgp = "E6C74782A1FBEE741D09885FD274286F672C800A"

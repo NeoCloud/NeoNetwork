@@ -1,5 +1,0 @@
-ASN="4201270013"
-DESC="Ndoskrnl's first node"
-IP=(
-	"10.127.13.1/24"
-)

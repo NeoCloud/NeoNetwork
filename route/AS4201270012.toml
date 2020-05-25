@@ -1,0 +1,4 @@
+["10.127.5.0/28"]
+type = "subnet"
+name = "yhi-h"
+description = "Yhi Interconnect H"
