@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import json
+import re
 import time
 from collections import defaultdict
 from contextlib import redirect_stdout
@@ -38,6 +39,15 @@ def is_dn42_asn(asn: int):
     return 4242420000 <= asn <= 4242429999
 
 
+def name_to_nic_hdl(name):
+    r, num = re.subn(r"[^0-9A-Z]", "-", name.upper())
+    _r = len(r.replace("-", ""))
+    assert _r >= 3  # has at least 3 effective chars
+    assert r[0] != "-"  # starts with [0-9A-Z]
+    assert num < _r  # not too many subs
+    return r
+
+
 def iter_toml_file(path: str):
     for item in Path(path).iterdir():
         if not item.is_file() or item.suffix != ".toml":
@@ -46,26 +56,23 @@ def iter_toml_file(path: str):
 
 
 def load_entities():
-    return {item.stem: entity for item, entity in iter_toml_file("entity")}
+    for item, entity in iter_toml_file("entity"):
+        yield item.stem, entity
 
 
 def load_asn(entities: dict):
-    def assert_entity(entity, asn):
-        owner = entity.get("owner")
-        source = entity.get("source")
-        if is_neo_network_asn(asn):
-            source = "NeoNetwork"
-        elif is_dn42_asn(asn):
-            source = "DN42"
-        entity["source"] = source
-        assert owner in entities
-        assert source in ["NeoNetwork", "DN42", "Internet"]
-        return entity
-
-    mapping = {
-        int(item.stem.lstrip("AS")): entity for item, entity in iter_toml_file("asn")
-    }
-    return {asn: assert_entity(entity, asn) for asn, entity in mapping.items()}
+    for item, entity in iter_toml_file("asn"):
+        asn = int(item.stem.lstrip("AS"))
+        entity["source"] = (
+            is_neo_network_asn(asn)
+            and "NeoNetwork"
+            or is_dn42_asn(asn)
+            and "DN42"
+            or entity.get("source")
+        )
+        assert entity["owner"] in entities
+        assert entity["source"] in ["NeoNetwork", "DN42", "Internet"]
+        yield asn, entity
 
 
 def node_to_asn(orignal_asn_set: set):
@@ -148,35 +155,58 @@ def prehandle_roa(asn_table: dict, args):
 
 
 def make_export(roa4, roa6):
-    entities = load_entities()
-    asn_table = load_asn(entities)
+    def modify_entity(entity):
+        entity["desc"] = ""
+        entity["nic_hdl"] = name_to_nic_hdl(entity["name"])
+        entity["auth"] = (
+            "persona" in entity
+            and "pgp-fingerprint {pgp}".format_map(entity["persona"])
+            or ""
+        )
+        if "babel" in entity:
+            del entity["babel"]
+        if "persona" in entity:
+            del entity["persona"]
+        if "contact" in entity:
+            entity["contact"] = [
+                "%s:%s" % (key.upper(), value)
+                for key, value in entity["contact"].items()
+            ]
+        return entity
+
+    def filter_route(records, asn):
+        return [
+            pick(roa, ["prefix", "maxLength"], name="netname")
+            for roa in records
+            if roa["asn"] == asn
+        ]
+
+    entities = dict(load_entities())
+    asn_list = [
+        {
+            "asn": asn,
+            "owner": asn_info["owner"],
+            "name": asn_info["name"],
+            "source": asn_info["source"],
+            "routes": {
+                "ipv4": filter_route(roa4, asn),
+                "ipv6": filter_route(roa6, asn),
+            },
+        }
+        for asn, asn_info in load_asn(entities)
+    ]
+
     current = int(time.time())
     output = {
         "metadata": {"generated": current, "valid": current + 14 * 86400},
         "people": {
-            owner: {"info": entity, "asns": []} for owner, entity in entities.items()
+            owner: {
+                "info": modify_entity(entity),
+                "asns": list(filter(lambda item: item["owner"] == owner, asn_list)),
+            }
+            for owner, entity in entities.items()
         },
     }
-    for asn, asn_info in asn_table.items():
-        owner = asn_info["owner"]
-        asn_item = {
-            "asn": asn,
-            "name": asn_info["name"],
-            "source": asn_info["source"],
-            "routes": {
-                "ipv4": [
-                    pick(roa, ["prefix", "maxLength"])
-                    for roa in roa4
-                    if roa["asn"] == asn
-                ],
-                "ipv6": [
-                    pick(roa, ["prefix", "maxLength"])
-                    for roa in roa6
-                    if roa["asn"] == asn
-                ],
-            },
-        }
-        output["people"][owner]["asns"].append(asn_item)
     return json.dumps(output, indent=2)
 
 
@@ -224,8 +254,8 @@ def make_roa_records(roa4, roa6):
 def make_summary():
     from tabulate import tabulate
 
-    entities = load_entities()
-    asn_table = load_asn(entities)
+    entities = dict(load_entities())
+    asn_table = dict(load_asn(entities))
     node_table = node_to_asn(set(asn_table.keys()))
     stream = StringIO()
     with redirect_stdout(stream):
@@ -299,8 +329,8 @@ def make_summary():
 
 
 def main(args):
-    entities = load_entities()
-    asn_table = load_asn(entities)
+    entities = dict(load_entities())
+    asn_table = dict(load_asn(entities))
     node_table = node_to_asn(set(asn_table.keys()))
     assert_peer(set(node_table.keys()))
     roa4, roa6 = prehandle_roa(asn_table, args)
