@@ -1,0 +1,5 @@
+["fd10:127:0233:1000::/64"]
+type = "subnet"
+name = "icecat"
+description = "Used to distribute IPv6 upstream of DN42, only used for ASN identification when tracking routes"
+supernet = "fd10:127:0233::/48"
