@@ -156,22 +156,7 @@ def prehandle_roa(asn_table: dict, args):
 
 def make_export(roa4, roa6):
     def modify_entity(entity):
-        entity["desc"] = ""
         entity["nic_hdl"] = name_to_nic_hdl(entity["name"])
-        entity["auth"] = (
-            "persona" in entity
-            and "pgp-fingerprint {pgp}".format_map(entity["persona"])
-            or ""
-        )
-        if "babel" in entity:
-            del entity["babel"]
-        if "persona" in entity:
-            del entity["persona"]
-        if "contact" in entity:
-            entity["contact"] = [
-                "%s:%s" % (key.upper(), value)
-                for key, value in entity["contact"].items()
-            ]
         return entity
 
     def filter_route(records, asn):
