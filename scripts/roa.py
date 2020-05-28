@@ -173,6 +173,7 @@ def make_export(roa4, roa6):
             "owner": asn_info["owner"],
             "name": asn_info["name"],
             "source": asn_info["source"],
+            "description": asn_info.get("description"),
             "routes": {
                 "ipv4": filter_route(roa4, asn),
                 "ipv6": filter_route(roa6, asn),
