@@ -1,9 +1,8 @@
 to-peer = [
-    "MagicNeko-HK01",
-    "NeoPDP-11",
-    "NeoSystem",
-    "chenx97",
-    "megumiLHS",
-    "pan",
-    "santost12",
+  "MagicNeko-HK01",
+  "NeoPDP-11",
+  "NeoSystem",
+  "chenx97",
+  "megumiLHS",
+  "pan",
 ]
