@@ -28,3 +28,8 @@ santost12	IN	A	10.128.69.1
 
 neko		IN	TXT	"helloworld"
 telegram	IN	TXT	"https://t.me/NeoNetworkVPN"
+
+; DELEGATED ZONES
+jerry       IN  NS    ns1.jerry
+ns1.jerry   IN  A     10.127.8.193
+ns1.jerry   IN  AAAA  fd10:127:53::1
