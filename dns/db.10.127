@@ -22,7 +22,7 @@ $TTL	604800
 185.8	IN	PTR	staph.neo.
 187.8	IN	PTR	staph-cn.neo.
 
-1.233	IN	PTR	1.233.gw4.imiku.cn.neo.
+1.233	IN	PTR	icecat-gw04.magicneko.imiku.cn.
 1.4	IN	PTR	Abolition-hk.bb.ix-magicneko.neo.
 10.4	IN	PTR	01-100M-200G.hk.bb.ix-magicneko.neo.
 12.4	IN	PTR	02-100M-5G.hk.bb.ix-magicneko.neo.

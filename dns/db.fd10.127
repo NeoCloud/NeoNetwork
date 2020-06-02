@@ -9,5 +9,22 @@ $TTL	604800
 ;
 @	IN	NS	NeoPDP-11.neo.
 
+
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.c.3.c.1.3.3.2.0    IN      PTR     icecat-gw06.magicneko.imiku.cn.
+1.0.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     Abolition-hk.bb.ix-magicneko.neo.
+a.0.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     01-100M-200G.hk.bb.ix-magicneko.neo.
+c.0.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     02-100M-5G.hk.bb.ix-magicneko.neo.
+d.0.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     02-100M-200G.jp.bb.ix-magicneko.neo.
+e.0.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     01-100M-200G.ru.bb.ix-magicneko.neo.
+f.0.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     03-100M-200G.jp.bb.ix-magicneko.neo.
+0.1.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     01-100M-200G-Abolition.us.bb.ix-magicneko.neo.
+1.1.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     01-100M-200G.tw.bb.ix-magicneko.neo.
+2.1.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     01-100M-200G.uk.bb.ix-magicneko.neo.
+4.6.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     cn-adsl-15M.cn.bb.ix-magicneko.neo.
+5.6.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     cn-adsl.15M.cn.bb.ix-magicneko.neo.
+
+
+
 ; DELEGATED ZONES
 3.5.0.0        IN      NS      ns1.jerry.neo.
+
