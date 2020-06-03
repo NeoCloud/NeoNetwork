@@ -1,0 +1,4 @@
+[iEdon]
+asn = 4242422189
+description = "IEDON-NET"
+cidr = ["10.127.21.1/24"]
