@@ -1,0 +1,7 @@
+["10.127.69.0/29"]
+type = "subnet"
+name = "santost12"
+
+["fd10:127:ec39::/48"]
+type = "subnet"
+name = "santost12"
