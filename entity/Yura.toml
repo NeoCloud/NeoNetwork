@@ -1,0 +1,18 @@
+name = "Yura"
+babel = [
+    "zh-N",
+    "zh-hans-N",
+    "zh-hant-2",
+    "zh-yue-2",
+    "en-3",
+    "ru-0",
+    "fi-0",
+    "ar-0",
+    "jp-0"
+]
+
+[contact]
+email = "yurachan@etlgr.com"
+
+[persona]
+pgp = "9E525A59D24A4041CA3C32BBF75C0CDC951918BE"
