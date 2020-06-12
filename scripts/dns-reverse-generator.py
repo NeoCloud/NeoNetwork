@@ -28,7 +28,7 @@ def main():
     for name, address in iter_route("loopback"):
         if isinstance(address, IPv4Address):
             pointer = address.reverse_pointer.replace(".127.10.in-addr.arpa", "")
-            records.append("%s\tIN\tPTR\t%s.neo" % (pointer, name))
+            records.append("%s\tIN\tPTR\t%s.neo." % (pointer, name))
     RESOLVE_FILE.write_text("\n".join(records))
 
 
