@@ -16,6 +16,7 @@ root		IN	CNAME	neo.
 NeoPDP-11	IN	A	10.127.255.1
 ucbvax		IN	A	10.127.255.2
 caasih		IN	A	10.127.2.16
+NeoVAX		IN	A	10.127.2.22
 NeoSystem	IN	A	10.127.255.80
 neostorage	IN	A	10.127.1.10
 NeoBOX		IN	A	10.127.1.20
