@@ -12,3 +12,13 @@ cidr = ["10.127.4.14/24", "fd10:127:0233:7170:2021::10.127.4.14/80"]
 asn = 4201270008
 description = "MagicNeko IX LAN interconnection"
 cidr = ["10.127.4.15/24", "fd10:127:0233:7170:2021::10.127.4.15/80"]
+
+[MagicNeko-TW01]
+asn = 4201270008
+description = "MagicNeko IX LAN interconnection"
+cidr = ["10.127.4.17/24", "fd10:127:0233:7170:2021::10.127.4.17/80"]
+
+[MagicNeko-UK01]
+asn = 4201270008
+description = "MagicNeko IX LAN interconnection"
+cidr = ["10.127.4.18/24", "fd10:127:0233:7170:2021::10.127.4.18/80"]
