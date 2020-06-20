@@ -25,7 +25,10 @@ NNPCC		IN	A	10.127.1.63
 pan		IN	A	10.127.3.1
 staph		IN	A	10.127.8.185
 staph-cn	IN	A	10.127.8.187
-santost12	IN	A	10.128.69.1
+santost12	IN	A	10.127.69.1
+tracker		IN	A	10.127.69.1
+ipv4.tracker	IN	A	10.127.69.1
+ipv6.tracker	IN	AAAA	fd10:127:ec39::1
 
 neko		IN	TXT	"helloworld"
 telegram	IN	TXT	"https://t.me/NeoNetworkVPN"
