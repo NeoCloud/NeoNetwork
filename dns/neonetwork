@@ -29,8 +29,6 @@ santost12	IN	A	10.127.69.1
 tracker		IN	A	10.127.69.1
 ipv4.tracker	IN	A	10.127.69.1
 ipv6.tracker	IN	AAAA	fd10:127:ec39::1
-kp		IN	A	10.127.69.1
-kp		IN	AAAA	fd10:127:ec39::1
 
 neko		IN	TXT	"helloworld"
 telegram	IN	TXT	"https://t.me/NeoNetworkVPN"
