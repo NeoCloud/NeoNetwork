@@ -1,9 +1,9 @@
-["fd10:127:1919:810::/64"]
+["fd10:127:1919::/48"]
 type = "subnet"
 name = "chenx97"
 description = "chenx97 but the subnet smells"
 
-["10.127.89.3/32"]
-type = "loopback"
-name = "chenx97-conoha"
-description = "Debian 10/frr"
+["10.127.89.0/24"]
+type = "subnet"
+name = "chenx97 v4"
+description = ""
