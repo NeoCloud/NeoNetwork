@@ -1,0 +1,16 @@
+name = "liangjw"
+babel = [
+    "zh-N",
+    "zh-hans-N",
+    "zh-hant-2",
+    "zh-yue-2",
+    "en-2",
+    "ja-1",
+]
+
+[contact]
+email = "liangjw@etlgr.com"
+telegram = "liangjw"
+
+[persona]
+pgp = "A04C56688622E1D51DB4ED5D263BDBB7ECAB32E4"
