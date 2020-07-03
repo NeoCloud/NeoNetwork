@@ -3,7 +3,7 @@ asn = 4201270008
 description = "Magicneko IX LAN interconnection"
 cidr = ["10.127.4.10/24", "fd10:127:0233:7170:2021::10.127.4.10/80"]
 
-[MagicNeko-RU01]
+[MagicNeko-JP02]
 asn = 4201270008
 description = "Magicneko IX LAN interconnection"
 cidr = ["10.127.4.14/24", "fd10:127:0233:7170:2021::10.127.4.14/80"]

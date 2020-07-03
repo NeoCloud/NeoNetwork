@@ -26,11 +26,11 @@ $TTL	604800
 1.4	IN	PTR	Abolition-hk.bb.ix-magicneko.neo.
 10.4	IN	PTR	01-100M-200G.hk.bb.ix-magicneko.neo.
 12.4	IN	PTR	02-100M-5G.hk.bb.ix-magicneko.neo.
-13.4	IN	PTR	02-100M-200G.jp.bb.ix-magicneko.neo.
-14.4	IN	PTR	01-100M-200G.ru.bb.ix-magicneko.neo.
-15.4	IN	PTR	03-100M-200G.jp.bb.ix-magicneko.neo.
+13.4	IN	PTR	02-100M-200G-Abolition.ru.bb.ix-magicneko.neo.
+14.4	IN	PTR	01-200M-500G.jp.bb.ix-magicneko.neo.
+15.4	IN	PTR	03-200M-500G.jp.bb.ix-magicneko.neo.
 16.4	IN	PTR	01-100M-200G-Abolition.us.bb.ix-magicneko.neo.
-17.4	IN	PTR	01-100M-200G.tw.bb.ix-magicneko.neo.
+17.4	IN	PTR	01-50M-100G.tw.bb.ix-magicneko.neo.
 18.4	IN	PTR	01-100M-200G.uk.bb.ix-magicneko.neo.
 100.4	IN	PTR	cn-adsl-15M.cn.bb.ix-magicneko.neo.
 101.4	IN	PTR	cn-adsl.15M.cn.bb.ix-magicneko.neo.
