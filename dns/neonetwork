@@ -48,12 +48,12 @@ lantian     IN  NS    ns3.lantian
 lantian     IN  NS    ns4.lantian
 lantian     IN  NS    ns5.lantian
 ns1.lantian IN  A     10.127.10.1
-ns1.lantian IN  AAAA  fd42:127:10::8b:c606:ba01
+ns1.lantian IN  AAAA  fd10:127:10::8b:c606:ba01
 ns2.lantian IN  A     10.127.10.65
-ns2.lantian IN  AAAA  fd42:127:10::dd:c85a:8a93
+ns2.lantian IN  AAAA  fd10:127:10::dd:c85a:8a93
 ns3.lantian IN  A     10.127.10.151
-ns3.lantian IN  AAAA  fd42:127:10::cc:433e:da3b
+ns3.lantian IN  AAAA  fd10:127:10::cc:433e:da3b
 ns4.lantian IN  A     10.127.10.239
-ns4.lantian IN  AAAA  fd42:127:10::e9:77e4:e2b0
+ns4.lantian IN  AAAA  fd10:127:10::e9:77e4:e2b0
 ns5.lantian IN  A     10.127.10.80
-ns5.lantian IN  AAAA  fd42:127:10::20:5549:a809
+ns5.lantian IN  AAAA  fd10:127:10::20:5549:a809
