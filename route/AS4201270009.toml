@@ -1,11 +1,6 @@
-["10.127.69.0/29"]
+["10.127.69.0/27"]
 type = "subnet"
 name = "santost12"
-
-["10.127.69.8/29"]
-type = "subnet"
-name = "santost12"
-description = "NAT64"
 
 ["fd10:127:ec39::/48"]
 type = "subnet"
