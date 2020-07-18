@@ -1,0 +1,10 @@
+["10.127.234.0/24"]
+type = "subnet"
+name = "CainSakura-home-devices"
+description = "For home devices internal network segment for testing connectivity quality, No SLA"
+
+["fd10:127:0234::/48"]
+type = "subnet"
+name = "CainSakura-home-devices"
+description = "For home devices internal network segment for testing connectivity quality, No SLA"
+supernet = "fd10:127:0233::/48"
