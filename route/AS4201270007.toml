@@ -1,4 +1,4 @@
-["10.127.8.184/29"]
+["10.127.8.160/27"]
 type = "subnet"
 name = "StaphNet"
 description = "For Staph-infected equipments around the world"
