@@ -26,10 +26,8 @@ jobs:
           python-version: "3.x"
           architecture: "x64"
 
-      - name: Run ROA script
-        run: .scripts/generate-roa.sh
+      - run: .scripts/generate-roa.sh
 
-      - name: Push to NeoCloud/NeoNetwork-ROA
-        run: .scripts/push-to-roa.sh
+      - run: .scripts/push-to-roa.sh
         env:
           SSHPRIVKEY: ${{ secrets.KEY }}
