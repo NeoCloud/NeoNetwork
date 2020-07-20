@@ -18,4 +18,4 @@ git add .
 git config user.name "neonet roa bot"
 git config user.email "bot@github.com"
 git commit -m "Generated at $(TZ='UTC' date +%Y%m%d-%H%M%S.%N)"
-git push --force --quiet "git@github.com:NeoCloud/NeoNetwork-ROA.git" HEAD:master
+git push
