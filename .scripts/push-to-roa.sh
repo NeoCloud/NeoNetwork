@@ -2,7 +2,7 @@
 set -xeuo pipefail
 IFS=$'\n\t'
 
-pushed roa_dir
+pushd roa_dir
 if [ -n "$SSHPRIVKEY" ]; then
 	echo SSHPRIVKEY is not set
 	exit 1

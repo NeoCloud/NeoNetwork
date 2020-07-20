@@ -12,7 +12,7 @@ fi
 source .venv/bin/activate
 
 mkdir -p "generated"
-pushed generated
+pushd generated
 
 .scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -o roa46_bird2.conf
 .scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -4 -o roa4_bird2.conf
