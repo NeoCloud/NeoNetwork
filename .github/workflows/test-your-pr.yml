@@ -1,11 +1,8 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Test Your PR
 
 on:
   pull_request:
-    branches:
-      - master
+    branches: [master]
 
 jobs:
   build:
