@@ -1,0 +1,4 @@
+["10.127.131.0/24"]
+type = "subnet"
+name = "IX42-LAS"
+description = "For IX42 (DN42 Internet eXchange (Las Vegas))"
