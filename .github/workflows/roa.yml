@@ -21,10 +21,10 @@ jobs:
           repository: NeoCloud/NeoNetwork-ROA
           path: generated
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y python3 python3-venv
+      - uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+          architecture: "x64"
 
       - name: Run ROA script
         run: .scripts/generate-roa.sh
