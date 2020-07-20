@@ -14,6 +14,7 @@ chmod 0600 "$HOME/.ssh/id_ed25519"
 set -x
 
 pushd generated
+git remote set-url origin git@github.com:NeoCloud/NeoNetwork-ROA.git
 git add .
 git config user.name "neonet roa bot"
 git config user.email "bot@github.com"
