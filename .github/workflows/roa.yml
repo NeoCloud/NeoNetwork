@@ -22,8 +22,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt update -qq
-          sudo apt install -y python3 python3-venv
+          sudo apt-get update -qq
+          sudo apt-get install -y python3 python3-venv
 
       - name: Run ROA script
         run: .scripts/generate-roa.sh
