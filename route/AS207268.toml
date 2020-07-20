@@ -1,4 +1,9 @@
 ["10.127.131.0/24"]
 type = "subnet"
-name = "IX42-LAS"
-description = "For IX42 (DN42 Internet eXchange (Las Vegas))"
+name = "IX42-LAS-4"
+description = "For IX42 (DN42 Internet eXchange (Las Vegas)) IPv4"
+
+["fd10:127:1300::/48"]
+type = "subnet"
+name = "IX42-LAS-6"
+description = "For IX42 (DN42 Internet eXchange (Las Vegas)) IPv6"
