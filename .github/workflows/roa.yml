@@ -13,21 +13,26 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
+
+      - uses: actions/checkout@v2
+        with:
+          repository: NeoCloud/NeoNetwork-ROA
+          ssh-key: ${{ secrets.KEY }}
+          path: generated
 
       - name: Install dependencies
-        shell: bash
         run: |
           sudo apt update -qq
           sudo apt install -y git python3 python3-venv openssh-client
 
       - name: Run ROA script
-        shell: bash
         run: .scripts/generate-roa.sh
 
       - name: Push to NeoCloud/NeoNetwork-ROA
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          directory: generated
-          repository: NeoCloud/NeoNetwork-ROA
+        run: |
+          cd generated
+          git config user.name "neonet roa bot"
+          git config user.email "bot@github.com"
+          git commit -m "Generated at $(TZ='UTC' date +%Y%m%d-%H%M%S.%N)"
+          git push
