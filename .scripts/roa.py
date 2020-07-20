@@ -11,6 +11,7 @@ from itertools import combinations
 from pathlib import Path
 
 import toml
+from tabulate import tabulate
 
 NEO_NETWORK_POOL = [ip_network("10.127.0.0/16"), ip_network("fd10:127::/32")]
 
@@ -238,8 +239,6 @@ def make_roa_records(roa4, roa6):
 
 
 def make_summary():
-    from tabulate import tabulate
-
     entities = dict(load_entities())
     asn_table = dict(load_asn(entities))
     node_table = node_to_asn(set(asn_table.keys()))

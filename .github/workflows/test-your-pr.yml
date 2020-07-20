@@ -21,19 +21,8 @@ jobs:
         shell: bash
         run: |
           sudo apt update -qq
-          sudo apt install -y python3 git openssh-client \
-                              python3-toml python3-tabulate
+          sudo apt install -y python3 git openssh-client
 
-      - name: Run roa script
+      - name: Run ROA script
         shell: bash
-        run: |
-          maxlen4=29
-          maxlen6=64
-          mkdir -p roa_dir
-          python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6}    -o roa_dir/roa46_bird2.conf
-          python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -4 -o roa_dir/roa4_bird2.conf
-          python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -6 -o roa_dir/roa6_bird2.conf
-          python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -j -o roa_dir/roa46.json
-          python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -e -o roa_dir/neonetwork.json
-          python3 scripts/roa.py -m ${maxlen4} -M ${maxlen6} -r -o roa_dir/rfc8416.json
-          python3 scripts/roa.py --summary --output roa_dir/README.txt
+        run: .scripts/generate-roa.sh
