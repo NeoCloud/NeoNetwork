@@ -1,80 +1,73 @@
 #!/usr/bin/env bash
 set -e
-	##########################################
-	# =============== Colors =============== #
-	##########################################
+##########################################
+# =============== Colors =============== #
+##########################################
 
 ESC='\033'
-RESET="${ESC}[0m"	#Reset all attributes
-BRIGHT="${ESC}[1m"	#Bright
-DIM="${ESC}[2m"	#Dim
-BLINK="${ESC}[5m"	#Blink
+RESET="${ESC}[0m"  #Reset all attributes
+BRIGHT="${ESC}[1m" #Bright
+DIM="${ESC}[2m"    #Dim
+BLINK="${ESC}[5m"  #Blink
 # Foreground Colours #
-FBLACK="${ESC}[30m"	#Black
-FRED="${ESC}[31m"	#Red
-FGREEN="${ESC}[32m"	#Green
-FYELLOW="${ESC}[33m"	#Yellow
-FBLUE="${ESC}[34m"	#Blue
-FMAGENTA="${ESC}[35m"	#Magenta
-FCYAN="${ESC}[36m"	#Cyan
-FWHITE="${ESC}[37m"	#White
+FBLACK="${ESC}[30m"   #Black
+FRED="${ESC}[31m"     #Red
+FGREEN="${ESC}[32m"   #Green
+FYELLOW="${ESC}[33m"  #Yellow
+FBLUE="${ESC}[34m"    #Blue
+FMAGENTA="${ESC}[35m" #Magenta
+FCYAN="${ESC}[36m"    #Cyan
+FWHITE="${ESC}[37m"   #White
 # Background Colours #
-BBLACK="${ESC}[40m"	#Black
-BRED="${ESC}[41m"	#Red
-BGREEN="${ESC}[42m"	#Green
-BYELLOW="${ESC}[43m"	#Yellow
-BBLUE="${ESC}[44m"	#Blue
-BMAGENTA="${ESC}[45m"	#Magenta
-BCYAN="${ESC}[46m"	#Cyan
-BWHITE="${ESC}[47m"	#White
+BBLACK="${ESC}[40m"   #Black
+BRED="${ESC}[41m"     #Red
+BGREEN="${ESC}[42m"   #Green
+BYELLOW="${ESC}[43m"  #Yellow
+BBLUE="${ESC}[44m"    #Blue
+BMAGENTA="${ESC}[45m" #Magenta
+BCYAN="${ESC}[46m"    #Cyan
+BWHITE="${ESC}[47m"   #White
 
-	#########################
-	# Functions:		#
-	# Make your life easier #
-	#########################
+#########################
+# Functions:		#
+# Make your life easier #
+#########################
 
 # Error Message that stops the script
-errmsg()
-{
+errmsg() {
 	echo -en "${BRED}>>${RESET} ${FMAGENTA}${*}${RESET}"
 	return 1
 }
 
 # Normal Message
-msg()
-{
+msg() {
 	echo -en "${BBLUE}>>${RESET} ${BRIGHT}${FGREEN}${*}${RESET}"
 }
 
 # Debug Level Verbose
-dbgmsg()
-{
+dbgmsg() {
 	echo -en "${BRIGHT}${BBLUE}>>${RESET} ${BRIGHT}${FGREEN}${*}${RESET}"
 }
 
 # Verbose Message
-vmsg()
-{
+vmsg() {
 	echo -en "${BRIGHT}${BBLUE}>>${RESET} ${BRIGHT}${FCYAN}${*}${RESET}"
 }
 
 # Formatted Output
 
 # for TUN30
-print_tun30()
-{
+print_tun30() {
 	printf "${FGREEN}%-20s${RESET}|${FYELLOW}%10s${RESET}| ${FCYAN}%20s ${BRIGHT}${FBLUE}<--> ${FMAGENTA}%s${RESET}\n" \
 		"$1" "$2" "$3" "$4"
 }
 
-print_subnet()
-{
+print_subnet() {
 	printf "${FGREEN}%-20s${RESET}${BRIGHT}${FBLUE}|| ${FMAGENTA}%s${RESET}\n\t>> %s\n" \
 		"$1" "$2" "$3"
 }
 
-print_ptp()
-{
+print_ptp() {
 	upstream_ip="${1%~*}"
 	downstream_ip="${1#$upstream_ip}"
 	downstream_ip="${downstream_ip#*~}"
@@ -83,8 +76,7 @@ print_ptp()
 		"$2" "$upstream_ip" "$downstream_ip" "$3" "$4"
 }
 
-print_lo()
-{
+print_lo() {
 	printf "${FGREEN}%-20s${RESET}${BRIGHT}${FBLUE}||${FMAGENTA}%24s${RESET} ${BRIGHT}${FBLUE}|| ${RESET}%s\n" \
 		"$1" "$2" "$3"
 }
@@ -102,19 +94,19 @@ if [ $# -lt 1 ]; then
 		"		asn, route, entity, node\n"
 fi
 
-arg="$2"	# Optional argument
+arg="$2" # Optional argument
 
 case "$1" in
 asn)
 	(
-	cd asn
-	for i in *; do
-		msg "${i#asn/}\n"
-		source "$i"
+		cd asn
+		for i in *; do
+			msg "${i#asn/}\n"
+			source "$i"
 
-		printf "${BRIGHT}${FMAGENTA}%-16s${RESET}| ${BRIGHT}${FYELLOW}%s\n\t>> %s\n" \
-			"$OWNER" "$NAME" "$DESC"
-	done
+			printf "${BRIGHT}${FMAGENTA}%-16s${RESET}| ${BRIGHT}${FYELLOW}%s\n\t>> %s\n" \
+				"$OWNER" "$NAME" "$DESC"
+		done
 	)
 	;;
 route)
@@ -123,13 +115,13 @@ route)
 		subnet="${subnet/,/\/}"
 		source "$i"
 		case "$TYPE" in
-			SUBNET)	print_subnet	"$subnet" "$NAME" "$DESC";;
-			LO)	print_lo	"$subnet" "$NAME" "$DESC";;
-			*)	errmsg "Invalid \$TYPE in $i\n";;
+		SUBNET) print_subnet "$subnet" "$NAME" "$DESC" ;;
+		LO) print_lo "$subnet" "$NAME" "$DESC" ;;
+		*) errmsg "Invalid \$TYPE in $i\n" ;;
 		esac
 	done
 	;;
-entity);;
+entity) ;;
 node)
 	for i in node/*; do
 		node="${i#node/}"
@@ -145,7 +137,7 @@ node)
 		done
 	done
 	;;
-*) errmsg "Invalid type\n";;
+*) errmsg "Invalid type\n" ;;
 esac
 
 # vim: set tabstop=8:softtabstop=8:shiftwidth=8

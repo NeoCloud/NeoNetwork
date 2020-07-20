@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# shellcheck disable=SC1091
 set -euo pipefail
 IFS=$'\n\t'
 
@@ -6,7 +7,7 @@ export MAX_LEN_4=29
 export MAX_LEN_6=64
 
 if [ ! -d .venv ]; then
-    python3 -m venv .venv
+	python3 -m venv .venv
 fi
 
 source .venv/bin/activate
