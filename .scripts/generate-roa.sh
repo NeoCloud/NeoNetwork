@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -xeuo pipefail
+set -euo pipefail
 IFS=$'\n\t'
 
 export MAX_LEN_4=29
@@ -10,8 +10,11 @@ if [ ! -d .venv ]; then
 fi
 
 source .venv/bin/activate
+pip install -r .scripts/requirements.txt
 
 mkdir -p "generated"
+
+set -x
 
 .scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -o generated/roa46_bird2.conf
 .scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -4 -o generated/roa4_bird2.conf
