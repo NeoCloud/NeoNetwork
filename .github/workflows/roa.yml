@@ -29,6 +29,6 @@ jobs:
         run: .scripts/generate-roa.sh
 
       - name: Push to NeoCloud/NeoNetwork-ROA
+        run: .scripts/push-to-roa.sh
         env:
           SSHPRIVKEY: ${{ secrets.KEY }}
-        run: .scripts/push-to-roa.sh

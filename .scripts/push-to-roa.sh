@@ -2,7 +2,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-if [ -n "$SSHPRIVKEY" ]; then
+if [ ! -n "$SSHPRIVKEY" ]; then
 	echo SSHPRIVKEY is not set
 	exit 1
 fi
