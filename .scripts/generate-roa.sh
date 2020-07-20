@@ -12,12 +12,11 @@ fi
 source .venv/bin/activate
 
 mkdir -p "generated"
-pushd generated
 
-.scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -o roa46_bird2.conf
-.scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -4 -o roa4_bird2.conf
-.scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -6 -o roa6_bird2.conf
-.scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -j -o roa46.json
-.scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -e -o neonetwork.json
-.scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -r -o rfc8416.json
-.scripts/roa.py --summary --output README.txt
+.scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -o generated/roa46_bird2.conf
+.scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -4 -o generated/roa4_bird2.conf
+.scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -6 -o generated/roa6_bird2.conf
+.scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -j -o generated/roa46.json
+.scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -e -o generated/neonetwork.json
+.scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -r -o generated/rfc8416.json
+.scripts/roa.py --summary --output generated/README.txt
