@@ -1,0 +1,4 @@
+["fd10:127:3262::/64"]
+type = "subnet"
+name = "Moe"
+description = "Moe Research Experimental Network"
