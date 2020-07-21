@@ -10,9 +10,9 @@ from ipaddress import IPv4Network, IPv6Network, ip_network
 from itertools import combinations
 from pathlib import Path
 
+import netaddr
 import toml
 from tabulate import tabulate
-import netaddr
 
 NEO_NETWORK_POOL = [ip_network("10.127.0.0/16"), ip_network("fd10:127::/32")]
 
