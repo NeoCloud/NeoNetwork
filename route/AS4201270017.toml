@@ -7,4 +7,3 @@ description = "For home devices internal network segment for testing connectivit
 type = "subnet"
 name = "CainSakura-home-devices"
 description = "For home devices internal network segment for testing connectivity quality, No SLA"
-supernet = "fd10:127:0233::/48"
