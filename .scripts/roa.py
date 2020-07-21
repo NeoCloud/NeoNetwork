@@ -109,7 +109,7 @@ def route_to_roa(asn_table: dict):
                 )
                 assert fields["name"]
                 assert is_neo_network(fields["prefix"])
-                assert not fields["supernet"] or is_neo_network(fields["supernet"])
+                assert not fields["supernet"] or (is_neo_network(fields["supernet"]) and fields["supernet"].supernet_of(fields["prefix"]))
                 yield pick(fields, ["asn", "name", "type", "prefix", "supernet"])
 
     entities = sorted(make_route(), key=lambda item: item["asn"])
