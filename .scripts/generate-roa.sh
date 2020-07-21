@@ -3,19 +3,10 @@
 set -euo pipefail
 IFS=$'\n\t'
 
+set -x
+
 export MAX_LEN_4=29
 export MAX_LEN_6=64
-
-if [ ! -d .venv ]; then
-	python3 -m venv .venv
-fi
-
-source .venv/bin/activate
-pip install -r .scripts/requirements.txt
-
-mkdir -p "generated"
-
-set -x
 
 .scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -o generated/roa46_bird2.conf
 .scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -4 -o generated/roa4_bird2.conf

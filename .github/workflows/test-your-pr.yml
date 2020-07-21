@@ -19,6 +19,8 @@ jobs:
           python-version: "3.x"
           architecture: "x64"
 
+      - run: pip install -r .scripts/requirements.txt
+
       - run: .scripts/generate-roa.sh
 
       - run: cat generated/README.txt
