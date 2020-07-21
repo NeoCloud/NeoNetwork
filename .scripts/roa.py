@@ -12,6 +12,7 @@ from pathlib import Path
 
 import toml
 from tabulate import tabulate
+import netaddr
 
 NEO_NETWORK_POOL = [ip_network("10.127.0.0/16"), ip_network("fd10:127::/32")]
 
@@ -310,6 +311,14 @@ def make_summary():
             tablefmt="presto",
         )
         print(route_table)
+        print()
+        print("Unused CIDR Range:")
+        prefixes = netaddr.cidr_merge(
+            netaddr.IPNetwork(str(entity["supernet"] or entity["prefix"]))
+            for entity in route_to_roa(asn_table)
+        )
+        for prefix in prefixes:
+            print(prefix)
     return stream.getvalue()
 
 
