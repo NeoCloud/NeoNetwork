@@ -314,7 +314,7 @@ def make_summary():
         print()
         print("Unused CIDR Range:")
         prefixes = netaddr.cidr_merge(
-            netaddr.IPNetwork(str(entity["supernet"] or entity["prefix"]))
+            netaddr.IPNetwork(str(entity["prefix"]))
             for entity in route_to_roa(asn_table)
         )
         for prefix in prefixes:
