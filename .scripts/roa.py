@@ -312,7 +312,7 @@ def make_summary():
         )
         print(route_table)
         print()
-        print("Unused CIDR Range:")
+        print("Used CIDR Range:")
         prefixes = netaddr.cidr_merge(
             netaddr.IPNetwork(str(entity["prefix"]))
             for entity in route_to_roa(asn_table)
