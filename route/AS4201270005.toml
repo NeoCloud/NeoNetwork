@@ -1,10 +1,23 @@
 ["10.127.233.0/24"]
 type = "subnet"
-name = "Icecat-Mobile-devices"
+name = "Icecat Residential network occupation address"
 description = "For Mobile device internal network segment for testing connectivity quality, No SLA(=172.24.5.0/24)"
+
+["10.127.236.0/24"]
+type = "subnet"
+name = "MagicNeko VPN"
+description = "For Magicneko Explosion Network Interworking address, No SLA"
 
 ["fd10:127:0233:1c3c::/64"]
 type = "subnet"
 name = "icecat"
-description = "NextMoe Radvd IPv6 Address"
+description = "Icecat Residential network occupation address"
 supernet = "fd10:127:0233::/48"
+
+
+["fd10:127:0233:1c3a::/64"]
+type = "subnet"
+name = "MagicNeko VPN"
+description = "For Magicneko Explosion Network Interworking address, No SLA"
+supernet = "fd10:127:0233::/48"
+

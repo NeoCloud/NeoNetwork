@@ -3,6 +3,16 @@ type = "subnet"
 name = "Icecat-Explosion"
 description = "For Magicneko Explosion Network Interworking address, No SLA"
 
+["10.127.235.0/24"]
+type = "subnet"
+name = "Icecat Global Tunnel Address"
+description = "For Magicneko Explosion Network Interworking address, No SLA"
+
+["10.127.237.0/24"]
+type = "subnet"
+name = "MagicNeko IX (Will not broadcast)"
+description = "For Magicneko Explosion Network Interworking address, No SLA"
+
 ["10.127.255.117/32"]
 type = "loopback"
 name = "magicneko-tw"
@@ -12,3 +22,4 @@ description = "magicneko-tw/frr"
 type = "subnet"
 name = "icecat"
 description = "Magicneko ipv6 reserved segment"
+
