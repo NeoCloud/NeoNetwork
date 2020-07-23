@@ -10,9 +10,14 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
         with:
           ref: ${{ github.event.pull_request.head.sha }}
+
+      - uses: actions/checkout@v2
+        with:
+          repository: NeoCloud/NeoNetwork-ROA
+          path: generated
 
       - uses: actions/setup-python@v2
         with:
@@ -23,4 +28,4 @@ jobs:
 
       - run: .scripts/generate-roa.sh
 
-      - run: cat generated/README.txt
+      - run: git -C generated diff README.txt
