@@ -8,8 +8,8 @@ set -x
 export MAX_LEN_4=29
 export MAX_LEN_6=64
 
-mkdir generated
-mkdir generated/dns
+mkdir -p generated
+mkdir -p generated/dns
 
 .scripts/dns-reverse-generator.py
 cp dns/db.10.127 generated/dns
