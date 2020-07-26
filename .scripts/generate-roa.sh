@@ -12,8 +12,7 @@ mkdir -p generated
 mkdir -p generated/dns
 
 .scripts/dns-reverse-generator.py
-cp dns/db.10.127 generated/dns
-cp dns/db.fd10.127 generated/dns
+cp -R dns/* generated/dns
 
 .scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -o generated/roa46_bird2.conf
 .scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -4 -o generated/roa4_bird2.conf

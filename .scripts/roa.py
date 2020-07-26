@@ -109,7 +109,10 @@ def route_to_roa(asn_table: dict):
                 )
                 assert fields["name"]
                 assert is_neo_network(fields["prefix"])
-                assert not fields["supernet"] or (is_neo_network(fields["supernet"]) and fields["supernet"].supernet_of(fields["prefix"]))
+                assert not fields["supernet"] or (
+                    is_neo_network(fields["supernet"])
+                    and fields["supernet"].supernet_of(fields["prefix"])
+                )
                 yield pick(fields, ["asn", "name", "type", "prefix", "supernet"])
 
     entities = sorted(make_route(), key=lambda item: item["asn"])
@@ -245,7 +248,9 @@ def make_summary():
     node_table = node_to_asn(set(asn_table.keys()))
     stream = StringIO()
     with redirect_stdout(stream):
-        print("Entity table:")
+        print("# NeoNetwork Summary")
+        print()
+        print("## Entity table")
         entity_table = tabulate(
             (
                 (
@@ -256,33 +261,33 @@ def make_summary():
                 for entity in entities.values()
             ),
             headers=["Name", "Email", "Telegram"],
-            tablefmt="presto",
+            tablefmt="github",
         )
         print(entity_table)
         print()
-        print("AS table:")
+        print("## AS table")
         as_table = tabulate(
             (
                 (entity["source"], "AS{}".format(asn), entity["owner"], entity["name"])
                 for asn, entity in sorted(asn_table.items(), key=lambda item: item[0])
             ),
             headers=["Source", "ASN", "Owner", "Name"],
-            tablefmt="presto",
+            tablefmt="github",
         )
         print(as_table)
         print()
-        print("Node table:")
+        print("## Node table")
         node_table = tabulate(
             (
                 ("AS{}".format(asn), name)
                 for name, asn in sorted(node_table.items(), key=lambda item: item[1])
             ),
             headers=["ASN", "Name"],
-            tablefmt="presto",
+            tablefmt="github",
         )
         print(node_table)
         print()
-        print("Peer table:")
+        print("## Peer table")
         peer_table = tabulate(
             (
                 (item.stem, downstream)
@@ -290,12 +295,12 @@ def make_summary():
                 for downstream in entity["to-peer"]
             ),
             headers=["Upstream", "Downstream"],
-            tablefmt="presto",
+            tablefmt="github",
             colalign=("right",),
         )
         print(peer_table)
         print()
-        print("Route table:")
+        print("## Route table")
         route_table = tabulate(
             (
                 (
@@ -308,17 +313,19 @@ def make_summary():
                 for entity in route_to_roa(asn_table)
             ),
             headers=["ASN", "Name", "Type", "Prefix", "Supernet"],
-            tablefmt="presto",
+            tablefmt="github",
         )
         print(route_table)
         print()
-        print("Used CIDR Range:")
+        print("## Used CIDR Range")
         prefixes = netaddr.cidr_merge(
             netaddr.IPNetwork(str(entity["prefix"]))
             for entity in route_to_roa(asn_table)
         )
+        print("```")
         for prefix in prefixes:
             print(prefix)
+        print("```")
     return stream.getvalue()
 
 
