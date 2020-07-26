@@ -17,9 +17,9 @@ jobs:
 
       - uses: actions/checkout@v2
         with:
+          path: generated
           ssh-key: ${{ secrets.DEPLOY_KEY }}
           repository: NeoCloud/NeoNetwork-ROA
-          path: generated
 
       - uses: actions/setup-python@v2
         with:
