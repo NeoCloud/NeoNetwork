@@ -251,6 +251,7 @@ def make_summary():
         print("# NeoNetwork Summary")
         print()
         print("## Entity table")
+        print()
         entity_table = tabulate(
             (
                 (
@@ -266,6 +267,7 @@ def make_summary():
         print(entity_table)
         print()
         print("## AS table")
+        print()
         as_table = tabulate(
             (
                 (entity["source"], "AS{}".format(asn), entity["owner"], entity["name"])
@@ -277,6 +279,7 @@ def make_summary():
         print(as_table)
         print()
         print("## Node table")
+        print()
         node_table = tabulate(
             (
                 ("AS{}".format(asn), name)
@@ -288,6 +291,7 @@ def make_summary():
         print(node_table)
         print()
         print("## Peer table")
+        print()
         peer_table = tabulate(
             (
                 (item.stem, downstream)
@@ -301,6 +305,7 @@ def make_summary():
         print(peer_table)
         print()
         print("## Route table")
+        print()
         route_table = tabulate(
             (
                 (
@@ -318,6 +323,7 @@ def make_summary():
         print(route_table)
         print()
         print("## Used CIDR Range")
+        print()
         prefixes = netaddr.cidr_merge(
             netaddr.IPNetwork(str(entity["prefix"]))
             for entity in route_to_roa(asn_table)
