@@ -20,4 +20,4 @@ cp -R dns/* generated/dns
 .scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -j -o generated/roa46.json
 .scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -e -o generated/neonetwork.json
 .scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -r -o generated/rfc8416.json
-.scripts/roa.py --summary --output generated/README.txt
+.scripts/roa.py --summary --output generated/README.md
