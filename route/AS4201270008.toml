@@ -3,11 +3,6 @@ type = "subnet"
 name = "Icecat-Explosion"
 description = "For Magicneko Explosion Network Interworking address, No SLA"
 
-["10.127.235.0/24"]
-type = "subnet"
-name = "Icecat Global Tunnel Address"
-description = "For Magicneko Explosion Network Interworking address, No SLA"
-
 ["10.127.237.0/24"]
 type = "subnet"
 name = "MagicNeko IX (Will not broadcast)"
