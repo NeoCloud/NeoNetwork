@@ -30,7 +30,7 @@ jobs:
 
       - run: .scripts/generate-roa.sh
 
-      - run: git -C generated diff README.txt
+      - run: git -C generated diff README.md
 
       - run: .scripts/push-to-roa.sh
 

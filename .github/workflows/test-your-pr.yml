@@ -28,7 +28,7 @@ jobs:
 
       - run: .scripts/generate-roa.sh
 
-      - run: git -C generated diff README.txt
+      - run: git -C generated diff README.md
 
       - uses: actions/upload-artifact@v2
         with:
