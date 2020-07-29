@@ -3,7 +3,47 @@ type = "subnet"
 name = "StaphNet"
 description = "For Staph-infected equipments around the world"
 
-["fd10:127:7::/48"]
+["10.127.7.0/24"]
+type = "subnet"
+name = "AOSCNet"
+description = "AOSC BuildBot Interconnection"
+
+["fd10:127:7::/51"]
 type = "subnet"
 name = "Staph_v6"
 description = "Staph-infected IPv6 subnet - please do not disinfect"
+
+["fd10:127:7:2000::/54"]
+type = "subnet"
+name = "StaphReserve_0"
+description = "Staph-infected reserved net for future use"
+
+["fd10:127:7:2672::/64"]
+type = "subnet"
+name = "AOSCNet_v6"
+description = "AOSC BuildBot Interconnection"
+
+["fd10:127:7:3000::/52"]
+type = "subnet"
+name = "StaphReserve_1"
+description = "Staph-infected reserved net for future use"
+
+["fd10:127:7:4000::/50"]
+type = "subnet"
+name = "StaphReserve_2"
+description = "Staph-infected reserved net for future use"
+
+["fd10:127:7:8000::/50"]
+type = "subnet"
+name = "StaphReserve_3"
+description = "Staph-infected reserved net for future use"
+
+["fd10:127:7:b000::/51"]
+type = "subnet"
+name = "StaphReserve_4"
+description = "Staph-infected reserved net for future use"
+
+["fd10:127:7:ffff::/64"]
+type = "subnet"
+name = "StaphPeer"
+description = "Staph infection network that would not be broadcasted in BGP"
