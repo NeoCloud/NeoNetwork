@@ -38,7 +38,7 @@ type = "subnet"
 name = "StaphReserve_3"
 description = "Staph-infected reserved net for future use"
 
-["fd10:127:7:b000::/51"]
+["fd10:127:7:c000::/51"]
 type = "subnet"
 name = "StaphReserve_4"
 description = "Staph-infected reserved net for future use"
