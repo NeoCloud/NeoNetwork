@@ -59,3 +59,6 @@ ns5.lantian IN  AAAA  fd10:127:10::20:5549:a809
 staph       IN	NS    ns1.staph
 ns1.staph   IN	A     10.127.8.185
 ns1.staph   IN  AAAA  fd10:127:7::1
+aoscnet	    IN	NS    ns1.aoscnet
+ns1.aoscnet IN	A     10.127.7.251
+ns1.aoscnet IN	AAAA  fd10:127:7:2672::1:1
