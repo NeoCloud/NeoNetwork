@@ -23,8 +23,6 @@ NeoBOX		IN	A	10.127.1.20
 cklvax		IN	A	10.127.1.40
 NNPCC		IN	A	10.127.1.63
 pan		IN	A	10.127.3.1
-staph		IN	A	10.127.8.185
-staph-cn	IN	A	10.127.8.187
 santost12	IN	A	10.127.69.1
 tracker		IN	A	10.127.69.1
 ipv4.tracker	IN	A	10.127.69.1
@@ -57,3 +55,7 @@ ns4.lantian IN  A     10.127.10.239
 ns4.lantian IN  AAAA  fd10:127:10::e9:77e4:e2b0
 ns5.lantian IN  A     10.127.10.80
 ns5.lantian IN  AAAA  fd10:127:10::20:5549:a809
+
+staph       IN	NS    ns1.staph
+ns1.staph   IN	A     10.127.8.185
+ns1.staph   IN  AAAA  fd10:127:7::1
