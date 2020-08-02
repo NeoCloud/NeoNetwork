@@ -112,8 +112,8 @@ $TTL	604800
 10              IN      NS      ns4.lantian.neo.
 10              IN      NS      ns5.lantian.neo.
 
-7		IN	NS	ns1.staph.neo
-160/27.8	IN	NS	ns1.staph.neo
+7		IN	NS	ns1.staph.neo.
+160/27.8	IN	NS	ns1.staph.neo.
 160.8		IN	CNAME	160.160/27.8
 161.8		IN	CNAME	161.160/27.8
 162.8		IN	CNAME	162.160/27.8
