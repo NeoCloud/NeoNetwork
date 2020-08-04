@@ -3,7 +3,7 @@ type = "subnet"
 name = "caxap-minecraft-net"
 description = "For minecraft servers"
 
-["fd10:127:53::/48"]
+["fd10:127:6324::/48"]
 type = "subnet"
 name = "caxap6"
 description = "caxaoNet6"
