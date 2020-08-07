@@ -34,7 +34,7 @@ There's a bind9 server on dns.neocloud.tw (`10.127.255.2` and `fd10:127:5f37:59d
 
 ## Connection Graph
 
-![NeoNetwork Nodes](https://raw.githubusercontent.com/NeoChen1024/NeoNetwork/master/nodes.svg)
+![NeoNetwork Nodes](https://raw.githubusercontent.com/NeoCloud/NeoNetwork/master/nodes.svg)
 
 ## Files and Directories
 
