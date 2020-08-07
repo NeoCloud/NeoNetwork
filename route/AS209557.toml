@@ -1,0 +1,4 @@
+["10.127.124.0/24"]
+type = "subnet"
+name = "Yi Global VPN"
+description = "VPS IP"
