@@ -20,15 +20,15 @@ $TTL	604800
 16.2	IN	PTR	caasih.neo.
 
 1.233	IN	PTR	icecat-gw04.magicneko.imiku.cn.
-1.4	IN	PTR	Abolition-hk.bb.ix-magicneko.neo.
-10.4	IN	PTR	01-100M-200G.hk.bb.ix-magicneko.neo.
-12.4	IN	PTR	02-100M-5G.hk.bb.ix-magicneko.neo.
-13.4	IN	PTR	02-100M-200G-Abolition.ru.bb.ix-magicneko.neo.
-14.4	IN	PTR	01-200M-500G.jp.bb.ix-magicneko.neo.
-15.4	IN	PTR	03-200M-500G.jp.bb.ix-magicneko.neo.
-16.4	IN	PTR	01-100M-200G-Abolition.us.bb.ix-magicneko.neo.
-17.4	IN	PTR	01-50M-100G.tw.bb.ix-magicneko.neo.
-18.4	IN	PTR	01-100M-200G.uk.bb.ix-magicneko.neo.
+1.4	IN	PTR	Abolition-hk.bb.magicneko.neo.
+10.4	IN	PTR	10.127.4.10.hk-01.bb.magicneko.neo.
+12.4	IN	PTR	10.127.4.12.hk-02.bb.magicneko.neo.
+13.4	IN	PTR	10.127.4.13.ru-01.bb.magicneko.neo.
+14.4	IN	PTR	10.127.4.14.jp-02.bb.magicneko.neo.
+15.4	IN	PTR	10.127.4.15.jp-03.bb.magicneko.neo.
+16.4	IN	PTR	10.127.4.16.us-01.bb.magicneko.neo.
+17.4	IN	PTR	10.127.4.17.tw-01.bb.magicneko.neo.
+18.4	IN	PTR	10.127.4.18.uk-01.bb.magicneko.neo.
 100.4	IN	PTR	cn-adsl-15M.cn.bb.ix-magicneko.neo.
 101.4	IN	PTR	cn-adsl.15M.cn.bb.ix-magicneko.neo.
 

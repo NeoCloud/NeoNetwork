@@ -11,27 +11,24 @@ $TTL	604800
 
 
 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.c.3.c.1.3.3.2.0    IN      PTR     icecat-gw06.magicneko.imiku.cn.
-1.0.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     Abolition-hk.bb.ix-magicneko.neo.
-a.0.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     01-100M-200G.hk.bb.ix-magicneko.neo.
-c.0.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     02-100M-5G.hk.bb.ix-magicneko.neo.
-d.0.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     02-100M-200G.jp.bb.ix-magicneko.neo.
-e.0.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     01-100M-200G.ru.bb.ix-magicneko.neo.
-f.0.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     03-100M-200G.jp.bb.ix-magicneko.neo.
-0.1.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     01-100M-200G-Abolition.us.bb.ix-magicneko.neo.
-1.1.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     01-100M-200G.tw.bb.ix-magicneko.neo.
-2.1.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     01-100M-200G.uk.bb.ix-magicneko.neo.
-4.6.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     cn-adsl-15M.cn.bb.ix-magicneko.neo.
-5.6.4.0.f.7.a.0.0.0.0.0.1.2.0.2.0.7.1.7.3.3.2.0    IN      PTR     cn-adsl.15M.cn.bb.ix-magicneko.neo.
-1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.9.0.0.0.3.3.2.0    IN      PTR     jp.icecat.ix-magicneko.neo.
-2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.9.0.0.0.3.3.2.0    IN      PTR     us.santost12.ix-magicneko.neo.
-1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.6.0.0.0.3.3.2.0    IN      PTR     jp.icecat.ix-magicneko.neo.
-2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.6.0.0.0.3.3.2.0    IN      PTR     jp.jerryxiao.ix-magicneko.neo.
-1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.0.0.0.3.3.2.0    IN      PTR     jp.icecat.ix-magicneko.neo.
-2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.0.0.0.3.3.2.0    IN      PTR     jp.chenx97.ix-magicneko.neo.
-5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.6.0.0.0.3.3.2.0    IN      PTR     jp.icecat.ix-nextmoe.neo.
-6.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.6.0.0.0.3.3.2.0    IN      PTR     jp.jerryxiao.ix-nextmoe.neo.
-1.0.0.0.0.0.0.0.0.0.0.0.8.9.1.2.2.4.0.0.3.3.2.0    IN      PTR     jp.icecat.ix-nextmoe.neo.
-2.0.0.0.0.0.0.0.0.0.0.0.8.9.1.2.2.4.0.0.3.3.2.0    IN      PTR     jp.iedon.ix-nextmoe.neo.
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.9.0.0.0.3.3.2.0    IN      PTR     jp.icecat.tunnel.ix-magicneko.neo.
+2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.9.0.0.0.3.3.2.0    IN      PTR     us.santost12.tunnel.ix-magicneko.neo.
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.6.0.0.0.3.3.2.0    IN      PTR     jp.icecat.tunnel.ix-magicneko.neo.
+2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.6.0.0.0.3.3.2.0    IN      PTR     jp.jerryxiao.tunnel.ix-magicneko.neo.
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.0.0.0.3.3.2.0    IN      PTR     jp.icecat.tunnel.ix-magicneko.neo.
+2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.0.0.0.3.3.2.0    IN      PTR     jp.chenx97.tunnel.ix-magicneko.neo.
+5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.6.0.0.0.3.3.2.0    IN      PTR     jp.icecat.tunnel.ix-nextmoe.neo.
+6.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.6.0.0.0.3.3.2.0    IN      PTR     jp.jerryxiao.tunnel.ix-nextmoe.neo.
+1.0.0.0.0.0.0.0.0.0.0.0.8.9.1.2.2.4.0.0.3.3.2.0    IN      PTR     jp.icecat.tunnel.ix-nextmoe.neo.
+2.0.0.0.0.0.0.0.0.0.0.0.8.9.1.2.2.4.0.0.3.3.2.0    IN      PTR     jp.iedon.tunnel.ix-nextmoe.neo.
+0.1.0.0.4.0.0.0.7.2.1.0.0.1.0.0.0.7.2.1.3.3.2.0    IN      PTR     10.127.4.10.hk-01.bb.magicneko.neo.
+2.1.0.0.4.0.0.0.7.2.1.0.0.1.0.0.0.7.2.1.3.3.2.0    IN      PTR     10.127.4.12.hk-02.bb.magicneko.neo.
+3.1.0.0.4.0.0.0.7.2.1.0.0.1.0.0.0.7.2.1.3.3.2.0    IN      PTR     10.127.4.13.ru-01.bb.magicneko.neo.
+4.1.0.0.4.0.0.0.7.2.1.0.0.1.0.0.0.7.2.1.3.3.2.0    IN      PTR     10.127.4.14.jp-02.bb.magicneko.neo.
+5.1.0.0.4.0.0.0.7.2.1.0.0.1.0.0.0.7.2.1.3.3.2.0    IN      PTR     10.127.4.15.jp-03.bb.magicneko.neo.
+6.1.0.0.4.0.0.0.7.2.1.0.0.1.0.0.0.7.2.1.3.3.2.0    IN      PTR     10.127.4.16.us-01.bb.magicneko.neo.
+7.1.0.0.4.0.0.0.7.2.1.0.0.1.0.0.0.7.2.1.3.3.2.0    IN      PTR     10.127.4.17.tw-01.bb.magicneko.neo.
+8.1.0.0.4.0.0.0.7.2.1.0.0.1.0.0.0.7.2.1.3.3.2.0    IN      PTR     10.127.4.18.uk-01.bb.magicneko.neo.
 
 ; DELEGATED ZONES
 3.5.0.0        IN      NS      ns1.jerry.neo.
