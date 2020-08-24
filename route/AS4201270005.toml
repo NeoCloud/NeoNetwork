@@ -3,11 +3,6 @@ type = "subnet"
 name = "Icecat Residential network occupation address"
 description = "For Mobile device internal network segment for testing connectivity quality, No SLA(=172.24.5.0/24)"
 
-["10.127.236.0/24"]
-type = "subnet"
-name = "MagicNeko VPN"
-description = "For Magicneko Explosion Network Interworking address, No SLA"
-
 ["fd10:127:0233:1c3c::/64"]
 type = "subnet"
 name = "icecat"
