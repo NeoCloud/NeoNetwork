@@ -8,6 +8,11 @@ type = "subnet"
 name = "Icecat Global Tunnel Address (OpenVPN)"
 description = "For Magicneko Explosion Network Interworking address, No SLA"
 
+["10.127.236.0/24"]
+type = "subnet"
+name = "MagicNeko VPN"
+description = "For Magicneko Explosion Network Interworking address, No SLA"
+
 ["fd10:127:0234::/48"]
 type = "subnet"
 name = "CainSakura-home-devices"
