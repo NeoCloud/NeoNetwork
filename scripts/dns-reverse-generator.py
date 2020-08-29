@@ -29,7 +29,7 @@ def main():
         if isinstance(address, IPv4Address):
             pointer = address.reverse_pointer.replace(".127.10.in-addr.arpa", "")
             records.append("%s\tIN\tPTR\t%s.neo." % (pointer, name))
-    RESOLVE_FILE.write_text("\n".join(records))
+    RESOLVE_FILE.write_text("\n".join(records)+"\n")
 
 
 if __name__ == "__main__":
