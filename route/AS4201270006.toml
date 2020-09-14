@@ -8,6 +8,11 @@ type = "subnet"
 name = "JerryXiao-Home"
 description = "For home"
 
+["10.127.8.64/26"]
+type = "subnet"
+name = "JerryXiao-School"
+description = "For school"
+
 ["10.127.255.53/32"]
 type = "loopback"
 name = "JerryXiao-Anycast"
