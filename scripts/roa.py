@@ -243,7 +243,7 @@ def make_rfc8416(roa4, roa6):
 
 def make_roa_records(roa4, roa6):
     records = [
-        "route {asn} max {prefix} as {maxLength};".format_map(roa)
+        "route {prefix} max {maxLength} as {asn};".format_map(roa)
         for roa in (*roa4, *roa6)
     ]
     return "\n".join(["# NeoNetwork ROA tool", "", *records])
