@@ -8,6 +8,11 @@ type = "subnet"
 name = "AOSCNet"
 description = "AOSC BuildBot Interconnection"
 
+["10.127.255.2/32"]
+type = "loopback"
+name = "staphdns"
+description = "Bind9 DNS"
+
 ["fd10:127:7::/51"]
 type = "subnet"
 name = "Staph_v6"
