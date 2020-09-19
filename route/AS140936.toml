@@ -1,4 +1,4 @@
 ["10.127.11.0/24"]
-type = "SUNNET"
+type = "subnet"
 name = "SUNNET"
 description = "SUNNET"
