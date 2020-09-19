@@ -27,7 +27,7 @@ type = "loopback"
 name = "NeoPDP-11"
 description = "FreeBSD/frr"
 
-["10.127.255.50/32"]
+["10.127.255.2/32"]
 type = "loopback"
 name = "ucbvax"
 description = "Arch Linux/frr"

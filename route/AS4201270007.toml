@@ -14,7 +14,7 @@ name = "staphdns"
 description = "Bind9 DNS"
 
 ["10.127.255.53/32"]
-type = "anycast"
+type = "loopback"
 name = "staphdns"
 description = "Bind9 DNS"
 
