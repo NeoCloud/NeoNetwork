@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import sys
-from ipaddress import IPv4Address, ip_network
+from ipaddress import IPv4Address, ip_network, IPv4Network
 from pathlib import Path
 
 import toml
@@ -16,7 +16,7 @@ def iter_route(route_type: str):
         items.extend(
             (entity["name"], ip_network(route).network_address)
             for route, entity in routes.items()
-            if entity["type"] == route_type
+            if entity["type"] == route_type and isinstance(ip_network(route), IPv4Network)
         )
     return sorted(items, key=lambda item: item[1])
 
