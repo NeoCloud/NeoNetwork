@@ -120,6 +120,8 @@ def route_to_roa(asn_table: dict):
     for net1, net2 in combinations(
         sorted(entities, key=lambda net: net["prefix"].prefixlen), 2
     ):
+        if net1["type"] == net2["type"] == "loopback":
+            continue
         if not net1["prefix"].overlaps(net2["prefix"]):
             continue
         entity_from_net = lambda net: asn_table.get(net["asn"])["owner"]
