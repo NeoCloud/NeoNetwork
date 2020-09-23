@@ -4,10 +4,11 @@ from ipaddress import IPv4Address, ip_network, IPv4Network
 from pathlib import Path
 
 import toml
+from rfc2317 import gen_reverse_pointers
 
 RESOLVE_FILE = Path("dns", "db.10.127")
 ROUTE_FILE = Path("route")
-
+RFC2317_FILE = Path("dns", "rfc2317.toml")
 
 def iter_route(route_type: str):
     items = []
@@ -18,8 +19,22 @@ def iter_route(route_type: str):
             for route, entity in routes.items()
             if entity["type"] == route_type and isinstance(ip_network(route), IPv4Network)
         )
+    routes = []
+    remove = []
+    for item in items[::-1]:
+        if item[1] in routes:
+            remove.append(item)
+        else:
+            routes.append(item[1])
+    for i in remove:
+        items.remove(i)
     return sorted(items, key=lambda item: item[1])
 
+def iter_rfc2317_entry():
+    entries = toml.loads(RFC2317_FILE.read_text())
+    for (route, attributes) in entries.items():
+        ns = attributes.get('ns')
+        yield(route, ns)
 
 def main():
     orignal = RESOLVE_FILE.read_text()
@@ -29,7 +44,13 @@ def main():
         if isinstance(address, IPv4Address):
             pointer = address.reverse_pointer.replace(".127.10.in-addr.arpa", "")
             records.append("%s\tIN\tPTR\t%s.neo." % (pointer, name))
-    RESOLVE_FILE.write_text("\n".join(records)+"\n")
+
+    records.extend(("", "; rfc2317"))
+    for route, ns in iter_rfc2317_entry():
+        records.extend(gen_reverse_pointers(route, ns))
+        records.append("")
+
+    RESOLVE_FILE.write_text("\n".join(records))
 
 
 if __name__ == "__main__":
