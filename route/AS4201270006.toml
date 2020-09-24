@@ -18,11 +18,6 @@ type = "subnet"
 name = "JerryXiao6"
 description = "JerryNet6"
 
-["10.127.255.2/32"]
-type = "loopback"
-name = "JerryXiao-Anycast4-legacy"
-description = "Anycast Recursive DNS"
-
 ["10.127.255.53/32"]
 type = "loopback"
 name = "JerryXiao-Anycast4"
