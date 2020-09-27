@@ -8,6 +8,16 @@ type = "subnet"
 name = "AOSCNet"
 description = "AOSC BuildBot Interconnection"
 
+["10.127.255.2/32"]
+type = "loopback?"
+name = "staphdns"
+description = "Bind9 DNS"
+
+["10.127.255.53/32"]
+type = "loopback?"
+name = "staphdns"
+description = "Bind9 DNS"
+
 ["fd10:127:7::/51"]
 type = "subnet"
 name = "Staph_v6"
@@ -47,3 +57,8 @@ description = "Staph-infected reserved net for future use"
 type = "subnet"
 name = "StaphPeer"
 description = "Staph infection network that would not be broadcasted in BGP"
+
+["fd10:127:ffff:53::/64"]
+type = "loopback?"
+name = "staphdns"
+description = "Bind9 DNS"

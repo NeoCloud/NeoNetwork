@@ -8,12 +8,33 @@ type = "subnet"
 name = "JerryXiao-Home"
 description = "For home"
 
-["10.127.255.53/32"]
-type = "loopback"
-name = "JerryXiao-Anycast"
-description = "Anycast Recursive DNS"
+["10.127.8.64/26"]
+type = "subnet"
+name = "JerryXiao-School"
+description = "For school"
 
 ["fd10:127:53::/48"]
 type = "subnet"
 name = "JerryXiao6"
 description = "JerryNet6"
+
+["10.127.255.53/32"]
+type = "loopback"
+name = "anycast-auth-4"
+description = "Anycast authoritative DNS"
+
+["10.127.255.54/32"]
+type = "loopback"
+name = "anycast-recur-4"
+description = "Anycast recursive DNS"
+
+["fd10:127:ffff:53::/64"]
+type = "loopback"
+name = "anycast-auth-6"
+description = "Anycast authoritative DNS"
+
+["fd10:127:53:53::/64"]
+type = "loopback"
+name = "anycast-recur-6"
+description = "Anycast recursive DNS"
+supernet = "fd10:127:53::/48"

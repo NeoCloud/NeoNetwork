@@ -120,9 +120,16 @@ def route_to_roa(asn_table: dict):
     for net1, net2 in combinations(
         sorted(entities, key=lambda net: net["prefix"].prefixlen), 2
     ):
+        if net1["type"] == net2["type"] == "loopback":
+            continue
         if not net1["prefix"].overlaps(net2["prefix"]):
             continue
-        assert net1["prefix"] != net2["prefix"]
+        entity_from_net = lambda net: asn_table.get(net["asn"])["owner"]
+        try:
+            assert net1["prefix"] != net2["prefix"]
+        except AssertionError:
+            assert net1['asn'] != net2['asn'] and entity_from_net(net1) == entity_from_net(net2)
+            continue
         assert net1["prefix"].supernet_of(net2["prefix"])
         s1net, s2net = (net1["supernet"], net2["supernet"])
         assert s2net  # please include supernet = <cidr> in your route
@@ -236,7 +243,7 @@ def make_rfc8416(roa4, roa6):
 
 def make_roa_records(roa4, roa6):
     records = [
-        "route {asn} max {prefix} as {maxLength};".format_map(roa)
+        "route {prefix} max {maxLength} as {asn};".format_map(roa)
         for roa in (*roa4, *roa6)
     ]
     return "\n".join(["# NeoNetwork ROA tool", "", *records])

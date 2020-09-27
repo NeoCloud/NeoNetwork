@@ -29,7 +29,7 @@ digraph "NeoNetwork Nodes"
 	JerryXiao_HK02 [label="jerryxiao-hk02\n(10.127.8.196)"]
 	septs [label="bgp.septs.me\n(AS4201270001)"]
 	lantian [label="lantian\n(AS4201270010)"]
-	dfceaef [label="dfceaef\n(10.127.8.64/26)\n(AS4242420140)"]
+	dfceaef [label="dfceaef\n(10.127.12.0/24)\n(AS4242420140)"]
 	SUNNET [label="SUNNET\n(10.127.11.0/24)\n(AS4242423088)"]
 	santost12 [label="Santost12\n(10.127.69.1)\n(AS4201270009)"]
 	frank_hsinchu [label="Frank_Hsinchu\n(10.127.255.56)\n(AS4201270004)"]
@@ -82,7 +82,6 @@ digraph "NeoNetwork Nodes"
 	}
 
 	JerryXiao -> ucbvax [dir=both]
-	JerryXiao -> septs [dir=both]
 	JerryXiao_SH01 -> dfceaef [dir=both]
 	magicneko_JP03 -> JerryXiao [dir=both]
 	lantian -> septs [dir=both]

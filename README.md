@@ -30,7 +30,7 @@ and [route6](https://github.com/NeoCloud/NeoNetwork/tree/master/route6) for allo
 
 ## DNS
 
-There's a bind9 server on dns.neocloud.tw (`10.127.255.2` and `fd10:127:5f37:59df::255:2`), all domain names are under ".neo".
+DNS Anycast is currently on `10.127.255.53` for IPv4 and `fd10:127:ffff:53::` for IPv6. All domain names are under ".neo".
 
 ## Connection Graph
 
