@@ -18,3 +18,15 @@ type = "subnet"
 name = "icecat"
 description = "Magicneko ipv6 reserved segment"
 
+
+["10.127.255.54/32"]
+type = "loopback"
+name = "anycast-recur-4"
+description = "Anycast recursive DNS"
+
+["fd10:127:53:53::/64"]
+type = "loopback"
+name = "anycast-recur-6"
+description = "Anycast recursive DNS"
+supernet = "fd10:127:53::/48"
+
