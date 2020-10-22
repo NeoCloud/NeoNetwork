@@ -1,6 +1,6 @@
 ["10.127.4.0/24"]
 type = "subnet"
-name = "Icecat-Explosion"
+name = "MagicNeko Network IPv4"
 description = "For Magicneko Explosion Network Interworking address, No SLA"
 
 ["10.127.237.0/24"]
@@ -17,7 +17,6 @@ description = "magicneko-tw/frr"
 type = "subnet"
 name = "icecat"
 description = "Magicneko ipv6 reserved segment"
-
 
 ["10.127.255.54/32"]
 type = "loopback"
