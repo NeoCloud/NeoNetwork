@@ -1,0 +1,14 @@
+name = "Clement VILLISEK"
+babel = [
+    "fr",
+    "en-5",
+    "es-2",
+    "jp-1",
+    "zh-0",
+    "ru-0"
+]
+
+[contact]
+email = "clement@villisek.fr"
+twitter = "cvillisek89"
+github = "villisek"

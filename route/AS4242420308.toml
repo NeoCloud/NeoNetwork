@@ -1,0 +1,9 @@
+["10.127.38.32/27"]
+type = "subnet"
+name = "VILLISEK-NEO"
+description = "VILLISEK NeoNetwork experiments"
+
+["fd10:127:0308::/48"]
+type = "subnet"
+name = "VILLISEK-NEO-V6"
+description = "VILLISEK NeoNetwork experiments in IPv6"
