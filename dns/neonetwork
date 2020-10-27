@@ -14,15 +14,14 @@ $TTL	604800
 @		IN	A	10.127.1.1
 root		IN	CNAME	neo.
 NeoPDP-11	IN	A	10.127.255.1
-ucbvax		IN	A	10.127.255.2
 caasih		IN	A	10.127.2.16
 NeoVAX		IN	A	10.127.2.22
 NeoSystem	IN	A	10.127.255.80
 neostorage	IN	A	10.127.1.10
 NeoBOX		IN	A	10.127.1.20
 cklvax		IN	A	10.127.1.40
-NNPCC		IN	A	10.127.1.63
 pan		IN	A	10.127.3.1
+NeoRouter	IN	A	10.127.2.127
 santost12	IN	A	10.127.69.1
 
 neko		IN	TXT	"helloworld"
