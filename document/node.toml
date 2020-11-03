@@ -1,0 +1,18 @@
+# Template file for the node registry (node/)
+# Before submission, please:
+# - Rename the file to "<entity_id>.toml", without the quotes.
+# - Remove any blank lines, comments, and unneeded options.
+
+# Multiple nodes can be declared in one file: start a node with its name as the
+# table name.
+[example_node]
+
+# Node owner (mandatory). This should match the ASN of a registered AS in asn/ .
+asn = 4201279999
+
+# Node description (optional). Can be an arbitrary string.
+description = ""
+
+# The IP address of the node, written in CIDR notation (optional). This option
+# is only used to generate DNS records automatically.
+cidr = []

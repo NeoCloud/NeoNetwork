@@ -1,0 +1,24 @@
+# Template file for the entity registry (entity/)
+# Before submission, please:
+# - Rename the file to "<entity_id>.toml", without the quotes.
+# - Remove any blank lines, comments, and unneeded options.
+
+# Entity name (optional). Can be an arbitrary string.
+name = ""
+
+# Babel (optional) to describe the working language of this entity. See
+# https://en.wikipedia.org/wiki/Wikipedia:Babel for how to fill this list.
+babel = []
+
+# Entity contacts (optional). The listed options are all optional.
+[contact]
+email = ""
+telegram = ""
+mastodon = ""
+github = ""
+
+# Details on identifying the entity online (optional). Usually, a PGP key
+# fingerprint can be put here to help others communicate with the entity more
+# securely.
+[persona]
+pgp = ""

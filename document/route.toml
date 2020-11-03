@@ -1,0 +1,24 @@
+# Template file for the route registry (route/)
+# Before submission, please:
+# - Rename the file to "AS<ASN>.toml", without the quotes.
+# - Remove any blank lines, comments, and unneeded options.
+
+# Multiple IP prefixes can be announced in one file: start every prefix with its
+# CIDR notation as the table name.
+["10.127.0.0/32"]
+
+# IP usage (mandatory). Possible values:
+# - subnet: this is a subnetwork announced by this AS.
+# - loopback: this is a loopback IP. The IP prefix should be a /32 one.
+type = ""
+
+# IP name (mandatory).
+name = ""
+
+# IP description (optional).
+description = ""
+
+# The supernet of this IP network (optional). Overlapping IP prefixes are
+# regarded as an error, so if this IP network is a subnet of another one, write
+# their IP prefix here.
+supernet = ""

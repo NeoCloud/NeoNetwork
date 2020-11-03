@@ -1,0 +1,27 @@
+# Template file for the AS registry (asn/)
+# Before submission, please:
+# - Rename the file to "AS<ASN>.toml", without the quotes.
+# - Remove any blank lines, comments, and unneeded options.
+
+# AS name (optional). Can be an arbitrary string.
+name = ""
+
+# AS owner (mandatory). This should match the ID (file name) of a registered
+# entity in entity/ .
+owner = ""
+
+# AS source (optional). Possible values are:
+# - NeoNetwork
+# - DN42
+# - Internet
+# Often you don't need to include this option: if the AS number falls into the
+# range of NeoNetwork or DN42, then our script can automatically find it out.
+#source = ""
+
+# AS description (optional). Can be an arbitrary string.
+description = ""
+
+# AS ownership validation status for NeoNetwork (optional). If the AS is
+# registered in other NICs, and members of NeoNetwork have validated the
+# ownership status, then this can be set to true. Otherwise, remove this option.
+#vaild = false
