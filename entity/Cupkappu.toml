@@ -1,0 +1,11 @@
+name = "Cupkappu"
+babel = [
+	"jp-1",
+	"zh-0"
+]
+
+[contact]
+telegram = "kifuc"
+email = "cup@kust.ga"
+github = "cupkappu"
+
