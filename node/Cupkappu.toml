@@ -1,10 +1,9 @@
 [Cupkappu-HK]
 asn = 4201270019
-cidr = ["10.127.20.97/27"]
+cidr = ["10.127.20.1/27"]
 desc = "Cup's Hong Kong Node"
 
 [Cupkappu-JP]
 asn = 4201270019
-cidr = ["10.127.20.98/27"]
+cidr = ["10.127.20.2/27"]
 desc = "Cup's Japan Osaka Node"
-
