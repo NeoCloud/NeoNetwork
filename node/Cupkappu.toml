@@ -10,5 +10,5 @@ desc = "Cup's Japan Osaka Node"
 
 [Cupkappu-HK2]
 asn = 4201270019
-cidr = ["10.127.19.1/27"]
+cidr = ["10.127.19.3/27"]
 desc = "Cup's Hong Kong Node 2"
