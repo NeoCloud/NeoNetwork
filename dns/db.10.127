@@ -20,11 +20,11 @@ $TTL	604800
 16.2	IN	PTR	caasih.neo.
 127.2	IN	PTR	NeoRouter.neo.
 
-1.233   IN      PTR     liqingge.user-icecat.eth-ether5.cn.koishi.moe.
-1.234   IN      PTR     liqingge.user-icecat.eth-ether5.cn.koishi.moe.
-8.4	IN	PTR	koishi-v4.up-core.vtap-hentai-bb.hk.magicneko.moe.
-10.4    IN      PTR     luotianyi-v4.up.vtap-hentai-bb.hk.magicneko.moe.
-15.4    IN      PTR     yuezhengling-v4.up.vtap-hentai-bb.jp.magicneko.moe.
+1.233   IN      PTR     liqingge.user-icecat.eth-ether5.cn.magicneko.neo.
+1.234   IN      PTR     liqingge.user-icecat.eth-ether5.cn.magicneko.neo.
+8.4	IN	PTR	koishi-v4.up-core.vtap-hentai-bb.hk.magicneko.neo.
+10.4    IN      PTR     luotianyi-v4.up.vtap-hentai-bb.hk.magicneko.neo.
+15.4    IN      PTR     yuezhengling-v4.up.vtap-hentai-bb.jp.magicneko.neo.
 
 
 1.8     IN      PTR     librehs.neo.
