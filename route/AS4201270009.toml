@@ -1,7 +1,7 @@
-["10.127.30.0/27"]
+["10.127.39.0/27"]
 type = "subnet"
 name = "santost12"
 
-["fd10:127:ec30::/44"]
+["fd10:127:ec39::/48"]
 type = "subnet"  
 name = "santost12"
