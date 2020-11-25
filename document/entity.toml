@@ -13,6 +13,7 @@ babel = []
 # Entity contacts (optional). The listed options are all optional.
 [contact]
 email = ""
+irc = ""
 telegram = ""
 mastodon = ""
 github = ""
