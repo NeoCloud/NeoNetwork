@@ -29,3 +29,7 @@ name = "anycast-recur-6"
 description = "Anycast recursive DNS"
 supernet = "fd10:127:53::/48"
 
+["10.127.255.18/32"]
+type = "loopback"
+name = "Video encoding node(Anycast)"
+description = "Video encoding node, used to monitor (Cyan) online live broadcast in the live room and record encoding"
