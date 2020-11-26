@@ -1,0 +1,7 @@
+["10.127.8.128/29"]
+type = "subnet"
+name = "Edward_P-Ezpro"
+
+["fd10:127:2f2f::/48"]
+type = "subnet"
+name = "Edward_P-Ezpro-V6"
