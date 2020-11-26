@@ -339,6 +339,22 @@ def make_summary():
         for prefix in prefixes:
             print(prefix)
         print("```")
+        IP_VRSIONS = {4, 6}
+        total_ip_count = {ver: sum([prefix.num_addresses for prefix in NEO_NETWORK_POOL if prefix.version == ver]) for ver in IP_VRSIONS}
+        used_ip_count = {ver: sum([ip_network(str(prefix)).num_addresses for prefix in prefixes if prefix.version == ver]) for ver in IP_VRSIONS}
+        print()
+        print("## Address Space Usage")
+        print()
+        address_space_usage_table = tabulate(
+            (
+                (f"IPv{ver}", f"{(t:=total_ip_count.get(ver)):.5g}", f"{(u:=used_ip_count.get(ver)):.5g}", f"{t-u:.5g}", f"{u/t*100:.2f}%", f"{(t-u)/t*100:.2f}%")
+                for ver in IP_VRSIONS
+            ),
+            headers=["IP Version", "Total", "Used", "Free", "Percent Used", "Percent Free"],
+            tablefmt="github",
+            disable_numparse=True
+        )
+        print(address_space_usage_table)
     return stream.getvalue()
 
 

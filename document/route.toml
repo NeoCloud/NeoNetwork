@@ -7,15 +7,17 @@
 # CIDR notation as the table name.
 ["10.127.0.0/32"]
 
-# IP usage (mandatory). Possible values:
+# IP network usage (mandatory). Possible values:
 # - subnet: this is a subnetwork announced by this AS.
-# - loopback: this is a loopback IP. The IP prefix should be a /32 one.
+# - loopback: this is a loopback IP (mainly used in anycast). The IP prefix should be a /32 (ipv4) or /64 (ipv6) one. Overlap check is skipped.
+# If you have no idea what this is, please fill in "subnet".
+# Any other value is considered invalid and will result in this CIDR being skipped entirely.
 type = ""
 
-# IP name (mandatory).
+# IP network name (mandatory).
 name = ""
 
-# IP description (optional).
+# IP network description (optional).
 description = ""
 
 # The supernet of this IP network (optional). Overlapping IP prefixes are
