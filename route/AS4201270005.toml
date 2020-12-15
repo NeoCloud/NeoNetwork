@@ -37,5 +37,5 @@ description = "For home devices internal network segment for testing connectivit
 
 ["10.127.255.18/32"]
 type = "loopback"
-name = "Video encoding node(Anycast)"
+name = "icecat-video"
 description = "Video encoding node, used to monitor (Cyan) online live broadcast in the live room and record encoding"
