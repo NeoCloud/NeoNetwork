@@ -28,7 +28,6 @@ $TTL	604800
 ; Loopback Addresses
 
 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.5.0.0.f.f.f.f    IN      PTR     root-dns.neo.
-0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.5.0.0.3.5.0.0    IN      PTR     dns.neo.
 
 ; DELEGATED ZONES
 3.5.0.0        IN      NS      ns1.jerry.neo.
