@@ -4,8 +4,8 @@ set -eo pipefail
 
 [ -n "$CI" ]
 
-apt update -qq
-DEBIAN_FRONTEND=noninteractive apt -o Dpkg::Options::=--force-confold install -y --no-install-recommends bind9-utils
+sudo apt update -qq
+sudo DEBIAN_FRONTEND=noninteractive apt -o Dpkg::Options::=--force-confold install -y --no-install-recommends bind9-utils
 
 alias check='PATH=/sbin:/usr/sbin:$PATH named-checkzone -i local'
 
