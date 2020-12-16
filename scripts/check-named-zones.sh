@@ -4,10 +4,17 @@ set -eo pipefail
 
 [ -n "$CI" ]
 
-sudo apt update -qq
-sudo DEBIAN_FRONTEND=noninteractive apt -o Dpkg::Options::=--force-confold install -y --no-install-recommends bind9-utils
+install() {
+    sudo DEBIAN_FRONTEND=noninteractive apt \
+        -o Dpkg::Options::=--force-confold \
+        install -y --no-install-recommends \
+        bind9-utils
+}
+install || { sudo apt update -qq; install; }
 
-alias check='PATH=/sbin:/usr/sbin:$PATH named-checkzone -i local'
+check() {
+    PATH=/sbin:/usr/sbin:$PATH named-checkzone -i local $@
+}
 
 pushd dns
 
