@@ -1,0 +1,20 @@
+["10.127.255.53/32"]
+type = "loopback"
+name = "anycast-auth-4"
+description = "Anycast authoritative DNS"
+
+["10.127.255.54/32"]
+type = "loopback"
+name = "anycast-recur-4"
+description = "Anycast recursive DNS"
+
+["fd10:127:ffff:53::/64"]
+type = "loopback"
+name = "anycast-auth-6"
+description = "Anycast authoritative DNS"
+
+["fd10:127:53:53::/64"]
+type = "loopback"
+name = "anycast-recur-6"
+description = "Anycast recursive DNS"
+supernet = "fd10:127:53::/48"
