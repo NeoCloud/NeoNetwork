@@ -31,6 +31,9 @@ root-dns    IN  AAAA fd10:127:ffff:53::
 dns         IN  A    10.127.255.54
 dns         IN  AAAA fd10:127:53:53::
 
+edwardp     IN  A    10.127.8.130
+edwardp     IN  AAAA fd10:127:2f2f::
+
 ; DELEGATED ZONES
 jerry       IN  NS    ns1.jerry
 ns1.jerry   IN  A     10.127.8.193
