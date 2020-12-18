@@ -24,6 +24,7 @@ $TTL	604800
 8.0.0.0.4.0.0.0.7.2.1.0.0.1.0.0.0.7.2.1.3.3.2.0    IN      PTR     koishi-v6.up-core.vtap-hentai-bb.hk.magicneko.neo.
 0.1.0.0.4.0.0.0.7.2.1.0.0.1.0.0.0.7.2.1.3.3.2.0    IN      PTR     luotianyi-v6.up.vtap-hentai-bb.hk.magicneko.neo.
 5.1.0.0.4.0.0.0.7.2.1.0.0.1.0.0.0.7.2.1.3.3.2.0    IN      PTR     yuezhengling-v6.up.vtap-hentai-bb.jp.magicneko.neo.
+0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.2.f.2    IN      PTR     edwardp.neo.
 
 ; Loopback Addresses
 

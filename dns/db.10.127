@@ -30,6 +30,8 @@ $TTL	604800
 1.8     IN      PTR     librehs.neo.
 2.8     IN      PTR     blog.librehs.neo.
 
+130.8   IN      PTR     edwardp.neo.
+
 ; Loopback Addresses
 
 1.255   IN	    PTR	    NeoPDP-11.neo.
