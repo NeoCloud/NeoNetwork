@@ -34,7 +34,7 @@ and [route6](https://github.com/NeoCloud/NeoNetwork/tree/master/route6) for allo
 
 ## DNS
 
-DNS Anycast is currently on `10.127.255.53` for IPv4 and `fd10:127:ffff:53::` for IPv6. All domain names are under ".neo".
+DNS Anycast is currently on `10.127.255.54` for IPv4 and `fd10:127:53:53::` for IPv6. All domain names are under ".neo".
 
 ## Connection Graph
 
