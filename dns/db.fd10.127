@@ -40,3 +40,4 @@ $TTL	604800
 0.1.0.0        IN      NS      ns5.lantian.neo.
 
 7.0.0.0	       IN      NS      ns1.staph.neo.
+1.1.e.e        IN      NS      ns1.sun.dn42.
