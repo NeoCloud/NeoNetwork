@@ -49,6 +49,7 @@ $TTL	604800
 
 9       IN      NS      ns1.jerry.neo.
 
+10      IN      NS      ns-anycast.lantian.neo.
 10      IN      NS      ns1.lantian.neo.
 10      IN      NS      ns2.lantian.neo.
 10      IN      NS      ns3.lantian.neo.
