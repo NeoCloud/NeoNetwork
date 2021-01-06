@@ -36,8 +36,11 @@ edwardp     IN  AAAA fd10:127:2f2f::
 
 ; DELEGATED ZONES
 jerry       IN  NS    ns1.jerry
+jerry       IN  NS    ns2.jerry
 ns1.jerry   IN  A     10.127.8.193
 ns1.jerry   IN  AAAA  fd10:127:53::1
+ns2.jerry   IN  A     10.127.8.216
+ns2.jerry   IN  AAAA  fd10:127:53:100::1
 
 kp          IN	NS    ns1.kp
 ns1.kp      IN	A     10.127.39.1

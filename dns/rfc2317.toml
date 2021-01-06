@@ -1,8 +1,8 @@
 ["10.127.8.64/26"]
-ns = ["ns1.jerry.neo."]
+ns = ["ns1.jerry.neo.", "ns2.jerry.neo."]
 
 ["10.127.8.192/26"]
-ns = ["ns1.jerry.neo."]
+ns = ["ns1.jerry.neo.", "ns2.jerry.neo."]
 
 ["10.127.8.160/27"]
 ns = ["ns1.staph.neo."]

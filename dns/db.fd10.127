@@ -32,6 +32,7 @@ $TTL	604800
 
 ; DELEGATED ZONES
 3.5.0.0        IN      NS      ns1.jerry.neo.
+3.5.0.0        IN      NS      ns2.jerry.neo.
 
 0.1.0.0        IN      NS      ns-anycast.lantian.neo.
 0.1.0.0        IN      NS      ns1.lantian.neo.
