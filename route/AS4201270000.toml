@@ -29,8 +29,8 @@ description = "FreeBSD/frr"
 
 ["10.127.255.4/32"]
 type = "loopback"
-name = "pan"
-description = "Arch Linux/frr"
+name = "fsnvax"
+description = "Debian/frr"
 
 ["10.127.255.80/32"]
 type = "loopback"
