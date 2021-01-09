@@ -35,7 +35,7 @@ $TTL	604800
 ; Loopback Addresses
 
 1.255   IN	    PTR	    NeoPDP-11.neo.
-4.255   IN	    PTR	    pan.neo.
+4.255   IN	    PTR	    fsnvax.neo.
 18.255  IN	    PTR	    icecat-video.neo.
 53.255  IN	    PTR	    root-dns.neo.
 54.255  IN	    PTR	    dns.neo.
