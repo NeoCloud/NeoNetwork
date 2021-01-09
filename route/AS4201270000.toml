@@ -12,11 +12,6 @@ description = "LAN at school"
 type = "subnet"
 name = "NeoSystem"
 
-["10.127.3.0/24"]
-type = "subnet"
-name = "pan hub"
-description = "For non-multihome connection in Taiwan"
-
 ["10.127.16.0/24"]
 type = "subnet"
 name = "Neo_Chen ZeroTier-One Hub"
@@ -41,8 +36,3 @@ description = "Arch Linux/frr"
 type = "subnet"
 name = "NeoNetwork Origin"
 description = "Neo_Chens Network"
-
-["fd10:127::/64"]
-type = "subnet"
-name = "Neo_Chen ZeroTier-One IPv6 Hub"
-description = ""
