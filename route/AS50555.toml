@@ -1,4 +1,4 @@
-["10.127.160.0/22"]
+["10.127.160.0/20"]
 type = "subnet"
 name = "KeatonAGLair IPv4-01"
 
