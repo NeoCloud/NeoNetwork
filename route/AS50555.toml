@@ -1,0 +1,7 @@
+["10.127.160.0/22"]
+type = "subnet"
+name = "KeatonAGLair IPv4-01"
+
+["fd10:127:5600::/40"]
+type = "subnet"
+name = "KeatonAGLair IPv6-01"
