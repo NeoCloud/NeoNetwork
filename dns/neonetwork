@@ -50,6 +50,13 @@ tracker     IN  NS    ns1.tracker
 ns1.tracker IN  A     10.127.39.1
 ns1.tracker IN  AAAA  fd10:127:ec39:2222::1
 
+kagl.neo.   IN	NS    ns1.kagl.me.
+kagl.neo.   IN	NS    ns2.kagl.me.
+ns1.kagl.me.	IN	A	10.127.163.53
+ns2.kagl.me.	IN	A	10.127.163.52
+ns1.kagl.me.	IN	AAAA	fd10:127:5653::
+ns2.kagl.me.	IN	AAAA	fd10:127:5652::
+
 lantian            IN  NS    ns-anycast.lantian
 lantian            IN  NS    ns1.lantian
 lantian            IN  NS    ns2.lantian
