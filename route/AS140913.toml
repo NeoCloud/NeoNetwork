@@ -1,0 +1,10 @@
+["10.127.4.0/24"]
+type = "subnet"
+name = "MagicNeko-Asia Backbone node(name:houraisankaguya+fujiwaranomokou)"
+description = "MagicNeko-Asia Backbone node(name:houraisankaguya+fujiwaranomokou)"
+
+["fd10:127:0233::/48"]
+type = "subnet"
+name = "Magicneko Asia address occupied"
+description = "Magicneko Asia address occupied(/48 not route)"
+

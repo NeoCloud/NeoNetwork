@@ -1,4 +1,0 @@
-["10.127.4.0/24"]
-type = "subnet"
-name = "MagicNeko Network IPv4"
-description = "For Magicneko Explosion Network Interworking address, No SLA"
