@@ -26,6 +26,9 @@ $TTL	604800
 10.4    IN      PTR     luotianyi-v4.up.vtap-hentai-bb.hk.magicneko.neo.
 15.4    IN      PTR     yuezhengling-v4.up.vtap-hentai-bb.jp.magicneko.neo.
 
+1.14    IN      PTR     gr-0-1-0-0.cr2.hkg1.licson.neo
+5.14    IN      PTR     gr-0-1-0-1.cr2.hkg1.licson.neo
+9.14    IN      PTR     gr-0-1-0-2.cr2.hkg1.licson.neo
 
 1.8     IN      PTR     librehs.neo.
 2.8     IN      PTR     blog.librehs.neo.
