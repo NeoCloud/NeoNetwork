@@ -1,41 +1,23 @@
 ["10.127.233.0/24"]
 type = "subnet"
-name = "Icecat Residential network occupation address"
-description = "For Mobile device internal network segment for testing connectivity quality, No SLA(=172.24.5.0/24)"
+name = "MagicNeko-CN office node(name:liqingge)"
+description = "MagicNeko CN office node (office network in Northeast China)"
+
+["10.127.234.0/24"]
+type = "subnet"
+name = "MagicNeko-CN office VPN+IX Node(name:liqingge)"
+description = "MagicNeko CN office node (office network in Northeast China)"
 
 ["fd10:127:0233:1c3c::/64"]
 type = "subnet"
-name = "icecat"
-description = "Icecat Residential network occupation address"
+name = "MagicNeko-CN office node(name:liqingge)"
+description = "MagicNeko CN office node (office network in Northeast China)"
 supernet = "fd10:127:0233::/48"
 
 ["fd10:127:0233:1c3a::/64"]
 type = "subnet"
-name = "MagicNeko VPN"
-description = "For Magicneko Explosion Network Interworking address, No SLA"
+name = "MagicNeko-CN office VPN+IX Node(name:liqingge)"
+description = "MagicNeko CN office node (office network in Northeast China)"
 supernet = "fd10:127:0233::/48"
 
-["10.127.234.0/24"]
-type = "subnet"
-name = "CainSakura-home-devices"
-description = "For home devices internal network segment for testing connectivity quality, No SLA"
 
-["10.127.235.0/24"]
-type = "subnet"
-name = "Icecat Global Tunnel Address (OpenVPN)"
-description = "For Magicneko Explosion Network Interworking address, No SLA"
-
-["10.127.236.0/24"]
-type = "subnet"
-name = "MagicNeko VPN"
-description = "For Magicneko Explosion Network Interworking address, No SLA"
-
-["fd10:127:0234::/48"]
-type = "subnet"
-name = "CainSakura-home-devices"
-description = "For home devices internal network segment for testing connectivity quality, No SLA"
-
-["10.127.255.18/32"]
-type = "loopback"
-name = "icecat-video"
-description = "Video encoding node, used to monitor (Cyan) online live broadcast in the live room and record encoding"
