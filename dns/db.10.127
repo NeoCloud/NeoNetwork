@@ -29,6 +29,8 @@ $TTL	604800
 1.14    IN      PTR     gr-0-1-0-0.cr2.hkg1.licson.neo.
 5.14    IN      PTR     gr-0-1-0-1.cr2.hkg1.licson.neo.
 9.14    IN      PTR     gr-0-1-0-2.cr2.hkg1.licson.neo.
+13.14   IN      PTR     gr-0-1-0-3.cr2.hkg1.licson.neo.
+1.15    IN      PTR     ae-0-1.cr2.hkg1.licson.neo.
 
 1.8     IN      PTR     librehs.neo.
 2.8     IN      PTR     blog.librehs.neo.
