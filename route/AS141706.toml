@@ -1,0 +1,23 @@
+["10.127.233.0/24"]
+type = "subnet"
+name = "MagicNeko-CN office node(name:liqingge)"
+description = "MagicNeko CN office node (office network in Northeast China)"
+
+["10.127.234.0/24"]
+type = "subnet"
+name = "MagicNeko-CN office VPN+IX Node(name:liqingge)"
+description = "MagicNeko CN office node (office network in Northeast China)"
+
+["fd10:127:0233:1c3c::/64"]
+type = "subnet"
+name = "MagicNeko-CN office node(name:liqingge)"
+description = "MagicNeko CN office node (office network in Northeast China)"
+supernet = "fd10:127:0233::/48"
+
+["fd10:127:0233:1c3a::/64"]
+type = "subnet"
+name = "MagicNeko-CN office VPN+IX Node(name:liqingge)"
+description = "MagicNeko CN office node (office network in Northeast China)"
+supernet = "fd10:127:0233::/48"
+
+

@@ -1,4 +1,5 @@
-name = "MagicNeko CN(Optical Cable Project in Northeast China)(=141706)"
+name = "Koishi Network(=4201270005)"
 owner = "magicneko"
 description = "MagicNeko CN(Optical Cable Project in Northeast China)"
-
+source = "Internet"
+vaild = true
