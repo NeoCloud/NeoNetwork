@@ -24,4 +24,4 @@ description = ""
 # AS ownership validation status for NeoNetwork (optional). If the AS is
 # registered in other NICs, and members of NeoNetwork have validated the
 # ownership status, then this can be set to true. Otherwise, remove this option.
-#vaild = false
+#valid = false
