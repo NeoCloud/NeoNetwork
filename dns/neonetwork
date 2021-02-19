@@ -69,6 +69,9 @@ ns4.lantian        IN  AAAA  fd10:127:10:2::1
 ns5.lantian        IN  A     10.127.10.9
 ns5.lantian        IN  AAAA  fd10:127:10:9::1
 
+iedon			   IN  NS	 ns.iedon
+ns.iedon		   IN  A     10.127.21.1
+
 staph	    IN	NS    ns1.staph
 staph	    IN	NS    ns2.staph
 staph	    IN	DS    64592 13 2 1AF24492D8FAE84D99E05C9B9088DDB8A82003F3301A53F35EFEC1627BEADDBA

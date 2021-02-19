@@ -70,3 +70,5 @@ $TTL	604800
 
 12      IN      NS      ns1.yangfl.dn42.
 12      IN      NS      ns2.yangfl.dn42.
+
+15		IN		NS		ns.iedon.neo.

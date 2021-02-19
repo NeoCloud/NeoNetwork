@@ -6,3 +6,9 @@ ns = ["ns1.jerry.neo.", "ns2.jerry.neo."]
 
 ["10.127.8.160/27"]
 ns = ["ns1.staph.neo."]
+
+["10.127.21.0/24"]
+ns = ["ns.iedon.neo."]
+
+["10.127.89.0/24"]
+ns = ["ns.iedon.neo."]
