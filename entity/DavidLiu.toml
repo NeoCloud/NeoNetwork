@@ -5,6 +5,7 @@ babel = ["zh-N", "en-3"]
 email = "david@fixmix.tech"
 telegram = "p0tat05"
 irc = "p0tat05"
+mastodon = "@p0tat05@mastodon.online"
 github = "p0tat05"
 
 [persona]
