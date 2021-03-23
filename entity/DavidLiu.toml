@@ -1,0 +1,11 @@
+name = "DavidLiu"
+babel = ["zh-N", "en-3"]
+
+[contact]
+email = "david@fixmix.tech"
+telegram = "p0tat05"
+irc = "p0tat05"
+github = "p0tat05"
+
+[persona]
+pgp = "11BA9B106D0DF5E6A1C4BC180641F2177A5530C0"

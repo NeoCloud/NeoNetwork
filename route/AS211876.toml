@@ -1,0 +1,9 @@
+["10.127.66.0/24"]
+type = "subnet"
+name = "FIXMIX-NET-NEOV4A"
+description = "fixmix NeoNetwork Network - IPv4 A"
+
+["fd10:127:aa66::/48"]
+type = "subnet"
+name = "FIXMIX-NET-NEOV6A"
+description = "fixmix NeoNetwork Network - IPv6 A"
