@@ -10,20 +10,7 @@ $TTL	604800
 @	IN	NS	NeoPDP-11.neo.
 
 
-1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.c.3.c.1.3.3.2.0    IN      PTR     liqingge.user-icecat.eth-ether5.cn.magicneko.neo.
-1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.9.0.0.0.3.3.2.0    IN      PTR     jp.icecat.tunnel.ix-magicneko.neo.
-2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.9.0.0.0.3.3.2.0    IN      PTR     us.santost12.tunnel.ix-magicneko.neo.
-1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.6.0.0.0.3.3.2.0    IN      PTR     jp.icecat.tunnel.ix-magicneko.neo.
-2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.6.0.0.0.3.3.2.0    IN      PTR     jp.jerryxiao.tunnel.ix-magicneko.neo.
-1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.0.0.0.3.3.2.0    IN      PTR     jp.icecat.tunnel.ix-magicneko.neo.
-2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.0.0.0.3.3.2.0    IN      PTR     jp.chenx97.tunnel.ix-magicneko.neo.
-5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.6.0.0.0.3.3.2.0    IN      PTR     jp.icecat.tunnel.ix-nextmoe.neo.
-6.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.6.0.0.0.3.3.2.0    IN      PTR     jp.jerryxiao.tunnel.ix-nextmoe.neo.
-1.0.0.0.0.0.0.0.0.0.0.0.8.9.1.2.2.4.0.0.3.3.2.0    IN      PTR     jp.icecat.tunnel.ix-nextmoe.neo.
-2.0.0.0.0.0.0.0.0.0.0.0.8.9.1.2.2.4.0.0.3.3.2.0    IN      PTR     jp.iedon.tunnel.ix-nextmoe.neo.
-8.0.0.0.4.0.0.0.7.2.1.0.0.1.0.0.0.7.2.1.3.3.2.0    IN      PTR     koishi-v6.up-core.vtap-hentai-bb.hk.magicneko.neo.
-0.1.0.0.4.0.0.0.7.2.1.0.0.1.0.0.0.7.2.1.3.3.2.0    IN      PTR     luotianyi-v6.up.vtap-hentai-bb.hk.magicneko.neo.
-5.1.0.0.4.0.0.0.7.2.1.0.0.1.0.0.0.7.2.1.3.3.2.0    IN      PTR     yuezhengling-v6.up.vtap-hentai-bb.jp.magicneko.neo.
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.c.3.c.1.3.3.2.0    IN      PTR     liqingge.router.br-koishi.lo.she.as141706.koishi.moe.
 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.2.f.2    IN      PTR     edwardp.neo.
 
 ; Loopback Addresses
