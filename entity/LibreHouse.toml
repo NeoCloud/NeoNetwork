@@ -4,8 +4,8 @@ babel = ["zh-N", "en-2"]
 [contact]
 email = "i+noc@outv.im"
 telegram = "outvi"
-mastodon = "@outvi@moe.cat"
+mastodon = "@ov@social.outv.im"
 github = "outloudvi"
 
 [persona]
-pgp = "47627D2288B20CC033C7B7D72D83E4E89C15DA36"
+pgp = "7A9543829E475D7D3826B08DA725CB57CA65CAFE"
