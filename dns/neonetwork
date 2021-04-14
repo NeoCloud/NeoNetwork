@@ -36,6 +36,7 @@ edwardp                   IN    AAAA     fd10:127:2f2f::
 ; DELEGATED ZONES
 jerry                     IN    NS       ns1.jerry
 jerry                     IN    NS       ns2.jerry
+jerry                     IN    NS       ns3.jerry
 jerry                     IN    DS       18792 13 2 2F335456EEE70FC4833886E5EEDC28E7195E90E2A337860B3E805D5EB9F3A804
 ns1.jerry                 IN    A        10.127.8.193
 ns1.jerry                 IN    AAAA     fd10:127:53::1
