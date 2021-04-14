@@ -1,74 +1,74 @@
 ; NeoNetwork DNS Record
-$TTL	604800
-@	IN	SOA	NeoPDP-11.neo. root.neo. (
-			4096	; Serial
-			604800	; Refresh
-			86400	; Retry
-			2419200	; Expire
-			604800 )	; Negative Cache TTL
+$TTL    3600
+@	IN	SOA	root-dns.neo. root.neo. (
+            4096	; Serial
+			900	    ; Refresh
+			900	    ; Retry
+			86400	; Expire
+			900 )	; Negative Cache TTL
 ;
-@	IN	NS	NeoPDP-11.neo.
+@              IN    NS     NeoPDP-11.neo.
 
-; 
-1.1     IN      PTR     NeoPDP-11.neo.
-40.1    IN      PTR     cklvax.neo.
-63.1    IN      PTR     NNPCC.neo.
-20.1    IN      PTR     NeoBOX.neo.
-10.1    IN      PTR     neostorage.neonetwork.
-80.1    IN      PTR     NeoSystem.neo.
-1.3     IN      PTR     pan.neo.
-16.2    IN      PTR     caasih.neo.
-127.2   IN      PTR     NeoRouter.neo.
 
-1.233   IN      PTR     liqingge.user-icecat.eth-ether5.cn.magicneko.neo.
-1.234   IN      PTR     liqingge.user-icecat.eth-ether5.cn.magicneko.neo.
-8.4     IN      PTR     koishi-v4.up-core.vtap-hentai-bb.hk.magicneko.neo.
-10.4    IN      PTR     luotianyi-v4.up.vtap-hentai-bb.hk.magicneko.neo.
-15.4    IN      PTR     yuezhengling-v4.up.vtap-hentai-bb.jp.magicneko.neo.
+1.1            IN    PTR    NeoPDP-11.neo.
+40.1           IN    PTR    cklvax.neo.
+63.1           IN    PTR    NNPCC.neo.
+20.1           IN    PTR    NeoBOX.neo.
+10.1           IN    PTR    neostorage.neonetwork.
+80.1           IN    PTR    NeoSystem.neo.
+1.3            IN    PTR    pan.neo.
+16.2           IN    PTR    caasih.neo.
+127.2          IN    PTR    NeoRouter.neo.
 
-1.14    IN      PTR     gr-0-1-0-0.cr2.hkg1.licson.neo.
-2.14    IN      PTR     moecast.gr-0-1-0-0.cr2.hkg1.licson.neo.
-5.14    IN      PTR     gr-0-1-0-1.cr2.hkg1.licson.neo.
-6.14    IN      PTR     yura.gr-0-1-0-1.cr2.hkg1.licson.neo.
-9.14    IN      PTR     gr-0-1-0-2.cr2.hkg1.licson.neo.
-10.14   IN      PTR     neochen.gr-0-1-0-2.cr2.hkg1.licson.neo.
-13.14   IN      PTR     gr-0-1-0-3.cr2.hkg1.licson.neo.
-14.14   IN      PTR     jerry.gr-0-1-0-3.cr2.hkg1.licson.neo.
-1.15    IN      PTR     ae-0-1.cr2.hkg1.licson.neo.
+1.233          IN    PTR    liqingge.user-icecat.eth-ether5.cn.magicneko.neo.
+1.234          IN    PTR    liqingge.user-icecat.eth-ether5.cn.magicneko.neo.
+8.4            IN    PTR    koishi-v4.up-core.vtap-hentai-bb.hk.magicneko.neo.
+10.4           IN    PTR    luotianyi-v4.up.vtap-hentai-bb.hk.magicneko.neo.
+15.4           IN    PTR    yuezhengling-v4.up.vtap-hentai-bb.jp.magicneko.neo.
 
-1.8     IN      PTR     librehs.neo.
-2.8     IN      PTR     blog.librehs.neo.
+1.14           IN    PTR    gr-0-1-0-0.cr2.hkg1.licson.neo.
+2.14           IN    PTR    moecast.gr-0-1-0-0.cr2.hkg1.licson.neo.
+5.14           IN    PTR    gr-0-1-0-1.cr2.hkg1.licson.neo.
+6.14           IN    PTR    yura.gr-0-1-0-1.cr2.hkg1.licson.neo.
+9.14           IN    PTR    gr-0-1-0-2.cr2.hkg1.licson.neo.
+10.14          IN    PTR    neochen.gr-0-1-0-2.cr2.hkg1.licson.neo.
+13.14          IN    PTR    gr-0-1-0-3.cr2.hkg1.licson.neo.
+14.14          IN    PTR    jerry.gr-0-1-0-3.cr2.hkg1.licson.neo.
+1.15           IN    PTR    ae-0-1.cr2.hkg1.licson.neo.
 
-130.8   IN      PTR     edwardp.neo.
+1.8            IN    PTR    librehs.neo.
+2.8            IN    PTR    blog.librehs.neo.
+
+130.8          IN    PTR    edwardp.neo.
 
 ; Loopback Addresses
 
-1.255   IN	    PTR	    NeoPDP-11.neo.
-4.255   IN	    PTR	    fsnvax.neo.
-18.255  IN	    PTR	    icecat-video.neo.
-53.255  IN	    PTR	    root-dns.neo.
-54.255  IN	    PTR	    dns.neo.
-56.255  IN	    PTR	    frank-hsinchu-1.neo.
-80.255  IN	    PTR	    NeoSystem.neo.
-117.255 IN	    PTR	    magicneko-tw.neo.
+1.255          IN    PTR    NeoPDP-11.neo.
+4.255          IN    PTR    fsnvax.neo.
+18.255         IN    PTR    icecat-video.neo.
+53.255         IN    PTR    root-dns.neo.
+54.255         IN    PTR    dns.neo.
+56.255         IN    PTR    frank-hsinchu-1.neo.
+80.255         IN    PTR    NeoSystem.neo.
+117.255        IN    PTR    magicneko-tw.neo.
 
 ; DELEGATED ZONES
 
-7       IN      NS      ns1.staph.neo.
+7              IN    NS     ns1.staph.neo.
 
-9       IN      NS      ns1.jerry.neo.
-9       IN      NS      ns2.jerry.neo.
+9              IN    NS     ns1.jerry.neo.
+9              IN    NS     ns2.jerry.neo.
 
-10      IN      NS      ns-anycast.lantian.neo.
-10      IN      NS      ns1.lantian.neo.
-10      IN      NS      ns2.lantian.neo.
-10      IN      NS      ns3.lantian.neo.
-10      IN      NS      ns4.lantian.neo.
-10      IN      NS      ns5.lantian.neo.
+10             IN    NS     ns-anycast.lantian.neo.
+10             IN    NS     ns1.lantian.neo.
+10             IN    NS     ns2.lantian.neo.
+10             IN    NS     ns3.lantian.neo.
+10             IN    NS     ns4.lantian.neo.
+10             IN    NS     ns5.lantian.neo.
 
-11      IN      NS      ns1.sun.dn42.
+11             IN    NS     ns1.sun.dn42.
 
-12      IN      NS      ns1.yangfl.dn42.
-12      IN      NS      ns2.yangfl.dn42.
+12             IN    NS     ns1.yangfl.dn42.
+12             IN    NS     ns2.yangfl.dn42.
 
-21		IN		NS		ns.iedon.neo.
+21             IN    NS     ns.iedon.neo.

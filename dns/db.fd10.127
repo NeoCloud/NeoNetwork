@@ -1,32 +1,32 @@
 ; NeoNetwork DNS Record
-$TTL	604800
-@	IN	SOA	NeoPDP-11.neo. root.neo. (
+$TTL	3600
+@	IN	SOA	root-dns.neo. root.neo. (
 			4096	; Serial
-			604800	; Refresh
-			86400	; Retry
-			2419200	; Expire
-			604800 )	; Negative Cache TTL
+			900	    ; Refresh
+			900	    ; Retry
+			86400	; Expire
+			900 )	; Negative Cache TTL
 ;
-@	IN	NS	NeoPDP-11.neo.
+@                                                      IN    NS     NeoPDP-11.neo.
 
 
-1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.c.3.c.1.3.3.2.0    IN      PTR     liqingge.router.br-koishi.lo.she.as141706.koishi.moe.
-0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.2.f.2    IN      PTR     edwardp.neo.
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.c.3.c.1.3.3.2.0        IN    PTR    liqingge.router.br-koishi.lo.she.as141706.koishi.moe.
+0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.2.f.2        IN    PTR    edwardp.neo.
 
 ; Loopback Addresses
 
-0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.5.0.0.f.f.f.f    IN      PTR     root-dns.neo.
+0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.5.0.0.f.f.f.f        IN    PTR    root-dns.neo.
 
 ; DELEGATED ZONES
-3.5.0.0        IN      NS      ns1.jerry.neo.
-3.5.0.0        IN      NS      ns2.jerry.neo.
+3.5.0.0                                                IN    NS     ns1.jerry.neo.
+3.5.0.0                                                IN    NS     ns2.jerry.neo.
 
-0.1.0.0        IN      NS      ns-anycast.lantian.neo.
-0.1.0.0        IN      NS      ns1.lantian.neo.
-0.1.0.0        IN      NS      ns2.lantian.neo.
-0.1.0.0        IN      NS      ns3.lantian.neo.
-0.1.0.0        IN      NS      ns4.lantian.neo.
-0.1.0.0        IN      NS      ns5.lantian.neo.
+0.1.0.0                                                IN    NS     ns-anycast.lantian.neo.
+0.1.0.0                                                IN    NS     ns1.lantian.neo.
+0.1.0.0                                                IN    NS     ns2.lantian.neo.
+0.1.0.0                                                IN    NS     ns3.lantian.neo.
+0.1.0.0                                                IN    NS     ns4.lantian.neo.
+0.1.0.0                                                IN    NS     ns5.lantian.neo.
 
-7.0.0.0	       IN      NS      ns1.staph.neo.
-1.1.e.e        IN      NS      ns1.sun.dn42.
+7.0.0.0                                                IN    NS     ns1.staph.neo.
+1.1.e.e                                                IN    NS     ns1.sun.dn42.
