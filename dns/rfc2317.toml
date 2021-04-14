@@ -1,8 +1,11 @@
 ["10.127.8.64/26"]
-ns = ["ns1.jerry.neo.", "ns2.jerry.neo."]
+NS = ["ns1.jerry.neo.", "ns2.jerry.neo.", "ns3.jerry.neo."]
+DS = ["24982 13 2 463EAE9D8248179806321A2ED3F05377234FD13DF0C2F20428C3B148F9C31B3D"]
+TTL = -1
 
 ["10.127.8.192/26"]
-ns = ["ns1.jerry.neo.", "ns2.jerry.neo."]
+NS = ["ns1.jerry.neo.", "ns2.jerry.neo.", "ns3.jerry.neo."]
+DS = ["12536 13 2 A2AEEFCDB5F0BB6C4AC075EF1034C5635AEFE5A2DA9E7FF7D8BBE53B5E61E8E3"]
 
 ["10.127.8.160/27"]
-ns = ["ns1.staph.neo."]
+NS = ["ns1.staph.neo."]

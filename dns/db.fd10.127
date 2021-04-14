@@ -20,6 +20,8 @@ $TTL	3600
 ; DELEGATED ZONES
 3.5.0.0                                                IN    NS     ns1.jerry.neo.
 3.5.0.0                                                IN    NS     ns2.jerry.neo.
+3.5.0.0                                                IN    NS     ns3.jerry.neo.
+3.5.0.0                                                IN    DS     53626 13 2 F7F6AFCCA1CEC26E2A6EE9FAC9E11975260F00B8DC287D0B0FF428F775C62C5D
 
 0.1.0.0                                                IN    NS     ns-anycast.lantian.neo.
 0.1.0.0                                                IN    NS     ns1.lantian.neo.
