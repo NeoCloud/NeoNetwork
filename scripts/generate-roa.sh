@@ -22,4 +22,6 @@ scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -e -o generated/neonetwork.json
 scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -r -o generated/rfc8416.json
 scripts/roa.py --summary --output generated/README.md
 
+scripts/update-zone-serial.py
+
 scripts/check-named-zones.sh
