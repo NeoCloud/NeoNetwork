@@ -74,3 +74,6 @@ $TTL    3600
 12             IN    NS     ns2.yangfl.dn42.
 
 21             IN    NS     ns.iedon.neo.
+
+127            IN    NS     ns1.yura.dn42.
+127            IN    NS     ns2.yura.dn42.
