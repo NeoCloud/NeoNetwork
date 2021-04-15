@@ -1,4 +1,14 @@
 ["10.127.127.0/24"]
 type = "subnet"
 name = "Yura Moe NET"
-description = "Yura Network"
+description = "Yura Neo Network"
+
+["fd10:127:127::/48"]
+type = "subnet"
+name = "Yura Neo2"
+description = "Yura Neo Network2"
+
+["10.127.127.127/32"]
+type = "loopback?"
+name = "Yura Neo Anycast"
+description = "Yura Anycast4 Services"
