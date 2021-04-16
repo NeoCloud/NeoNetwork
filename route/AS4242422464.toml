@@ -9,6 +9,7 @@ name = "Yura Neo2"
 description = "Yura Neo Network2"
 
 ["10.127.127.127/32"]
-type = "loopback?"
+type = "loopback"
 name = "Yura Neo Anycast"
 description = "Yura Anycast4 Services"
+supernet = "10.127.127.0/24"

@@ -89,3 +89,14 @@ ns1.aoscnet               IN    A        10.127.7.251
 ns1.aoscnet               IN    AAAA     fd10:127:7:2672::1:1
 ns2.aoscnet               IN    A        10.127.7.252
 ns2.aoscnet               IN    AAAA     fd10:127:7:2672::1:3
+
+yura                      IN    NS       ns.yura
+yura                      IN    NS       ns1.yura
+yura                      IN    NS       ns2.yura
+yura                      IN    DS       63132 15 1 0E03FCE3B54D9FC84A12CC6CF36A71158AA88933
+yura                      IN    DS       63132 15 2 75C0A884399D5ECA686EC35287CDAC2A756D94C30815A0055B88B068F3C947A7
+yura                      IN    DS       63132 15 4 C4BB952FC40FA0185499A4E613864A29FC06FC8014299F2F3702A6E6420D3C054545A11566B95211C2C678F1F6F255F3
+ns.yura                   IN    A        10.127.127.125
+ns.yura                   IN    AAAA     fd10:127:127:53::
+ns1.yura                  IN    AAAA     fd10:127:127:53a::1
+ns2.yura                  IN    AAAA     fd10:127:127:53b::1
