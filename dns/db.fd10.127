@@ -29,6 +29,9 @@ $TTL	3600
 0.1.0.0                                                IN    NS     ns3.lantian.neo.
 0.1.0.0                                                IN    NS     ns4.lantian.neo.
 0.1.0.0                                                IN    NS     ns5.lantian.neo.
+0.1.0.0                                                IN    DS     11807 13 1 6B42025140C9BBDDA0460429B5641651B1553D78
+0.1.0.0                                                IN    DS     11807 13 2 BBADC27B4EBFC90CBA79F4E69E4F167B9FFAF664B071F4CC46196902054B0910
+0.1.0.0                                                IN    DS     11807 13 4 CB48D8BABA0E44B9D363D3142463014EBDE6D28E15997EA8FB5FDBD42FDCF1CF3846E63925A5910DDD6A192571AEBD93
 
 7.0.0.0                                                IN    NS     ns1.staph.neo.
 

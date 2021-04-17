@@ -59,6 +59,9 @@ lantian                   IN    NS       ns2.lantian
 lantian                   IN    NS       ns3.lantian
 lantian                   IN    NS       ns4.lantian
 lantian                   IN    NS       ns5.lantian
+lantian                   IN    DS       47346 13 1 BF0E344C96838564CF9DBA3889AAE6E3DA5F6835
+lantian                   IN    DS       47346 13 2 1023D2C40803BA13F2148BC67A09E50A3157EE3E7B1DC2C22041D3B981E976E3
+lantian                   IN    DS       47346 13 4 1DBFA42E78F699241042E18061218CC2DEA7A69884E634165CE99AA5C65ECF4DF7DA16B382494A5AE7D781AB9A3BB1C5
 ns-anycast.lantian        IN    A        10.127.10.254
 ns-anycast.lantian        IN    AAAA     fd10:127:10:2547::54
 ns1.lantian               IN    A        10.127.10.1
