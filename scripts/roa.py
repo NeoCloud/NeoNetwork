@@ -165,6 +165,25 @@ def prehandle_roa(asn_table: dict, args):
         r["prefix"] = r["prefix"].with_prefixlen
     return roa4, roa6
 
+def export_dnssec_dnskey():
+    dnskey_path = Path("dns") / "dnssec"
+    dnskeys = list()
+    for f in dnskey_path.iterdir():
+        if f.name.endswith(".keys"):
+            zonekey = {"zone": "", "dnskeys": list()}
+            records = f.read_text().split("\n")
+            records = [r.split() for r in records if r]
+            for zone, _ttl, _in, _dnskey, *dnskey in records:
+                int(_ttl)
+                assert _in == "IN" and _dnskey == "DNSKEY"
+                if not zonekey["zone"]:
+                    zonekey["zone"] = zone
+                else:
+                    assert zonekey["zone"] == zone
+                zonekey["dnskeys"].append(" ".join(dnskey))
+            if zonekey["zone"]:
+                dnskeys.append(zonekey)
+    return dnskeys
 
 def make_export(roa4, roa6):
     def modify_entity(entity):
@@ -204,6 +223,7 @@ def make_export(roa4, roa6):
             }
             for owner, entity in entities.items()
         },
+        "dnssec": export_dnssec_dnskey()
     }
     return json.dumps(output, indent=2)
 
