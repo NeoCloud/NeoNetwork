@@ -13,6 +13,11 @@ from pathlib import Path
 import netaddr
 import toml
 from tabulate import tabulate
+# dnssec
+from base64 import b64decode
+from dns.dnssec import make_ds
+from dns.rdtypes.ANY.DNSKEY import DNSKEY
+
 
 NEO_NETWORK_POOL = [ip_network("10.127.0.0/16"), ip_network("fd10:127::/32")]
 
@@ -166,11 +171,14 @@ def prehandle_roa(asn_table: dict, args):
     return roa4, roa6
 
 def export_dnssec_dnskey():
+    def ds_from_dnskey(zone, flags, protocol, algorithm, *key):
+        dnspy_dnskey = DNSKEY("IN", "DNSKEY", int(flags), int(protocol), int(algorithm), b64decode(" ".join(key)))
+        return make_ds(zone, dnspy_dnskey, "SHA256").to_text()
     dnskey_path = Path("dns") / "dnssec"
     dnskeys = list()
     for f in dnskey_path.iterdir():
         if f.name.endswith(".keys"):
-            zonekey = {"zone": "", "dnskeys": list()}
+            zonekey = {"zone": "", "records": list()}
             records = f.read_text().split("\n")
             records = [r.split() for r in records if r]
             for zone, _ttl, _in, _dnskey, *dnskey in records:
@@ -180,7 +188,11 @@ def export_dnssec_dnskey():
                     zonekey["zone"] = zone
                 else:
                     assert zonekey["zone"] == zone
-                zonekey["dnskeys"].append(" ".join(dnskey))
+                str_dnskey = " ".join(dnskey)
+                zonekey["records"].append({
+                    "dnskey": str_dnskey,
+                    "ds": ds_from_dnskey(zone, *dnskey),
+                })
             if zonekey["zone"]:
                 dnskeys.append(zonekey)
     return dnskeys
