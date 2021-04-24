@@ -188,9 +188,8 @@ def export_dnssec_dnskey():
                     zonekey["zone"] = zone
                 else:
                     assert zonekey["zone"] == zone
-                str_dnskey = " ".join(dnskey)
                 zonekey["records"].append({
-                    "dnskey": str_dnskey,
+                    "dnskey": " ".join(dnskey),
                     "ds": ds_from_dnskey(zone, *dnskey),
                 })
             if zonekey["zone"]:
