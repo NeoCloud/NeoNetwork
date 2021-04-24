@@ -9,8 +9,8 @@ $TTL	3600
 ;
 
 ; NeoNetwork Original
-@                         IN    NS       NeoPDP-11.neo.
-@                         IN    A        10.127.1.1
+@                         IN    NS       root-dns.neo.
+@                         IN    TXT      "brought to you by NeoPDP-11"
 root                      IN    CNAME    neo.
 NeoPDP-11                 IN    A        10.127.255.1
 caasih                    IN    A        10.127.2.16
