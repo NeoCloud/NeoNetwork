@@ -13,3 +13,26 @@ type = "loopback"
 name = "Yura Neo Anycast"
 description = "Yura Anycast4 Services"
 supernet = "10.127.127.0/24"
+
+["fd10:127:127:53::/64"]
+type = "loopback"
+name = "Yura Neo2 Anycast"
+description = "Yura Anycast6 Services"
+supernet = "fd10:127:127::/48"
+
+["10.127.127.125/32"]
+type = "loopback"
+name = "Yura Neo Anycast"
+description = "Yura Anycast4 Authoritative DNS"
+supernet = "10.127.127.0/24"
+
+["10.127.255.54/32"]
+type = "loopback"
+name = "anycast-recur-4"
+description = "Anycast recursive DNS"
+
+["fd10:127:53:53::/64"]
+type = "loopback"
+name = "anycast-recur-6"
+description = "Anycast recursive DNS"
+supernet = "fd10:127:53::/48"
