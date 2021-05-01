@@ -1,0 +1,9 @@
+["10.127.8.136/29"]
+type = "subnet"
+name = "lilydjwg"
+description = "lilydjwg"
+
+["fd10:127:ba7e::/48"]
+type = "subnet"
+name = "lilydjwg"
+description = "lilydjwg"
