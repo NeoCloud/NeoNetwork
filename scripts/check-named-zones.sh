@@ -13,10 +13,10 @@ install() {
 install || { sudo apt update -qq; install; }
 
 check() {
-    PATH=/sbin:/usr/sbin:$PATH named-checkzone -i local $@
+    PATH=/sbin:/usr/sbin:$PATH named-checkzone -i local -l 86400 $@
 }
 
-pushd dns
+pushd generated/dns
 
 check 'neo'                      neonetwork
 check '127.10.in-addr.arpa'      db.10.127

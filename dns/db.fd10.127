@@ -1,32 +1,45 @@
 ; NeoNetwork DNS Record
-$TTL	604800
-@	IN	SOA	NeoPDP-11.neo. root.neo. (
-			4096	; Serial
-			604800	; Refresh
-			86400	; Retry
-			2419200	; Expire
-			604800 )	; Negative Cache TTL
+$TTL	3600
+@	IN	SOA	root-dns.neo. root.neo. (
+            4096    ; Serial
+             900    ; Refresh
+             900    ; Retry
+           86400    ; Expire
+             900 )  ; Negative Cache TTL
 ;
-@	IN	NS	NeoPDP-11.neo.
+@                                                      IN    NS     NeoPDP-11.neo.
 
 
-1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.c.3.c.1.3.3.2.0    IN      PTR     liqingge.router.br-koishi.lo.she.as141706.koishi.moe.
-0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.2.f.2    IN      PTR     edwardp.neo.
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.c.3.c.1.3.3.2.0        IN    PTR    liqingge.router.br-koishi.lo.she.as141706.koishi.moe.
+0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.2.f.2        IN    PTR    edwardp.neo.
 
 ; Loopback Addresses
 
-0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.5.0.0.f.f.f.f    IN      PTR     root-dns.neo.
+0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.5.0.0.f.f.f.f        IN    PTR    root-dns.neo.
 
 ; DELEGATED ZONES
-3.5.0.0        IN      NS      ns1.jerry.neo.
-3.5.0.0        IN      NS      ns2.jerry.neo.
+3.5.0.0                                                IN    NS     ns1.jerry.neo.
+3.5.0.0                                                IN    NS     ns2.jerry.neo.
+3.5.0.0                                                IN    NS     ns3.jerry.neo.
+3.5.0.0                                                IN    DS     53626 13 2 F7F6AFCCA1CEC26E2A6EE9FAC9E11975260F00B8DC287D0B0FF428F775C62C5D
 
-0.1.0.0        IN      NS      ns-anycast.lantian.neo.
-0.1.0.0        IN      NS      ns1.lantian.neo.
-0.1.0.0        IN      NS      ns2.lantian.neo.
-0.1.0.0        IN      NS      ns3.lantian.neo.
-0.1.0.0        IN      NS      ns4.lantian.neo.
-0.1.0.0        IN      NS      ns5.lantian.neo.
+0.1.0.0                                                IN    NS     ns-anycast.lantian.neo.
+0.1.0.0                                                IN    NS     ns1.lantian.neo.
+0.1.0.0                                                IN    NS     ns2.lantian.neo.
+0.1.0.0                                                IN    NS     ns3.lantian.neo.
+0.1.0.0                                                IN    NS     ns4.lantian.neo.
+0.1.0.0                                                IN    NS     ns5.lantian.neo.
+0.1.0.0                                                IN    DS     11807 13 1 6B42025140C9BBDDA0460429B5641651B1553D78
+0.1.0.0                                                IN    DS     11807 13 2 BBADC27B4EBFC90CBA79F4E69E4F167B9FFAF664B071F4CC46196902054B0910
+0.1.0.0                                                IN    DS     11807 13 4 CB48D8BABA0E44B9D363D3142463014EBDE6D28E15997EA8FB5FDBD42FDCF1CF3846E63925A5910DDD6A192571AEBD93
 
-7.0.0.0	       IN      NS      ns1.staph.neo.
-1.1.e.e        IN      NS      ns1.sun.dn42.
+7.0.0.0                                                IN    NS     ns1.staph.neo.
+
+7.2.1.0                                                IN    NS     ns1.yura.dn42.
+7.2.1.0                                                IN    NS     ns2.yura.dn42.
+
+1.1.e.e                                                IN    NS     ns1.sun.dn42.
+
+6.6.a.a                                                IN    NS     ns1.fixmix.neo.
+6.6.a.a                                                IN    NS     ns2.fixmix.neo. 
+6.6.a.a                                                IN    NS     ns3.fixmix.neo.

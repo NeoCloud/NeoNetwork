@@ -1,88 +1,118 @@
 ; NeoNetwork DNS Record
-
-$TTL	604800
-@	IN	SOA	NeoPDP-11.neo. root.neo. (
-			4096	; Serial
-			604800	; Refresh
-			86400	; Retry
-			2419200	; Expire
-			604800 )	; Negative Cache TTL
+$TTL	3600
+@	IN	SOA	root-dns.neo. root.neo. (
+            4096    ; Serial
+             900    ; Refresh
+             900    ; Retry
+           86400    ; Expire
+             900 )  ; Negative Cache TTL
 ;
 
 ; NeoNetwork Original
-@		IN	NS	NeoPDP-11.neo.
-@		IN	A	10.127.1.1
-root		IN	CNAME	neo.
-NeoPDP-11	IN	A	10.127.255.1
-caasih		IN	A	10.127.2.16
-NeoVAX		IN	A	10.127.2.22
-NeoSystem	IN	A	10.127.255.80
-neostorage	IN	A	10.127.1.10
-NeoBOX		IN	A	10.127.1.20
-cklvax		IN	A	10.127.1.40
-pan		IN	A	10.127.3.1
-NeoRouter	IN	A	10.127.2.127
-santost12	IN	A	10.127.39.1
+@                         IN    NS       root-dns.neo.
+@                         IN    TXT      "brought to you by NeoPDP-11"
+root                      IN    CNAME    neo.
+NeoPDP-11                 IN    A        10.127.255.1
+caasih                    IN    A        10.127.2.16
+NeoVAX                    IN    A        10.127.2.22
+NeoSystem                 IN    A        10.127.255.80
+neostorage                IN    A        10.127.1.10
+NeoBOX                    IN    A        10.127.1.20
+cklvax                    IN    A        10.127.1.40
+pan                       IN    A        10.127.3.1
+NeoRouter                 IN    A        10.127.2.127
+santost12                 IN    A        10.127.39.1
 
-neko		IN	TXT	"helloworld"
-telegram	IN	TXT	"https://t.me/NeoNetworkVPN"
-root-dns    IN  A    10.127.255.53
-root-dns    IN  AAAA fd10:127:ffff:53::
-dns         IN  A    10.127.255.54
-dns         IN  AAAA fd10:127:53:53::
+neko                      IN    TXT      "helloworld"
+telegram                  IN    TXT      "https://t.me/NeoNetworkVPN"
+root-dns                  IN    A        10.127.255.53
+root-dns                  IN    AAAA     fd10:127:ffff:53::
+dns                       IN    A        10.127.255.54
+dns                       IN    AAAA     fd10:127:53:53::
 
-edwardp     IN  A    10.127.8.130
-edwardp     IN  AAAA fd10:127:2f2f::
+edwardp                   IN    A        10.127.8.130
+edwardp                   IN    AAAA     fd10:127:2f2f::
 
 ; DELEGATED ZONES
-jerry       IN  NS    ns1.jerry
-jerry       IN  NS    ns2.jerry
-ns1.jerry   IN  A     10.127.8.193
-ns1.jerry   IN  AAAA  fd10:127:53::1
-ns2.jerry   IN  A     10.127.8.216
-ns2.jerry   IN  AAAA  fd10:127:53:100::1
+jerry                     IN    NS       ns1.jerry
+jerry                     IN    NS       ns2.jerry
+jerry                     IN    NS       ns3.jerry
+jerry                     IN    DS       18792 13 2 2F335456EEE70FC4833886E5EEDC28E7195E90E2A337860B3E805D5EB9F3A804
+ns1.jerry                 IN    A        10.127.8.193
+ns1.jerry                 IN    AAAA     fd10:127:53::1
+ns2.jerry                 IN    A        10.127.8.216
+ns2.jerry                 IN    AAAA     fd10:127:53:100::1
+ns3.jerry                 IN    A        10.127.8.208
+ns3.jerry                 IN    AAAA     fd10:127:53:200::1
 
-kp          IN	NS    ns1.kp
-ns1.kp      IN	A     10.127.39.1
-ns1.kp      IN	AAAA  fd10:127:ec39:2222::1
+kp                        IN    NS       ns1.kp
+ns1.kp                    IN    A        10.127.39.1
+ns1.kp                    IN    AAAA     fd10:127:ec39:2222::1
 
-tracker     IN  NS    ns1.tracker
-ns1.tracker IN  A     10.127.39.1
-ns1.tracker IN  AAAA  fd10:127:ec39:2222::1
+tracker                   IN    NS       ns1.tracker
+ns1.tracker               IN    A        10.127.39.1
+ns1.tracker               IN    AAAA     fd10:127:ec39:2222::1
 
-lantian            IN  NS    ns-anycast.lantian
-lantian            IN  NS    ns1.lantian
-lantian            IN  NS    ns2.lantian
-lantian            IN  NS    ns3.lantian
-lantian            IN  NS    ns4.lantian
-lantian            IN  NS    ns5.lantian
-ns-anycast.lantian IN  A     10.127.10.254
-ns-anycast.lantian IN  AAAA  fd10:127:10:2547::54
-ns1.lantian        IN  A     10.127.10.1
-ns1.lantian        IN  AAAA  fd10:127:10:1::1
-ns2.lantian        IN  A     10.127.10.3
-ns2.lantian        IN  AAAA  fd10:127:10:3::1
-ns3.lantian        IN  A     10.127.10.8
-ns3.lantian        IN  AAAA  fd10:127:10:8::1
-ns4.lantian        IN  A     10.127.10.2
-ns4.lantian        IN  AAAA  fd10:127:10:2::1
-ns5.lantian        IN  A     10.127.10.9
-ns5.lantian        IN  AAAA  fd10:127:10:9::1
+lantian                   IN    NS       ns-anycast.lantian
+lantian                   IN    NS       ns1.lantian
+lantian                   IN    NS       ns2.lantian
+lantian                   IN    NS       ns3.lantian
+lantian                   IN    NS       ns4.lantian
+lantian                   IN    NS       ns5.lantian
+lantian                   IN    DS       47346 13 1 BF0E344C96838564CF9DBA3889AAE6E3DA5F6835
+lantian                   IN    DS       47346 13 2 1023D2C40803BA13F2148BC67A09E50A3157EE3E7B1DC2C22041D3B981E976E3
+lantian                   IN    DS       47346 13 4 1DBFA42E78F699241042E18061218CC2DEA7A69884E634165CE99AA5C65ECF4DF7DA16B382494A5AE7D781AB9A3BB1C5
+ns-anycast.lantian        IN    A        10.127.10.254
+ns-anycast.lantian        IN    AAAA     fd10:127:10:2547::54
+ns1.lantian               IN    A        10.127.10.1
+ns1.lantian               IN    AAAA     fd10:127:10:1::1
+ns2.lantian               IN    A        10.127.10.3
+ns2.lantian               IN    AAAA     fd10:127:10:3::1
+ns3.lantian               IN    A        10.127.10.8
+ns3.lantian               IN    AAAA     fd10:127:10:8::1
+ns4.lantian               IN    A        10.127.10.2
+ns4.lantian               IN    AAAA     fd10:127:10:2::1
+ns5.lantian               IN    A        10.127.10.9
+ns5.lantian               IN    AAAA     fd10:127:10:9::1
 
-iedon			   IN  NS	 ns.iedon
-ns.iedon		   IN  A     10.127.21.1
+iedon                     IN    NS       ns.iedon
+ns.iedon                  IN    A        10.127.21.1
 
-staph	    IN	NS    ns1.staph
-staph	    IN	NS    ns2.staph
-staph	    IN	DS    64592 13 2 1AF24492D8FAE84D99E05C9B9088DDB8A82003F3301A53F35EFEC1627BEADDBA
-ns1.staph   IN	A     10.127.8.185
-ns1.staph   IN  AAAA  fd10:127:7::1
-ns2.staph   IN	A     10.127.8.190
-ns2.staph   IN	AAAA  fd10:127:7::6
-aoscnet	    IN	NS    ns1.aoscnet
-aoscnet	    IN	NS    ns2.aoscnet
-aoscnet	    IN	DS    27134 13 2 57145BCB903E0F0060BF94AA4EE5894DCA19D64E6B455A1C1864DA0FD4BA64E2
-ns1.aoscnet IN	A     10.127.7.251
-ns1.aoscnet IN	AAAA  fd10:127:7:2672::1:1
-ns2.aoscnet IN	A     10.127.7.252
-ns2.aoscnet IN	AAAA  fd10:127:7:2672::1:3
+staph                     IN    NS       ns1.staph
+staph                     IN    NS       ns2.staph
+staph                     IN    DS       64592 13 2 1AF24492D8FAE84D99E05C9B9088DDB8A82003F3301A53F35EFEC1627BEADDBA
+ns1.staph                 IN    A        10.127.8.185
+ns1.staph                 IN    AAAA     fd10:127:7::1
+ns2.staph                 IN    A        10.127.8.190
+ns2.staph                 IN    AAAA     fd10:127:7::6
+aoscnet                   IN    NS       ns1.aoscnet
+aoscnet                   IN    NS       ns2.aoscnet
+aoscnet                   IN    DS       27134 13 2 57145BCB903E0F0060BF94AA4EE5894DCA19D64E6B455A1C1864DA0FD4BA64E2
+ns1.aoscnet               IN    A        10.127.7.251
+ns1.aoscnet               IN    AAAA     fd10:127:7:2672::1:1
+ns2.aoscnet               IN    A        10.127.7.252
+ns2.aoscnet               IN    AAAA     fd10:127:7:2672::1:3
+
+yura                      IN    NS       ns.yura
+yura                      IN    NS       ns1.yura
+yura                      IN    NS       ns2.yura
+yura                      IN    DS       63132 15 1 0E03FCE3B54D9FC84A12CC6CF36A71158AA88933
+yura                      IN    DS       63132 15 2 75C0A884399D5ECA686EC35287CDAC2A756D94C30815A0055B88B068F3C947A7
+yura                      IN    DS       63132 15 4 C4BB952FC40FA0185499A4E613864A29FC06FC8014299F2F3702A6E6420D3C054545A11566B95211C2C678F1F6F255F3
+ns.yura                   IN    A        10.127.127.125
+ns.yura                   IN    AAAA     fd10:127:127:53::
+ns1.yura                  IN    AAAA     fd10:127:127:53a::1
+ns2.yura                  IN    AAAA     fd10:127:127:53b::1
+
+fixmix                    IN    NS       ns1.fixmix
+fixmix                    IN    NS       ns2.fixmix
+fixmix                    IN    NS       ns3.fixmix
+david                     IN    NS       ns1.fixmix
+david                     IN    NS       ns2.fixmix
+david                     IN    NS       ns3.fixmix
+ns1.fixmix                IN    A        10.127.66.59
+ns2.fixmix                IN    A        10.127.66.54
+ns3.fixmix                IN    A        10.127.66.52
+ns1.fixmix                IN    AAAA     fd10:127:aa66:11::
+ns2.fixmix                IN    AAAA     fd10:127:aa66:21::
+ns3.fixmix                IN    AAAA     fd10:127:aa66:31::

@@ -1,4 +1,9 @@
-["10.127.64.0/27"]
+["10.127.64.0/24"]
 type = "subnet"
-name = "Moecast Network"
-description = "Moecast Network Public Service"
+name = "MOECAST-EXP-NET"
+description = "Moecast Network Experimental Network"
+
+["fd10:127:64::/48"]
+type = "subnet"
+name = "MOECAST-EXP-NET-NG"
+description = "Moecast Network Experimental Network NextGen"
