@@ -103,3 +103,16 @@ ns.yura                   IN    A        10.127.127.125
 ns.yura                   IN    AAAA     fd10:127:127:53::
 ns1.yura                  IN    AAAA     fd10:127:127:53a::1
 ns2.yura                  IN    AAAA     fd10:127:127:53b::1
+
+fixmix                    IN    NS       ns1.fixmix
+fixmix                    IN    NS       ns2.fixmix
+fixmix                    IN    NS       ns3.fixmix
+david                     IN    NS       ns1.fixmix
+david                     IN    NS       ns2.fixmix
+david                     IN    NS       ns3.fixmix
+ns1.fixmix                IN    A        10.127.66.59
+ns2.fixmix                IN    A        10.127.66.54
+ns3.fixmix                IN    A        10.127.66.52
+ns1.fixmix                IN    AAAA     fd10:127:aa66:11::
+ns2.fixmix                IN    AAAA     fd10:127:aa66:21::
+ns3.fixmix                IN    AAAA     fd10:127:aa66:31::

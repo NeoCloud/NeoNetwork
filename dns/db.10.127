@@ -80,3 +80,7 @@ $TTL    3600
 
 127            IN    NS     ns1.yura.dn42.
 127            IN    NS     ns2.yura.dn42.
+
+66             IN    NS     ns1.fixmix.neo.
+66             IN    NS     ns2.fixmix.neo.
+66             IN    NS     ns3.fixmix.neo.
