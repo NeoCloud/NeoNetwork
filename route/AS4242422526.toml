@@ -1,0 +1,7 @@
+["10.127.20.0/24"]
+type = "subnet"
+name = "Anillc Network v4"
+
+["fd10:127:cc::/48"]
+type = "subnet"
+name = "Anillc Network v6"
