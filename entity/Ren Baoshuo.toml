@@ -1,0 +1,10 @@
+name = "Ren Baoshuo"
+babel = ["zh-N", "en-3"]
+
+[contact]
+email = "i@baoshuo.ren"
+telegram = "baoshuo"
+github = "renbaoshuo"
+
+[persona]
+pgp = "60E46C33C022FA15DBB326837C7AE7B1CE4FF525"
