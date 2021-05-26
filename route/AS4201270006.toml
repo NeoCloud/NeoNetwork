@@ -28,6 +28,11 @@ type = "loopback"
 name = "anycast-recur-4"
 description = "Anycast recursive DNS"
 
+["10.127.18.0/27"]
+type = "subnet"
+name = "JerryXiao-Service"
+description = "NeoNetwork services"
+
 ["fd10:127:ffff:53::/64"]
 type = "loopback"
 name = "anycast-auth-6"
