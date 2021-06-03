@@ -7,5 +7,9 @@ TTL = -1
 NS = ["ns1.jerry.neo.", "ns2.jerry.neo.", "ns3.jerry.neo."]
 DS = ["24982 13 2 463EAE9D8248179806321A2ED3F05377234FD13DF0C2F20428C3B148F9C31B3D"]
 
+["10.127.18.0/27"]
+NS = ["ns1.jerry.neo.", "ns2.jerry.neo.", "ns3.jerry.neo."]
+DS = ["18817 13 2 4E7B00D8C4EEB8969CC8DD2938B0172FEF136C106D5549CB0A3B5221912DB0AC"]
+
 ["10.127.8.160/27"]
 NS = ["ns1.staph.neo."]

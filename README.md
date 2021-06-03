@@ -34,6 +34,10 @@ and [route6](https://github.com/NeoCloud/NeoNetwork/tree/master/route6) for allo
 
 DNS Anycast is currently on `10.127.255.54` for IPv4 and `fd10:127:53:53::` for IPv6. All domain names are under ".neo".
 
+## Certificate Authority
+
+Root certificate can be downloaded from [here](https://github.com/NeoCloud/NeoNetwork/blob/master/ca/neonetwork.crt). An acmev2-api is available at `https://acme.neo/acme/acme/directory`.
+
 ## Connection Graph
 
 ![NeoNetwork Nodes](https://raw.githubusercontent.com/NeoCloud/NeoNetwork/master/nodes.svg)
