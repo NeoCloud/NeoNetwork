@@ -34,7 +34,12 @@ $TTL    3600
 10.14          IN    PTR    neochen.gr-0-1-0-2.cr2.hkg1.licson.neo.
 13.14          IN    PTR    gr-0-1-0-3.cr2.hkg1.licson.neo.
 14.14          IN    PTR    jerry.gr-0-1-0-3.cr2.hkg1.licson.neo.
+17.14          IN    PTR    gr-0-1-0-4.cr2.hkg1.licson.neo.
+18.14          IN    PTR    yuetan.gr-0-1-0-4.cr2.hkg1.licson.neo.
+21.14          IN    PTR    gr-0-1-0-5.cr2.hkg1.licson.neo.
+22.14          IN    PTR    moecast.gr-0-1-0-5.cr2.hkg1.licson.neo.
 1.15           IN    PTR    ae-0-1.cr2.hkg1.licson.neo.
+58.15          IN    PTR    live.licson.neo.
 
 1.8            IN    PTR    librehs.neo.
 2.8            IN    PTR    blog.librehs.neo.
