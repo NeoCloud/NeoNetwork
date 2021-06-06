@@ -9,6 +9,7 @@ from io import StringIO
 from ipaddress import IPv4Network, IPv6Network, ip_network
 from itertools import combinations
 from pathlib import Path
+from functools import wraps
 
 import netaddr
 import toml
@@ -62,11 +63,21 @@ def iter_toml_file(path: str):
         yield item, toml.loads(item.read_text())
 
 
+def _sort_as_iterator(func):
+    @wraps(func)
+    def wrapped(*args, **kwargs):
+        for item in sorted(list(func(*args, **kwargs)), key=lambda x: x[0], reverse=False):
+            yield item
+    return wrapped
+
+
+@_sort_as_iterator
 def load_entities():
     for item, entity in iter_toml_file("entity"):
         yield item.stem, entity
 
 
+@_sort_as_iterator
 def load_asn(entities: dict):
     for item, entity in iter_toml_file("asn"):
         asn = int(item.stem.lstrip("AS"))
