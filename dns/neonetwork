@@ -121,4 +121,8 @@ ns1.fixmix                IN    AAAA     fd10:127:aa66:11::
 ns2.fixmix                IN    AAAA     fd10:127:aa66:21::
 ns3.fixmix                IN    AAAA     fd10:127:aa66:31::
 
+bear                      IN    NS       ns1.bear
+koala                     IN    NS       ns1.bear
+ns1.bear                  IN    AAAA     fd10:127:1488::
+
 an                        IN    NS       ns1.an.dn42.
