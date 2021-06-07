@@ -125,4 +125,11 @@ bear                      IN    NS       ns1.bear
 koala                     IN    NS       ns1.bear
 ns1.bear                  IN    AAAA     fd10:127:1488::
 
+iwarp                     IN    NS       ns1.iwarp
+go                        IN    NS       ns1.iwarp
+yux                       IN    NS       ns1.iwarp
+ns1.iwarp                 IN    A        10.127.30.53
+ns1.iwarp                 IN    AAAA     fd10:127:30:53::1
+
 an                        IN    NS       ns1.an.dn42.
+
