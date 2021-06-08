@@ -3,18 +3,21 @@ import sys
 from pathlib import Path
 
 import toml
+
 from rfc2317 import gen_reverse_pointers
 
 RESOLVE_FILE = Path("dns", "db.10.127")
 RFC2317_FILE = Path("dns", "rfc2317.toml")
 
+
 def iter_rfc2317_entry():
     entries = toml.loads(RFC2317_FILE.read_text())
     for (route, attributes) in entries.items():
-        ns = attributes.get('NS')
-        ds = attributes.get('DS', list())
-        ttl = attributes.get('TTL', -1)
-        yield(route, ns, ds, ttl)
+        ns = attributes.get("NS")
+        ds = attributes.get("DS", list())
+        ttl = attributes.get("TTL", -1)
+        yield (route, ns, ds, ttl)
+
 
 def main():
     orignal = RESOLVE_FILE.read_text()

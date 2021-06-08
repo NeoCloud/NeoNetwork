@@ -6,11 +6,11 @@ import argparse
 from pathlib import Path
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser('named-formatzone')
+    parser = argparse.ArgumentParser("named-formatzone")
     parser.add_argument("file")
     args = parser.parse_args()
     zonefile = Path(args.file)
-    zonelines = zonefile.read_text().split('\n')
+    zonelines = zonefile.read_text().split("\n")
     formatted = list()
     max_length = [0, 0, 0, 0, 0]
     in_soa = False
@@ -18,7 +18,7 @@ if __name__ == "__main__":
     def iter_lines(scan_only=True):
         soafound = None
         for rline in zonelines:
-            line, *comments = rline.split(';')
+            line, *comments = rline.split(";")
             comments = ";".join(comments)
             line = line.strip()
             if "SOA" in line and soafound is None:
@@ -41,7 +41,7 @@ if __name__ == "__main__":
                 else:
                     fmtlline = list()
                     for i, entry in enumerate(cols):
-                        entry += " "*(max_length[i]-len(entry)+3)
+                        entry += " " * (max_length[i] - len(entry) + 3)
                         if entry:
                             fmtlline.append(entry)
                     fmtline = " ".join(fmtlline)
@@ -50,6 +50,7 @@ if __name__ == "__main__":
             else:
                 if not scan_only:
                     formatted.append(rline)
+
     iter_lines()
     iter_lines(False)
 

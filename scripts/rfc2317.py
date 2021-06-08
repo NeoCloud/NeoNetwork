@@ -2,11 +2,14 @@
 
 import ipaddress
 
-ZONE = '.127.10.in-addr.arpa'
+ZONE = ".127.10.in-addr.arpa"
+
+
 def truncate(rev: str) -> str:
     assert rev.endswith(ZONE)
-    rev = rev[:-len(ZONE)]
+    rev = rev[: -len(ZONE)]
     return rev
+
 
 def gen_reverse_pointers(network: str, ns: list, ds: list = [], ttl: int = -1) -> list:
     ttl = f"{ttl} " if 900 <= ttl <= 86400 else ""
@@ -25,5 +28,17 @@ def gen_reverse_pointers(network: str, ns: list, ds: list = [], ttl: int = -1) -
         buf.append(f"{cnamefr} {ttl}IN CNAME {cnameto}")
     return buf
 
+
 if __name__ == "__main__":
-    print("\n".join(gen_reverse_pointers('10.127.8.64/26', ['ns1.jerry.neo.'], ['18792 13 2 2F335456EEE70FC4833886E5EEDC28E7195E90E2A337860B3E805D5EB9F3A804'], ttl=1500)))
+    print(
+        "\n".join(
+            gen_reverse_pointers(
+                "10.127.8.64/26",
+                ["ns1.jerry.neo."],
+                [
+                    "18792 13 2 2F335456EEE70FC4833886E5EEDC28E7195E90E2A337860B3E805D5EB9F3A804"
+                ],
+                ttl=1500,
+            )
+        )
+    )
