@@ -1,4 +1,9 @@
 ["10.127.5.0/28"]
 type = "subnet"
 name = "yhi-h"
-description = "Yhi Interconnect H"
+description = "Yhi Interconnection Region H"
+
+["10.127.5.16/28"]
+type = "subnet"
+name = "yhi-s"
+description = "Yhi Interconnection Region S"
