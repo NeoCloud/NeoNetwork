@@ -1,0 +1,9 @@
+["10.127.132.0/24"]
+type = "subnet"
+name = "NetUnion-IPv4"
+description = "NetUnion access. (IPv4)"
+
+["fd10:127:1332::/48"]
+type = "subnet"
+name = "NetUnion-IPv6"
+description = "NetUnion access. (IPv6)"

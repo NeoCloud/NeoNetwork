@@ -2,5 +2,8 @@ name = "Yukari"
 
 [contact]
 telegram = "CharlesYang"
-github = "SteveCharlesYang"
-email = "charles@0x7f.cc"
+github = "YukariChiba"
+email = "i@0x7f.cc"
+
+[persona]
+pgp = "9DC663829861B7FDFB5DA8B39277CB21961D6DD5"
