@@ -123,7 +123,7 @@ ns3.fixmix                IN    AAAA     fd10:127:aa66:31::
 
 bear                      IN    NS       ns1.bear
 koala                     IN    NS       ns1.bear
-ns1.bear                  IN    AAAA     fd10:127:1488::
+ns1.bear                  IN    AAAA     fd42:e621::53
 
 iwarp                     IN    NS       ns1.iwarp
 go                        IN    NS       ns1.iwarp
