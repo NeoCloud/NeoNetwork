@@ -133,3 +133,9 @@ ns1.iwarp                 IN    AAAA     fd10:127:30:53::1
 
 an                        IN    NS       ns1.an.dn42.
 
+tsingyao                   IN    NS       ns1.tsingyao
+tsingyao                   IN    NS       ns2.tsingyao
+ns1.tsingyao               IN    A        10.127.99.1
+ns1.tsingyao               IN    AAAA     fd10:127:99:1::1
+ns2.tsingyao               IN    A        10.127.99.2
+ns2.tsingyao               IN    AAAA     fd10:127:99:2::1

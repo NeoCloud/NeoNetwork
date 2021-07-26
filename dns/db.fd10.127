@@ -49,3 +49,6 @@ $TTL	3600
 8.8.4.1                                                IN    NS     ns1.bear.neo.
 
 c.c.0.0                                                IN    NS     ns1.an.dn42.
+
+9.9.0.0                                                IN    NS     ns1.tsingyao.neo.
+9.9.0.0                                                IN    NS     ns2.tsingyao.neo.
