@@ -93,3 +93,6 @@ $TTL    3600
 66             IN    NS     ns1.fixmix.neo.
 66             IN    NS     ns2.fixmix.neo.
 66             IN    NS     ns3.fixmix.neo.
+
+99             IN    NS     ns1.tsingyao.neo.
+99             IN    NS     ns2.tsingyao.neo.

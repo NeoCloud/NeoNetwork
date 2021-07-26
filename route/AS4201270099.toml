@@ -1,0 +1,9 @@
+["10.127.99.0/24"]
+type = "subnet"
+name = "TSINTYAO-NET4-NEOA"
+description = "TsingYao Technologies NeoNetwork IPv4 Block"
+
+["fd10:127:99::/48"]
+type = "subnet"
+name = "TSINGYAO-NET6-NEOA"
+description = "TsingYao Technologies NeoNetwork IPv6 Block"
