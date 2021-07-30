@@ -37,6 +37,9 @@ edwardp                   IN    AAAA     fd10:127:2f2f::
 
 tv                        IN    A        10.127.15.58
 
+lily                      IN    A        10.127.8.137
+lily                      IN    AAAA     fd10:127:ba7e::137
+
 ; DELEGATED ZONES
 jerry                     IN    NS       ns1.jerry
 jerry                     IN    NS       ns2.jerry
