@@ -46,7 +46,7 @@ $TTL    3600
 
 130.8          IN    PTR    edwardp.neo.
 
-137.8          IN    PTR    lily.neo
+137.8          IN    PTR    lily.neo.
 
 ; Loopback Addresses
 
