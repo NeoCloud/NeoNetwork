@@ -1,9 +1,9 @@
 name = "TsingYao"
+babel = ["zh-N", "en"]
 
 [contact]
 email = "yujintong@126.com"
-telegram = "@yujintong"
-irc = "yujintong"
+telegram = "yujintong"
 github = "yujintong"
 
 [persona]
