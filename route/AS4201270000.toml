@@ -5,32 +5,22 @@ description = "Reserved"
 
 ["10.127.1.0/24"]
 type = "subnet"
-name = "CROOM"
-description = "LAN at school"
+name = "MAIN"
+description = "LAN 1"
 
 ["10.127.2.0/24"]
 type = "subnet"
-name = "NeoSystem"
+name = "Messed-up Network"
 
 ["10.127.16.0/24"]
 type = "subnet"
 name = "Neo_Chen ZeroTier-One Hub"
 description = ""
 
-["10.127.255.1/32"]
-type = "loopback"
-name = "NeoPDP-11"
-description = "FreeBSD/frr"
-
 ["10.127.255.4/32"]
 type = "loopback"
 name = "fsnvax"
 description = "Debian/frr"
-
-["10.127.255.80/32"]
-type = "loopback"
-name = "NeoSystem"
-description = "Arch Linux/frr"
 
 ["fd10:127:5f37:59df::/64"]
 type = "subnet"
