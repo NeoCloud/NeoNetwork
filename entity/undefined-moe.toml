@@ -1,0 +1,7 @@
+name = "undefined-moe"
+babel = ["zh", "en-3"]
+
+[contact]
+email = "i@undefined.moe"
+telegram = "webpack_exports_undefined"
+github = "undefined-moe"
