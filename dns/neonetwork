@@ -148,3 +148,8 @@ ns2.dnswol                IN    AAAA     fd10:127:99::33:1
 
 tsingyao                  IN    NS       ns1.dnswol
 tsingyao                  IN    NS       ns2.dnswol
+
+undefiend                 IN    A        10.127.88.1
+*.undefined               IN    A        10.127.88.1
+undefiend                 IN    AAAA     fd10:127:88::1
+*.undefined               IN    AAAA     fd10:127:88::1

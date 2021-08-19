@@ -1,3 +1,8 @@
 ["10.127.88.0/24"]
 type = "subnet"
-name = "Hydro-Neo-Network"
+name = "Hydro-Neo-Network-4"
+
+["fd10:127:88::/48"]
+type = "subnet"
+name = "Hydro-Neo-Network-6"
+
