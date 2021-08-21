@@ -44,9 +44,10 @@ $TTL	3600
 
 1.1.e.e                                                IN    NS     ns1.sun.dn42.
 
-6.6.a.a                                                IN    NS     ns1.fixmix.neo.
-6.6.a.a                                                IN    NS     ns2.fixmix.neo. 
-6.6.a.a                                                IN    NS     ns3.fixmix.neo.
+6.6.a.a                                                IN    NS     ns1.potato.neo.
+6.6.a.a                                                IN    NS     ns2.potato.neo. 
+6.6.a.a                                                IN    NS     ns3.potato.neo.
+6.6.a.a                                                IN    DS     31105 7 2 CA2C41EA47978F1728FE49778CDC2882AD2725E23081AE72F7D2ECE5FF95E20D
 
 8.8.4.1                                                IN    NS     ns1.bear.neo.
 

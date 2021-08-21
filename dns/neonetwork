@@ -111,18 +111,24 @@ ns.yura                   IN    AAAA     fd10:127:127:53::
 ns1.yura                  IN    AAAA     fd10:127:127:53a::1
 ns2.yura                  IN    AAAA     fd10:127:127:53b::1
 
-fixmix                    IN    NS       ns1.fixmix
-fixmix                    IN    NS       ns2.fixmix
-fixmix                    IN    NS       ns3.fixmix
-david                     IN    NS       ns1.fixmix
-david                     IN    NS       ns2.fixmix
-david                     IN    NS       ns3.fixmix
-ns1.fixmix                IN    A        10.127.66.59
-ns2.fixmix                IN    A        10.127.66.54
-ns3.fixmix                IN    A        10.127.66.52
-ns1.fixmix                IN    AAAA     fd10:127:aa66:11::
-ns2.fixmix                IN    AAAA     fd10:127:aa66:21::
-ns3.fixmix                IN    AAAA     fd10:127:aa66:31::
+potato                    IN    NS       ns1.potato
+potato                    IN    NS       ns2.potato
+potato                    IN    NS       ns3.potato
+potato                    IN    DS       6841 7 2 B02CE6960F3FFC54AAAEA4FA26F050D911A7049158B0B35350E74CC78F04E183
+fixmix                    IN    NS       ns1.potato
+fixmix                    IN    NS       ns2.potato
+fixmix                    IN    NS       ns3.potato
+fixmix                    IN    DS       5223 7 2 BF26524942A4FAFA08C0DDF71C2E56EDC3BC82EDBA8F86B0DF6070B378919840
+david                     IN    NS       ns1.potato
+david                     IN    NS       ns2.potato
+david                     IN    NS       ns3.potato
+david                     IN    DS       14533 7 2 914D786DACF1C5D2C953515A425FB4BA4D644D7DECA7B6B60BBC487323479039
+ns1.potato                IN    A        10.127.66.59
+ns2.potato                IN    A        10.127.66.54
+ns3.potato                IN    A        10.127.66.52
+ns1.potato                IN    AAAA     fd10:127:aa66:1010::1
+ns2.potato                IN    AAAA     fd10:127:aa66:2010::1
+ns3.potato                IN    AAAA     fd10:127:aa66:3010::1
 
 bear                      IN    NS       ns1.bear
 koala                     IN    NS       ns1.bear
