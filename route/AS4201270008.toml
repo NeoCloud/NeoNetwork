@@ -1,5 +1,0 @@
-["10.127.255.117/32"]
-type = "loopback"
-name = "MagicNeko-TW Snode(name:none)"
-description = "MagicNeko VPN old node"
-
