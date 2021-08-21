@@ -1,0 +1,19 @@
+name = "kskb"
+babel = [
+    "zh",
+    "en-3",
+]
+
+[contact]
+email = "dn42@kskb.eu.org"
+irc = "kskb"
+telegram = "KusakabeSi"
+mastodon = ""
+github = "KusakabeSi"
+
+# Details on identifying the entity online (optional). Usually, a PGP key
+# fingerprint can be put here to help others communicate with the entity more
+# securely.
+[persona]
+pgp = "716846E71E56F088BDF42E695A6761FECF4CAA65"
+

@@ -13,6 +13,8 @@ $TTL	3600
 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.c.3.c.1.3.3.2.0        IN    PTR    liqingge.router.br-koishi.lo.she.as141706.koishi.moe.
 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.2.f.2        IN    PTR    edwardp.neo.
 
+7.3.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.e.7.a.b        IN    PTR    lily.neo.
+
 ; Loopback Addresses
 
 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.5.0.0.f.f.f.f        IN    PTR    root-dns.neo.
@@ -33,6 +35,8 @@ $TTL	3600
 0.1.0.0                                                IN    DS     11807 13 2 BBADC27B4EBFC90CBA79F4E69E4F167B9FFAF664B071F4CC46196902054B0910
 0.1.0.0                                                IN    DS     11807 13 4 CB48D8BABA0E44B9D363D3142463014EBDE6D28E15997EA8FB5FDBD42FDCF1CF3846E63925A5910DDD6A192571AEBD93
 
+0.3.0.0                                                IN    NS     ns1.iwarp.neo.
+
 7.0.0.0                                                IN    NS     ns1.staph.neo.
 
 7.2.1.0                                                IN    NS     ns1.yura.dn42.
@@ -44,4 +48,9 @@ $TTL	3600
 6.6.a.a                                                IN    NS     ns2.fixmix.neo. 
 6.6.a.a                                                IN    NS     ns3.fixmix.neo.
 
+8.8.4.1                                                IN    NS     ns1.bear.neo.
+
 c.c.0.0                                                IN    NS     ns1.an.dn42.
+
+9.9.0.0                                                IN    NS     ns1.tsingyao.neo.
+9.9.0.0                                                IN    NS     ns2.tsingyao.neo.

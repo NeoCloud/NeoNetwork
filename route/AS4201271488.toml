@@ -1,0 +1,4 @@
+["fd10:127:1488::/48"]
+type = "subnet"
+name = "Bear"
+description = "Bear Neo Network"

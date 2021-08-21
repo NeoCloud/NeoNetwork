@@ -35,6 +35,11 @@ acme                      IN    AAAA     fd10:127:53:223::1
 edwardp                   IN    A        10.127.8.130
 edwardp                   IN    AAAA     fd10:127:2f2f::
 
+tv                        IN    A        10.127.15.58
+
+lily                      IN    A        10.127.8.137
+lily                      IN    AAAA     fd10:127:ba7e::137
+
 ; DELEGATED ZONES
 jerry                     IN    NS       ns1.jerry
 jerry                     IN    NS       ns2.jerry
@@ -119,4 +124,32 @@ ns1.fixmix                IN    AAAA     fd10:127:aa66:11::
 ns2.fixmix                IN    AAAA     fd10:127:aa66:21::
 ns3.fixmix                IN    AAAA     fd10:127:aa66:31::
 
+bear                      IN    NS       ns1.bear
+koala                     IN    NS       ns1.bear
+ns1.bear                  IN    AAAA     fd42:e621::53
+
+iwarp                     IN    NS       ns1.iwarp
+go                        IN    NS       ns1.iwarp
+yux                       IN    NS       ns1.iwarp
+ns1.iwarp                 IN    A        10.127.30.53
+ns1.iwarp                 IN    AAAA     fd10:127:30:53::1
+
 an                        IN    NS       ns1.an.dn42.
+
+dnswol                    IN    NS       ns1.dnswol
+dnswol                    IN    NS       ns2.dnswol
+dnswol                    IN    DS       53285 14 1 88971c954d18aa1224a1b01e54c81dc6cd71a86e
+dnswol                    IN    DS       53285 14 2 d782d7d9afec4e20082913fe2f23fd9e2c0e0ad7206fa389cadc4050d11b7e80
+dnswol                    IN    DS       53285 14 4 1c0fcf050b4000de0648a8e25a8e809e35b7501c846ad785f07e2c4296610c305d217cb5113c34f937f62780e82b5e98
+ns1.dnswol                IN    A        10.127.99.50
+ns1.dnswol                IN    AAAA     fd10:127:99::32:1
+ns2.dnswol                IN    A        10.127.99.51
+ns2.dnswol                IN    AAAA     fd10:127:99::33:1
+
+tsingyao                  IN    NS       ns1.dnswol
+tsingyao                  IN    NS       ns2.dnswol
+
+undefiend.moe             IN    A        10.127.88.1
+*.undefined.moe           IN    A        10.127.88.1
+undefiend.moe             IN    AAAA     fd10:127:88::1
+*.undefined.moe           IN    AAAA     fd10:127:88::1

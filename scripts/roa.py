@@ -3,8 +3,12 @@ import argparse
 import json
 import re
 import time
+
+# dnssec
+from base64 import b64decode
 from collections import defaultdict
 from contextlib import redirect_stdout
+from functools import wraps
 from io import StringIO
 from ipaddress import IPv4Network, IPv6Network, ip_network
 from itertools import combinations
@@ -12,12 +16,9 @@ from pathlib import Path
 
 import netaddr
 import toml
-from tabulate import tabulate
-# dnssec
-from base64 import b64decode
 from dns.dnssec import make_ds
 from dns.rdtypes.ANY.DNSKEY import DNSKEY
-
+from tabulate import tabulate
 
 NEO_NETWORK_POOL = [ip_network("10.127.0.0/16"), ip_network("fd10:127::/32")]
 
@@ -62,11 +63,24 @@ def iter_toml_file(path: str):
         yield item, toml.loads(item.read_text())
 
 
+def _sort_as_iterator(func):
+    @wraps(func)
+    def wrapped(*args, **kwargs):
+        for item in sorted(
+            list(func(*args, **kwargs)), key=lambda x: x[0], reverse=False
+        ):
+            yield item
+
+    return wrapped
+
+
+@_sort_as_iterator
 def load_entities():
     for item, entity in iter_toml_file("entity"):
         yield item.stem, entity
 
 
+@_sort_as_iterator
 def load_asn(entities: dict):
     for item, entity in iter_toml_file("asn"):
         asn = int(item.stem.lstrip("AS"))
@@ -133,7 +147,9 @@ def route_to_roa(asn_table: dict):
         try:
             assert net1["prefix"] != net2["prefix"]
         except AssertionError:
-            assert net1['asn'] != net2['asn'] and entity_from_net(net1) == entity_from_net(net2)
+            assert net1["asn"] != net2["asn"] and entity_from_net(
+                net1
+            ) == entity_from_net(net2)
             continue
         assert net1["prefix"].supernet_of(net2["prefix"])
         s1net, s2net = (net1["supernet"], net2["supernet"])
@@ -170,10 +186,19 @@ def prehandle_roa(asn_table: dict, args):
         r["prefix"] = r["prefix"].with_prefixlen
     return roa4, roa6
 
+
 def export_dnssec_dnskey():
     def ds_from_dnskey(zone, flags, protocol, algorithm, *key):
-        dnspy_dnskey = DNSKEY("IN", "DNSKEY", int(flags), int(protocol), int(algorithm), b64decode(" ".join(key)))
+        dnspy_dnskey = DNSKEY(
+            "IN",
+            "DNSKEY",
+            int(flags),
+            int(protocol),
+            int(algorithm),
+            b64decode(" ".join(key)),
+        )
         return make_ds(zone, dnspy_dnskey, "SHA256").to_text()
+
     dnskey_path = Path("dns") / "dnssec"
     dnskeys = list()
     for f in dnskey_path.iterdir():
@@ -188,13 +213,16 @@ def export_dnssec_dnskey():
                     zonekey["zone"] = zone
                 else:
                     assert zonekey["zone"] == zone
-                zonekey["records"].append({
-                    "dnskey": " ".join(dnskey),
-                    "ds": ds_from_dnskey(zone, *dnskey),
-                })
+                zonekey["records"].append(
+                    {
+                        "dnskey": " ".join(dnskey),
+                        "ds": ds_from_dnskey(zone, *dnskey),
+                    }
+                )
             if zonekey["zone"]:
                 dnskeys.append(zonekey)
     return dnskeys
+
 
 def make_export(roa4, roa6):
     def modify_entity(entity):
@@ -234,7 +262,7 @@ def make_export(roa4, roa6):
             }
             for owner, entity in entities.items()
         },
-        "dnssec": export_dnssec_dnskey()
+        "dnssec": export_dnssec_dnskey(),
     }
     return json.dumps(output, indent=2)
 
@@ -263,7 +291,10 @@ def make_rfc8416(roa4, roa6):
             "bgpsecAssertions": [],
             "prefixAssertions": [
                 pick(
-                    roa, ["asn", "prefix"], maxLength="maxPrefixLength", name="comment",
+                    roa,
+                    ["asn", "prefix"],
+                    maxLength="maxPrefixLength",
+                    name="comment",
                 )
                 for roa in (*roa4, *roa6)
             ],
@@ -371,19 +402,51 @@ def make_summary():
             print(prefix)
         print("```")
         IP_VRSIONS = {4, 6}
-        total_ip_count = {ver: sum([prefix.num_addresses for prefix in NEO_NETWORK_POOL if prefix.version == ver]) for ver in IP_VRSIONS}
-        used_ip_count = {ver: sum([ip_network(str(prefix)).num_addresses for prefix in prefixes if prefix.version == ver]) for ver in IP_VRSIONS}
+        total_ip_count = {
+            ver: sum(
+                [
+                    prefix.num_addresses
+                    for prefix in NEO_NETWORK_POOL
+                    if prefix.version == ver
+                ]
+            )
+            for ver in IP_VRSIONS
+        }
+        used_ip_count = {
+            ver: sum(
+                [
+                    ip_network(str(prefix)).num_addresses
+                    for prefix in prefixes
+                    if prefix.version == ver
+                ]
+            )
+            for ver in IP_VRSIONS
+        }
         print()
         print("## Address Space Usage")
         print()
         address_space_usage_table = tabulate(
             (
-                (f"IPv{ver}", f"{(t:=total_ip_count.get(ver)):.5g}", f"{(u:=used_ip_count.get(ver)):.5g}", f"{t-u:.5g}", f"{u/t*100:.2f}%", f"{(t-u)/t*100:.2f}%")
+                (
+                    f"IPv{ver}",
+                    f"{(t:=total_ip_count.get(ver)):.5g}",
+                    f"{(u:=used_ip_count.get(ver)):.5g}",
+                    f"{t-u:.5g}",
+                    f"{u/t*100:.2f}%",
+                    f"{(t-u)/t*100:.2f}%",
+                )
                 for ver in IP_VRSIONS
             ),
-            headers=["IP Version", "Total", "Used", "Free", "Percent Used", "Percent Free"],
+            headers=[
+                "IP Version",
+                "Total",
+                "Used",
+                "Free",
+                "Percent Used",
+                "Percent Free",
+            ],
             tablefmt="github",
-            disable_numparse=True
+            disable_numparse=True,
         )
         print(address_space_usage_table)
     return stream.getvalue()

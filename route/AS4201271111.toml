@@ -1,0 +1,9 @@
+["10.127.111.0/24"]
+type = "subnet"
+name = "kskb"
+description = "kskb"
+
+["fd10:127:e00f::/48"]
+type = "subnet"
+name = "kskb"
+description = "kskb"
