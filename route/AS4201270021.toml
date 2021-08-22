@@ -1,9 +1,9 @@
 ["10.127.66.0/24"]
 type = "subnet"
-name = "FIXMIX-NET4-NEOA"
-description = "fixmix Technologies NeoNetwork IPv4 Block"
+name = "POTATO-NEO-NET4-A"
+description = "PotatoNet @ NeoNetwork"
 
 ["fd10:127:aa66::/48"]
 type = "subnet"
-name = "FIXMIX-NET6-NEOA"
-description = "fixmix Technologies NeoNetwork IPv6 Block"
+name = "POTATO-NEO-NET6-A"
+description = "PotatoNet @ NeoNetwork"
