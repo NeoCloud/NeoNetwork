@@ -1,7 +1,11 @@
-["10.127.8.128/29"]
+["10.127.18.32/27"]
 type = "subnet"
-name = "Edward_P-Ezpro"
+name = "Edward_P-Tunnel"
+
+["10.127.26.0/24"]
+type = "subnet"
+name = "Edward_P-Home"
 
 ["fd10:127:2f2f::/48"]
 type = "subnet"
-name = "Edward_P-Ezpro-V6"
+name = "Edward_P-V6"
