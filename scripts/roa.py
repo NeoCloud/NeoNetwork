@@ -392,6 +392,7 @@ def make_summary():
         print(route_table)
         print()
         print("## Used CIDR Range")
+        print("<details>\n<summary>Click to expand</summary>")
         print()
         prefixes = netaddr.cidr_merge(
             netaddr.IPNetwork(str(entity["prefix"]))
@@ -401,6 +402,17 @@ def make_summary():
         for prefix in prefixes:
             print(prefix)
         print("```")
+        print("</details>")
+        free_netset = netaddr.IPSet([str(n) for n in NEO_NETWORK_POOL]) - netaddr.IPSet(prefixes)
+        print()
+        print("## Free CIDR Range")
+        print("<details>\n<summary>Click to expand</summary>")
+        print()
+        print("```")
+        for prefix in free_netset.iter_cidrs():
+            print(prefix)
+        print("```")
+        print("</details>")
         IP_VRSIONS = {4, 6}
         total_ip_count = {
             ver: sum(
