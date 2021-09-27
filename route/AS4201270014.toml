@@ -1,9 +1,7 @@
-["10.127.23.0/29"]
+["10.127.8.128/29"]
 type = "subnet"
-name = "leedagee"
-description = "leedagee"
+name = "leedagee-local"
 
 ["fd10:127:0023::/48"]
 type = "subnet"
 name = "leedagee"
-description = "leedagee"
