@@ -1,12 +1,7 @@
 ["10.127.0.0/24"]
 type = "subnet"
-name = "RESERVED"
-description = "Reserved"
-
-["10.127.1.0/24"]
-type = "subnet"
-name = "MAIN"
-description = "LAN 1"
+name = "Neo_Chen LAN"
+description = "Internal Interconnection"
 
 ["10.127.2.0/24"]
 type = "subnet"
