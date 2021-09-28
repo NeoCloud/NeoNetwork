@@ -32,9 +32,6 @@ dns                       IN    AAAA     fd10:127:53:53::
 acme                      IN    A        10.127.18.30
 acme                      IN    AAAA     fd10:127:53:223::1
 
-edwardp                   IN    A        10.127.8.130
-edwardp                   IN    AAAA     fd10:127:2f2f::
-
 tv                        IN    A        10.127.15.58
 
 lily                      IN    A        10.127.8.137
@@ -159,3 +156,7 @@ undefiend.moe             IN    A        10.127.88.1
 *.undefined.moe           IN    A        10.127.88.1
 undefiend.moe             IN    AAAA     fd10:127:88::1
 *.undefined.moe           IN    AAAA     fd10:127:88::1
+
+leedagee                  IN    NS       ns.leedagee
+ns.leedagee               IN    A        10.127.8.129
+ns.leedagee               IN    AAAA     fd10:127:23::1
