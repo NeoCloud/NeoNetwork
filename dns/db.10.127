@@ -44,6 +44,10 @@ $TTL    3600
 1.8            IN    PTR    librehs.neo.
 2.8            IN    PTR    blog.librehs.neo.
 
+1.26           IN    PTR    home.edwardp.neo.
+33.18          IN    PTR    home.edwardp.neo.
+34.18          IN    PTR    jpn.edwardp.neo.
+
 137.8          IN    PTR    lily.neo.
 
 ; Loopback Addresses
