@@ -32,6 +32,13 @@ dns                       IN    AAAA     fd10:127:53:53::
 acme                      IN    A        10.127.18.30
 acme                      IN    AAAA     fd10:127:53:223::1
 
+home.edwardp              IN    A        10.127.18.33
+home.edwardp              IN    AAAA     fd10:127:2f2f:2333::1
+jpn.edwardp               IN    A        10.127.18.34
+jpn.edwardp               IN    AAAA     fd10:127:2f2f:2334::1
+edwardp                   IN    CNAME    home.edwardp
+mc.edwardp                IN    CNAME    home.edwardp
+
 tv                        IN    A        10.127.15.58
 
 lily                      IN    A        10.127.8.137
