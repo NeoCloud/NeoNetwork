@@ -81,6 +81,7 @@ $TTL    3600
 10             IN    DS     53292 13 4 17C4FC53AE45A90840779DF75A5640E20126F732F69BFA848C878AC008484368A9B6325B31ED70F5FD77D9676545667C
 
 11             IN    NS     ns1.sun.dn42.
+11             IN    NS     ns2.sun.dn42.
 
 12             IN    NS     ns1.yangfl.dn42.
 12             IN    NS     ns2.yangfl.dn42.
