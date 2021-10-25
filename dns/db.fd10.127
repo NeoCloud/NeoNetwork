@@ -45,6 +45,8 @@ $TTL	3600
 7.2.1.0                                                IN    NS     ns2.yura.dn42.
 
 1.1.e.e                                                IN    NS     ns1.sun.dn42.
+1.1.e.e                                                IN    NS     ns2.sun.dn42.
+
 
 6.6.a.a                                                IN    NS     ns1.potato.neo.
 6.6.a.a                                                IN    NS     ns2.potato.neo. 
