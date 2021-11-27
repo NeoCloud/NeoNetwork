@@ -2,4 +2,4 @@ name = "NTEREN-BACKBONE"
 owner = "Yitong-Dang"
 source = "Internet"
 description = "NaiveTomcat Education and Research Network"
-valid = false
+valid = true
