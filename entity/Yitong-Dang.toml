@@ -1,0 +1,10 @@
+name = "Yitong Dang"
+babel = ["zh", "en-4"]
+
+[contact]
+email = "tomdang@naivetomcat.cn"
+telegram = "@naivetomcat"
+github = "NaiveTomcat"
+
+[persona]
+pgp = "B5EB6EA969688B74853918EDEBA7269DA2D7E015"
