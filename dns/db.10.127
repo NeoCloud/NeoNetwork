@@ -102,3 +102,5 @@ $TTL    3600
 
 99             IN    NS     ns1.tsingyao.neo.
 99             IN    NS     ns2.tsingyao.neo.
+
+111            IN    NS     ns.kskb.neo.

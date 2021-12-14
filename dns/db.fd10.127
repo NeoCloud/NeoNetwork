@@ -61,3 +61,5 @@ c.c.0.0                                                IN    NS     ns1.an.dn42.
 9.9.0.0                                                IN    NS     ns2.tsingyao.neo.
 
 3.2.0.0                                                IN    NS     ns.leedagee.neo.
+
+f.0.0.e                                                IN    NS     ns.kskb.neo.

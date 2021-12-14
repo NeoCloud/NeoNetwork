@@ -167,3 +167,7 @@ undefiend.moe             IN    AAAA     fd10:127:88::1
 leedagee                  IN    NS       ns.leedagee
 ns.leedagee               IN    A        10.127.8.129
 ns.leedagee               IN    AAAA     fd10:127:23::1
+
+kskb                      IN    NS       ns.kskb
+ns.kskb                   IN    A        10.127.111.233
+ns.kskb                   IN    AAAA     fd10:127:e00f:aca::233
