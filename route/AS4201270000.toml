@@ -17,6 +17,11 @@ type = "subnet"
 name = "Neo_Chen ZeroTier-One Hub"
 description = ""
 
+["10.127.110.0/24"]
+type = "subnet"
+name = "BS-Net"
+description = "BS satellite TV streaming network"
+
 ["10.127.255.4/32"]
 type = "loopback"
 name = "fsnvax"
