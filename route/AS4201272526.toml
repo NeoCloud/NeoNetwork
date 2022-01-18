@@ -1,7 +1,0 @@
-["10.127.3.0/24"]
-type = "subnet"
-name = "Anillc NEO Network v4"
-
-["fd10:127:ee::/48"]
-type = "subnet"
-name = "Anillc NEO Network v6"
