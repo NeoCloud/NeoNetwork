@@ -171,3 +171,7 @@ ns.leedagee               IN    AAAA     fd10:127:23::1
 kskb                      IN    NS       ns.kskb
 ns.kskb                   IN    A        10.127.111.233
 ns.kskb                   IN    AAAA     fd10:127:e00f:aca::233
+
+hjt                       IN    NS       ns0.hjt
+ns0.hjt                   IN    A        10.127.45.233
+ns0.hjt                   IN    AAAA     fdce:c37e:c37a::233

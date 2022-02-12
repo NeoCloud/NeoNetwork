@@ -1,0 +1,9 @@
+["10.127.45.0/24"]
+type = "subnet"
+name = "HuajiTech-Network Interconnectivity"
+description = "HuajiTech Core Interconnection Network"
+
+["fdce:c37e:c37a::/48"]
+type = "subnet"
+name = "HuajiTech-Network Interconnectivity"
+description = "HuajiTech Core Interconnection Network"

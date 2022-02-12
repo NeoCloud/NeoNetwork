@@ -1,0 +1,11 @@
+name = "funnysyc"
+babel = ["zh-N", "en-2"]
+
+[contact]
+email = "yc.s@outlook.com"
+irc = "funnysyc"
+telegram = "funnysyc"
+github = "funnysyc"
+
+[persona]
+pgp = "0ECA668E2E3C5A8DE9F4EDBFA614F414584C9E12"
