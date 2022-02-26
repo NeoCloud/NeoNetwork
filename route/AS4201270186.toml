@@ -1,0 +1,9 @@
+["10.127.186.0/24"]
+type = "subnet"
+name = "186526-block-v4"
+description = "186526 Network IPv4 Block"
+
+["fd10:127:186::/48"]
+type = "subnet"
+name = "186526-block-v6"
+description = "186526 Network IPv6 Block"
