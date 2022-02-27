@@ -106,3 +106,6 @@ $TTL    3600
 111            IN    NS     ns.kskb.neo.
 
 45             IN    NS     ns0.hjt.neo.
+
+186            IN    NS     ns1.186526.dn42.
+186            IN    NS     ns2.186526.dn42.

@@ -1,0 +1,10 @@
+name = "186526"
+babel = ["zh", "en-3"]
+
+[contact]
+email = "i@186526.xyz"
+telegram = "real186526"
+github = "186526"
+
+[persona]
+pgp = "11aac9b085c85ee85e796251c7eb1e6b8cc5e51d"
