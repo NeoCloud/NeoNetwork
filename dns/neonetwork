@@ -44,6 +44,11 @@ tv                        IN    A        10.127.15.58
 lily                      IN    A        10.127.8.137
 lily                      IN    AAAA     fd10:127:ba7e::137
 
+undefiend.moe             IN    A        10.127.88.1
+*.undefined.moe           IN    A        10.127.88.1
+undefiend.moe             IN    AAAA     fd10:127:88::1
+*.undefined.moe           IN    AAAA     fd10:127:88::1
+
 ; DELEGATED ZONES
 jerry                     IN    NS       ns1.jerry
 jerry                     IN    NS       ns2.jerry
@@ -158,11 +163,6 @@ ns2.dnswol                IN    AAAA     fd10:127:99::33:1
 
 tsingyao                  IN    NS       ns1.dnswol
 tsingyao                  IN    NS       ns2.dnswol
-
-undefiend.moe             IN    A        10.127.88.1
-*.undefined.moe           IN    A        10.127.88.1
-undefiend.moe             IN    AAAA     fd10:127:88::1
-*.undefined.moe           IN    AAAA     fd10:127:88::1
 
 leedagee                  IN    NS       ns.leedagee
 ns.leedagee               IN    A        10.127.8.129
