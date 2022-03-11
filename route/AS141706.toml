@@ -8,16 +8,22 @@ type = "subnet"
 name = "MagicNeko-CN office VPN+IX Node(name:liqingge)"
 description = "MagicNeko CN office node (office network in Northeast China)"
 
-["fd10:127:0233:1c3c::/64"]
+["fd10:127:0238::/48"]
 type = "subnet"
-name = "MagicNeko-CN office node(name:liqingge)"
-description = "MagicNeko CN office node (office network in Northeast China)"
-supernet = "fd10:127:0233::/48"
+name = "Home-magicneko"
+description = "Magicneko Home(TEST)"
 
-["fd10:127:0233:1c3a::/64"]
+["fd10:127:0239::/48"]
 type = "subnet"
-name = "MagicNeko-CN office VPN+IX Node(name:liqingge)"
-description = "MagicNeko CN office node (office network in Northeast China)"
-supernet = "fd10:127:0233::/48"
+name = "Home-icecat"
+description = "Icecat Home(TEST)"
 
+["fd10:127:023a::/48"]
+type = "subnet"
+name = "Catstar-VPN"
+description = "MagicNeko VPN(CN)"
 
+["fd10:127:023b::/48"]
+type = "subnet"
+name = "Catstar-IX"
+description = "MagicNeko IX"
