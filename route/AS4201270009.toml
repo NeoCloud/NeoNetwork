@@ -1,7 +1,0 @@
-["10.127.39.0/27"]
-type = "subnet"
-name = "santost12"
-
-["fd10:127:ec39::/48"]
-type = "subnet"  
-name = "santost12"

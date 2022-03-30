@@ -21,7 +21,6 @@ NeoBOX                    IN    A        10.127.1.20
 cklvax                    IN    A        10.127.1.40
 pan                       IN    A        10.127.3.1
 NeoRouter                 IN    A        10.127.2.127
-santost12                 IN    A        10.127.39.1
 
 neko                      IN    TXT      "helloworld"
 telegram                  IN    TXT      "https://t.me/NeoNetworkVPN"
@@ -60,14 +59,6 @@ ns2.jerry                 IN    A        10.127.8.216
 ns2.jerry                 IN    AAAA     fd10:127:53:100::1
 ns3.jerry                 IN    A        10.127.8.208
 ns3.jerry                 IN    AAAA     fd10:127:53:200::1
-
-kp                        IN    NS       ns1.kp
-ns1.kp                    IN    A        10.127.39.1
-ns1.kp                    IN    AAAA     fd10:127:ec39:2222::1
-
-tracker                   IN    NS       ns1.tracker
-ns1.tracker               IN    A        10.127.39.1
-ns1.tracker               IN    AAAA     fd10:127:ec39:2222::1
 
 lantian                   IN    NS       ns-anycast.lantian
 lantian                   IN    NS       ns1.lantian
