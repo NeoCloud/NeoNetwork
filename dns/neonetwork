@@ -33,8 +33,10 @@ acme                      IN    AAAA     fd10:127:53:223::1
 
 home.edwardp              IN    A        10.127.18.33
 home.edwardp              IN    AAAA     fd10:127:2f2f:2333::1
-jpn.edwardp               IN    A        10.127.18.34
-jpn.edwardp               IN    AAAA     fd10:127:2f2f:2334::1
+jp1.edwardp               IN    A        10.127.18.34
+jp1.edwardp               IN    AAAA     fd10:127:2f2f:2334::1
+jp2.edwardp               IN    A        10.127.18.37
+jp2.edwardp               IN    AAAA     fd10:127:2f2f:2337::1
 edwardp                   IN    CNAME    home.edwardp
 mc.edwardp                IN    CNAME    home.edwardp
 
