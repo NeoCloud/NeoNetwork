@@ -1,0 +1,9 @@
+["10.127.180.0/24"]
+type = "subnet"
+name = "LilyNetwork-Neo-IP4"
+description = "LilyNetwork Neo Network v4"
+
+["fd10:127:1877::/48"]
+type = "subnet"
+name = "LilyNetwork-Neo-IP6"
+description = "LilyNetwork Neo Network v6"
