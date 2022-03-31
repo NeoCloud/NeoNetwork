@@ -1,0 +1,12 @@
+name = "Lilybouquet"
+babel = [
+    "zh",
+    "en-3",
+]
+
+[contact]
+email = "lilybouquet@lilynet.work"
+telegram = "Lilybouquet"
+
+[persona]
+pgp = "B11F5BE9989BEE9A6A1E81F730291293322B1B8E"
