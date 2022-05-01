@@ -170,5 +170,5 @@ ns0.hjt                   IN    A        10.127.45.233
 ns0.hjt                   IN    AAAA     fd10:127:45:233::1
 
 hanako                    IN    NS       ns.hanako
-ns.hanako.neo             IN    A        10.127.80.80
-ns.hanako.neo             IN    A        fd10:127:80:aa00::1
+ns.hanako                 IN    A        10.127.80.80
+ns.hanako                 IN    AAAA     fd10:127:80:aa00::1
