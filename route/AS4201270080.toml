@@ -1,0 +1,7 @@
+["10.127.80.0/24"]
+type = "subnet"
+name = "Hanako-Network-Neo-1-v4"
+
+["fd10:127:80::/48"]
+type = "subnet"
+name = "Hanako-Network-Neo-1-v6"

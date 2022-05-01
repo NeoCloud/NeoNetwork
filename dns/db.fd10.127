@@ -69,3 +69,5 @@ f.0.0.e                                                IN    NS     ns.kskb.neo.
 
 6.8.1.0                                                IN    NS     ns1.186526.dn42.
 6.8.1.0                                                IN    NS     ns2.186526.dn42.
+
+0.8.0.0                                                IN    NS     ns.hanako.neo.
