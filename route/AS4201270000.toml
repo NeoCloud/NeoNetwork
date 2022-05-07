@@ -19,8 +19,8 @@ description = ""
 
 ["10.127.110.0/24"]
 type = "subnet"
-name = "BS-Net"
-description = "BS satellite TV streaming network"
+name = "Home Network"
+description = "Home LAN (Taichung)"
 
 ["10.127.255.4/32"]
 type = "loopback"
