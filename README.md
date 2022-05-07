@@ -1,7 +1,7 @@
 # NeoNetwork
 A useless VPN network ready for peering!  
 This network is connected with [DN42](https://dn42.net)  
-Git Repo. [here](https://git.neocloud.tw)  
+Git Repo. [here](https://github.com/NeoCloud/NeoNetwork)  
 Pull requests are welcomed!  
 Working language: `zh_* / en_*`  
 
