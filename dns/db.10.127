@@ -41,7 +41,7 @@ $TTL    3600
 1.15           IN    PTR    ae-0-1.cr2.hkg1.licson.neo.
 58.15          IN    PTR    live.licson.neo.
 
-1.8            IN    PTR    librehs.neo.
+3.8            IN    PTR    librehs.neo.
 2.8            IN    PTR    blog.librehs.neo.
 
 1.26           IN    PTR    home.edwardp.neo.
