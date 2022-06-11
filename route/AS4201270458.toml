@@ -1,9 +1,0 @@
-["10.127.45.0/24"]
-type = "subnet"
-name = "HuajiTech-Network Interconnectivity"
-description = "HuajiTech Core Interconnection Network"
-
-["fd10:127:45::/48"]
-type = "subnet"
-name = "HuajiTech-Network Interconnectivity"
-description = "HuajiTech Core Interconnection Network"

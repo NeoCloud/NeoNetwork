@@ -1,0 +1,7 @@
+["10.127.45.0/24"]
+type = "subnet"
+name = "HJTMESH-NET"
+
+["fd10:127:45::/48"]
+type = "subnet"
+name = "HJTMESH-NET"
