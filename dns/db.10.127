@@ -112,3 +112,6 @@ $TTL    3600
 186            IN    NS     ns2.186526.dn42.
 
 80             IN    NS     ns.hanako.neo.
+
+39             IN    NS     lb.ns.saru.neo.
+39             IN    DS     34424 13 2 5028EE969AD85AA072A725C371F116B3617DFB8AEF1DAF62CAC041B7AE379B74

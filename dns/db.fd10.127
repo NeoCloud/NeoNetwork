@@ -71,3 +71,6 @@ f.0.0.e                                                IN    NS     ns.kskb.neo.
 6.8.1.0                                                IN    NS     ns2.186526.dn42.
 
 0.8.0.0                                                IN    NS     ns.hanako.neo.
+
+9.3.0.0                                                IN    NS     lb.ns.saru.neo.
+9.3.0.0                                                IN    DS     57464 13 2 B9FA37834CD039D84856C12BAA2E1BDF6968D5AB40D60510AEB64ACC5E6B051E
