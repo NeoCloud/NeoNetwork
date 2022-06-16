@@ -172,3 +172,11 @@ ns0.hjt                   IN    AAAA     fd10:127:45:233::1
 hanako                    IN    NS       ns.hanako
 ns.hanako                 IN    A        10.127.80.80
 ns.hanako                 IN    AAAA     fd10:127:80:aa00::1
+
+saru                      IN    NS       lb.ns.saru
+saru                      IN    DS       42159 13 2 D8AF3E06E8D4E21C1FFA85CBE3DEC6E7DA06095283109D4289C4BBDF23283E1B
+lb.ns.saru                IN    A        10.127.39.193
+lb.ns.saru                IN    AAAA     fd10:127:39:a000::3901
+lb.ns.saru                IN    AAAA     fd10:127:39:a001::3901
+lb.ns.saru                IN    AAAA     fd10:127:39:b000::3901
+lb.ns.saru                IN    AAAA     fd10:127:39:c000::3901

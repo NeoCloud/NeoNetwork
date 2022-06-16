@@ -1,0 +1,11 @@
+name = "DannyAAM"
+babel = ["zh-N", "en-2"]
+
+[contact]
+email = "danny@saru.moe"
+telegram = "danny8376"
+irc = "dannyAAM"
+github = "danny8376"
+
+[persona]
+pgp = "AF3165DE7ABAD04F9250756E9147806CAF74BA71"
