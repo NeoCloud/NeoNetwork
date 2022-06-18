@@ -56,6 +56,7 @@ $TTL    3600
 1.255          IN    PTR    NeoPDP-11.neo.
 4.255          IN    PTR    fsnvax.neo.
 18.255         IN    PTR    icecat-video.neo.
+39.255         IN    PTR    any.ns.saru.neo.
 53.255         IN    PTR    root-dns.neo.
 54.255         IN    PTR    dns.neo.
 56.255         IN    PTR    frank-hsinchu-1.neo.
