@@ -1,19 +1,24 @@
 [SaruHome]
 asn = 4201270039
 cidr = ["10.127.39.200/24"]
+description = "My home main router @ NeoNetwork, not for open peering"
 
 [SaruSaru]
 asn = 4201270039
 cidr = ["10.127.39.199/24"]
+description = "Asia core router @ NeoNetwork, Tokyo Japan @ Linode"
 
 [SaruIruka]
 asn = 4201270039
 cidr = ["10.127.39.198/24"]
+description = "Asia core router @ NeoNetwork, Singapore @ DigitalOcean"
 
 [SaruUmidanuki]
 asn = 4201270039
 cidr = ["10.127.39.210/24"]
+description = "North America core router @ NeoNetwork, Quebec Canada @ OVH"
 
 [SaruYagi]
 asn = 4201270039
 cidr = ["10.127.39.221/24"]
+description = "Europe core router @ NeoNetwork, Frankfurt Germany @ Contabo"

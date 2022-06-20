@@ -3,6 +3,11 @@ type = "subnet"
 name = "Saru-Neo-IP4"
 description = "Saru Network NeoNetwork IPv4"
 
+["10.127.255.39/32"]
+type = "loopback"
+name = "Saru-Neo-AnyNS-IP4"
+description = "Anycast authoritative IPv4 DNS of Saru Network @ NeoNetwork"
+
 ["fd10:127:39::/48"]
 type = "subnet"
 name = "Saru-Neo-IP6"
