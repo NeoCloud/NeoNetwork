@@ -1,0 +1,11 @@
+name = "HuajiTech"
+babel = ["zh-N", "en-2"]
+
+[contact]
+email = "noc@huajitech.net"
+telegram = "huajitech"
+github = "huajitech"
+
+# See also:
+#   entity/funnysyc.toml
+#   entity/ricky8955555.toml

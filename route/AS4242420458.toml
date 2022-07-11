@@ -1,11 +1,3 @@
-["10.127.45.0/24"]
-type = "subnet"
-name = "HJTMESH-NET"
-
-["fd10:127:45::/48"]
-type = "subnet"
-name = "HJTMESH-NET"
-
 ["10.127.27.24/29"]
 type = "subnet"
 name = "HUAJITECH-ANYCAST"

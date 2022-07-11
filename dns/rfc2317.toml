@@ -16,3 +16,6 @@ NS = ["ns1.staph.neo."]
 
 ["10.127.8.128/29"]
 NS = ["ns.leedagee.neo."]
+
+["10.127.27.24/29"]
+NS = ["ns0.hmn.neo."]

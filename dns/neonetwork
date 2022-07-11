@@ -165,9 +165,11 @@ kskb                      IN    NS       ns.kskb
 ns.kskb                   IN    A        10.127.111.233
 ns.kskb                   IN    AAAA     fd10:127:e00f:aca::233
 
-hjt                       IN    NS       ns0.hjt
-ns0.hjt                   IN    A        10.127.45.233
-ns0.hjt                   IN    AAAA     fd10:127:45:233::1
+hmn                       IN    NS       ns0.hmn
+ns0.hmn                   IN    A        10.127.45.233
+ns0.hmn                   IN    AAAA     fd10:127:45:233::1
+
+hjt                       IN    NS       ns0.hmn
 
 hanako                    IN    NS       ns.hanako
 ns.hanako                 IN    A        10.127.80.80
