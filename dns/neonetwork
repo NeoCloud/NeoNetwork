@@ -182,3 +182,7 @@ lb.ns.saru                IN    AAAA     fd10:127:39:a000::3901
 lb.ns.saru                IN    AAAA     fd10:127:39:a001::3901
 lb.ns.saru                IN    AAAA     fd10:127:39:b000::3901
 lb.ns.saru                IN    AAAA     fd10:127:39:c000::3901
+
+luna                      IN    NS       anycast.luna
+anycast.luna              IN    A        172.23.180.1
+anycast.luna              IN    AAAA     fd42:1877:222c::1
