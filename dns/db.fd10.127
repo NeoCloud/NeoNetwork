@@ -75,3 +75,6 @@ f.0.0.e                                                IN    NS     ns.kskb.neo.
 
 9.3.0.0                                                IN    NS     lb.ns.saru.neo.
 9.3.0.0                                                IN    DS     57464 13 2 B9FA37834CD039D84856C12BAA2E1BDF6968D5AB40D60510AEB64ACC5E6B051E
+
+7.7.8.1                                                IN    NS     anycast.luna.neo.
+7.7.8.1                                                IN    NS     anycast.lily.dn42.

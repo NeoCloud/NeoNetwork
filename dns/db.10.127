@@ -116,3 +116,6 @@ $TTL    3600
 
 39             IN    NS     lb.ns.saru.neo.
 39             IN    DS     34424 13 2 5028EE969AD85AA072A725C371F116B3617DFB8AEF1DAF62CAC041B7AE379B74
+
+180            IN    NS     anycast.luna.neo.
+180            IN    NS     anycast.lily.dn42.
