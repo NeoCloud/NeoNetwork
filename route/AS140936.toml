@@ -1,8 +1,0 @@
-["10.127.11.0/24"]
-type = "subnet"
-name = "SUNNET"
-description = "SUNNET"
-["fd10:127:ee11::/48"]
-type = "subnet"
-name = "SUNNET"
-description = "SUNNET"
