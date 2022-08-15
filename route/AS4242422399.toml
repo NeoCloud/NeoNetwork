@@ -1,0 +1,9 @@
+["10.127.239.0/24"]
+type = "subnet"
+name = "QYZ-NEO-IPV4"
+description = "Peer with me at 1@jin-dan.site"
+
+["fd10:127:2399::/48"]
+type = "subnet"
+name = "QYZ-NEO-IPV6"
+description = "Peer with me at 1@jin-dan.site"
