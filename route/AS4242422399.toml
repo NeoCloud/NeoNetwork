@@ -1,0 +1,9 @@
+["10.127.17.0/24"]
+type = "subnet"
+name = "BAOSHUO-NEO-V4-1"
+description = "Baoshuo Neo Network"
+
+["fd10:127:17::/48"]
+type = "subnet"
+name = "BAOSHUO-NEO-V6-1"
+description = "Baoshuo Neo Network"

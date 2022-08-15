@@ -1,9 +1,9 @@
-["10.127.99.0/24"]
+["10.127.239.0/24"]
 type = "subnet"
-name = "TSINTYAO-NEO-NET4"
-description = "TsingYao Neo Network IPv4 Block"
+name = "QYZ-NEO-IPV4"
+description = "Peer with me at 1@jin-dan.site"
 
-["fd10:127:99::/48"]
+["fd10:127:2399::/48"]
 type = "subnet"
-name = "TSINGYAO-NEO-NET6"
-description = "TsingYao Neo Network IPv6 Block"
+name = "QYZ-NEO-IPV6"
+description = "Peer with me at 1@jin-dan.site"
