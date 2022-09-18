@@ -186,3 +186,8 @@ lb.ns.saru                IN    AAAA     fd10:127:39:c000::3901
 luna                      IN    NS       anycast.luna
 anycast.luna              IN    A        172.23.180.1
 anycast.luna              IN    AAAA     fd42:1877:222c::1
+
+bandura                   IN    NS       ns1.bandura
+ns1.bandura               IN    A        10.127.149.242
+ns1.bandura               IN    AAAA     fd10:127:fc31::42
+bandura                   IN    DS       30344 15 2 92716A3A5226CDE664828B1346D3F621610E840D39070EB584A992552884B110
