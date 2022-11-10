@@ -20,6 +20,9 @@ name = ""
 # IP network description (optional).
 description = ""
 
+# Max length (optional). Default values: 29 for ipv4, 64 for ipv6
+max-len = 29
+
 # The supernet of this IP network (optional). Overlapping IP prefixes are
 # regarded as an error, so if this IP network is a subnet of another one, write
 # their IP prefix here.

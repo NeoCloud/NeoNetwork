@@ -122,6 +122,8 @@ def route_to_roa(asn_table: dict):
                     continue
                 fields["asn"] = asn
                 fields["prefix"] = ip_network(prefix, strict=True)
+                fields["maxLength"] = fields.get("max-len", fields["prefix"].max_prefixlen)
+                assert fields["prefix"].prefixlen <= fields["maxLength"] <= fields["prefix"].max_prefixlen
                 supernet = fields.get("supernet")
                 fields["supernet"] = (
                     ip_network(supernet, strict=True) if supernet else None
@@ -132,7 +134,7 @@ def route_to_roa(asn_table: dict):
                     is_neo_network(fields["supernet"])
                     and fields["supernet"].supernet_of(fields["prefix"])
                 )
-                yield pick(fields, ["asn", "name", "type", "prefix", "supernet"])
+                yield pick(fields, ["asn", "name", "type", "prefix", "supernet", "maxLength"])
 
     entities = sorted(make_route(), key=lambda item: item["asn"])
     prefixes = [item["prefix"] for item in entities]
@@ -177,11 +179,12 @@ def prehandle_roa(asn_table: dict, args):
     ]
     roa6 = [r for r in roa6 if r["prefix"].prefixlen <= args.max6]
     for r in roa4:
-        r["maxLength"] = args.max
         if r["prefix"].prefixlen == max_prefixlen:
             r["maxLength"] = max_prefixlen
+        else:
+            r["maxLength"] = r["maxLength"] if r["maxLength"] <= args.max else args.max
     for r in roa6:
-        r["maxLength"] = args.max6
+        r["maxLength"] = r["maxLength"] if r["maxLength"] <= args.max6 else args.max6
     for r in (*roa4, *roa6):
         r["prefix"] = r["prefix"].with_prefixlen
     return roa4, roa6
