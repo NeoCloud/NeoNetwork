@@ -3,9 +3,6 @@ babel = ["de", "en-1"]
 
 [contact]
 email = "neo@mk16.de"
-telegram = "https://t.me/mark22k"
-mastodon = "@mark22k@layer8.space"
-github = "marek22k"
 
 [persona]
 pgp = "9AA28159FCEB3CD83BC212017E869146699108C7"

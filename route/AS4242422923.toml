@@ -1,7 +1,9 @@
 ["10.127.149.224/27"]
 type = "subnet"
 name = "AS-BANDURA-DN42"
+max-len = 27
 
 ["fd10:127:fc31::/48"]
 type = "subnet"
 name = "AS-BANDURA-DN42"
+max-len = 48
