@@ -2,3 +2,8 @@
 neo. 3600 IN DNSKEY 257 3 13 jDd4k21xTgqOFqtvQkeqdQs/RH5+SU+vFchqnOHk5yaEL6EQDOKNuYJ2 C4ld+tVHf007GgbKX6BC68uMU8iGIg==
 ; ZSK owner entity/JerryXiao
 neo. 3600 IN DNSKEY 256 3 13 oUcsKJykGOVwz58smxaygPFhm4PZEPKIukPO+HKbEBwGFnIbcamMsXFJ Gp2Wi7T5a0Z61IT/VxWLV4D7UhcAvg==
+
+; KSK owner entity/mark22k
+neo. 3600 IN DNSKEY 257 3 15 eE/0MWGb7wYP4U/kf5mXCbE8tGIwo1U++dp22Fumo+g=
+; ZSK owner entity/mark22k
+neo. 3600 IN DNSKEY 256 3 15 oAzPHJyXlawMglhQ6ymkj6Xx3zX5Awon0nyP9V3+DTc=
