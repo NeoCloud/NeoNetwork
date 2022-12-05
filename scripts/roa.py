@@ -190,7 +190,7 @@ def prehandle_roa(asn_table: dict, args):
     return roa4, roa6
 
 
-def export_dnssec_dnskey():
+def export_dnssec_dnskey(include_zsk=False):
     def ds_from_dnskey(zone, flags, protocol, algorithm, *key):
         dnspy_dnskey = DNSKEY(
             "IN",
@@ -208,7 +208,7 @@ def export_dnssec_dnskey():
         if f.name.endswith(".keys"):
             zonekey = {"zone": "", "records": list()}
             records = f.read_text().split("\n")
-            records = [r.split() for r in records if r]
+            records = [r.split() for r in records if r and not r.startswith(';')]
             for zone, _ttl, _in, _dnskey, *dnskey in records:
                 int(_ttl)
                 assert _in == "IN" and _dnskey == "DNSKEY"
@@ -216,12 +216,14 @@ def export_dnssec_dnskey():
                     zonekey["zone"] = zone
                 else:
                     assert zonekey["zone"] == zone
-                zonekey["records"].append(
-                    {
-                        "dnskey": " ".join(dnskey),
-                        "ds": ds_from_dnskey(zone, *dnskey),
-                    }
-                )
+                assert dnskey[0] in ['256', '257']
+                if dnskey[0] == '257' or include_zsk:
+                    zonekey["records"].append(
+                        {
+                            "dnskey": " ".join(dnskey),
+                            "ds": ds_from_dnskey(zone, *dnskey),
+                        }
+                    )
             if zonekey["zone"]:
                 dnskeys.append(zonekey)
     return dnskeys

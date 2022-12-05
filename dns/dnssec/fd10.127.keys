@@ -1,1 +1,4 @@
-7.2.1.0.0.1.d.f.ip6.arpa. 600 IN DNSKEY 257 3 13 sI90N0KcwXtpqNDmsagKH/761EzsjSlGyYxx338qRrDlzRwXQPG6bO1m HoTdnKrWBcd1JqYM0/tgDXKep7dJgA==
+; KSK owner entity/JerryXiao
+7.2.1.0.0.1.d.f.ip6.arpa. 3600 IN DNSKEY 257 3 13 sI90N0KcwXtpqNDmsagKH/761EzsjSlGyYxx338qRrDlzRwXQPG6bO1m HoTdnKrWBcd1JqYM0/tgDXKep7dJgA==
+; ZSK owner entity/JerryXiao
+7.2.1.0.0.1.d.f.ip6.arpa. 3600 IN DNSKEY 256 3 13 fu+4con6sb7biVu866tpzq0w6IeFZWTlXSikshue3G26ftLMU0jz5tVV dqOMHP+CpXz9y0kQ6lOHmIlCzi4pAA==
