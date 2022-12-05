@@ -13,6 +13,7 @@ ZONE_FILE_MAP = {
     '7.2.1.0.0.1.d.f.ip6.arpa.': Path("dns", "db.fd10.127")
 }
 RFC2317_FILE = Path("dns", "rfc2317.toml")
+NAMED_TURST_ANCHORS_FILE = Path("dns", "named_trust_anchors.conf")
 
 
 def iter_rfc2317_entry():
@@ -23,6 +24,17 @@ def iter_rfc2317_entry():
         ttl = attributes.get("TTL", -1)
         yield (route, ns, ds, ttl)
 
+def write_named_trust_anchors():
+    header = 'trust-anchors {\n'
+    footer = '\n}\n'
+    contents = []
+    dnskeys_exported = export_dnssec_dnskey(include_zsk=False)
+    maxzonelen = max(len(entry['zone']) for entry in dnskeys_exported)
+    for entry in dnskeys_exported:
+        zone, records = entry['zone'], [r['dnskey'] for r in entry['records']]
+        for record in records:
+            contents.append(f"    {zone:>{maxzonelen}s} static-key \"{record}\";")
+    NAMED_TURST_ANCHORS_FILE.write_text(header + '\n'.join(contents) + footer)
 
 def main():
     DNSKEYS = {entry['zone']: entry['records'] for entry in export_dnssec_dnskey(include_zsk=True)}
@@ -43,3 +55,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    write_named_trust_anchors()
