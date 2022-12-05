@@ -117,5 +117,5 @@ $TTL    3600
 180            IN    NS     anycast.luna.neo.
 180            IN    NS     anycast.lily.dn42.
 
-149            IN    NS     ns1.bandura.neo
+149            IN    NS     ns1.bandura.neo.
 149            IN    DS     20940 15 2 75AA55617D952424CD65DEDE64F500F4B40B80AE48E7BC21E0E98CEDCA040CCE

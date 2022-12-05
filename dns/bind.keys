@@ -1,0 +1,16 @@
+# Can be used for example with delv (specify with -a ./bind.keys).
+
+trust-anchors {
+
+	    # JerryXiao's keys
+	    
+	    neo.                        static-key 257 3 13 "jDd4k21xTgqOFqtvQkeqdQs/RH5+SU+vFchqnOHk5yaEL6EQDOKNuYJ2 C4ld+tVHf007GgbKX6BC68uMU8iGIg==";
+	    127.10.in-addr.arpa.        static-key 257 3 13 "QVgt1c+OlL9X9jrnD39njabYFCi2eEYjLI5AvpXT6HWAF1BbAOfNm/56 4OeU03oDcCgQ6zNQMV0FNPvrk53K0w==";
+	    7.2.1.0.0.1.d.f.ip6.arpa.   static-key 257 3 13 "sI90N0KcwXtpqNDmsagKH/761EzsjSlGyYxx338qRrDlzRwXQPG6bO1m HoTdnKrWBcd1JqYM0/tgDXKep7dJgA==";
+
+        # mark22k's keys
+	    neo.                        static-key 257 3 15 "eE/0MWGb7wYP4U/kf5mXCbE8tGIwo1U++dp22Fumo+g=";
+	    127.10.in-addr.arpa.        static-key 257 3 15 "PWTkwcNA5jJqNYSsyeHt0xnxh1wZQ5//UmMuMPi5DlU=";
+	    7.2.1.0.0.1.d.f.ip6.arpa.   static-key 257 3 15 "aneEeuuJL47gPJJzT6ZbOgB9HlKpQmkkPNJNvK2z1pI=";
+
+};
