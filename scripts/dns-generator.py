@@ -33,7 +33,8 @@ def write_named_trust_anchors():
     for entry in dnskeys_exported:
         zone, records = entry['zone'], [r['dnskey'] for r in entry['records']]
         for record in records:
-            contents.append(f"    {zone:>{maxzonelen}s} static-key \"{record}\";")
+            a1, a2, a3, a4 = record.split(maxsplit=3)
+            contents.append(f"    {zone:>{maxzonelen}s} static-key {a1} {a2} {a3} \"{a4}\";")
     NAMED_TURST_ANCHORS_FILE.write_text(header + '\n'.join(contents) + footer)
 
 def main():
