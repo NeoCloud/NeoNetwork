@@ -2,3 +2,8 @@
 127.10.in-addr.arpa. 3600 IN DNSKEY 257 3 13 QVgt1c+OlL9X9jrnD39njabYFCi2eEYjLI5AvpXT6HWAF1BbAOfNm/56 4OeU03oDcCgQ6zNQMV0FNPvrk53K0w==
 ; ZSK owner entity/JerryXiao
 127.10.in-addr.arpa. 3600 IN DNSKEY 256 3 13 tmr6/kCoMAtGpwQkLg3ONtQlm5FysG2l4mJcxVrqpb7BClNXVzdfvcJK 3NIu2/N/zUQrlMrW2CeJO4STSgvt+A==
+
+; KSK owner entity/mark22k
+127.10.in-addr.arpa. 3600 IN DNSKEY 257 3 15 PWTkwcNA5jJqNYSsyeHt0xnxh1wZQ5//UmMuMPi5DlU=
+; ZSK owner entity/mark22k
+127.10.in-addr.arpa. 3600 IN DNSKEY 256 3 15 Dex1JgKqrqb/3zIOQfTeoLJzQqWiy2SFV12u0eRjHqA=
