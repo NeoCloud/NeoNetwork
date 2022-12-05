@@ -7,3 +7,13 @@ max-len = 27
 type = "subnet"
 name = "AS-BANDURA-NEO"
 max-len = 48
+
+["10.127.255.53/32"]
+type = "loopback"
+name = "anycast-auth-4"
+max-len = 32
+
+["fd10:127:ffff:53::/64"]
+type = "loopback"
+name = "anycast-auth-6"
+max-len = 64
