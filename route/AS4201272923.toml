@@ -17,3 +17,14 @@ max-len = 32
 type = "loopback"
 name = "anycast-auth-6"
 max-len = 64
+
+["10.127.255.54/32"]
+type = "loopback"
+name = "anycast-recur-4"
+max-len = 32
+
+["fd10:127:53:53::/64"]
+type = "loopback"
+name = "anycast-recur-6"
+max-len = 64
+supernet = "fd10:127:53::/48"
