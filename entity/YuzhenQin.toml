@@ -1,0 +1,9 @@
+name = "Qin Yuzhen"
+babel = ["zh-N", "en-3"]
+
+[contact]
+email = "1@jin-dan.site"
+github = "yuzhenqin"
+
+[persona]
+pgp = "E370A15E3372180A5854E9052B722BAAAAAAAAAA"
