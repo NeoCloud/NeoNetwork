@@ -2,3 +2,4 @@ name = "YUZHEN-NETWORK"
 owner = "YuzhenQin"
 description = "Yuzhen Network"
 source = "Internet"
+valid = true
