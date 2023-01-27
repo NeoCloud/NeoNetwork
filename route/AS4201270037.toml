@@ -1,0 +1,7 @@
+["10.127.37.0/24"]
+type = "subnet"
+name = "FUNNYSYC-NET"
+
+["fd10:127:37::/48"]
+type = "subnet"
+name = "FUNNYSYC-NET"
