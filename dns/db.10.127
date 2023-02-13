@@ -121,3 +121,6 @@ $TTL    3600
 149            IN    DS     20940 15 2 75AA55617D952424CD65DEDE64F500F4B40B80AE48E7BC21E0E98CEDCA040CCE
 
 37             IN    NS     ns.syc.neo.
+
+192            IN    NS     ns1.nevlezay.neo.
+192            IN    NS     ns2.nevlezay.neo.
