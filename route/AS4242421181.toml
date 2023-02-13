@@ -1,0 +1,4 @@
+["10.127.192.0/24"]
+type = "subnet"
+name = "AS-NEVLEZAY-DN42"
+max-len = 27
