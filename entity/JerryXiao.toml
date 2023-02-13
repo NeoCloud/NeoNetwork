@@ -1,4 +1,5 @@
 name = "JerryXiao"
+babel = ["zh-N", "en-3"]
 
 [contact]
 email = "neonet@mail.jerryxiao.cc"
