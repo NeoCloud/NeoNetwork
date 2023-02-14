@@ -202,8 +202,7 @@ syc                       IN    NS       ns.syc
 ns.syc                    IN    A        10.127.37.1
 ns.syc                    IN    AAAA     fd10:127:37::1
 
-nevlezay                       IN    NS       ns1.nevlezay
-nevlezay                       IN    NS       ns2.nevlezay
-
-ns1.nevlezay                    IN    A        10.127.192.0
-ns2.nevlezay                    IN    A        10.127.192.1
+nevlezay                  IN    NS       ns1.nevlezay
+nevlezay                  IN    NS       ns2.nevlezay
+ns1.nevlezay              IN    A        10.127.192.0
+ns2.nevlezay              IN    A        10.127.192.1
