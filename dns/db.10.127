@@ -7,7 +7,7 @@ $TTL    3600
            86400    ; Expire
              900 )  ; Negative Cache TTL
 ;
-@              IN    NS     NeoPDP-11.neo.
+@              IN    NS     root-dns.neo.
 
 
 1.1            IN    PTR    NeoPDP-11.neo.
