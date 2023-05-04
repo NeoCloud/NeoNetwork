@@ -1,9 +1,0 @@
-[yhi-h]
-asn = 4201270012
-description = "Yhi Interconnection Region H Edge Router"
-cidr = ["10.127.5.1/28"]
-
-[yhi-s]
-asn = 4201270012
-description = "Yhi Interconnection Region S Edge Router"
-cidr = ["10.127.5.17/28"]
