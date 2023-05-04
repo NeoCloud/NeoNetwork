@@ -95,24 +95,6 @@ def load_asn(entities: dict):
         assert entity["source"] in ["NeoNetwork", "DN42", "Internet"]
         yield asn, entity
 
-
-def node_to_asn(orignal_asn_set: set):
-    node_table = dict()
-    for _, entities in iter_toml_file("node"):
-        mapping = {name: entity["asn"] for (name, entity) in entities.items()}
-        asn_set = set(mapping.values())
-        assert orignal_asn_set & asn_set == asn_set
-        node_table.update(mapping)
-    return node_table
-
-
-def assert_peer(nodes: set):
-    for item, entities in iter_toml_file("peer"):
-        peers = set(entities["to-peer"])
-        assert item.stem in nodes
-        assert nodes & peers == peers
-
-
 def route_to_roa(asn_table: dict):
     def make_route():
         for item, entity in iter_toml_file("route"):
@@ -319,7 +301,6 @@ def make_roa_records(roa4, roa6):
 def make_summary():
     entities = dict(load_entities())
     asn_table = dict(load_asn(entities))
-    node_table = node_to_asn(set(asn_table.keys()))
     stream = StringIO()
     with redirect_stdout(stream):
         print("# NeoNetwork Summary")
@@ -351,32 +332,6 @@ def make_summary():
             tablefmt="github",
         )
         print(as_table)
-        print()
-        print("## Node table")
-        print()
-        node_table = tabulate(
-            (
-                ("AS{}".format(asn), name)
-                for name, asn in sorted(node_table.items(), key=lambda item: item[1])
-            ),
-            headers=["ASN", "Name"],
-            tablefmt="github",
-        )
-        print(node_table)
-        print()
-        print("## Peer table")
-        print()
-        peer_table = tabulate(
-            (
-                (item.stem, downstream)
-                for item, entity in iter_toml_file("peer")
-                for downstream in entity["to-peer"]
-            ),
-            headers=["Upstream", "Downstream"],
-            tablefmt="github",
-            colalign=("right",),
-        )
-        print(peer_table)
         print()
         print("## Route table")
         print()
@@ -472,8 +427,6 @@ def make_summary():
 def main(args):
     entities = dict(load_entities())
     asn_table = dict(load_asn(entities))
-    node_table = node_to_asn(set(asn_table.keys()))
-    assert_peer(set(node_table.keys()))
     roa4, roa6 = prehandle_roa(asn_table, args)
     if args.export:
         return make_export(roa4, roa6)
