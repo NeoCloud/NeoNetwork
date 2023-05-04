@@ -1,8 +1,0 @@
-# Template file for the peering registry (peer/)
-# Before submission, please:
-# - Rename the file to "<node_name>.toml", without the quotes.
-# - Remove any blank lines, comments, and unneeded options.
-
-# A list of peers that this node is peering to (mandatory). Items in this list
-# should match the name of registered nodes in node/ .
-to-peer = []
