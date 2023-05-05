@@ -10,15 +10,23 @@ $TTL    3600
 @              IN    NS     root-dns.neo.
 
 
-1.1            IN    PTR    NeoPDP-11.neo.
-40.1           IN    PTR    cklvax.neo.
-63.1           IN    PTR    NNPCC.neo.
-20.1           IN    PTR    NeoBOX.neo.
-10.1           IN    PTR    neostorage.neonetwork.
-80.1           IN    PTR    NeoSystem.neo.
-1.3            IN    PTR    pan.neo.
-16.2           IN    PTR    caasih.neo.
+22.2           IN    PTR    NeoVAX.neo.
+63.110         IN    PTR    NeoVAX.neo.
+160.16         IN    PTR    NeoVAX.neo.
+1.2            IN    PTR    NeoSystem.neo.
+80.16          IN    PTR    NeoSystem.neo.
 127.2          IN    PTR    NeoRouter.neo.
+1.110          IN    PTR    NeoRouter.neo.
+16.16          IN    PTR    NeoRouter.neo.
+1.1            IN    PTR    NeoWRT.neo.
+9.16           IN    PTR    NeoWRT.neo.
+16.1           IN    PTR    NeoWorkstation.neo.
+8.16           IN    PTR    NeoWorkstation.neo.
+76.16          IN    PTR    NeoKSKB.neo.
+4.255          IN    PTR    fsnvax.neo.
+240.16         IN    PTR    fsnvax.neo.
+64.110         IN    PTR    NeoPi.neo.
+24.16          IN    PTR    NeoPi.neo.
 
 1.233          IN    PTR    liqingge.user-icecat.eth-ether5.cn.magicneko.neo.
 1.234          IN    PTR    liqingge.user-icecat.eth-ether5.cn.magicneko.neo.

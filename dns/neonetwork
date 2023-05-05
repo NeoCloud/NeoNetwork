@@ -8,20 +8,10 @@ $TTL	3600
              900 )  ; Negative Cache TTL
 ;
 
-; NeoNetwork Original
+; Important Records
 @                         IN    NS       root-dns.neo.
-@                         IN    TXT      "brought to you by NeoPDP-11"
+@                         IN    TXT      "Full-Table BGP on the way (tm)"
 root                      IN    CNAME    neo.
-NeoPDP-11                 IN    A        10.127.255.1
-caasih                    IN    A        10.127.2.16
-NeoVAX                    IN    A        10.127.2.22
-NeoSystem                 IN    A        10.127.255.80
-neostorage                IN    A        10.127.1.10
-NeoBOX                    IN    A        10.127.1.20
-cklvax                    IN    A        10.127.1.40
-pan                       IN    A        10.127.3.1
-NeoRouter                 IN    A        10.127.2.127
-
 neko                      IN    TXT      "helloworld"
 telegram                  IN    TXT      "https://t.me/NeoNetworkVPN"
 root-dns                  IN    A        10.127.255.53
@@ -30,6 +20,23 @@ dns                       IN    A        10.127.255.54
 dns                       IN    AAAA     fd10:127:53:53::
 acme                      IN    A        10.127.18.30
 acme                      IN    AAAA     fd10:127:53:223::1
+
+NeoVAX                    IN    A        10.127.2.22
+NeoVAX                    IN    AAAA     fd10:127:5f37:59df::2:22
+NeoSystem                 IN    A        10.127.2.1
+NeoSystem                 IN    AAAA     fd10:127:5f37:59df::2:1
+NeoRouter                 IN    A        10.127.2.127
+NeoRouter                 IN    AAAA     fd10:127:5f37:59df::2:127
+NeoWRT                    IN    A        10.127.1.1
+NeoWRT                    IN    AAAA     fd10:127:5f37:59df::1:1
+NeoWorkstation            IN    A        10.127.1.16
+NeoWorkstation            IN    AAAA     fd10:127:5f37:59df::1:16
+NeoKSKB                   IN    A        10.127.16.76
+NeoKSKB                   IN    AAAA     fd10:127:5f37:59df::16:76
+fsnvax                    IN    A        10.127.255.4
+fsnvax                    IN    AAAA     fd10:127:5f37:59df::255:4
+NeoRPi                    IN    A        10.127.110.64
+NeoRPi                    IN    AAAA     fd10:127:5f37:59df::110:64
 
 home.edwardp              IN    A        10.127.18.33
 home.edwardp              IN    AAAA     fd10:127:2f2f:2333::1
