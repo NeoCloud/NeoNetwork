@@ -9,6 +9,16 @@ $TTL	3600
 ;
 @                                                      IN    NS     root-dns.neo.
 
+; NeoNetwork Origin (AS4201270000)
+2.2.0.0.2.0.0.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    NeoVAX.neo.
+1.0.0.0.2.0.0.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    NeoSystem.neo.
+7.2.1.0.2.0.0.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    NeoRouter.neo.
+1.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    NeoWRT.neo.
+6.1.0.0.1.0.0.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    NeoWorkstation.neo.
+6.7.0.0.6.1.0.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    NeoKSKB.neo.
+4.0.0.0.5.5.2.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    fsnvax.neo.
+4.6.0.0.0.1.1.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    NeoPi.neo.
+; End of AS4201270000
 
 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.c.3.c.1.3.3.2.0        IN    PTR    liqingge.router.br-koishi.lo.she.as141706.koishi.moe.
 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.2.f.2        IN    PTR    home.edwardp.neo.
