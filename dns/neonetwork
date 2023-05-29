@@ -35,8 +35,10 @@ NeoKSKB                   IN    A        10.127.16.76
 NeoKSKB                   IN    AAAA     fd10:127:5f37:59df::16:76
 fsnvax                    IN    A        10.127.255.4
 fsnvax                    IN    AAAA     fd10:127:5f37:59df::255:4
-NeoRPi                    IN    A        10.127.110.64
-NeoRPi                    IN    AAAA     fd10:127:5f37:59df::110:64
+NeoPi                     IN    A        10.127.110.64
+NeoPi                     IN    AAAA     fd10:127:5f37:59df::110:64
+NeoRTK                    IN    A        10.127.16.31
+NeoRTK                    IN    AAAA     fd10:127:5f37:59df::16:31
 
 home.edwardp              IN    A        10.127.18.33
 home.edwardp              IN    AAAA     fd10:127:2f2f:2333::1
