@@ -177,8 +177,8 @@ ns.leedagee               IN    A        10.127.8.129
 ns.leedagee               IN    AAAA     fd10:127:23::1
 
 kskb                      IN    NS       ns.kskb
-ns.kskb                   IN    A        10.127.111.233
-ns.kskb                   IN    AAAA     fd10:127:e00f:aca::233
+ns.kskb                   IN    A        10.127.111.15
+ns.kskb                   IN    AAAA     fd10:127:e00f:f::1
 
 hmn                       IN    NS       ns0.hmn
 ns0.hmn                   IN    A        10.127.45.233
