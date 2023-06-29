@@ -1,9 +1,9 @@
 ["10.127.111.0/24"]
 type = "subnet"
-name = "Kusakabe-Neo-IP4"
+name = "KSKB-NEO-IP4"
 description = "Kusakabe's Neo Network v4"
 
 ["fd10:127:e00f::/48"]
 type = "subnet"
-name = "Kusakabe-Neo-IP6"
+name = "KSKB-NEO-IP6"
 description = "Kusakabe's Neo Network v6"
