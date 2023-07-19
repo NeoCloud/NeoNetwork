@@ -1,0 +1,9 @@
+name = "nekoid"
+babel = ["zh", "en-4", "jp-1"]
+
+[contact]
+email = "info@nekoid.cc"
+telegram = "nekonull_ptr"
+
+[persona]
+pgp = "77857DC6BBB6429C8BE209F5D68E0BFE4115B78C"

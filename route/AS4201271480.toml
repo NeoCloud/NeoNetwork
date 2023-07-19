@@ -1,0 +1,9 @@
+["10.127.24.0/24"]
+type = "subnet"
+name = "NEKOID-INET"
+description = "NEKOID IPv4 Network"
+
+["fd10:127:24::/48"]
+type = "subnet"
+name = "NEKOID-INET6"
+description = "NEKOID IPv6 Network"
