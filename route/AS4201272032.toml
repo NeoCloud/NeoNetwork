@@ -1,0 +1,9 @@
+["10.127.134.0/24"]
+type = "subnet"
+name = "LAPISNET4-NEO"
+description = "Razuritta's Net4"
+
+["fd10:127:2032::/48"]
+type = "subnet"
+name = "LAPISNET6-NEO"
+description = "Razuritta's Net6"
