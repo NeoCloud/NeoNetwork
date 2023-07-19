@@ -134,3 +134,5 @@ $TTL    3600
 
 192            IN    NS     ns1.nevlezay.neo.
 192            IN    NS     ns2.nevlezay.neo.
+
+135            IN    NS     ns.razu.neo.

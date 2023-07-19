@@ -1,0 +1,6 @@
+name = "Razuritta"
+babel = ["en", "zh"]
+
+[contact]
+email = "i@razuritta.me"
+matrix = "@salty_0x1c:bartz.foo"

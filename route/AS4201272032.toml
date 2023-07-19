@@ -1,0 +1,14 @@
+["10.127.134.0/24"]
+type = "subnet"
+name = "LAPISNET4-R"
+description = "Razuritta's Net For Routers"
+
+["10.127.135.0/24"]
+type = "subnet"
+name = "LAPISNET4-AC"
+description = "Razuritta's Net Access"
+
+["fd10:127:2032::/48"]
+type = "subnet"
+name = "LAPISNET6-R01"
+description = "Razuritta's Net6"
