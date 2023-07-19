@@ -90,3 +90,5 @@ f.0.0.e                                                IN    NS     ns.kskb.neo.
 1.3.c.f                                                IN    DS     23486 15 2 AD11FF63F805D6E85CE4D85965C73339D9CC0619676B481A8647D9724BBC6182
 
 7.3.0.0                                                IN    NS     ns.syc.neo.
+
+2.3.0.2                                                IN    NS     ns.razu.neo.

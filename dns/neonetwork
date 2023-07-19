@@ -215,3 +215,7 @@ nevlezay                  IN    NS       ns1.nevlezay
 nevlezay                  IN    NS       ns2.nevlezay
 ns1.nevlezay              IN    A        10.127.192.0
 ns2.nevlezay              IN    A        10.127.192.1
+
+razu                      IN    NS       ns.razu
+ns.razu                   IN    A        10.127.135.53
+ns.razu                   IN    AAAA     fd10:127:2032::53

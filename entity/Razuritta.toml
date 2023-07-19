@@ -1,0 +1,9 @@
+name = "Razuritta"
+babel = ["en", "zh"]
+
+[contact]
+email = "i@razuritta.me"
+matrix = "@salty_0x1c:bartz.foo"
+
+[persona]
+pgp = "ae902ca260080ba005e3a5e92e466ddd3794c4eb"
