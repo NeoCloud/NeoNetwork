@@ -1,9 +1,9 @@
-["10.127.99.0/24"]
+["10.127.36.0/24"]
 type = "subnet"
 name = "TSINTYAO-NEO-NET4"
 description = "TsingYao Neo Network IPv4 Block"
 
-["fd10:127:99::/48"]
+["fd10:127:36::/48"]
 type = "subnet"
 name = "TSINGYAO-NEO-NET6"
 description = "TsingYao Neo Network IPv6 Block"

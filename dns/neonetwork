@@ -159,18 +159,37 @@ ns2.iwarp                 IN    AAAA     fd10:127:30:ac54::1
 
 an                        IN    NS       ns1.an.dn42.
 
+dnswol                    IN    NS       ns-anycast.dnswol
 dnswol                    IN    NS       ns1.dnswol
 dnswol                    IN    NS       ns2.dnswol
+dnswol                    IN    NS       ns3.dnswol
+dnswol                    IN    NS       ns4.dnswol
+dnswol                    IN    NS       ns5.dnswol
+dnswol                    IN    NS       ns6.dnswol
 dnswol                    IN    DS       53285 14 1 88971c954d18aa1224a1b01e54c81dc6cd71a86e
 dnswol                    IN    DS       53285 14 2 d782d7d9afec4e20082913fe2f23fd9e2c0e0ad7206fa389cadc4050d11b7e80
 dnswol                    IN    DS       53285 14 4 1c0fcf050b4000de0648a8e25a8e809e35b7501c846ad785f07e2c4296610c305d217cb5113c34f937f62780e82b5e98
-ns1.dnswol                IN    A        10.127.99.50
-ns1.dnswol                IN    AAAA     fd10:127:99::32:1
-ns2.dnswol                IN    A        10.127.99.51
-ns2.dnswol                IN    AAAA     fd10:127:99::33:1
+ns-anycast.dnswol         IN    A        10.127.36.53
+ns-anycast.dnswol         IN    AAAA     fd10:127:36::53:53
+ns1.dnswol                IN    A        10.127.36.1
+ns1.dnswol                IN    AAAA     fd10:127:36::1:1
+ns2.dnswol                IN    A        10.127.36.2
+ns2.dnswol                IN    AAAA     fd10:127:36::2:1
+ns3.dnswol                IN    A        10.127.36.3
+ns3.dnswol                IN    AAAA     fd10:127:36::3:1
+ns4.dnswol                IN    A        10.127.36.4
+ns4.dnswol                IN    AAAA     fd10:127:36::4:1
+ns5.dnswol                IN    A        10.127.36.5
+ns5.dnswol                IN    AAAA     fd10:127:36::5:1
+ns6.dnswol                IN    A        10.127.36.6
+ns6.dnswol                IN    AAAA     fd10:127:36::6:1
 
 tsingyao                  IN    NS       ns1.dnswol
 tsingyao                  IN    NS       ns2.dnswol
+tsingyao                  IN    NS       ns3.dnswol
+tsingyao                  IN    NS       ns4.dnswol
+tsingyao                  IN    NS       ns5.dnswol
+tsingyao                  IN    NS       ns6.dnswol
 
 leedagee                  IN    NS       ns.leedagee
 ns.leedagee               IN    A        10.127.8.129
