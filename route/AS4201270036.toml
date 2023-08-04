@@ -1,0 +1,9 @@
+["10.127.36.0/24"]
+type = "subnet"
+name = "TSINTYAO-NEO-NET4-IX36"
+description = "Internet eXchange 36 IPv4 Block For TsingYao Neo Network"
+
+["fd10:127:36::/48"]
+type = "subnet"
+name = "TSINGYAO-NEO-NET6-IX36"
+description = "Internet eXchange 36 IPv6 Block For TsingYao Neo Network"
