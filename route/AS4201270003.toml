@@ -1,9 +1,0 @@
-["fd10:127:1919::/48"]
-type = "subnet"
-name = "chenx97"
-description = "chenx97 but the subnet smells"
-
-["10.127.89.0/24"]
-type = "subnet"
-name = "chenx97 v4"
-description = ""
