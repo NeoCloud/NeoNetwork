@@ -4,3 +4,6 @@ name = "Edward_P"
 email = "edward@edward-p.xyz"
 github = "edward-p"
 telegram = "@Edward_P"
+
+[persona]
+pgp = "A0B55B12351C08FED81DAAF4840A50A14EEF0D58"
