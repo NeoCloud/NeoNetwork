@@ -56,8 +56,7 @@ $TTL    3600
 
 1.26           IN    PTR    home.edwardp.neo.
 33.18          IN    PTR    home.edwardp.neo.
-34.18          IN    PTR    jp1.edwardp.neo.
-37.18          IN    PTR    jp2.edwardp.neo.
+34.18          IN    PTR    hkg.edwardp.neo.
 
 137.8          IN    PTR    lily.neo.
 

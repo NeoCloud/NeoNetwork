@@ -42,8 +42,8 @@ NeoRTK                    IN    AAAA     fd10:127:5f37:59df::16:31
 
 home.edwardp              IN    A        10.127.18.33
 home.edwardp              IN    AAAA     fd10:127:2f2f:2333::1
-jp1.edwardp               IN    A        10.127.18.34
-jp1.edwardp               IN    AAAA     fd10:127:2f2f:2334::1
+hkg.edwardp               IN    A        10.127.18.34
+hkg.edwardp               IN    AAAA     fd10:127:2f2f:2334::1
 edwardp                   IN    CNAME    home.edwardp
 mc.edwardp                IN    CNAME    home.edwardp
 live.edwardp              IN    CNAME    home.edwardp
