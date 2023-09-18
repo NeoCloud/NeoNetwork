@@ -40,7 +40,7 @@ NeoPi                     IN    AAAA     fd10:127:5f37:59df::110:64
 NeoRTK                    IN    A        10.127.16.31
 NeoRTK                    IN    AAAA     fd10:127:5f37:59df::16:31
 
-home.edwardp              IN    A        10.127.18.33
+home.edwardp              IN    A        10.127.18.1
 home.edwardp              IN    AAAA     fd10:127:2f2f:2333::1
 hkg.edwardp               IN    A        10.127.18.34
 hkg.edwardp               IN    AAAA     fd10:127:2f2f:2334::1
