@@ -55,7 +55,6 @@ $TTL    3600
 2.8            IN    PTR    blog.librehs.neo.
 
 1.26           IN    PTR    home.edwardp.neo.
-33.18          IN    PTR    home.edwardp.neo.
 34.18          IN    PTR    hkg.edwardp.neo.
 
 137.8          IN    PTR    lily.neo.
