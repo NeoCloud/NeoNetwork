@@ -18,7 +18,7 @@ owner = ""
 # range of NeoNetwork or DN42, then our script can automatically find it out.
 #source = ""
 
-# AS description (optional). Can be an arbitrary string.
+# AS description (mandatory). Can be an arbitrary string.
 description = ""
 
 # AS ownership validation status for NeoNetwork (optional). If the AS is
