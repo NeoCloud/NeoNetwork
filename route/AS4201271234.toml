@@ -1,0 +1,7 @@
+["10.127.20.0/24"]
+type = "subnet"
+name = "WTM-ZONE-N-IPV4"
+
+["fd10:127:66::/48"]
+type = "subnet"
+name = "WTM-ZONE-N-IPV6"
