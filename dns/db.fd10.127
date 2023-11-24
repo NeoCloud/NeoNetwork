@@ -91,3 +91,6 @@ f.0.0.e                                                IN    NS     ns.kskb.neo.
 7.3.0.0                                                IN    NS     ns.syc.neo.
 
 2.3.0.2                                                IN    NS     ns.razu.neo.
+
+6.6.0.0                                                IN    NS     ns1.wtm.neo.
+6.6.0.0                                                IN    NS     ns2.wtm.neo.

@@ -219,3 +219,12 @@ ns2.nevlezay              IN    A        10.127.192.1
 razu                      IN    NS       ns.razu
 ns.razu                   IN    A        10.127.134.53
 ns.razu                   IN    AAAA     fd10:127:2032::53
+
+wtm                       IN    NS       ns1.wtm
+wtm                       IN    NS       ns2.wtm
+windtalker                IN    NS       ns1.wtm
+windtalker                IN    NS       ns2.wtm
+ns1.wtm                   IN    A        10.127.20.222
+ns1.wtm                   IN    AAAA     fd10:127:66::222
+ns2.wtm                   IN    A        10.127.20.223
+ns2.wtm                   IN    AAAA     fd10:127:66::223
