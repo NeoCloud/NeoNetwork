@@ -3,7 +3,7 @@
 # - Rename the file to "AS<ASN>.toml", without the quotes.
 # - Remove any blank lines, comments, and unneeded options.
 
-# AS name (optional). Can be an arbitrary string.
+# AS name (mandatory). Can be an arbitrary string.
 name = ""
 
 # AS owner (mandatory). This should match the ID (file name) of a registered
@@ -18,7 +18,7 @@ owner = ""
 # range of NeoNetwork or DN42, then our script can automatically find it out.
 #source = ""
 
-# AS description (mandatory). Can be an arbitrary string.
+# AS description (optional). Can be an arbitrary string.
 description = ""
 
 # AS ownership validation status for NeoNetwork (optional). If the AS is
