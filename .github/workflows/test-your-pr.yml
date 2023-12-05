@@ -70,7 +70,7 @@ jobs:
     steps:
       - shell: bash
         run: |
-          echo ${{needs.build.outputs.generate_roa}} | base64 -d | tr -d '`' |tail > /tmp/buildjob_tail.log || echo 'internal error' > /tmp/buildjob_tail.log
+          echo ${{needs.build.outputs.generate_roa}} | base64 -d | tail > /tmp/buildjob_tail.log || echo 'internal error' > /tmp/buildjob_tail.log
 
       - uses: actions/github-script@v7
         with:
