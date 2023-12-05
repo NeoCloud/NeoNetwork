@@ -1,7 +1,7 @@
 name: Test Your PR
 
 on:
-  pull_request:
+  pull_request_target:
     branches: [master]
 
 jobs:
@@ -13,11 +13,27 @@ jobs:
       generate_roa: ${{ steps.generate_roa.outputs.base64 }}
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          path: trusted_master_head
+          fetch-depth: 0
+
+      - run: |
+          git remote add trusted trusted_master_head
+          git fetch trusted
+          # you shall not change this
+          git diff --exit-code --name-status trusted/master ${{github.event.pull_request.head.sha}} ./scripts
+          # just in case
+          rm -rf scripts && cp -a trusted_master_head/scripts ./
+        shell: bash
+
+      - uses: actions/checkout@v4
         with:
           repository: NeoCloud/NeoNetwork-ROA
           path: generated
