@@ -65,11 +65,11 @@ jobs:
     steps:
       - shell: bash
         run: |
-          echo ${{needs.build.outputs.generate_roa}} | base64 -d |tail > ~/buildjob_tail.log || echo 'internal error' > ~/buildjob_tail.log
+          echo ${{needs.build.outputs.generate_roa}} | base64 -d |tail > /tmp/buildjob_tail.log || echo 'internal error' > /tmp/buildjob_tail.log
 
       - uses: thollander/actions-comment-pull-request@v2
         with:
           GITHUB_TOKEN: ${{ secrets.COMMENT_GITHUB_TOKEN }}
-          filePath: ~/buildjob_tail.log
+          filePath: /tmp/buildjob_tail.log
 
       - run: false
