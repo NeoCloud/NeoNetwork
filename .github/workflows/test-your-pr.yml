@@ -9,6 +9,9 @@ jobs:
     name: Generate ROA
     runs-on: ubuntu-20.04
 
+    outputs:
+      generate_roa: ${{ steps.generate_roa.outputs.base64 }}
+
     steps:
       - uses: actions/checkout@v2
         with:
@@ -24,13 +27,18 @@ jobs:
           python-version: 3.x
           architecture: x64
 
-      - shell: bash
-        run: |
-          env PYTHONUNBUFFERED=1 pip install -r scripts/requirements.txt 2> >(tee -a ~/buildjob.log >&2)
+      - run: pip install -r scripts/requirements.txt
 
-      - shell: bash
-        run: |
-          env PYTHONUNBUFFERED=1 scripts/generate-roa.sh 2> >(tee -a ~/buildjob.log >&2)
+      - run: |
+          success=true
+
+          scripts/generate-roa.sh 2> >(tee ~/buildjob.log >&2) || success=false
+
+          echo -n "base64=" >> $GITHUB_OUTPUT
+          base64 -w0 ~/buildjob.log >> $GITHUB_OUTPUT
+          ${success}
+        shell: bash
+        id: generate_roa
 
       - run: git -C generated diff README.md
 
@@ -57,7 +65,7 @@ jobs:
     steps:
       - shell: bash
         run: |
-          tail ~/buildjob.log > ~/buildjob_tail.log
+          echo ${{needs.build.outputs.generate_roa}} | base64 -d |tail > ~/buildjob_tail.log || echo 'internal error' > ~/buildjob_tail.log
 
       - uses: thollander/actions-comment-pull-request@v2
         with:
