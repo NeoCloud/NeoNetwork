@@ -54,7 +54,7 @@ jobs:
     steps:
       - uses: thollander/actions-comment-pull-request@v2
         with:
-          GITHUB_TOKEN: ${{ secrets.COMMENT_GITHUB_TOKEN }}
+          token: ${{ secrets.COMMENT_GITHUB_TOKEN }}
           message: |
             Congratulations! Your pull request passed the check.
 
@@ -69,7 +69,7 @@ jobs:
 
       - uses: thollander/actions-comment-pull-request@v2
         with:
-          GITHUB_TOKEN: ${{ secrets.COMMENT_GITHUB_TOKEN }}
+          token: ${{ secrets.COMMENT_GITHUB_TOKEN }}
           filePath: /tmp/buildjob_tail.log
 
       - run: false
