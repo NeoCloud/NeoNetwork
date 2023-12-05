@@ -98,7 +98,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `Your pull request failed the check:\`\`\`\n${l.trimEnd()}\n\`\`\``
+              body: `Your pull request failed the check:\n\`\`\`\n${l.trimEnd()}\n\`\`\``
             })
 
       - run: false
