@@ -24,9 +24,13 @@ jobs:
           python-version: 3.x
           architecture: x64
 
-      - run: env PYTHONUNBUFFERED=1 pip install -r scripts/requirements.txt 2>(tee -a ~/buildjob.log >&2)
+      - shell: bash
+        run: |
+          env PYTHONUNBUFFERED=1 pip install -r scripts/requirements.txt 2>(tee -a ~/buildjob.log >&2)
 
-      - run: env PYTHONUNBUFFERED=1 scripts/generate-roa.sh 2>(tee -a ~/buildjob.log >&2)
+      - shell: bash
+        run: |
+          env PYTHONUNBUFFERED=1 scripts/generate-roa.sh 2>(tee -a ~/buildjob.log >&2)
 
       - run: git -C generated diff README.md
 
@@ -38,7 +42,7 @@ jobs:
   comment_success:
     needs: [build]
     runs-on: ubuntu-20.04
-    if: needs.build.result == 'success'
+    if: ${{ always() && contains(needs.build.result, 'success') }}
     steps:
       - uses: thollander/actions-comment-pull-request@v2
         with:
@@ -49,9 +53,11 @@ jobs:
   comment_failure:
     needs: [build]
     runs-on: ubuntu-20.04
-    if: needs.build.result == 'failure'
+    if: ${{ always() && contains(needs.build.result, 'failure') }}
     steps:
-      - run: tail ~/buildjob.log > ~/buildjob_tail.log
+      - shell: bash
+        run: |
+          tail ~/buildjob.log > ~/buildjob_tail.log
 
       - uses: thollander/actions-comment-pull-request@v2
         with:
