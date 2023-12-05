@@ -24,9 +24,9 @@ jobs:
           python-version: 3.x
           architecture: x64
 
-      - run: pip install -r scripts/requirements.txt
+      - run: env PYTHONUNBUFFERED=1 pip install -r scripts/requirements.txt 2>(tee -a ~/buildjob.log >&2)
 
-      - run: scripts/generate-roa.sh
+      - run: env PYTHONUNBUFFERED=1 scripts/generate-roa.sh 2>(tee -a ~/buildjob.log >&2)
 
       - run: git -C generated diff README.md
 
@@ -34,3 +34,26 @@ jobs:
         with:
           name: generated
           path: generated
+
+  comment_success:
+    needs: [build]
+    runs-on: ubuntu-20.04
+    if: needs.build.result == 'success'
+    steps:
+      - uses: thollander/actions-comment-pull-request@v2
+        with:
+          GITHUB_TOKEN: ${{ secrets.COMMENT_GITHUB_TOKEN }}
+          message: |
+            Congratulations! Your pull request passed the check.
+
+  comment_failure:
+    needs: [build]
+    runs-on: ubuntu-20.04
+    if: needs.build.result == 'failure'
+    steps:
+      - run: tail ~/buildjob.log > ~/buildjob_tail.log
+
+      - uses: thollander/actions-comment-pull-request@v2
+        with:
+          GITHUB_TOKEN: ${{ secrets.COMMENT_GITHUB_TOKEN }}
+          filePath: ~/buildjob_tail.log
