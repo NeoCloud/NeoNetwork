@@ -63,3 +63,5 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.COMMENT_GITHUB_TOKEN }}
           filePath: ~/buildjob_tail.log
+
+      - run: false
