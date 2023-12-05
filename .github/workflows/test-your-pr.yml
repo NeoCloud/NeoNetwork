@@ -26,11 +26,11 @@ jobs:
 
       - shell: bash
         run: |
-          env PYTHONUNBUFFERED=1 pip install -r scripts/requirements.txt 2>(tee -a ~/buildjob.log >&2)
+          env PYTHONUNBUFFERED=1 pip install -r scripts/requirements.txt 2> >(tee -a ~/buildjob.log >&2)
 
       - shell: bash
         run: |
-          env PYTHONUNBUFFERED=1 scripts/generate-roa.sh 2>(tee -a ~/buildjob.log >&2)
+          env PYTHONUNBUFFERED=1 scripts/generate-roa.sh 2> >(tee -a ~/buildjob.log >&2)
 
       - run: git -C generated diff README.md
 
