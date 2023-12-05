@@ -86,18 +86,19 @@ jobs:
     steps:
       - shell: bash
         run: |
-          echo ${{needs.build.outputs.generate_roa}} | base64 -d | tail > /tmp/buildjob_tail.log || echo 'internal error' > /tmp/buildjob_tail.log
+          echo ${{needs.build.outputs.generate_roa}} | base64 -d | tail > /tmp/buildjob_tail.log || echo 'internal error' >> /tmp/buildjob_tail.log
 
       - uses: actions/github-script@v7
         with:
           github-token: ${{secrets.COMMENT_GITHUB_TOKEN}}
           script: |
             const fs = require('fs')
+            let l = fs.readFileSync('/tmp/buildjob_tail.log', { encoding: 'utf8', flag: 'r' }).replaceAll("```", "'''")
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: fs.readFileSync('/tmp/buildjob_tail.log', { encoding: 'utf8', flag: 'r' })
+              body: `Your pull request failed the check:\`\`\`\n${l.trimEnd()}\n\`\`\``
             })
 
       - run: false
