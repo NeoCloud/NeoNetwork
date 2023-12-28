@@ -1,0 +1,9 @@
+["10.127.217.0/24"]
+type = "subnet"
+name = "HAWKINS-NEO-NET4"
+description = "Shared prefix for HAWKINS-NEO-AS and SERNET-DN42"
+supernet = "10.127.217.0/24"
+
+["fd10:127:217::/48"]
+type = "subnet"
+name = "HAWKINS-NEO-NET6"

@@ -94,3 +94,6 @@ f.0.0.e                                                IN    NS     ns.kskb.neo.
 
 6.6.0.0                                                IN    NS     ns1.wtm.neo.
 6.6.0.0                                                IN    NS     ns2.wtm.neo.
+
+7.1.2.0                                                IN    NS     ns1.hawkins.neo.
+7.1.2.0                                                IN    NS     ns2.hawkins.neo.
