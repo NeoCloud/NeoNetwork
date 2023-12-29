@@ -228,3 +228,10 @@ ns1.wtm                   IN    A        10.127.20.222
 ns1.wtm                   IN    AAAA     fd10:127:66::222
 ns2.wtm                   IN    A        10.127.20.223
 ns2.wtm                   IN    AAAA     fd10:127:66::223
+
+ns1.hawkins               IN    A        10.127.217.14
+ns1.hawkins               IN    AAAA     fd10:127:217:53::1
+ns2.hawkins               IN    A        10.127.217.15
+ns2.hawkins               IN    AAAA     fd10:127:217:53::2
+hawkins                   IN    NS       ns1.hawkins
+hawkins                   IN    NS       ns2.hawkins

@@ -137,3 +137,6 @@ $TTL    3600
 
 20             IN    NS     ns1.wtm.neo.
 20             IN    NS     ns2.wtm.neo.
+
+217            IN    NS     ns1.hawkins.neo.
+217            IN    NS     ns2.hawkins.neo.
