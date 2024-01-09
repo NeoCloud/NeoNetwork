@@ -27,7 +27,7 @@ type = "loopback"
 name = "fsnvax"
 description = "Debian/frr"
 
-["fd10:127:0000::/56"]
+["fd10:127:0000::/48"]
 type = "subnet"
 name = "NeoNetwork Origin 1"
 description = "Neo_Chen's Network"
