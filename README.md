@@ -14,7 +14,7 @@ Working language: `zh_* / en_*`
 	neovax.neocloud.tw		(10.127.110.1,	ASN 4201270000)
 	fsnvax.neocloud.tw		(10.127.16.240,	ASN 4201270000)
 	jpn.neo.jerryxiao.cc		(10.127.8.193,	ASN 4201270006)
-	s.aureus.ga			(10.127.8.185,	ASN 4201270007)
+	s.aureus.icu			(10.127.8.185,	ASN 4201270007)
 
 ## Address Allocation
 
