@@ -39,8 +39,10 @@ NeoPi                     IN    A        10.127.110.64
 NeoPi                     IN    AAAA     fd10:127:5f37:59df::110:64
 NeoRTK                    IN    A        10.127.16.31
 NeoRTK                    IN    AAAA     fd10:127:5f37:59df::16:31
-NeoRadio                  IN    A        10.127.16.32
-NeoRadio                  IN    AAAA     fd10:127:5f37:59df::16:32
+NeoServer                 IN    A        10.127.2.86
+NeoServer                 IN    AAAA     fd10:127:5f37:59df::2:86
+PTYRouter                 IN    A        10.127.2.65
+PTYRouter                 IN    AAAA     fd10:127:5f37:59df::2:65
 
 home.edwardp              IN    A        10.127.26.1
 home.edwardp              IN    AAAA     fd10:127:2f2f:2333::1

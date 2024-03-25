@@ -28,6 +28,9 @@ $TTL    3600
 64.110         IN    PTR    NeoPi.neo.
 24.16          IN    PTR    NeoPi.neo.
 31.16          IN    PTR    NeoRTK.neo.
+32.16          IN    PTR    NeoServer.neo.
+86.2           IN    PTR    NeoServer.neo.
+65.2           IN    PTR    PTYRouter.neo.
 ; End of AS4201270000
 
 1.233          IN    PTR    liqingge.user-icecat.eth-ether5.cn.magicneko.neo.
