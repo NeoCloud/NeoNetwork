@@ -3,7 +3,7 @@ type = "subnet"
 name = "S242storm42-IPv4"
 description = "Starstorm42 access. (IPv4)"
 
-i"fd10:127:42ff::/48"]
+["fd10:127:42ff::/48"]
 type = "subnet"
 name = "Starstorm42IPv6"
 description = "Starstorm42 access. (IPv6)"

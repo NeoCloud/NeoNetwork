@@ -1,0 +1,9 @@
+name = "starstorm42"
+babel = ["en"]
+
+[contact]
+email = "startstorm@disroot.org"
+github = "BigFunnyGiant"
+
+[persona]
+pgp = "E38751374DD58D716A73831B3D5B23A378C7F8AF"
