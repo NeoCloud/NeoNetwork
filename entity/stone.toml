@@ -1,0 +1,7 @@
+name = "Stone Fox"
+
+[contact]
+email = "stone@unix.dog"
+
+[persona]
+ssh = "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHJZ9eLR5cJ++1HJ9sMjrnM35Q4yrfJXKbgQMHmOrgOnfEXc9TEgZN2bWogcKRoLDbIF3hA8iiT/7QffKhCRBsw="
