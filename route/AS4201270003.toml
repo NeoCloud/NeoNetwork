@@ -1,9 +1,0 @@
-["10.127.18.128/25"]
-type = "subnet"
-
-name = "Stone IPv4 Block"
-
-["fd10:127:6194:24e0::/64"]
-type = "subnet"
-
-name = "Stone IPv6 Block"
