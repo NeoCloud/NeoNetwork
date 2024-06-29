@@ -1,0 +1,9 @@
+["10.127.69.0/24"]
+type = "subnet"
+name = "CDUBS Network"
+description = "CDUBS Neo Network v4"
+
+["fd10:127:69::/48"]
+type = "subnet"
+name = "CDUBS Network"
+description = "CDUBS Neo Network v6"
