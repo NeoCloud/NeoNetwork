@@ -1,0 +1,8 @@
+name = "CDUBS"
+babel = ["en"]
+
+[contact]
+email = "noc@cdubs.tech"
+
+[persona]
+pgp = "80095CB4A8D365B114DD35CEB26D9F20836A8936"
