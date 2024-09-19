@@ -10,18 +10,18 @@ jobs:
   build:
     name: Generate ROA
     if: "github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip ci]')"
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           path: generated
           ssh-key: ${{ secrets.DEPLOY_KEY }}
           repository: NeoCloud/NeoNetwork-ROA
 
-      - uses: actions/setup-python@v2
+      - uses: actions/setup-python@v5
         with:
           python-version: 3.x
           architecture: x64
@@ -34,7 +34,7 @@ jobs:
 
       - run: scripts/push-to-roa.sh
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: generated
           path: generated

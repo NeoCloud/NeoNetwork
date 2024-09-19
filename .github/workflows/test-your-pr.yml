@@ -7,7 +7,7 @@ on:
 jobs:
   build:
     name: Generate ROA
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     outputs:
       generate_roa: ${{ steps.generate_roa.outputs.base64 }}
@@ -38,7 +38,7 @@ jobs:
           repository: NeoCloud/NeoNetwork-ROA
           path: generated
 
-      - uses: actions/setup-python@v2
+      - uses: actions/setup-python@v5
         with:
           python-version: 3.x
           architecture: x64
@@ -58,7 +58,7 @@ jobs:
 
       - run: git -C generated diff README.md
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: generated
           path: generated
