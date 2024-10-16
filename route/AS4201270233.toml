@@ -1,0 +1,8 @@
+["10.127.233.233/24"]
+type = "subnet"
+name = "Rosmontis-Network v4"
+description = "Meow~meow~nya~"
+["fd10:127:2333::/48"]
+type = "subnet"
+name = "Rosmontis-Network v6"
+description = "Meow~meow~nya~"
