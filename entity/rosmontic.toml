@@ -1,4 +1,4 @@
-name = "Rosmontic"
+name = "rosmontic"
 babel = ["zh", "en-2"]
 
 [contact]
