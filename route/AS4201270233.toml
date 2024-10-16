@@ -1,4 +1,4 @@
-["10.127.233.0/24"]
+["10.127.33.0/24"]
 type = "subnet"
 name = "Rosmontis-Network v4"
 description = "Meow~meow~nya~"
