@@ -1,5 +1,5 @@
 name = "Rosmontic"
-babel = ["zh", "en"]
+babel = ["zh", "en-2"]
 
 [contact]
 email = "Rosmontis233@hotmail.com"
