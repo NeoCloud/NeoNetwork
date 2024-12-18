@@ -1,0 +1,9 @@
+["10.127.51.0/24"]
+type = "subnet"
+name = "InPRTx-NEO-NET4"
+description = "InPRTx Neo Network v4"
+
+["fd10:127:3751::/48"]
+type = "subnet"
+name = "InPRTx-NEO-NET6"
+description = "InPRTx Neo Network v6"
