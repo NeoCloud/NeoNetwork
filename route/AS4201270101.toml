@@ -1,0 +1,9 @@
+["10.127.6.0/24"]
+type = "subnet"
+name = "AndyZhou-NEO-NET4"
+description = "AndyZhou Neo Network v4"
+
+["fd10:127:6::/48"]
+type = "subnet"
+name = "AndyZhou-NEO-NET6"
+description = "AndyZhou Neo Network v6"

@@ -101,3 +101,5 @@ f.0.0.e                                                IN    NS     ns.kskb.neo.
 7.1.2.0                                                IN    NS     ns2.hawkins.neo.
 
 1.5.7.3                                                IN    NS     ns.inprtx.neo.
+
+6.0.0.0                                                IN    NS     ns.andyzhou.neo.

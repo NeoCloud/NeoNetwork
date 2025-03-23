@@ -243,3 +243,7 @@ hawkins                   IN    NS       ns2.hawkins
 inprtx                    IN    NS       ns.inprtx
 ns.inprtx                 IN    A        10.127.51.1
 ns.inprtx                 IN    AAAA     fd10:127:3751::1
+
+andyzhou                  IN    NS       ns.andyzhou
+ns.andyzhou               IN    A        10.127.6.1
+ns.andyzhou               IN    AAAA     fd10:127:6::1
