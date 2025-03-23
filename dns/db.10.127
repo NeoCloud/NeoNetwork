@@ -145,3 +145,5 @@ $TTL    3600
 217            IN    NS     ns2.hawkins.neo.
 
 51            IN    NS      ns.inprtx.neo.
+
+6              IN    NS     ns.andyzhou.neo.
