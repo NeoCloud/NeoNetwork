@@ -1,0 +1,9 @@
+["10.127.204.48/28"]
+type = "subnet"
+name = "YANGIU-NEO4"
+description = "Iuyang1 NEO IPv4 Network"
+
+["fd10:127:face::/48"]
+type = "subnet"
+name = "YANGIU-NEO6"
+description = "Iuyang1 NEO IPv6 Network"

@@ -1,0 +1,10 @@
+name = "iu_yang1"
+babel = ["zh-hans-N", "en-3"]
+
+[contact]
+email = "iu_yang1@foxmail.com"
+github = "Iu-yang1"
+telegram = "iu_yang1"
+
+[persona]
+pgp = "D06D16F965E1FD87557BC61AC7F5891A70B5E484"
