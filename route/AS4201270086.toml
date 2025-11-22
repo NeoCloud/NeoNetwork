@@ -1,0 +1,7 @@
+["10.127.86.0/24"]
+type = "subnet"
+name = "DynamicLoader-Network-Neo-v4"
+
+["fd10:127:86::/48"]
+type = "subnet"
+name = "DynamicLoader-Network-Neo-v6"
