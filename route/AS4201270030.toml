@@ -1,10 +1,10 @@
 ["10.127.30.0/24"]
 type = "subnet"
-name = "IWARP-NEO-IP4-NETWORK"
-description = "IWarp Global Experimental NeoNetwork - IPv4"
+name = "HWARP-NEO-IP4-NETWORK"
+description = "Hwarp NeoNetwork - IPv4"
 
 ["fd10:127:30::/48"]
 type = "subnet"
-name = "IWARP-NEO-IP6-NETWORK"
-description = "IWarp Global Experimental NeoNetwork - IPv6"
+name = "HWARP-NEO-IP6-NETWORK"
+description = "Hwarp NeoNetwork - IPv6"
 

@@ -100,7 +100,7 @@ $TTL    3600
 
 21             IN    NS     ns.iedon.neo.
 
-30             IN    NS     ns1.iwarp.neo.
+30             IN    NS     ns1.hwarp.neo.
 
 127            IN    NS     ns1.yura.dn42.
 127            IN    NS     ns2.yura.dn42.
