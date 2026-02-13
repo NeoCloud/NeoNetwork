@@ -1,0 +1,9 @@
+["10.127.188.0/24"]
+type = "subnet"
+name = "AYUMU-NEO-V4"
+description = "Ayumu Neo Network"
+
+["fd10:127:188::/48"]
+type = "subnet"
+name = "AYUMU-NEO-V6"
+description = "Ayumu Neo Network"
