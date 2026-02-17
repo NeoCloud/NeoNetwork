@@ -1,0 +1,11 @@
+name = "Afnooi-Neo"
+babel = ["zh-N", "en-3"]
+
+[contact]
+email = "info@115411.xyz"
+github = "kingdomes"
+telegram = "@wangyouweis"
+irc = "AS4242422213@hackint"
+
+[persona]
+ssh = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJOOI/ljWcj8LATEWl8C7dtcaGC0x+zSokLPlU9pg/QY"
