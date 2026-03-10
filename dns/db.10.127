@@ -145,3 +145,5 @@ $TTL    3600
 217            IN    NS     ns2.hawkins.neo.
 
 6              IN    NS     ns.andyzhou.neo.
+
+137            IN    NS     ns1.sulfate.dn42.
