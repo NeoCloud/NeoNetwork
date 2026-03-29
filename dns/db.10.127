@@ -147,3 +147,5 @@ $TTL    3600
 6              IN    NS     ns.andyzhou.neo.
 
 137            IN    NS     ns1.sulfate.dn42.
+
+28             IN    NS     ns.sess.neo.
