@@ -239,3 +239,8 @@ hawkins                   IN    NS       ns2.hawkins
 andyzhou                  IN    NS       ns.andyzhou
 ns.andyzhou               IN    A        10.127.6.1
 ns.andyzhou               IN    AAAA     fd10:127:6::1
+
+
+nox                       IN    NS       ns.nox
+ns.nox                    IN    A        10.127.42.53
+ns.nox                    IN    AAAA     fd10:127:42::53
