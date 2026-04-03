@@ -148,4 +148,5 @@ $TTL    3600
 
 137            IN    NS     ns1.sulfate.dn42.
 
+28             IN    NS     ns.sess.neo.
 129            IN    NS     ns1.moitr.dn42.

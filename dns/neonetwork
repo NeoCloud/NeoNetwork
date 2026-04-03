@@ -239,3 +239,7 @@ hawkins                   IN    NS       ns2.hawkins
 andyzhou                  IN    NS       ns.andyzhou
 ns.andyzhou               IN    A        10.127.6.1
 ns.andyzhou               IN    AAAA     fd10:127:6::1
+
+sess                      IN    NS       ns.sess
+ns.sess                   IN    A        172.20.62.161
+ns.sess                   IN    AAAA     fd42:23eb:6cf::161
