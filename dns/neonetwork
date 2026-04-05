@@ -243,3 +243,8 @@ ns.andyzhou               IN    AAAA     fd10:127:6::1
 sess                      IN    NS       ns.sess
 ns.sess                   IN    A        172.20.62.161
 ns.sess                   IN    AAAA     fd42:23eb:6cf::161
+
+cowgl                     IN    NS       ns1.cowgl
+ns1.cowgl                 IN    A        172.22.144.80
+ns1.cowgl                 IN    AAAA     fd36:62be:ef51:31ad::1
+cow                       IN    NS       ns1.cowgl
