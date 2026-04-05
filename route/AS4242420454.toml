@@ -1,0 +1,11 @@
+["10.127.42.0/24"]
+type = "subnet"
+name = "NEDIFINITA-NETWORK"
+description = "Nedifinita Network"
+max-len = 24
+
+["fd10:127:42::/48"]
+type = "subnet"
+name = "NEDIFINITA-NETWORK"
+description = "Nedifinita Network"
+max-len = 48
