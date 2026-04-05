@@ -1,0 +1,9 @@
+["10.127.53.0/24"]
+type = "subnet"
+name = "Afnooi-Neo"
+description = "Afnooi Global Experimental NeoNetwork - IPv4"
+
+["fd10:127:54::/48"]
+type = "subnet"
+name = "Afnooi-Neo"
+description = "Afnooi Global Experimental NeoNetwork - IPv6"
