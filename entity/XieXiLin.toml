@@ -1,0 +1,10 @@
+name = "XieXiLin"
+babel = ["zh-N"]
+
+[contact]
+email = "support@xiexilin.com"
+telegram = "XieXiLin"
+github = "XieXiLin2"
+
+[persona]
+pgp = "08CFDF017D51B7CE3AD9183B2005A79943EBEBEE"

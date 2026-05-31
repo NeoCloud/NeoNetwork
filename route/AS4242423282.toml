@@ -1,0 +1,7 @@
+["10.127.123.0/24"]
+type = "subnet"
+name = "LUKK-Uni_V4"
+
+["fd10:127:123::/48"]
+type = "subnet"
+name = "LUKK-Uni_V6"

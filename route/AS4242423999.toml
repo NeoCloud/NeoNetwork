@@ -1,0 +1,4 @@
+["10.127.55.0/24"]
+type = "subnet"
+name = "COWGL-IPV4-NEO"
+description = "CowGL Experiments"

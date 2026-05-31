@@ -1,0 +1,11 @@
+["10.127.28.0/24"]
+type = "subnet"
+name = "SESS-NETWORK"
+description = "Network of Sess"
+max-len = 24
+
+["fd10:127:2466::/48"]
+type = "subnet"
+name = "SESS-NETWORK"
+description = "Network of Sess"
+max-len = 48
