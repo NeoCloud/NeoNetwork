@@ -266,6 +266,8 @@ wall                      IN    NS       ns3.afn
 iswall                    IN    NS       ns1.afn
 iswall                    IN    NS       ns2.afn
 iswall                    IN    NS       ns3.afn
+anycast.afn               IN    A        172.23.57.130
+anycast.afn               IN    AAAA     fdf1:8356:996d:1a3b:2c4d:5e6f:7081:92a3
 ns1.afn                   IN    A        172.23.57.130
 ns1.afn                   IN    AAAA     fdf1:8356:996d:1a3b:2c4d:5e6f:7081:92a3
 ns2.afn                   IN    A        172.23.57.131
