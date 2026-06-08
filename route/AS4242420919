@@ -1,0 +1,4 @@
+["10.127.187.0/24"]
+type = "subnet"
+name = "STUIX-DN42"
+description = "For STUIX DN42 peering VLAN"
