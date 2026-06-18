@@ -1,7 +1,7 @@
 ; NeoNetwork DNS Record
 $TTL	3600
 @	IN	SOA	root-dns.neo. root.neo. (
-            4096    ; Serial
+            4097    ; Serial
              900    ; Refresh
              900    ; Retry
            86400    ; Expire
@@ -253,6 +253,13 @@ cowgl                     IN    NS       ns1.cowgl
 ns1.cowgl                 IN    A        172.22.144.80
 ns1.cowgl                 IN    AAAA     fd36:62be:ef51:31ad::1
 cow                       IN    NS       ns1.cowgl
+
+furry                     IN    NS       ns1.furry
+furry                     IN    NS       ns2.furry
+ns1.furry                 IN    A        10.127.224.1
+ns1.furry                 IN    AAAA     fd10:127:2424::1
+ns2.furry                 IN    A        10.127.224.2
+ns2.furry                 IN    AAAA     fd10:127:2424::2
 
 afn                       IN    NS       ns1.afn
 afn                       IN    NS       ns2.afn

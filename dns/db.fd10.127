@@ -1,7 +1,7 @@
 ; NeoNetwork DNS Record
 $TTL	3600
 @	IN	SOA	root-dns.neo. root.neo. (
-            4096    ; Serial
+            4097    ; Serial
              900    ; Refresh
              900    ; Retry
            86400    ; Expire
@@ -104,3 +104,5 @@ f.0.0.e                                                IN    NS     ns.kskb.neo.
 
 2.4.0.0                                                IN    NS     ns.nox.neo.
 6.6.4.2                                                IN    NS     ns.sess.neo.
+4.2.4.2                                                IN    NS     ns1.furry.neo.
+4.2.4.2                                                IN    NS     ns2.furry.neo.
