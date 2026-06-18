@@ -154,3 +154,5 @@ $TTL    3600
 28             IN    NS     ns.sess.neo.
 129            IN    NS     ns1.moitr.dn42.
 55             IN    NS     ns1.cowgl.neo.
+
+101            IN    NS     ns1.xiaoxi654.dn42.
