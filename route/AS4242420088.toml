@@ -1,0 +1,9 @@
+["10.127.224.0/24"]
+type = "subnet"
+name = "FurryNet-v4"
+description = "Linmont NeoNetwork IPv4"
+
+["fd10:127:2424::/48"]
+type = "subnet"
+name = "FurryNet-v6"
+description = "Linmont NeoNetwork IPv6"
