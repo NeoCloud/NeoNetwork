@@ -1,0 +1,4 @@
+; KSK owner entity/Hanako
+hanako.neo. 3600 IN DNSKEY 257 3 13 Ce5f5qBqBQG4LhNl90pVohBmT68mVxf/3lTo+RdMK7D9e0lu/L3gHIg8 n6w1aqcWmKr9V4SnYvdtIqK1GIaNzA==
+; ZSK owner entity/Hanako
+hanako.neo. 3600 IN DNSKEY 256 3 13 /+CBWePThFQDMHS1rWNA9uNqIMQVQBogXHUU8MVCxmQarfvA2WB7XYpL QZwmUoe6EPbwot1EUtS6xafFDoF8rA==
