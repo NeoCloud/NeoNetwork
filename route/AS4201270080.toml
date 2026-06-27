@@ -5,3 +5,37 @@ name = "Hanako-Network-Neo-1-v4"
 ["fd10:127:80::/48"]
 type = "subnet"
 name = "Hanako-Network-Neo-1-v6"
+
+["10.127.80.0/26"]
+type = "subnet"
+name = "vlab-dn42-v4"
+description = "vlab DN42 router + services"
+supernet = "10.127.80.0/24"
+max-len = 29
+
+["fd10:127:80:1000::/56"]
+type = "subnet"
+name = "vlab-dn42-v6"
+description = "vlab DN42 router + services"
+supernet = "fd10:127:80::/48"
+max-len = 64
+
+["10.127.80.1/32"]
+type = "loopback"
+name = "vlab-dn42-gw-v4"
+supernet = "10.127.80.0/26"
+
+["10.127.80.2/32"]
+type = "loopback"
+name = "ns-hanako-v4"
+supernet = "10.127.80.0/26"
+
+["fd10:127:80:1000::1/128"]
+type = "loopback"
+name = "vlab-dn42-gw-v6"
+supernet = "fd10:127:80:1000::/56"
+
+["fd10:127:80:1000::53/128"]
+type = "loopback"
+name = "ns-hanako-v6"
+supernet = "fd10:127:80:1000::/56"
