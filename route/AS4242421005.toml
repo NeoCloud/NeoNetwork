@@ -1,0 +1,11 @@
+["10.127.114.0/24"]
+type = "subnet"
+name = "YZYMC-IPv4-NEO"
+description = "YZYNetwork IPv4 Block"
+max-len = 24
+
+["fd10:127:114::/48"]
+type = "subnet"
+name = "YZYMC-IPv6-NEO"
+description = "YZYNetwork IPv6 Block"
+max-len = 48
