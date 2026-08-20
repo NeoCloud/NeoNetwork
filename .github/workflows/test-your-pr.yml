@@ -15,8 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
-          allow-unsafe-pr-checkout: true
+          ref: refs/pull/${{ github.event.pull_request.number }}/merge
           fetch-depth: 0
 
       - uses: actions/checkout@v4
@@ -29,7 +28,7 @@ jobs:
           git remote add trusted trusted_master_head
           git fetch trusted
           # you shall not change this
-          git diff --exit-code --name-status trusted/master ${{github.event.pull_request.head.sha}} ./scripts
+          git diff --exit-code --name-status trusted/master HEAD ./scripts
           # just in case
           rm -rf scripts && cp -a trusted_master_head/scripts ./
         shell: bash
