@@ -1,0 +1,9 @@
+["10.127.123.0/26"]
+type = "subnet"
+name = "Twilight"
+supernet = "10.127.123.0/24"
+
+["fd10:127:123::/64"]
+type = "subnet"
+name = "Twilight"
+supernet = "fd10:127:123::/48"
