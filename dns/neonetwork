@@ -246,9 +246,12 @@ nox                       IN    NS       ns.nox
 ns.nox                    IN    A        10.127.42.53
 ns.nox                    IN    AAAA     fd10:127:42::53
 
-sess                      IN    NS       ns.sess
-ns.sess                   IN    A        172.20.62.161
-ns.sess                   IN    AAAA     fd42:23eb:6cf::161
+sess                      IN    NS       ns1.sess
+sess                      IN    NS       ns2.sess
+ns1.sess                  IN    A        172.20.62.161
+ns1.sess                  IN    AAAA     fd42:23eb:6cf::161
+ns2.sess                  IN    A        172.20.62.164
+ns2.sess                  IN    AAAA     fd42:23eb:6cf::164
 
 cowgl                     IN    NS       ns1.cowgl
 ns1.cowgl                 IN    A        172.22.144.80
