@@ -103,7 +103,10 @@ f.0.0.e                                                IN    NS     ns.kskb.neo.
 6.0.0.0                                                IN    NS     ns.andyzhou.neo.
 
 2.4.0.0                                                IN    NS     ns.nox.neo.
-6.6.4.2                                                IN    NS     ns.sess.neo.
+
+6.6.4.2                                                IN    NS     ns1.sess.neo.
+6.6.4.2                                                IN    NS     ns2.sess.neo.
+
 4.2.4.2                                                IN    NS     ns1.furry.neo.
 4.2.4.2                                                IN    NS     ns2.furry.neo.
 
