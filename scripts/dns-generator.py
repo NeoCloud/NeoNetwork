@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 import sys
+import tomllib
 from pathlib import Path
 
-import toml
 
 from rfc2317 import gen_reverse_pointers, ZONE as RFC2317_ZONE
 from roa import export_dnssec_dnskey
@@ -17,7 +17,7 @@ NAMED_TURST_ANCHORS_FILE = Path("dns", "named_trust_anchors.conf")
 
 
 def iter_rfc2317_entry():
-    entries = toml.loads(RFC2317_FILE.read_text())
+    entries = tomllib.loads(RFC2317_FILE.read_text())
     for (route, attributes) in entries.items():
         ns = attributes.get("NS")
         ds = attributes.get("DS", list())

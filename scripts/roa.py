@@ -3,6 +3,7 @@ import argparse
 import json
 import re
 import time
+import tomllib
 
 # dnssec
 from base64 import b64decode
@@ -15,7 +16,6 @@ from itertools import combinations
 from pathlib import Path
 
 import netaddr
-import toml
 from dns.dnssec import make_ds
 from dns.rdtypes.ANY.DNSKEY import DNSKEY
 from tabulate import tabulate
@@ -60,7 +60,7 @@ def iter_toml_file(path: str):
     for item in Path(path).iterdir():
         if not item.is_file() or item.suffix != ".toml":
             continue
-        yield item, toml.loads(item.read_text())
+        yield item, tomllib.loads(item.read_text())
 
 
 def _sort_as_iterator(func):

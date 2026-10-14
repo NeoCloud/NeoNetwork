@@ -7,19 +7,19 @@ on:
 jobs:
   build:
     name: Generate ROA
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
 
     outputs:
       generate_roa: ${{ steps.generate_roa.outputs.base64 }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: refs/pull/${{ github.event.pull_request.number }}/merge
           allow-unsafe-pr-checkout: true
           fetch-depth: 0
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: master
           path: trusted_master_head
@@ -34,12 +34,12 @@ jobs:
           rm -rf scripts && cp -a trusted_master_head/scripts ./
         shell: bash
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           repository: NeoCloud/NeoNetwork-ROA
           path: generated
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: 3.x
           architecture: x64
@@ -59,17 +59,17 @@ jobs:
 
       - run: git -C generated diff README.md
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: generated
           path: generated
 
   comment_success:
     needs: [build]
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     if: ${{ always() && contains(needs.build.result, 'success') }}
     steps:
-      - uses: actions/github-script@v7
+      - uses: actions/github-script@v9
         with:
           github-token: ${{secrets.COMMENT_GITHUB_TOKEN}}
           script: |
@@ -82,14 +82,14 @@ jobs:
 
   comment_failure:
     needs: [build]
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     if: ${{ always() && contains(needs.build.result, 'failure') }}
     steps:
       - shell: bash
         run: |
           echo ${{needs.build.outputs.generate_roa}} | base64 -d | tail > /tmp/buildjob_tail.log || echo 'internal error' >> /tmp/buildjob_tail.log
 
-      - uses: actions/github-script@v7
+      - uses: actions/github-script@v9
         with:
           github-token: ${{secrets.COMMENT_GITHUB_TOKEN}}
           script: |
