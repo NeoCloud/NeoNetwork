@@ -162,3 +162,5 @@ $TTL    3600
 
 32             IN    NS     ns.tes286.neo.
 
+123            IN    NS     ns1.twilight.neo.
+123            IN    NS     ns2.twilight.neo.
