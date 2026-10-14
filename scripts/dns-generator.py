@@ -7,13 +7,16 @@ from pathlib import Path
 from rfc2317 import gen_reverse_pointers, ZONE as RFC2317_ZONE
 from roa import export_dnssec_dnskey
 
+# zone files in this directory are modified in place
+DNS_DIR = Path(sys.argv[1] if len(sys.argv) > 1 else "dns")
+
 ZONE_FILE_MAP = {
-    'neo.': Path("dns", "neonetwork"),
-    '127.10.in-addr.arpa.': Path("dns", "db.10.127"),
-    '7.2.1.0.0.1.d.f.ip6.arpa.': Path("dns", "db.fd10.127")
+    'neo.': DNS_DIR / "neonetwork",
+    '127.10.in-addr.arpa.': DNS_DIR / "db.10.127",
+    '7.2.1.0.0.1.d.f.ip6.arpa.': DNS_DIR / "db.fd10.127"
 }
-RFC2317_FILE = Path("dns", "rfc2317.toml")
-NAMED_TURST_ANCHORS_FILE = Path("dns", "named_trust_anchors.conf")
+RFC2317_FILE = DNS_DIR / "rfc2317.toml"
+NAMED_TURST_ANCHORS_FILE = DNS_DIR / "named_trust_anchors.conf"
 
 
 def iter_rfc2317_entry():

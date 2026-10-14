@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import subprocess
+import sys
 from os import chdir
 from pathlib import Path
 from re import match
@@ -10,6 +11,9 @@ zone_files = [
     "db.10.127",
     "db.fd10.127",
 ]
+
+# zone files in this directory are modified in place
+DNS_DIR = Path(sys.argv[1] if len(sys.argv) > 1 else "dns")
 
 serial_base = 1586876035
 new_serial = int(time()) - serial_base
@@ -38,7 +42,7 @@ def update_serial_to(zone: Path, serial: int = 0) -> int:
 
 for zone in zone_files:
     gen_zone = Path("generated") / "dns" / zone
-    repo_zone = Path("dns") / zone
+    repo_zone = DNS_DIR / zone
     assert gen_zone.exists()
     assert repo_zone.exists()
     old_serial = update_serial_to(gen_zone)

@@ -11,9 +11,14 @@ export MAX_LEN_6=64
 mkdir -p generated
 mkdir -p generated/dns
 
-scripts/dns-generator.py
-scripts/update-zone-serial.py
-cp -R dns/* generated/dns
+# build zone files in a scratch copy so dns/ in the work tree stays untouched
+DNS_BUILD_DIR="$(mktemp -d)"
+trap 'rm -rf "$DNS_BUILD_DIR"' EXIT
+cp -R dns/* "$DNS_BUILD_DIR"
+
+scripts/dns-generator.py "$DNS_BUILD_DIR"
+scripts/update-zone-serial.py "$DNS_BUILD_DIR"
+cp -R "$DNS_BUILD_DIR"/* generated/dns
 scripts/check-named-zones.sh
 
 scripts/roa.py -m "$MAX_LEN_4" -M "$MAX_LEN_6" -o generated/roa46_bird2.conf
