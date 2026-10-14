@@ -1,2 +1,9 @@
 .venv
 *.pyc
+
+# build outputs of scripts/generate-roa.sh
+/generated/
+/dns/named_trust_anchors.conf
+
+# cf CLI cache
+/.cloudflare/
