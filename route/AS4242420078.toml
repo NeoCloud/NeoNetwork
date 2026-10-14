@@ -2,8 +2,10 @@
 type = "subnet"
 name = "TES286-NETWORK"
 description = "TES286's Network"
+max-len = 24
 
 ["fd10:127:286::/48"]
 type = "subnet"
 name = "TES286-NETWORK"
 description = "TES286's Network"
+max-len = 48
