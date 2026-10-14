@@ -287,7 +287,7 @@ ns3.afn                   IN    A        172.23.57.132
 ns3.afn                   IN    AAAA     fdf1:8356:996d:7e8f:90a1:b2c3:d4e5:f607
 
 tes286                    IN    NS       ns.tes286.neo
-ns.tes286                 IN    A        10.127.32.1
+ns.tes286                 IN    A        10.127.32.96
 ns.tes286                 IN    AAAA     fd10:127:286::
 
 twilight                  IN    NS       ns1.twilight
