@@ -1,0 +1,3 @@
+name = "CLOUDC-AS"
+owner = "CLOUDC"
+description = "CLOUDC experimental network; peering information: https://dn42.cloudc.dev"
