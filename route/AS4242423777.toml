@@ -1,0 +1,10 @@
+["10.127.107.0/24"]
+type = "subnet"
+name = "CLOUDC-NEO-IPV4"
+description = "CLOUDC NeoNetwork IPv4 block"
+max-len = 29
+["fd10:127:3777::/48"]
+type = "subnet"
+name = "CLOUDC-NEO-IPV6"
+description = "CLOUDC NeoNetwork IPv6 block"
+max-len = 64
