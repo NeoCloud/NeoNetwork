@@ -1,0 +1,9 @@
+name = "Hat"
+babel = ["zh-N", "en-3"]
+
+[contact]
+email = "dn42@hats-mail.com"
+github = "Alice39s"
+
+[persona]
+pgp = "96409450E5537A98FC4E7C23B124000000000000"

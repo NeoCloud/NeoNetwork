@@ -1,0 +1,4 @@
+["10.127.208.0/24"]
+type = "subnet"
+name = "HATSNET-NEO-V4"
+max-len = 29
