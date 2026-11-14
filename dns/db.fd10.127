@@ -113,3 +113,8 @@ f.0.0.e                                                IN    NS     ns.kskb.neo.
 
 3.2.1.0                                                IN    NS     ns1.twilight.neo.
 3.2.1.0                                                IN    NS     ns2.twilight.neo.
+
+3.7.5.1                                               IN    NS     anycast.sironeko.neo.
+3.7.5.1                                               IN    NS     ns1.sironeko.neo.
+3.7.5.1                                               IN    DS     6298 15 2 0a211444e09412f1fe4f02ccae8729a9b6834fd029b3696c16c06eefe237e0b0
+3.7.5.1                                               IN    DS     6298 15 4 ea5e713278f105cd8029e1b9ecc42c0803fee27c274d9ffb9a349cca30a5f085e31aac5f5e1aabd9f436b999043ce159

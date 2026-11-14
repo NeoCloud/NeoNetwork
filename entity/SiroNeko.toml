@@ -1,0 +1,10 @@
+name = "SiroNeko"
+
+[contact]
+github = "LZYxiaobai"
+telegram = "LZY_xiaobai"
+email = "neo@sironeko.moe"
+
+[persona]
+pgp = "8394476AD22AAD3C7D6E682A4725B85E9B6CDB69"
+ssh = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOOg3F1KubLuXQvFTBHUnalZsFQprADEvdwvJIHhD6kA"
