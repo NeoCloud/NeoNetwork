@@ -295,3 +295,12 @@ ns1.twilight              IN    A        10.127.123.123
 ns1.twilight              IN    AAAA     fd10:127:123::
 ns2.twilight              IN    A        172.22.123.40
 ns2.twilight              IN    AAAA     fd72:ee9b:57fa:53::40
+
+sironeko                  IN    NS       anycast.sironeko
+sironeko                  IN    NS       ns1.sironeko
+sironeko                  IN    DS       58504 15 2 78521bf27e078e936227ee4a47ac4fc91df0c4e315a3a0faf099e6966e0e4d43
+sironeko                  IN    DS       58504 15 4 3a0f7494684746a2fb48d6e0ed95bf623b30659e61dae220c6436a6495949ccea9be72486eebc13ae537d985b86f3088
+anycast.sironeko          IN    A        172.23.91.254
+anycast.sironeko          IN    AAAA     fd78:d00:721:ff00::53
+ns1.sironeko              IN    A        172.23.91.242
+ns1.sironeko              IN    AAAA     fd78:d00:721:1:f000::53

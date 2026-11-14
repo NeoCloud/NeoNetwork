@@ -163,3 +163,8 @@ $TTL    3600
 
 123            IN    NS     ns1.twilight.neo.
 123            IN    NS     ns2.twilight.neo.
+
+73             IN    NS     anycast.sironeko.neo.
+73             IN    NS     ns1.sironeko.neo.
+73             IN    DS     44901 15 2 b5e9d833350d1f6915945cbf14387df1f6838f1b10d7c5eb4d3fa16aa0c351bc
+73             IN    DS     44901 15 4 deac9c635b92bda90730540c57f5d6a6dc869ba7aa2bbe94328afa809ae019a514f3b8659e78a09ff3bad7e078c1ac11

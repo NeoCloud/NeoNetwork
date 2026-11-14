@@ -1,0 +1,9 @@
+["10.127.73.0/24"]
+type = "subnet"
+name = "SIRONEKO-NETWORK-NEO"
+max-len = 29
+
+["fd10:127:1573::/48"]
+type = "subnet"
+name = "SIRONEKO-NETWORK-NEO"
+max-len = 64
