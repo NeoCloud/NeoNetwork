@@ -168,3 +168,10 @@ $TTL    3600
 73             IN    NS     ns1.sironeko.neo.
 73             IN    DS     44901 15 2 b5e9d833350d1f6915945cbf14387df1f6838f1b10d7c5eb4d3fa16aa0c351bc
 73             IN    DS     44901 15 4 deac9c635b92bda90730540c57f5d6a6dc869ba7aa2bbe94328afa809ae019a514f3b8659e78a09ff3bad7e078c1ac11
+
+208            IN    NS     ns-anycast.hat.dn42.
+208            IN    NS     ns-unicast-a.hat.dn42.
+208            IN    NS     ns-unicast-b.hat.dn42.
+208            IN    NS     ns-unicast-c.hat.dn42.
+208            IN    NS     ns-unicast-d.hat.dn42.
+208            IN    DS     1677 13 2 8b5679168957a022bf85cb3e2e141128d6823465f4423b14cedb9d608537c8da
